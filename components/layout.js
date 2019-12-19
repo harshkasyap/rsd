@@ -5,21 +5,6 @@ import Link from "next/link";
 import Router from "next/router";
 import GlobalStyle from "./globalStyle";
 
-const PrefetchOnMouseEnter = ( { href, title, className } ) => (
-    <Link href={ href }>
-        <a
-            className={ className }
-            onMouseEnter={ ( ) => Router.prefetch( href ) }
-        >{ title }</a>
-    </Link>
-);
-
-PrefetchOnMouseEnter.propTypes = {
-    href: PropTypes.string,
-    title: PropTypes.string,
-    className: PropTypes.string,
-};
-
 const Layout = ( { children, title = "RSD-IITP" } ) => (
     <div>
         <Head>
@@ -32,12 +17,13 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
         <header className="header section dark">
             <nav>
                 <Link href="./index.html"><a className="navlink">Home</a></Link>
-                <PrefetchOnMouseEnter className="navlink" href="/about" title="About" />
-                <Link prefetch href="/speakers"><a className="navlink">Speakers</a></Link>
-                <PrefetchOnMouseEnter className="navlink" href="/agenda" title="Agenda" />
-                <PrefetchOnMouseEnter className="navlink" href="/sponsors-and-partners" title="Sponsors and Partners" />
-                <Link href="/"><a className="navlink highlight">Register</a></Link>
-                <Link href="/"><a className="navlink">Contact</a></Link>
+                <Link href="./index.html#about"><a className="navlink">About</a></Link>
+                <Link href="./index.html#speakers"><a className="navlink">Speakers</a></Link>
+                <Link href="./index.html#agenda"><a className="navlink">Agenda</a></Link>
+                <Link href="./index.html#sponsors"><a className="navlink">Sponsors and Partners</a></Link>
+                <Link href="./index.html#register"><a className="navlink">Register</a></Link>
+                <Link href="./index.html#gallery"><a className="navlink">Gallery</a></Link>
+                <Link href="./index.html#contact"><a className="navlink">Contact</a></Link>
             </nav>
             <GlobalStyle />
         </header>
@@ -45,11 +31,5 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
         { children }
     </div>
 );
-
-const { string, any } = PropTypes;
-Layout.propTypes = {
-    title: string, // eslint-disable-line react/require-default-props
-    children: any.isRequired, // eslint-disable-line react/forbid-prop-types
-};
 
 export default Layout;
