@@ -1,0 +1,11 @@
+module.exports = {
+    aboutPara1: "We’re planning for JSHeroes to be the biggest tech Conference in Romania, dedicated solely to JavaScript. We’ll get our engine going with 20 international JavaScript experts and we’ve chosen a venue that allows a crowd of up to 500 attendees.",
+    aboutPara2: "We kick-started the Cluj JavaScripters community in August 2015. Since then we’ve grown to 900+ members and formed one of the most active knowledge sharing groups worldwide. We organized more than 42 Meetups and Trainings for the JS community in Cluj. So far we partnered with technical conferences to deliver high-quality JS knowledge and held an entire conference track for CodeCamp. What can we say, it was a full-house track and it was brilliant!",
+    aboutPara3: "We kick-started the Cluj JavaScripters community in August 2015. Since then we’ve grown to 900+ members and formed one of the most active knowledge sharing groups worldwide. We organized more than 42 Meetups and Trainings for the JS community in Cluj. So far we partnered with technical conferences to deliver high-quality JS knowledge and held an entire conference track for CodeCamp. What can we say, it was a full-house track and it was brilliant!",
+
+    directorMsg: "Mauris placerat nunc sit amet turpis pulvinar, nec iaculis massa posuere. Aenean orci tortor, aliquet sed neque eu, dictum suscipit nisi. Morbi interdum vitae nunc sit amet varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam non enim orci. Suspendisse mauris quam, porttitor vel lorem nec, malesuada suscipit velit. Duis lacinia cursus mattis. Vestibulum vel nisl vestibulum neque tincidunt fringilla at a dui. Nam nisi lacus, viverra vitae eros quis, maximus vehicula nisi. Phasellus euismod, tortor et rutrum tempus, libero risus vestibulum nisi, non malesuada eros orci quis sem. Quisque iaculis pharetra placerat. Integer ut urna sit amet dui pretium pharetra at sit amet nisl. Aliquam rutrum velit ipsum, scelerisque pretium purus ultrices nec.",
+    directorName: "Prof. Pushpak Bhattacharyya",
+
+
+    
+};

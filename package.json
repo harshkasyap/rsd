@@ -10,6 +10,7 @@
     "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
+    "google-map-react": "^1.1.5",
     "isomorphic-fetch": "^2.2.1",
     "next": "latest",
     "react": "^16.12.0",
