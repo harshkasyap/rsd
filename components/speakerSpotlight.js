@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types'
-import theme from "../config/theme";
+import theme from "../data/theme";
 
 const SpeakerSpotlight = ( { details } ) => (
     <div className="speaker-pic">

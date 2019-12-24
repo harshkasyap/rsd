@@ -1,18 +1,29 @@
 import React from "react";
 
+import Poster from  "../components/poster"
+import Register from "../components/register"
+import Paper from  "../components/paper"
 import Timer from "../components/timer"
 import Layout from "../components/layout";
-import Banner from "../components/banner";
 import SpeakerSpotlight from "../components/speakerSpotlight";
 import SponsorSpotLight from "../components/sponsorSpotlight";
+import TeamSpotlight from "../components/teamSpotlight";
+import dictionary from "../data/dictionary";
+import Grid from '@material-ui/core/Grid';
+import Slideshow from "../components/slider"
 
 const speakers = require( "../data/speakers" );
 const sponsors = require( "../data/sponsors" );
+const team = require ( "../data/team" );
 const text = require( "../data/text" );
 
 const Home = ( props ) => {
     const speakerSpotlights = speakers.map(
         ( speaker ) => <SpeakerSpotlight details={ speaker } key={ speaker.id } />,
+    );
+
+    const teamSpotlight = team.map(
+        ( member ) => <TeamSpotlight details={ member } key={ member.id } />,
     );
 
     const sponsorSpotlights = sponsors.map(
@@ -21,8 +32,8 @@ const Home = ( props ) => {
 
     return (
         <Layout>
-            <Banner />
-            <div className="section color" id="speakers">
+            <Slideshow />
+            <div className="section color">
                 <div>
                     <Timer />
                 </div>
@@ -33,6 +44,17 @@ const Home = ( props ) => {
                     <p>{text.aboutPara1}</p>
                     <p>{text.aboutPara2}</p>
                     <p>{text.aboutPara3}</p>
+                    <Grid container spacing={24}>
+                        <Grid item xs={4}>
+                            <Poster />   
+                        </Grid>
+                        <Grid item xs={4}>
+                            <Register />
+                        </Grid>
+                        <Grid item xs={4}>
+                            <Paper />
+                        </Grid>
+                    </Grid>
                 </div>
             </div>
             <div className="section dark">
@@ -48,39 +70,21 @@ const Home = ( props ) => {
                     { speakerSpotlights }
                 </div>
             </div>
-            <div className="section light" id="agenda">
+            <div className="section light" id="sponsors">
                 <div className="container">
-                    <h2>Schedule</h2>
-                    <p>Curabitur vestibulum ante maximus maximus consectetur. Morbi elementum nisl nec risus varius volutpat. Sed vehicula, odio at gravida feugiat, urna lectus cursus metus, in molestie lorem purus ut risus. In ac volutpat metus, id iaculis est. Phasellus in nisi pharetra, ultricies est non, accumsan mauris. Suspendisse vel consequat quam. Aenean interdum lectus eget magna pellentesque, at posuere dui egestas. Morbi at lectus nulla. Nunc tristique, leo eget tincidunt iaculis, turpis nulla semper dolor, a molestie justo lacus id nulla.</p>
-
-                    <p>Fusce dignissim quam aliquam orci bibendum dignissim. Nunc vehicula ante non diam consequat, sed mattis nibh dictum. Proin est nisl, placerat at lectus quis, eleifend ultrices nisi. Donec ac interdum lectus, nec consectetur erat. Suspendisse eget libero at nisl consectetur viverra. Quisque sit amet mauris ac nibh rhoncus bibendum id eu sapien. Vestibulum a urna non nisl vehicula hendrerit. Vivamus id odio vel leo consequat rhoncus a in diam. Quisque rhoncus vulputate lacus ac luctus. Curabitur leo orci, mattis pellentesque augue nec, hendrerit faucibus nulla. Vestibulum a efficitur nisl.</p>
-                </div>
-            </div>
-            <div className="section dark" id="sponsors">
-                <div className="container">
-                    <h2>Sponsors</h2>
+                    <h2>Sponsors And Partners</h2>
                 </div>
                 { sponsorSpotlights }
             </div>
-            <div className="section color" id="register">
+            <div className="section color" id="contact">
+                <h2>Team RSD</h2>
                 <div className="container">
-                    <h2>Register</h2>
+                { teamSpotlight }
                 </div>
             </div>
-            <div className="section light" id="gallery">
+            <div className="section dark">
                 <div className="container">
-                    <h2>Gallery</h2>
-                </div>
-            </div>
-            <div className="section dark" id="contact">
-                <div className="container">
-                    <h2>Team-RSD-IITP-2020</h2>
-                </div>
-                { speakerSpotlights }
-            </div>
-            <div className="section color">
-                <div className="container">
-                    <p>Join us on 7th, March 2020.</p>
+                    <p>{dictionary.footer}</p>
                 </div>
             </div>
         </Layout>

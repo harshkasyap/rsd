@@ -17,11 +17,9 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
                 <Link href="./index.html"><a className="navlink">Home</a></Link>
                 <Link href="./index.html#about"><a className="navlink">About</a></Link>
                 <Link href="./index.html#speakers"><a className="navlink">Speakers</a></Link>
-                <Link href="./index.html#agenda"><a className="navlink">Agenda</a></Link>
                 <Link href="./index.html#sponsors"><a className="navlink">Sponsors and Partners</a></Link>
-                <Link href="./index.html#register"><a className="navlink">Register</a></Link>
-                <Link href="./index.html#gallery"><a className="navlink">Gallery</a></Link>
-                <Link href="./index.html#contact"><a className="navlink">Contact</a></Link>
+{/*                 <Link href="./index.html#gallery"><a className="navlink">Gallery</a></Link> */}
+                <Link href="./index.html#contact"><a className="navlink">Team</a></Link>
             </nav>
             <GlobalStyle />
         </header>

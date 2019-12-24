@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import dictionary from "../data/dictionary";
 import moment from "moment";
 
 class Countdown extends React.Component {
@@ -16,7 +17,7 @@ class Countdown extends React.Component {
 			const then = moment(timeTillDate, timeFormat);
 			const now = moment();
             const countdown = moment(then - now);
-            const months = countdown.format('MM');
+            const months = countdown.format('MM') - 1;
 			const days = countdown.format('D');
 			const hours = countdown.format('HH');
 			const minutes = countdown.format('mm');
@@ -34,7 +35,7 @@ class Countdown extends React.Component {
 	
 	render() {
 		const { months, days, hours, minutes, seconds } = this.state;
-        const monthsRadius = mapNumber(months, 12, 0, 0, 360);
+        const monthsRadius = mapNumber(months, 2, 0, 0, 360);
         const daysRadius = mapNumber(days, 30, 0, 0, 360);
 		const hoursRadius = mapNumber(hours, 24, 0, 0, 360);
 		const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
@@ -117,14 +118,14 @@ class Countdown extends React.Component {
 				<div className='countdown-wrapper'>
 					{months && (
 						<div className='countdown-item'>
-							<SVGCircle radius={daysRadius} />
+							<SVGCircle radius={monthsRadius} />
 							{months} 
 							<span>months</span>
 						</div>
 					)}
                     {days && (
 						<div className='countdown-item'>
-							<SVGCircle radius={monthsRadius} />
+							<SVGCircle radius={daysRadius} />
 							{days} 
 							<span>days</span>
 						</div>
@@ -194,7 +195,7 @@ function mapNumber(number, in_min, in_max, out_min, out_max) {
 
 const Timer = ( ) => (
     <div>
-        <Countdown timeTillDate="03 07 2020, 6:00 am" timeFormat="MM DD YYYY, h:mm a" />
+        <Countdown timeTillDate={dictionary.event.inaugralTime} timeFormat="MM DD YYYY, h:mm a" />
     </div>
 );
 
