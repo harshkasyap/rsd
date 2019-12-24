@@ -1,6 +1,6 @@
 import React from "react";
-import GoogleMap from 'google-map-react';
 
+import Timer from "../components/timer"
 import Layout from "../components/layout";
 import Banner from "../components/banner";
 import SpeakerSpotlight from "../components/speakerSpotlight";
@@ -9,14 +9,6 @@ import SponsorSpotLight from "../components/sponsorSpotlight";
 const speakers = require( "../data/speakers" );
 const sponsors = require( "../data/sponsors" );
 const text = require( "../data/text" );
-const map = require( "../data/map" );
-
-const Marker = ({ title }) => (
-    <div style={map.markerStyle}>
-      <img style={map.imgStyle} src="https://res.cloudinary.com/og-tech/image/upload/s--OpSJXuvZ--/v1545236805/map-marker_hfipes.png" alt={title} />
-      <h3>{title}</h3>
-    </div>
-);
 
 const Home = ( props ) => {
     const speakerSpotlights = speakers.map(
@@ -30,6 +22,11 @@ const Home = ( props ) => {
     return (
         <Layout>
             <Banner />
+            <div className="section color" id="speakers">
+                <div>
+                    <Timer />
+                </div>
+            </div>
             <div className="section light" id="about">
                 <div className="container">
                     <h2>About the event</h2>
@@ -84,19 +81,6 @@ const Home = ( props ) => {
             <div className="section color">
                 <div className="container">
                     <p>Join us on 7th, March 2020.</p>
-                    <GoogleMap
-                        style={map.mapStyles}
-                        bootstrapURLKeys={{ key: 'AIzaSyB7uL5snlkwkA2mwAQCejhm_YUmSm5wn44' }}
-                        center={{ lat: 5.6219868, lng: -0.1733074 }}
-                        zoom={14}
-                        >
-                        <Marker
-                            title={'Current Location'}
-                            lat={5.6219868}
-                            lng={-0.1733074}
-                            >
-                        </Marker>
-                    </GoogleMap>
                 </div>
             </div>
         </Layout>

@@ -1,5 +1,6 @@
 import React from "react";
 import Dictionary from "../config/dictionary";
+import Timer from "../components/timer";
 
 const Banner = ( ) => (
     <div className="above-the-fold" id="home">
@@ -42,6 +43,7 @@ const Banner = ( ) => (
         <div className="overlay" />
         <div className="centered-text">
             <h1>{ Dictionary.event.name }</h1>
+
             <h2>{ Dictionary.event.period }</h2>
             <p>{ Dictionary.event.place }</p>
         </div>

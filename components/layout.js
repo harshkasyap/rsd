@@ -1,8 +1,6 @@
 import React from "react";
-import PropTypes from 'prop-types'
 import Head from "next/head";
 import Link from "next/link";
-import Router from "next/router";
 import GlobalStyle from "./globalStyle";
 
 const Layout = ( { children, title = "RSD-IITP" } ) => (

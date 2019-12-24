@@ -1,0 +1,1 @@
+sed -i 's/\/rsd/./g' out/index.html
