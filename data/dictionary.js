@@ -1,6 +1,6 @@
 export default {
     event: {
-        name: "Research Scholar Day",
+        name: "Research Scholars Day",
         period: "March 7, 2020",
         place: "Indian Institute Of Technology, Patna",
         inaugralTime: "03 07 2020, 9:00 am"
