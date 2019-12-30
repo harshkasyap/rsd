@@ -16,56 +16,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__["Carousel"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+    jsx: true
+  }, "\n    .carousel {\n        height:80vh;\n        position: absolute;\n    }\n        \n    .carousel-inner &gt; .item &gt; img {\n        height:80vh;\n        object-fit: contain;\n    }\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__["Carousel"], {
     autoPlay: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/cover.jpg"
+    src: "./static/images/res1.jpg",
+    height: "100%"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "legend"
-  }, "Legend 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/paper.jpeg"
+  }, "res 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/res2.jpg",
+    height: "100%"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "legend"
-  }, "Legend 2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/poster.jpeg"
+  }, "res 2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/res3.jpg",
+    height: "100%"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "legend"
-  }, "Legend 2")));
+  }, "res 3"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null));
 });
-
-/***/ }),
-
-/***/ "./components/banner.js":
-/*!******************************!*\
-  !*** ./components/banner.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slider */ "./components/slider.js");
-/* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
-
-
-
-
-var Banner = function Banner() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "above-the-fold",
-    id: "home"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
-    jsx: true
-  }, "\n            .above-the-fold {\n                background-image: url( \"./static/images/cover.jpg\" );\n                background-size: 100%;\n                background-repeat: no-repeat;\n                background-size: cover;\n                height: 100vh;\n                position: relative;\n                color: #eee;\n            }\n\n            .above-the-fold .centered-text {\n                position: absolute;\n                height: 200px;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                margin: auto;\n            }\n\n            .above-the-fold h1 {\n                color: #f1c40f;\n                font-size: 3rem;\n                margin: 30px;\n            }\n\n            .overlay {\n                background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5), #2F2727);\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n            }\n        "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "overlay"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "centered-text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.period), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.place)));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Banner);
 
 /***/ }),
 
@@ -359,11 +330,13 @@ __webpack_require__.r(__webpack_exports__);
 var Slideshow = function Slideshow() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true
-  }, "\n            .centered-text {\n                position: absolute;\n                height: 200px;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                margin: auto;\n            }\n\n            .above-the-fold h1 {\n                color: #f1c40f;\n                font-size: 3rem;\n                margin: 30px;\n            }\n\n            .overlay {\n                background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5), #2F2727);\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n            }\n\n    .carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transitio\n    n:all .25s ease-in;transition:all .25s ease-in;opacity:.4;position:absolute;z-index:2;top:20px;background:0 0;border:0;font-size:32px;cursor:pointer}.carousel .control-arrow:hover{o\n    pacity:1}.carousel .control-arrow:before,.carousel.carousel-slider .control-arrow:before{margin:0 5px;display:inline-block;border-top:8px solid transparent;border-bottom:8px solid t\n    ransparent;content:''}.carousel .control-disabled.control-arrow{opacity:0;cursor:inherit;display:none}.carousel .control-prev.control-arrow{left:0}.carousel .control-prev.control-arrow:before{border-right:8px solid #fff}.carousel .control-next.control-arrow{right:0}.carousel .control-next.control-arrow:before{border-left:8px solid #fff}.carousel{position:relative;width:100%}.carousel *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.carousel img{width:100%;display:inline-block;pointer-events:none}.carousel .carousel{position:relative}.carousel .control-arrow{outline:0;border:0;background:0 0;top:50%;margin-top:-13px;font-size:18px}.carousel .thumbs-wrapper{margin:20px;overflow:hidden}.carousel .thumbs{-webkit-transition:all .15s ease-in;-moz-transition:all .15s ease-in;-ms-transition:all .15s ease-in;-o-transition:all .15s ease-in;transition:all .15s ease-in;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);position:relative;list-style:none;white-space:nowrap}.carousel .thumb{-webkit-transition:border .15s ease-in;-moz-transition:border .15s ease-in;-ms-transition:border .15s ease-in;-o-transition:border .15s ease-in;transition:border .15s ease-in;display:inline-block;width:80px;margin-right:6px;white-space:nowrap;overflow:hidden;border:3px solid #fff;padding:2px}.carousel .thumb:focus{border:3px solid #ccc;outline:0}.carousel .thumb.selected,.carousel .thumb:hover{border:3px solid #333}.carousel .thumb img{vertical-align:top}.carousel.carousel-slider{position:relative;margin:0;overflow:hidden}.carousel.carousel-slider .control-arrow{top:0;color:#fff;font-size:26px;bottom:0;margin-top:0;padding:5px}.carousel.carousel-slider .control-arrow:hover{background:rgba(0,0,0,.2)}.carousel .slider-wrapper{overflow:hidden;margin:auto;width:100%;-webkit-transition:height .15s ease-in;-moz-transition:height .15s ease-in;-ms-transition:height .15s ease-in;-o-transition:height .15s ease-in;transition:height .15s ease-in}.carousel .slider-wrapper.axis-horizontal .slider{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-horizontal .slider .slide{flex-direction:column;flex-flow:column}.carousel .slider-wrapper.axis-vertical{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-vertical .slider{-webkit-flex-direction:column;flex-direction:column}.carousel .slider{margin:0;padding:0;position:relative;list-style:none;width:100%}.carousel .slider.animated{-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out}.carousel .slide{min-width:100%;margin:0;position:relative;text-align:center;background:#000}.carousel .slide img{width:100%;vertical-align:top;border:0}.carousel .slide iframe{display:inline-block;width:calc(100% - 80px);margin:0 40px 40px;border:0}.carousel .slide .legend{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;position:absolute;bottom:40px;left:50%;margin-left:-45%;width:90%;border-radius:10px;background:#000;color:#fff;padding:10px;font-size:12px;text-align:center;opacity:.25;-webkit-transition:opacity .35s ease-in-out;-moz-transition:opacity .35s ease-in-out;-ms-transition:opacity .35s ease-in-out;-o-transition:opacity .35s ease-in-out;transition:opacity .35s ease-in-out}.carousel .control-dots{position:absolute;bottom:0;margin:10px 0;text-align:center;width:100%}@media (min-width:960px){.carousel .control-dots{bottom:0}}.carousel .control-dots .dot{-webkit-transition:opacity .25s ease-in;-moz-transition:opacity .25s ease-in;-ms-transition:opacity .25s ease-in;-o-transition:opacity .25s ease-in;transition:opacity .25s ease-in;opacity:.3;box-shadow:1px 1px 2px rgba(0,0,0,.9);background:#fff;border-radius:50%;width:8px;height:8px;cursor:pointer;display:inline-block;margin:0 8px}.carousel .control-dots .dot.selected,.carousel .control-dots .dot:hover{opacity:1}.carousel .carousel-status{position:absolute;top:0;right:0;padding:5px;font-size:10px;text-shadow:1px 1px 1px rgba(0,0,0,.9);color:#fff}.carousel:hover .slide .legend{opacity:1}\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\n            .centered-text {\n                position: absolute;\n                height: 200px;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                margin: auto;\n            }\n\n            h1 {\n                color: #3f51b5;\n                font-size: 3rem;\n                margin: 30px;\n            }\n\n            h2 {\n              color: #9e2a22;\n            }\n\n            h3 {\n              color: #f50057;\n            }\n\n            h4 {\n              color: #9e2a22;\n            }\n\n            .overlay {\n                background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5), #2F2727);\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n            }\n\n    .carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transitio\n    n:all .25s ease-in;transition:all .25s ease-in;opacity:.4;position:absolute;z-index:2;top:20px;background:0 0;border:0;font-size:32px;cursor:pointer}.carousel .control-arrow:hover{o\n    pacity:1}.carousel .control-arrow:before,.carousel.carousel-slider .control-arrow:before{margin:0 5px;display:inline-block;border-top:16px solid transparent;border-bottom:16px solid t\n    ransparent;content:''}.carousel .control-disabled.control-arrow{opacity:0;cursor:inherit;display:none}.carousel .control-prev.control-arrow{left:0}.carousel .control-prev.control-arrow:before{border-right:16px solid #5e132f}.carousel .control-next.control-arrow{right:0}.carousel .control-next.control-arrow:before{border-left:16px solid #5e132f}.carousel{position:relative;width:100%}.carousel *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.carousel img{width:100%;display:inline-block;pointer-events:none}.carousel .carousel{position:relative}.carousel .control-arrow{outline:0;border:0;background:0 0;top:50%;margin-top:-13px;font-size:116px}.carousel .thumbs-wrapper{margin:20px;overflow:hidden}.carousel .thumbs{-webkit-transition:all .15s ease-in;-moz-transition:all .15s ease-in;-ms-transition:all .15s ease-in;-o-transition:all .15s ease-in;transition:all .15s ease-in;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);position:relative;list-style:none;white-space:nowrap}.carousel .thumb{-webkit-transition:border .15s ease-in;-moz-transition:border .15s ease-in;-ms-transition:border .15s ease-in;-o-transition:border .15s ease-in;transition:border .15s ease-in;display:inline-block;width:80px;margin-right:6px;white-space:nowrap;overflow:hidden;border:3px solid #5e132f;padding:2px}.carousel .thumb:focus{border:3px solid #ccc;outline:0}.carousel .thumb.selected,.carousel .thumb:hover{border:3px solid #333}.carousel .thumb img{vertical-align:top}.carousel.carousel-slider{position:relative;margin:0;overflow:hidden}.carousel.carousel-slider .control-arrow{top:0;color:#5e132f;font-size:26px;bottom:0;margin-top:0;padding:5px}.carousel.carousel-slider .control-arrow:hover{background:rgba(0,0,0,.2)}.carousel .slider-wrapper{overflow:hidden;margin:auto;width:100%;-webkit-transition:height .15s ease-in;-moz-transition:height .15s ease-in;-ms-transition:height .15s ease-in;-o-transition:height .15s ease-in;transition:height .15s ease-in}.carousel .slider-wrapper.axis-horizontal .slider{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-horizontal .slider .slide{flex-direction:column;flex-flow:column}.carousel .slider-wrapper.axis-vertical{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-vertical .slider{-webkit-flex-direction:column;flex-direction:column}.carousel .slider{margin:0;padding:0;position:relative;list-style:none;width:100%}.carousel .slider.animated{-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out}.carousel .slide{min-width:100%;margin:0;position:relative;text-align:center;background:#000}.carousel .slide img{width:100%;vertical-align:top;border:0}.carousel .slide iframe{display:inline-block;width:calc(100% - 80px);margin:0 40px 40px;border:0}.carousel .slide .legend{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;position:absolute;bottom:40px;left:50%;margin-left:-45%;width:90%;border-radius:10px;background:#000;color:#5e132f;padding:10px;font-size:12px;text-align:center;opacity:.25;-webkit-transition:opacity .35s ease-in-out;-moz-transition:opacity .35s ease-in-out;-ms-transition:opacity .35s ease-in-out;-o-transition:opacity .35s ease-in-out;transition:opacity .35s ease-in-out}.carousel .control-dots{position:absolute;bottom:0;margin:10px 0;text-align:center;width:100%}@media (min-width:960px){.carousel .control-dots{bottom:0}}.carousel .control-dots .dot{-webkit-transition:opacity .25s ease-in;-moz-transition:opacity .25s ease-in;-ms-transition:opacity .25s ease-in;-o-transition:opacity .25s ease-in;transition:opacity .25s ease-in;opacity:.3;box-shadow:1px 1px 2px rgba(0,0,0,.9);background:#5e132f;border-radius:50%;width:16px;height:16px;cursor:pointer;display:inline-block;margin:0 16px}.carousel .control-dots .dot.selected,.carousel .control-dots .dot:hover{opacity:1}.carousel .carousel-status{position:absolute;top:0;right:0;padding:5px;font-size:10px;text-shadow:1px 1px 1px rgba(0,0,0,.9);color:#5e132f}.carousel:hover .slide .legend{opacity:1}\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "overlay"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "centered-text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.period), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.place)));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "section light"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.period), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.place))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Slideshow);
@@ -486,6 +459,53 @@ SponsorSpotlight.propTypes = {
   }).isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (SponsorSpotlight);
+
+/***/ }),
+
+/***/ "./components/teamSpotlight.js":
+/*!*************************************!*\
+  !*** ./components/teamSpotlight.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/theme */ "./data/theme.js");
+
+
+
+
+var TeamSpotlight = function TeamSpotlight(_ref) {
+  var details = _ref.details;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "speaker-pic"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+    jsx: true
+  }, "\n            .speaker-pic {\n                display: inline-block;\n                width: 25%;\n                margin-bottom: 30px;\n            }\n\n            .rounded {\n                border-radius: 200px;\n                height: 200px;\n                width: 200px;\n                overflow: hidden;\n                margin: auto;\n                position: relative;\n                cursor: pointer;\n            }\n\n            .speaker-pic img {\n                width: 200px;\n            }\n\n            .rounded:hover .social {\n                opacity: 1;\n                transform: translateY( 0 );\n            }\n\n            .rounded:hover .overlay {\n                opacity: 0.5;\n            }\n\n            .social {\n                position: absolute;\n                margin: auto;\n                transition: all 0.2s;\n                top: 45%;\n                opacity: 0;\n                width: 100%;\n                transform: translateY( 100px );\n            }\n\n            .overlay {\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                opacity: 0;\n                background-color: ".concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].primaryColor, ";\n                transition: all 1s;\n            }\n\n            .social a {\n                margin: 10px;\n                border: 1px solid black;\n                padding: 5px 7px;\n                border-radius: 100%;\n                text-decoration: none;\n                color: ").concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].secondaryColor, ";\n            }\n        ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rounded"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: details.imageUrl,
+    alt: details.name
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "overlay"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, details.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, details.position), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, details.company));
+};
+
+var shape = prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape,
+    string = prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string;
+TeamSpotlight.propTypes = {
+  details: shape({
+    name: string.isRequired,
+    position: string.isRequired,
+    imageUrl: string.isRequired
+  }).isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (TeamSpotlight);
 
 /***/ }),
 
@@ -701,30 +721,7 @@ __webpack_require__.r(__webpack_exports__);
     place: "Indian Institute Of Technology, Patna",
     inaugralTime: "03 07 2020, 9:00 am"
   },
-  footer: "Join us on 7th, March 2020. @ IIT Patna",
-  columns: [{
-    key: 'id',
-    label: 'ID',
-    primary: true
-  }, {
-    key: 'name',
-    label: 'Name'
-  }, {
-    key: 'authors',
-    label: 'Author(s)',
-    render: function render(value) {
-      return value.join(', ');
-    }
-  }],
-  data: [{
-    id: '1234',
-    name: 'Foo',
-    authors: ['Andy']
-  }, {
-    id: '4567',
-    name: 'Bar',
-    authors: ['Joe', 'Mike']
-  }]
+  footer: "Join us on 7th, March 2020. @ IIT Patna"
 });
 
 /***/ }),
@@ -862,6 +859,40 @@ module.exports = [{
   name: "ABC",
   logoUrl: "./static/images/sponsors/abc.png",
   linkUrl: "http://www.fortech.ro"
+}];
+
+/***/ }),
+
+/***/ "./data/team.js":
+/*!**********************!*\
+  !*** ./data/team.js ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = [{
+  id: 1,
+  name: "Guillermo Rauch",
+  position: "Convener",
+  imageUrl: "./static/images/speakers/speaker.png"
+}, {
+  id: 2,
+  name: "Guillermo Rauch",
+  position: "Convener",
+  imageUrl: "./static/images/speakers/speaker.png"
+}, {
+  id: 3,
+  name: "Guillermo Rauch",
+  position: "Convener",
+  imageUrl: "./static/images/speakers/speaker.png"
+}, {
+  id: 4,
+  name: "Guillermo Rauch",
+  position: "Convener",
+  imageUrl: "./static/images/speakers/speaker.png"
 }];
 
 /***/ }),
@@ -42803,9 +42834,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_paper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/paper */ "./components/paper.js");
 /* harmony import */ var _components_timer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/timer */ "./components/timer.js");
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var _components_banner__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/banner */ "./components/banner.js");
-/* harmony import */ var _components_speakerSpotlight__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/speakerSpotlight */ "./components/speakerSpotlight.js");
-/* harmony import */ var _components_sponsorSpotlight__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/sponsorSpotlight */ "./components/sponsorSpotlight.js");
+/* harmony import */ var _components_speakerSpotlight__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/speakerSpotlight */ "./components/speakerSpotlight.js");
+/* harmony import */ var _components_sponsorSpotlight__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/sponsorSpotlight */ "./components/sponsorSpotlight.js");
+/* harmony import */ var _components_teamSpotlight__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/teamSpotlight */ "./components/teamSpotlight.js");
 /* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/slider */ "./components/slider.js");
@@ -42826,17 +42857,25 @@ var speakers = __webpack_require__(/*! ../data/speakers */ "./data/speakers.js")
 
 var sponsors = __webpack_require__(/*! ../data/sponsors */ "./data/sponsors.js");
 
+var team = __webpack_require__(/*! ../data/team */ "./data/team.js");
+
 var text = __webpack_require__(/*! ../data/text */ "./data/text.js");
 
 var Home = function Home(props) {
   var speakerSpotlights = speakers.map(function (speaker) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_speakerSpotlight__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_speakerSpotlight__WEBPACK_IMPORTED_MODULE_6__["default"], {
       details: speaker,
       key: speaker.id
     });
   });
+  var teamSpotlight = team.map(function (member) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_teamSpotlight__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      details: member,
+      key: member.id
+    });
+  });
   var sponsorSpotlights = sponsors.map(function (sponsor) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_sponsorSpotlight__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_sponsorSpotlight__WEBPACK_IMPORTED_MODULE_7__["default"], {
       details: sponsor,
       key: sponsor.id
     });
@@ -42873,12 +42912,12 @@ var Home = function Home(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sponsors And Partners")), sponsorSpotlights), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section dark",
+    className: "section color",
     id: "contact"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Team RSD"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Team-RSD-IITP-2020")), speakerSpotlights), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section color"
+  }, teamSpotlight)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "section dark"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_9__["default"].footer))));
