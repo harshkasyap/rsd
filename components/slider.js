@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "./Carousel";
-import Dictionary from "../data/dictionary"
+import Dictionary from "../data/dictionary";
+import Timer from "./timer"
 
 const Slideshow = () => (
   <div>
@@ -51,11 +52,12 @@ const Slideshow = () => (
     <Carousel/>
             <div className="overlay" />
             <div className="centered-text">
-              <div className="section light">
+              {/* <div className="section light"> */}
                 <h1>{ Dictionary.event.name }</h1>
+                <Timer />
                 <h3>{ Dictionary.event.period }</h3>
                 <h4>{ Dictionary.event.place }</h4>
-              </div>
+              {/* </div> */}
             </div>
   </div>
 );

@@ -19,13 +19,12 @@ const Home = ( props ) => {
         <Layout>
             <div className="section light" id="home">
                 <Slideshow />
-               
             </div>
-            <div className="section color">
+            {/* <div className="section color">
                 <div>
                     <Timer />
                 </div>
-            </div>
+            </div> */}
             <div className="section light" id="about">
                 <div className="container">
                     <h2>About the event</h2>
@@ -58,10 +57,10 @@ const Home = ( props ) => {
             <div className="section light" id="sponsors">
                 <SponsorSlider />
             </div>
-            <div className="section color" id="contact">
+            <div className="section dark" id="contact">
                 <TeamSlider />
             </div>
-            <div className="section dark">
+            <div className="section color">
                 <div className="container">
                     <p>{dictionary.footer}</p>
                 </div>

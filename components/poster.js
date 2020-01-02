@@ -38,7 +38,8 @@ export default function Poster() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <a href = "https://www.google.com" class="button">Register</a>
+      <a href = "https://www.google.com" class="button" size="small" color="primary">Register</a>
+      <a href = "https://www.google.com" class="button" size="small" color="primary">Format</a>
       </CardActions>
     </Card>
   );

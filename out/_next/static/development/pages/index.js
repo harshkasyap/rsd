@@ -243,8 +243,15 @@ function Poster() {
     component: "p"
   }, "Description"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.google.com",
-    "class": "button"
-  }, "Register")));
+    "class": "button",
+    size: "small",
+    color: "primary"
+  }, "Register"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.google.com",
+    "class": "button",
+    size: "small",
+    color: "primary"
+  }, "Format")));
 }
 
 /***/ }),
@@ -323,6 +330,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Carousel */ "./components/Carousel.js");
 /* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
+/* harmony import */ var _timer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./timer */ "./components/timer.js");
+
 
 
 
@@ -334,9 +343,7 @@ var Slideshow = function Slideshow() {
     className: "overlay"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "centered-text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section light"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.period), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.place))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_timer__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.period), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_2__["default"].event.place)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Slideshow);
@@ -1359,7 +1366,7 @@ var TeamSpotlight = function TeamSpotlight(_ref) {
     className: "speaker-pic"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true
-  }, "\n            .speaker-pic {\n                display: inline-block;\n                width: 25%;\n                margin-bottom: 30px;\n            }\n\n            .rounded {\n                border-radius: 200px;\n                height: 200px;\n                width: 200px;\n                overflow: hidden;\n                margin: auto;\n                position: relative;\n                cursor: pointer;\n            }\n\n            .speaker-pic img {\n                width: 200px;\n            }\n\n            .rounded:hover .social {\n                opacity: 1;\n                transform: translateY( 0 );\n            }\n\n            .rounded:hover .overlay {\n                opacity: 0.5;\n            }\n\n            .social {\n                position: absolute;\n                margin: auto;\n                transition: all 0.2s;\n                top: 45%;\n                opacity: 0;\n                width: 100%;\n                transform: translateY( 100px );\n            }\n\n            .overlay {\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                opacity: 0;\n                background-color: ".concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].primaryColor, ";\n                transition: all 1s;\n            }\n\n            .social a {\n                margin: 10px;\n                border: 1px solid black;\n                padding: 5px 7px;\n                border-radius: 100%;\n                text-decoration: none;\n                color: ").concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].secondaryColor, ";\n            }\n        ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\n            .speaker-pic {\n                display: inline-block;\n                width: 25%;\n                margin-bottom: 30px;\n            }\n\n            .rounded {\n                border-radius: 200px;\n                height: 150px;\n                width: 150px;\n                overflow: hidden;\n                margin: auto;\n                position: relative;\n                cursor: pointer;\n            }\n\n            .speaker-pic img {\n                width: 150px;\n            }\n\n            .rounded:hover .social {\n                opacity: 1;\n                transform: translateY( 0 );\n            }\n\n            .rounded:hover .overlay {\n                opacity: 0.5;\n            }\n\n            .social {\n                position: absolute;\n                margin: auto;\n                transition: all 0.2s;\n                top: 45%;\n                opacity: 0;\n                width: 100%;\n                transform: translateY( 100px );\n            }\n\n            .overlay {\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                opacity: 0;\n                background-color: ".concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].primaryColor, ";\n                transition: all 1s;\n            }\n\n            .social a {\n                margin: 10px;\n                border: 1px solid black;\n                padding: 5px 7px;\n                border-radius: 100%;\n                text-decoration: none;\n                color: ").concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].secondaryColor, ";\n            }\n        ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "rounded"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: details.imageUrl,
@@ -50823,8 +50830,6 @@ var Home = function Home(props) {
     className: "section light",
     id: "home"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider__WEBPACK_IMPORTED_MODULE_8__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section color"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_timer__WEBPACK_IMPORTED_MODULE_4__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section light",
     id: "about"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -50852,10 +50857,10 @@ var Home = function Home(props) {
     className: "section light",
     id: "sponsors"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_10__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section color",
+    className: "section dark",
     id: "contact"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider_teamSlider__WEBPACK_IMPORTED_MODULE_11__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section dark"
+    className: "section color"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_6__["default"].footer))));

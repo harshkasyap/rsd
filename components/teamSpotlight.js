@@ -13,8 +13,8 @@ const TeamSpotlight = ( { details } ) => (
 
             .rounded {
                 border-radius: 200px;
-                height: 200px;
-                width: 200px;
+                height: 150px;
+                width: 150px;
                 overflow: hidden;
                 margin: auto;
                 position: relative;
@@ -22,7 +22,7 @@ const TeamSpotlight = ( { details } ) => (
             }
 
             .speaker-pic img {
-                width: 200px;
+                width: 150px;
             }
 
             .rounded:hover .social {
