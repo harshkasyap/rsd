@@ -5,34 +5,22 @@ import Register from "../components/register"
 import Paper from  "../components/paper"
 import Timer from "../components/timer"
 import Layout from "../components/layout";
-import SpeakerSpotlight from "../components/speakerSpotlight";
-import SponsorSpotLight from "../components/sponsorSpotlight";
-import TeamSpotlight from "../components/teamSpotlight";
 import dictionary from "../data/dictionary";
 import Grid from '@material-ui/core/Grid';
 import Slideshow from "../components/slider"
+import SpeakerSlider from "../components/slider/speakerSlider"
+import SponsorSlider from "../components/slider/sponsorSlider"
+import TeamSlider from "../components/slider/teamSlider"
 
-const speakers = require( "../data/speakers" );
-const sponsors = require( "../data/sponsors" );
-const team = require ( "../data/team" );
 const text = require( "../data/text" );
 
 const Home = ( props ) => {
-    const speakerSpotlights = speakers.map(
-        ( speaker ) => <SpeakerSpotlight details={ speaker } key={ speaker.id } />,
-    );
-
-    const teamSpotlight = team.map(
-        ( member ) => <TeamSpotlight details={ member } key={ member.id } />,
-    );
-
-    const sponsorSpotlights = sponsors.map(
-        ( sponsor ) => <SponsorSpotLight details={ sponsor } key={ sponsor.id } />,
-    );
-
     return (
         <Layout>
-            <Slideshow />
+            <div className="section light" id="home">
+                <Slideshow />
+               
+            </div>
             <div className="section color">
                 <div>
                     <Timer />
@@ -65,22 +53,13 @@ const Home = ( props ) => {
                 </div>
             </div>
             <div className="section color" id="speakers">
-                <h2>KEYNOTE Speakers</h2>
-                <div>
-                    { speakerSpotlights }
-                </div>
+                <SpeakerSlider />
             </div>
             <div className="section light" id="sponsors">
-                <div className="container">
-                    <h2>Sponsors And Partners</h2>
-                </div>
-                { sponsorSpotlights }
+                <SponsorSlider />
             </div>
             <div className="section color" id="contact">
-                <h2>Team RSD</h2>
-                <div className="container">
-                { teamSpotlight }
-                </div>
+                <TeamSlider />
             </div>
             <div className="section dark">
                 <div className="container">

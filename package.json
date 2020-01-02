@@ -18,8 +18,10 @@
     "next": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.18",
     "react-images": "^1.1.0-beta.0",
-    "react-router": "^5.1.2"
+    "react-router": "^5.1.2",
+    "react-styled-carousel": "^0.5.1"
   },
   "license": "ISC",
   "devDependencies": {

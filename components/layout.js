@@ -14,12 +14,11 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
         </Head>
         <header className="header section dark">
             <nav>
-                <Link href="./index.html"><a className="navlink">Home</a></Link>
-                <Link href="./index.html#about"><a className="navlink">About</a></Link>
-                <Link href="./index.html#speakers"><a className="navlink">Speakers</a></Link>
-                <Link href="./index.html#sponsors"><a className="navlink">Sponsors and Partners</a></Link>
-{/*                 <Link href="./index.html#gallery"><a className="navlink">Gallery</a></Link> */}
-                <Link href="./index.html#contact"><a className="navlink">Team</a></Link>
+                <Link href="#home"><a className="navlink">Home</a></Link>
+                <Link href="#about"><a className="navlink">About</a></Link>
+                <Link href="#speakers"><a className="navlink">Speakers</a></Link>
+                <Link href="#sponsors"><a className="navlink">Sponsors and Partners</a></Link>
+                <Link href="#contact"><a className="navlink">Team</a></Link>
             </nav>
             <GlobalStyle />
         </header>
