@@ -251,6 +251,9 @@ function Poster() {
     "class": "button",
     size: "small",
     color: "primary"
+  }, "Format"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.google.com",
+    "class": "button"
   }, "Format")));
 }
 
@@ -1754,6 +1757,26 @@ module.exports = [{
 
 
 module.exports = [{
+  id: 1,
+  name: "Guillermo Rauch",
+  position: "Convener",
+  imageUrl: "./static/images/speakers/speaker.png"
+}, {
+  id: 2,
+  name: "Guillermo Rauch",
+  position: "Convener",
+  imageUrl: "./static/images/speakers/speaker.png"
+}, {
+  id: 3,
+  name: "Guillermo Rauch",
+  position: "Convener",
+  imageUrl: "./static/images/speakers/speaker.png"
+}, {
+  id: 4,
+  name: "Guillermo Rauch",
+  position: "Convener",
+  imageUrl: "./static/images/speakers/speaker.png"
+}, {
   id: 1,
   name: "Guillermo Rauch",
   position: "Convener",
@@ -50870,7 +50893,7 @@ var Home = function Home(props) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!***************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FPlayGround%2FRepos%2Frsd%2Fpages%2Findex.js ***!
   \***************************************************************************************************************/
@@ -50893,5 +50916,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

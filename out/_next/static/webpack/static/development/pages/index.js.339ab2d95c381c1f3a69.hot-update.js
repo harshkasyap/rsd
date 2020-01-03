@@ -53,18 +53,23 @@ function Poster() {
     variant: "body2",
     color: "textSecondary",
     component: "p"
-  }, "Description"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "Description"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.google.com",
+    "class": "button",
     size: "small",
-    color: "primary",
-    onclick: "alert('Hello!');"
-  }, "Register"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    color: "primary"
+  }, "Register"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.google.com",
+    "class": "button",
     size: "small",
-    color: "primary",
-    onclick: "window.location.href = 'https://www.google.com';"
-  }, "Check Format")));
+    color: "primary"
+  }, "Format"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.google.com",
+    "class": "button"
+  }, "Format")));
 }
 
 /***/ })
 
 })
-//# sourceMappingURL=index.js.68e52a429c6c5156e36c.hot-update.js.map
+//# sourceMappingURL=index.js.339ab2d95c381c1f3a69.hot-update.js.map

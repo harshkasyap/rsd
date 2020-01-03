@@ -40,6 +40,7 @@ export default function Poster() {
       <CardActions>
       <a href = "https://www.google.com" class="button" size="small" color="primary">Register</a>
       <a href = "https://www.google.com" class="button" size="small" color="primary">Format</a>
+      <a href = "https://www.google.com" class="button" >Format</a>
       </CardActions>
     </Card>
   );
