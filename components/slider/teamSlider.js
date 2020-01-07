@@ -18,7 +18,7 @@ const teamSpotlight = team.map(
 
 const TeamSlider = () => (
   <Container>
-    <h1>Team-RSD</h1>
+    <h2>Organizing committee</h2>
     <Slider responsive={responsive}>
       { teamSpotlight }
     </Slider>

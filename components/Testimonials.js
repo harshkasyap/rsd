@@ -23,7 +23,7 @@ class Testimonials extends Component {
         /* ------------------------------------------------------------------ */
 
         #testimonials {
-        background: #1F1F1F url(./static/images/testimonials-bg.jpg) no-repeat center center;
+        background: #1F1F1F url(./static/images/back.jpeg) no-repeat center center;
         background-size: cover !important;
             -webkit-background-size: cover !important;
         background-attachment: fixed;
@@ -42,10 +42,10 @@ class Testimonials extends Component {
        }
 
         #testimonials .text-container {
-        padding-top: 96px;
-        padding-bottom: 66px;
-        padding-left: 266px;
-        padding-right: 266px;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 20vw;
+        padding-right: 20vw;
         }
         #testimonials h1 {
         font: 18px/24px 'opensans-bold', sans-serif;
@@ -94,11 +94,11 @@ class Testimonials extends Component {
         ` }</style>
       <section id="testimonials">
       <div className="text-container">
-         <div className="row1">
-            <div className="two1 columns1">
+         <div className="row">
+            <div className="three columns">
                <img className="profile-pic" src={"./static/images/director.jpg"} alt="Director" />
             </div>
-            <div className="ten1 columns1 flex-container">
+            <div className="nine columns flex-container">
                   <ul className="slides">
                       {testimonials}
                   </ul>

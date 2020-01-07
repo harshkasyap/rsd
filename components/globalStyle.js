@@ -36,6 +36,10 @@ export default ( ) => (
             border-color: #333;
         }
 
+        .speaker-background{
+            background: #1F1F1F url(./static/images/testimonials-bg.jpg) no-repeat center center;
+        }
+
         .container {
             width: 1024px;
             margin: auto;

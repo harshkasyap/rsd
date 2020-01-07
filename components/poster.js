@@ -38,9 +38,13 @@ export default function Poster() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <a href = "https://www.google.com" class="button" size="small" color="primary">Register</a>
-      <a href = "https://www.google.com" class="button" size="small" color="primary">Format</a>
-      <a href = "https://www.google.com" class="button" >Format</a>
+      <div className="three columns">
+        <a href = "https://easychair.org/conferences/?conf=rsd2020" class="button-c" size="small" color="primary">Register</a>
+      </div>
+      <div className="six columns">
+        <a href = "https://www.google.com" class="button-c" size="small" color="primary">Format</a>
+      </div>
+      
       </CardActions>
     </Card>
   );

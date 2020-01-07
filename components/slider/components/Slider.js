@@ -162,7 +162,7 @@ class Slider extends React.Component {
   renderLeftArrow() {
     const { LeftArrow, infinite } = this.props;
     const { initialCard } = this.state;
-    return React.cloneElement(LeftArrow, {
+  return React.cloneElement(LeftArrow, {
       onClick: this.handleLeftArrowClick,
       disabled: !infinite && !initialCard,
     });
@@ -176,6 +176,9 @@ class Slider extends React.Component {
       onClick: this.handleRightArrowClick,
       disabled: !infinite && (initialCard + cardsToShow === numberOfChildren),
     });
+/*     return (
+      <div id="go-top"><a className="smoothscroll" title="right" href="this.handleLeftArrowClick"><i className="fa fa-arrow-up"></i></a></div>
+    ); */
   }
 
   render() {

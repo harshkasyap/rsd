@@ -25,5 +25,25 @@ export default {
           "url":"https://twitter.com/RsdIit",
           "className":"fa fa-twitter"
         }
-      ]
+      ],
+      speakers: [
+          {
+            "name":"TBD",
+            "designation":"TBD",
+            "image":"speaker.jpg",
+            "url":"https://www.canadianwanderlust.com"
+          },
+          {
+            "name":"TBD",
+            "designation":"TBD",
+            "image":"speaker.jpg",
+            "url":"http://www.timbakerdev.com"
+          },
+          {
+            "name":"TBD",
+            "designation":"TBD",
+            "image":"speaker.jpg",
+            "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+          }
+        ]
 };

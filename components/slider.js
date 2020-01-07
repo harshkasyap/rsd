@@ -17,8 +17,8 @@ const Slideshow = () => (
             }
 
             h1 {
-                color: #3f51b5;
-                font-size: 3rem;
+                color: #dc1731;
+                font-size: 5rem;
                 margin: 30px;
             }
 
@@ -31,7 +31,7 @@ const Slideshow = () => (
             }
 
             h4 {
-              color: #9e2a22;
+              color: #6b6565;
             }
 
             .overlay {

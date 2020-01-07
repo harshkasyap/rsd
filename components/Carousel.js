@@ -15,14 +15,13 @@ export default () => (
     }
     ` }</style>
     <br></br>
-    <br></br>
   <Carousel autoPlay>
     <div>
       <img src="./static/images/iit2.jpg" height="100%"/>
       <p className="legend"></p>
     </div>
     <div>
-      <img src="./static/images/iit2.jpg" height="100%"/>
+      <img src="./static/images/iit1.jpg" height="100%"/>
       <p className="legend"></p>
     </div>
   </Carousel>

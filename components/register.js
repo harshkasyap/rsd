@@ -25,12 +25,12 @@ export default function Register() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="./static/images/register.jpg"
+          image="./static/images/winners.jpg"
           title="Register Presentation"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Register For the Events
+            Previous Year Winners
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Paper and Poster Presentation
@@ -38,7 +38,12 @@ export default function Register() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <a href = "https://www.google.com" class="button">Schedule of the Day</a>
+      <div className="three columns">
+        <a href = "https://www.google.com" class="button-c" size="small" color="primary">Participants</a>
+      </div>
+      <div className="six columns">
+        <a href = "https://www.google.com" class="button-c" size="small" color="primary">Brocheure</a>
+      </div>
       </CardActions>
     </Card>
   );

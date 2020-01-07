@@ -79,9 +79,9 @@ const SpeakerSpotlight = ( { details } ) => (
                 </a>
             </div>
         </div>
-        <p><strong>{ details.name }</strong></p>
-        <p>{ details.position }</p>
-        <p>{ details.company }</p>
+        <h2 color="white">{ details.name }</h2>
+        <h2>{ details.position }</h2>
+        {/* <p>{ details.company }</p> */}
     </div>
 );
 

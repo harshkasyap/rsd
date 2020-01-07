@@ -20,8 +20,6 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
                 <Link href="#about"><a className="navlink">About</a></Link>
                 <Link href="#register"><a className="navlink">Register</a></Link>
                 <Link href="#speakers"><a className="navlink">Speakers</a></Link>
-                <Link href="#gallery"><a className="navlink">Gallery</a></Link>
-                <Link href="#sponsors"><a className="navlink">Sponsors and Partners</a></Link>
                 <Link href="#contact"><a className="navlink">Team</a></Link>
             </nav>
             <GlobalStyle />

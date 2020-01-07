@@ -51,7 +51,7 @@ e. Others
  fieldset, form, label, legend,
  table, caption, tbody, tfoot, thead, tr, th, td,
  article, aside, canvas, details, figcaption, figure,
- footer, header, hgroup, menu, nav, section, summary,
+ footer-c, header, hgroup, menu, nav, section, summary,
  time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@ e. Others
  }
  
  article,aside,details,figcaption,figure,
- footer,header,hgroup,menu,nav,section {
+ footer-c,header,hgroup,menu,nav,section {
     display: block;
  }
  
@@ -461,12 +461,12 @@ e. Others
  
  /*  6. Buttons  --------------------------------------------------------- */
  
- .button,
- .button:visited,
- button,
+ .button-c,
+ .button-c:visited,
+ button-c,
  input[type="submit"],
  input[type="reset"],
- input[type="button"] {
+ input[type="button-c"] {
     font: 16px/30px 'opensans-bold', sans-serif;
     background: #11ABB0;
     display: inline-block;
@@ -491,29 +491,29 @@ e. Others
     border-radius: 3px;
  }
  
- .button:hover,
- button:hover,
+ .button-c:hover,
+ button-c:hover,
  input[type="submit"]:hover,
  input[type="reset"]:hover,
- input[type="button"]:hover {
+ input[type="button-c"]:hover {
     background: #3d4145;
     color: #fff;
  }
  
- .button:active,
- button:active,
+ .button-c:active,
+ button-c:active,
  input[type="submit"]:active,
  input[type="reset"]:active,
- input[type="button"]:active {
+ input[type="button-c"]:active {
     background: #3d4145;
     color: #fff;
  }
  
- .button.full-width,
- button.full-width,
+ .button-c.full-width,
+ button-c.full-width,
  input[type="submit"].full-width,
  input[type="reset"].full-width,
- input[type="button"].full-width {
+ input[type="button-c"].full-width {
      width: 100%;
      padding-left: 0 !important;
      padding-right: 0 !important;
@@ -521,7 +521,7 @@ e. Others
  }
  
  /* Fix for odd Mozilla border & padding issues */
- button::-moz-focus-inner,
+ button-c::-moz-focus-inner,
  input::-moz-focus-inner {
      border: 0;
      padding: 0;
@@ -810,57 +810,59 @@ e. Others
 /* i. Footer
 /* ------------------------------------------------------------------ */
 
-footer {
+footer-c {
+   background: #1F1F1F url(./static/images/back1.jpg) no-repeat center center;
    padding-top: 48px;
    //margin-bottom: 48px;
    color: #303030;
    font-size: 14px;
    text-align: center;
    position: relative;
+   size: 100vw;
 }
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer-c a, footer-c a:visited { color: #525252; }
+footer-c a:hover, footer-c a:focus { color: #fff; }
 
 /* copyright */
-footer .copyright {
+footer-c .copyright {
     margin: 0;
     padding: 0;
  }
-footer .copyright li {
+footer-c .copyright li {
     display: inline-block;
     margin: 0;
     padding: 0;
-    line-height: 24px;
+    line-height: 1vh;
 }
-.ie footer .copyright li {
+.ie footer-c .copyright li {
    display: inline;
 }
-footer .copyright li:before {
+footer-c .copyright li:before {
     content: "\\2022";
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
     color: #095153;
 }
-footer .copyright  li:first-child:before {
+footer-c .copyright  li:first-child:before {
     display: none;
 }
 
 /* social links */
-footer .social-links {
-   margin: 18px 0 30px 0;
+footer-c .social-links {
+   margin: 2.5vh 0 0.5vh 0;
    padding: 0;
    font-size: 30px;
 }
-footer .social-links li {
+footer-c .social-links li {
     display: inline-block;
     margin: 0;
     padding: 0;
-    margin-left: 42px;
+    margin-left: 1.5vw;
     color: #F06000;
 }
 
-footer .social-links li:first-child { margin-left: 0; }
+footer-c .social-links li:first-child { margin-left: 0; }
 
 /* Go To Top Button */
 #go-top {
@@ -889,6 +891,111 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
+
+/* ------------------------------------------------------------------ */
+/* e. Portfolio Section
+/* ------------------------------------------------------------------ */
+
+#portfolio {
+   background: #ebeeee;
+   padding-top: 5vh;
+   padding-bottom: 60px;
+}
+#portfolio h1 {
+   font: 1.5vw/1.5vw 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   color: #3f51b5;
+}
+
+/* Portfolio Content */
+#portfolio-wrapper .columns { margin-bottom: 36px; }
+.portfolio-item .item-wrap {
+   background: #fff;
+   overflow: hidden;
+   position: relative;
+
+   -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.portfolio-item .item-wrap a {
+   display: block;
+   cursor: pointer;
+}
+
+/* overlay */
+.portfolio-item .item-wrap .overlay {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+
+   -webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+
+   background: url(./static/images/overlay-bg.png) repeat;
+}
+.portfolio-item .item-wrap .link-icon {
+   display: block;
+   color: #fff;
+   height: 30px;
+   width: 30px;
+   font-size: 18px;
+   line-height: 30px;
+   text-align: center;
+
+   opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+
+   -webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-left: -15px;
+   margin-top: -15px;
+}
+.portfolio-item .item-wrap img {
+   vertical-align: bottom;
+}
+.portfolio-item .portfolio-item-meta { padding: 18px }
+.portfolio-item .portfolio-item-meta h5 {
+   font: 14px/21px 'opensans-bold', sans-serif;
+   color: #fff;
+}
+.portfolio-item .portfolio-item-meta p {
+   font: 12px/18px 'opensans-light', sans-serif;
+   color: #c6c7c7;
+   margin-bottom: 0;
+}
+
+/* on hover */
+.portfolio-item:hover .overlay {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+.portfolio-item:hover .link-icon {
+   opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
 
  ` }</style>
  );

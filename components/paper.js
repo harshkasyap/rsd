@@ -25,12 +25,12 @@ export default function Paper() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="./static/images/paper.jpeg"
+          image="./static/images/3mins.jpeg"
           title="Paper Presentation"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Paper Presentation
+            My Research In 3 Mins
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Description
@@ -38,7 +38,12 @@ export default function Paper() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <a href = "https://www.google.com" class="button" align="center">Register</a>
+      <div className="three columns">
+        <a href = "https://www.google.com" class="button-c" size="small" color="primary">Register</a>
+      </div>
+      <div className="six columns">
+        <a href = "https://www.google.com" class="button-c" size="small" color="primary">Format</a>
+      </div>
       </CardActions>
     </Card>
   );

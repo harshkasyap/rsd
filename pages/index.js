@@ -15,6 +15,7 @@ import SponsorSlider from "../components/slider/sponsorSlider"
 import TeamSlider from "../components/slider/teamSlider"
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
+import Speakers from '../components/Speakers';
 
 const text = require( "../data/text" );
 
@@ -61,31 +62,12 @@ const Home = ( props ) => {
                 </div>
             </div>
             <div className="section light" id="speakers">
-                <h2>KEYNOTE Speakers</h2>
-                <br />
-                <div>
-                    { speakerSpotlights }
-                </div>
+                <Speakers />
             </div>
-            <div className="section light" id="gallery">
-                <h2>Shades of Previous Events</h2>
-                <Gallery />
-            </div>
-            <div className="section color" id="contact">
+            <div className="section light" id="contact">
                 <TeamSlider />
             </div>
-            <div className="section light" id="gallery">
-                <h2>Sponsors and Partners</h2>
-                <br />
-                <SponsorSlider />
-            </div>
             <Footer />
-            {/* <div className="section dark">
-                <div className="container">
-                    <h2>{dictionary.footer}</h2>
-                    <p>Copyright ©2020 All Rights Reserved | Design By RSDP Team</p>
-                </div>
-            </div> */}
         </Layout>
     );
 };
