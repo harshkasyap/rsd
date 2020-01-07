@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import GlobalStyle from "./globalStyle";
+import ImportStyle from "./importStyle";
+import SponsorSlider from "./slider/sponsorSlider"
 
 const Layout = ( { children, title = "RSD-IITP" } ) => (
     <div>
@@ -16,13 +18,22 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
             <nav>
                 <Link href="#home"><a className="navlink">Home</a></Link>
                 <Link href="#about"><a className="navlink">About</a></Link>
+                <Link href="#register"><a className="navlink">Register</a></Link>
                 <Link href="#speakers"><a className="navlink">Speakers</a></Link>
+                <Link href="#gallery"><a className="navlink">Gallery</a></Link>
                 <Link href="#sponsors"><a className="navlink">Sponsors and Partners</a></Link>
                 <Link href="#contact"><a className="navlink">Team</a></Link>
             </nav>
             <GlobalStyle />
         </header>
-
+        <p className="scrolldown">
+            <ImportStyle />
+            <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+        </p>
+ {/*        <footer className="footer">
+            <SponsorSlider />  
+        </footer>
+ */}
         { children }
     </div>
 );

@@ -3,33 +3,34 @@ import PropTypes from 'prop-types'
 import theme from "../data/theme";
 
 const SponsorSpotlight = ( { details } ) => (
-    <div className="speaker-pic">
+    <div className="sponsor-pic">
         <style jsx>{ `
-            .speaker-pic {
+            .sponsor-pic {
                 display: inline-block;
                 width: 25%;
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
             }
 
-            .rounded {
+            .rounded-sps {
                 border-radius: 200px;
-                height: 200px;
-                width: 200px;
+                height: 75px;
+                width: 75px;
                 margin: auto;
+                overflow: hidden;
                 position: relative;
                 cursor: pointer;
             }
 
-            .speaker-pic img {
-                width: 200px;
+            .sponsor-pic img {
+                width: 75px;
             }
 
-            .rounded:hover .social {
+            .rounded-sps:hover .social {
                 opacity: 1;
                 transform: translateY( 0 );
             }
 
-            .rounded:hover .overlay {
+            .rounded-sps:hover .overlay {
                 opacity: 0.5;
             }
 
@@ -63,13 +64,13 @@ const SponsorSpotlight = ( { details } ) => (
                 color: ${ theme.secondaryColor };
             }
         ` }</style>
-        <div className="rounded">
+        <div className="rounded-sps">
             <a target="_blank" rel="noopener noreferrer" href={ details.linkUrl }>
                 <img src={ details.logoUrl } alt={ details.name } />
                 <div className="overlay" />
             </a>
-        </div>
-        <p><strong>{ details.name }</strong></p>
+        </div>{/* 
+        <p><strong>{ details.name }</strong></p> */}
     </div>
 );
 

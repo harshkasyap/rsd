@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>RSD-IITP</title><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/><meta charSet="utf-8"/><link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"/><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/><meta name="next-head-count" content="5"/><link rel="preload" href="./_next/static/b5Z8xXHVRA0vBv2q3T_Of/pages/index.js" as="script"/><link rel="preload" href="./_next/static/b5Z8xXHVRA0vBv2q3T_Of/pages/_app.js" as="script"/><link rel="preload" href="./_next/static/runtime/webpack-08f7b238829422e3b9b2.js" as="script"/><link rel="preload" href="./_next/static/chunks/commons.ad3ca390b50797445405.js" as="script"/><link rel="preload" href="./_next/static/runtime/main-7b9273b1ac62fdc39484.js" as="script"/></head><body><div id="__next"><div><header class="header section dark"><nav><a class="navlink" href="#home">Home</a><a class="navlink" href="#about">About</a><a class="navlink" href="#speakers">Speakers</a><a class="navlink" href="#sponsors">Sponsors and Partners</a><a class="navlink" href="#contact">Team</a></nav><style>
+<!DOCTYPE html><html><head><title>RSD-IITP</title><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/><meta charSet="utf-8"/><link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"/><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/><meta name="next-head-count" content="5"/><link rel="preload" href="./_next/static/djUyERgSc5SKYZAjJwsds/pages/index.js" as="script"/><link rel="preload" href="./_next/static/djUyERgSc5SKYZAjJwsds/pages/_app.js" as="script"/><link rel="preload" href="./_next/static/runtime/webpack-08f7b238829422e3b9b2.js" as="script"/><link rel="preload" href="./_next/static/chunks/commons.ad3ca390b50797445405.js" as="script"/><link rel="preload" href="./_next/static/runtime/main-7b9273b1ac62fdc39484.js" as="script"/></head><body><div id="__next"><div><header class="header section dark"><nav><a class="navlink" href="#home">Home</a><a class="navlink" href="#about">About</a><a class="navlink" href="#register">Register</a><a class="navlink" href="#speakers">Speakers</a><a class="navlink" href="#gallery">Gallery</a><a class="navlink" href="#sponsors">Sponsors and Partners</a><a class="navlink" href="#contact">Team</a></nav><style>
         .button {
             margin: 20px;
             border-style: solid;
@@ -43,6 +43,14 @@
             width: 100%;
             z-index: 10;
         }
+
+       /*  .footer {
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+            background-color: #eee;
+            color: #333;
+        } */
 
         .main {
             padding-top: 59px;
@@ -100,7 +108,896 @@
             font-weight: 300;
             font-size: 1.2rem;
         }
-    </style></header><div class="section light" id="home"><div><style>
+
+    </style></header><p class="scrolldown"><style>/*
+=====================================================================
+*   Ceevee v1.0 Default Stylesheet
+*   url: styleshout.com
+*   03-17-2014
+=====================================================================
+
+TOC:
+a. Webfonts and Icon fonts
+b. Reset
+c. Default Styles
+   1. Basic
+   2. Typography
+   3. Links
+   4. Images
+   5. Buttons
+   6. Forms
+d. Grid
+e. Others
+   1. Clearing
+   2. Misc
+
+=====================================================================  */
+
+/* ------------------------------------------------------------------ */
+/* a. Webfonts and Icon fonts
+ ------------------------------------------------------------------ */
+
+ @import url(&quot;fonts.css&quot;);
+ @import url(&quot;fontello/css/fontello.css&quot;);
+ @import url(&quot;font-awesome/css/font-awesome.min.css&quot;);
+ 
+ /* ------------------------------------------------------------------
+ /* b. Reset
+       Adapted from:
+       Normalize.css - https://github.com/necolas/normalize.css/
+       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
+ /* ------------------------------------------------------------------ */
+ 
+ html, body, div, span, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ abbr, address, cite, code,
+ del, dfn, em, img, ins, kbd, q, samp,
+ small, strong, sub, sup, var,
+ b, i,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section, summary,
+ time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+ }
+ 
+ article,aside,details,figcaption,figure,
+ footer,header,hgroup,menu,nav,section {
+    display: block;
+ }
+ 
+ audio,
+ canvas,
+ video {
+    display: inline-block;
+ }
+ 
+ audio:not([controls]) {
+    display: none;
+    height: 0;
+ }
+ 
+ [hidden] { display: none; }
+ 
+ code, kbd, pre, samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+ }
+ 
+ pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+ }
+ 
+ blockquote, q { quotes: &amp;#8220 &amp;#8220; }
+ 
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+    content: &#x27;&#x27;;
+    content: none;
+ }
+ 
+ ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+ }
+ 
+ mark {
+    background-color: #A7F4F6;
+    color: #555;
+ }
+ 
+ del { text-decoration: line-through; }
+ 
+ abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+ }
+ 
+ table {
+    border-collapse: collapse;
+    border-spacing: 0;
+ }
+ 
+ 
+ /* ------------------------------------------------------------------ */
+ /* c. Default and Basic Styles
+       Adapted from:
+       Skeleton CSS Framework - http://www.getskeleton.com/
+       Typeplate Typographic Starter Kit - http://typeplate.com/
+ /* ------------------------------------------------------------------ */
+ 
+ /*  1. Basic  ------------------------------------------------------- */
+ 
+ *,
+ *:before,
+ *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ 
+ html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+ }
+ 
+ body {
+    background: #fff;
+    font-family: &#x27;opensans-regular&#x27;, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+     color: #838C95;
+ 
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+     -webkit-text-size-adjust: 100%;
+ }
+ 
+ /*  2. Typography
+        Vertical rhythm with leading derived from 6
+ --------------------------------------------------------------------- */
+ 
+ h1, h2, h3, h4, h5, h6 {
+    color: #313131;
+     font-family: &#x27;opensans-bold&#x27;, sans-serif;
+    font-weight: normal;
+ }
+ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+ h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
+ h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }
+ h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }
+ h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
+ h5 { font-size: 18px; line-height: 30px; }
+ h6 { font-size: 14px; line-height: 30px; }
+ .subheader { }
+ 
+ p { margin: 0 0 30px 0; }
+ p img { margin: 0; }
+ p.lead {
+    font: 19px/36px &#x27;opensans-light&#x27;, sans-serif;
+    margin-bottom: 18px;
+ }
+ 
+ /* for &#x27;em&#x27; and &#x27;strong&#x27; tags, font-size and line-height should be same with
+ the body tag due to rendering problems in some browsers */
+ em { font: 15px/30px &#x27;opensans-italic&#x27;, sans-serif; }
+ strong, b { font: 15px/30px &#x27;opensans-bold&#x27;, sans-serif; }
+ small { font-size: 11px; line-height: inherit; }
+ 
+ /*	Blockquotes */
+ blockquote {
+    margin: 30px 0px;
+    padding-left: 40px;
+    position: relative;
+ }
+ blockquote:before {
+    content: &quot;\201C&quot;;
+    opacity: 0.45;
+    font-size: 80px;
+    line-height: 0px;
+    margin: 0;
+    font-family: arial, sans-serif;
+ 
+    position: absolute;
+    top:  30px;
+     left: 0;
+ }
+ blockquote p {
+    font-family: &#x27;librebaskerville-italic&#x27;, serif;
+    padding: 0;
+    font-size: 18px;
+    line-height: 36px;
+ }
+ blockquote cite {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+ }
+ blockquote cite:before { content: &quot;\2014 \0020&quot;; }
+ blockquote cite a,
+ blockquote cite a:visited { color: #8B9798; border: none }
+ 
+ /* ---------------------------------------------------------------------
+ /*  Pull Quotes Markup
+ /*
+     &lt;aside class=&quot;pull-quote&quot;&gt;
+         &lt;blockquote&gt;
+             &lt;p&gt;&lt;/p&gt;
+         &lt;/blockquote&gt;
+      &lt;/aside&gt;
+ /*
+ /* --------------------------------------------------------------------- */
+ .pull-quote {
+    position: relative;
+     padding: 18px 30px 18px 0px;
+ }
+ .pull-quote:before,
+ .pull-quote:after {
+     height: 1em;
+     opacity: 0.45;
+     position: absolute;
+     font-size: 80px;
+    font-family: Arial, Sans-Serif;
+ }
+ .pull-quote:before {
+     content: &quot;\201C&quot;;
+     top:  33px;
+     left: 0;
+ }
+ .pull-quote:after {
+     content: &#x27;\201D&#x27;;
+     bottom: -33px;
+     right: 0;
+ }
+ .pull-quote blockquote {
+    margin: 0;
+ }
+ .pull-quote blockquote:before {
+    content: none;
+ }
+ 
+ /* Abbreviations */
+ abbr {
+    font-family: &#x27;opensans-bold&#x27;, sans-serif;
+     font-variant: small-caps;
+     text-transform: lowercase;
+    letter-spacing: .5px;
+     color: gray;
+ }
+ abbr:hover { cursor: help; }
+ 
+ /* drop cap */
+ .drop-cap:first-letter {
+     float: left;
+     margin: 0;
+     padding: 14px 6px 0 0;
+     font-size: 84px;
+     font-family: /* Copperplate */ &#x27;opensans-bold&#x27;, sans-serif;
+    line-height: 60px;
+     text-indent: 0;
+     background: transparent;
+     color: inherit;
+ }
+ 
+ hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
+ 
+ 
+ /*  3. Links  ------------------------------------------------------- */
+ 
+ a, a:visited {
+    text-decoration: none;
+    outline: 0;
+    color: #11ABB0;
+ 
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+ }
+ a:hover, a:focus { color: #313131; }
+ p a, p a:visited { line-height: inherit; }
+ 
+ 
+ /*  4. List  --------------------------------------------------------- */
+ 
+ ul, ol { margin-bottom: 24px; margin-top: 12px; }
+ ul { list-style: none outside; }
+ ol { list-style: decimal; }
+ ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+ ul.square { list-style: square outside; }
+ ul.circle { list-style: circle outside; }
+ ul.disc { list-style: disc outside; }
+ ul ul, ul ol,
+ ol ol, ol ul { margin: 6px 0 6px 30px; }
+ ul ul li, ul ol li,
+ ol ol li, ol ul li { margin-bottom: 6px; }
+ li { line-height: 18px; margin-bottom: 12px; }
+ ul.large li { }
+ li p { }
+ 
+ /* ---------------------------------------------------------------------
+ /*  Stats Tab Markup
+ 
+     &lt;ul class=&quot;stats-tabs&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;[value]&lt;b&gt;[name]&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+ 
+     Extend this object into your markup.
+ /*
+ /* --------------------------------------------------------------------- */
+ .stats-tabs {
+    padding: 0;
+    margin: 24px 0;
+ }
+ .stats-tabs li {
+     display: inline-block;
+     margin: 0 10px 18px 0;
+     padding: 0 10px 0 0;
+     border-right: 1px solid #ccc;
+ }
+ .stats-tabs li:last-child {
+     margin: 0;
+     padding: 0;
+     border: none;
+ }
+ .stats-tabs li a {
+     display: inline-block;
+     font-size: 22px;
+     font-family: &#x27;opensans-bold&#x27;, sans-serif;
+    border: none;
+    color: #313131;
+ }
+ .stats-tabs li a:hover {
+    color:#11ABB0;
+ }
+ .stats-tabs li a b {
+     display: block;
+     margin: 6px 0 0 0;
+     font-size: 13px;
+     font-family: &#x27;opensans-regular&#x27;, sans-serif;
+    color: #8B9798;
+ }
+ 
+ /* definition list */
+ dl { margin: 12px 0; }
+ dt { margin: 0; color:#11ABB0; }
+ dd { margin: 0 0 0 20px; }
+ 
+ /* Lining Definition Style Markup */
+ .lining dt,
+ .lining dd {
+     display: inline;
+     margin: 0;
+ }
+ .lining dt + dt:before,
+ .lining dd + dt:before {
+     content: &quot;A&quot;;
+     white-space: pre;
+ }
+ .lining dd + dd:before {
+     content: &quot;, &quot;;
+ }
+ .lining dd:before {
+     content: &quot;: &quot;;
+     margin-left: -0.2em;
+ }
+ 
+ /* Dictionary Definition Style Markup */
+ .dictionary-style dt {
+     display: inline;
+     counter-reset: definitions;
+ }
+ .dictionary-style dt + dt:before {
+     content: &quot;, &quot;;
+     margin-left: -0.2em;
+ }
+ .dictionary-style dd {
+     display: block;
+     counter-increment: definitions;
+ }
+ .dictionary-style dd:before {
+     content: counter(definitions, decimal) &quot;. &quot;;
+ }
+ 
+ /* Pagination */
+ .pagination {
+    margin: 36px auto;
+    text-align: center;
+ }
+ .pagination ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+ }
+ .pagination .page-numbers {
+    font: 15px/18px &#x27;opensans-bold&#x27;, sans-serif;
+    display: inline-block;
+    padding: 6px 10px;
+    margin-right: 3px;
+    margin-bottom: 6px;
+     color: #6E757C;
+     background-color: #E6E8EB;
+ 
+     -webkit-transition: all 200ms ease-in-out;
+     -moz-transition: all 200ms ease-in-out;
+     -o-transition: all 200ms ease-in-out;
+     -ms-transition: all 200ms ease-in-out;
+     transition: all 200ms ease-in-out;
+ 
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+     border-radius: 3px;
+ }
+ .pagination .page-numbers:hover {
+    background: #838A91;
+    color: #fff;
+ }
+ .pagination .current,
+ .pagination .current:hover {
+    background-color: #11ABB0;
+    color: #fff;
+ }
+ .pagination .inactive,
+ .pagination .inactive:hover {
+    background-color: #E6E8EB;
+     color: #A9ADB2;
+ }
+ .pagination .prev, .pagination .next {}
+ 
+ /*  5. Images  --------------------------------------------------------- */
+ 
+ img {
+    max-width: 100%;
+    height: auto;
+ }
+ img.pull-right { margin: 12px 0px 0px 18px; }
+ img.pull-left { margin: 12px 18px 0px 0px; }
+ 
+ /*  6. Buttons  --------------------------------------------------------- */
+ 
+ .button,
+ .button:visited,
+ button,
+ input[type=&quot;submit&quot;],
+ input[type=&quot;reset&quot;],
+ input[type=&quot;button&quot;] {
+    font: 16px/30px &#x27;opensans-bold&#x27;, sans-serif;
+    background: #11ABB0;
+    display: inline-block;
+     text-decoration: none;
+    letter-spacing: 0;
+    color: #fff;
+     padding: 12px 20px;
+     margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+    height: auto;
+ 
+    -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+     -o-transition: all .2s ease-in-out;
+     -ms-transition: all .2s ease-in-out;
+     transition: all .2s ease-in-out;
+ 
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+ }
+ 
+ .button:hover,
+ button:hover,
+ input[type=&quot;submit&quot;]:hover,
+ input[type=&quot;reset&quot;]:hover,
+ input[type=&quot;button&quot;]:hover {
+    background: #3d4145;
+    color: #fff;
+ }
+ 
+ .button:active,
+ button:active,
+ input[type=&quot;submit&quot;]:active,
+ input[type=&quot;reset&quot;]:active,
+ input[type=&quot;button&quot;]:active {
+    background: #3d4145;
+    color: #fff;
+ }
+ 
+ .button.full-width,
+ button.full-width,
+ input[type=&quot;submit&quot;].full-width,
+ input[type=&quot;reset&quot;].full-width,
+ input[type=&quot;button&quot;].full-width {
+     width: 100%;
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+     text-align: center;
+ }
+ 
+ /* Fix for odd Mozilla border &amp; padding issues */
+ button::-moz-focus-inner,
+ input::-moz-focus-inner {
+     border: 0;
+     padding: 0;
+ }
+ 
+ 
+ /*  7. Forms  --------------------------------------------------------- */
+ 
+ form { margin-bottom: 24px; }
+ fieldset { margin-bottom: 24px; }
+ 
+ input[type=&quot;text&quot;],
+ input[type=&quot;password&quot;],
+ input[type=&quot;email&quot;],
+ textarea,
+ select {
+    display: block;
+    padding: 18px 15px;
+    margin: 0 0 24px 0;
+    border: 0;
+    outline: none;
+    vertical-align: middle;
+    min-width: 225px;
+     max-width: 100%;
+    font-size: 15px;
+    line-height: 24px;
+     color: #647373;
+     background: #D3D9D9;
+ 
+ }
+ 
+ /* select { padding: 0;
+    width: 220px;
+    } */
+ 
+ input[type=&quot;text&quot;]:focus,
+ input[type=&quot;password&quot;]:focus,
+ input[type=&quot;email&quot;]:focus,
+ textarea:focus {
+    color: #B3B7BC;
+     background-color: #3d4145;
+ }
+ 
+ textarea { min-height: 220px; }
+ 
+ label,
+ legend {
+    font: 16px/24px &#x27;opensans-bold&#x27;, sans-serif;
+     margin: 12px 0;
+    color: #3d4145;
+    display: block;
+ }
+ label span,
+ legend span {
+     color: #8B9798;
+    font: 14px/24px &#x27;opensans-regular&#x27;, sans-serif;
+ }
+ 
+ input[type=&quot;checkbox&quot;],
+ input[type=&quot;radio&quot;] {
+     font-size: 15px;
+     color: #737373;
+ }
+ 
+ input[type=&quot;checkbox&quot;] { display: inline; }
+ 
+ /* ------------------------------------------------------------------ */
+ /* d. Grid
+ ---------------------------------------------------------------------
+    gutter = 40px.
+ /* ------------------------------------------------------------------ */
+ 
+ /* default
+ --------------------------------------------------------------- */
+ .row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+ }
+ /* fixed width for IE8 */
+ .ie .row { width: 1000px ; }
+ 
+ .narrow .row { max-width: 980px; }
+ 
+ .row .row { width: auto; max-width: none; margin: 0 -20px; }
+ 
+ /* row clearing */
+ .row:before,
+ .row:after {
+     content: &quot; &quot;;
+     display: table;
+ }
+ .row:after {
+     clear: both;
+ }
+ 
+ .column, .columns {
+    position: relative;
+    padding: 0 20px;
+    min-height: 1px;
+    float: left;
+ }
+ .column.centered, .columns.centered  {
+     float: none;
+     margin: 0 auto;
+ }
+ 
+ /* removed gutters */
+ .row.collapsed &gt; .column,
+ .row.collapsed &gt; .columns,
+ .column.collapsed, .columns.collapsed  { padding: 0; }
+ 
+ [class*=&quot;column&quot;] + [class*=&quot;column&quot;]:last-child { float: right; }
+ [class*=&quot;column&quot;] + [class*=&quot;column&quot;].end { float: right; }
+ 
+ /* column widths */
+ .row .one         { width: 8.33333%; }
+ .row .two         { width: 16.66667%; }
+ .row .three       { width: 25%; }
+ .row .four        { width: 33.33333%; }
+ .row .five        { width: 41.66667%; }
+ .row .six         { width: 50%; }
+ .row .seven       { width: 58.33333%; }
+ .row .eight       { width: 66.66667%; }
+ .row .nine        { width: 75%; }
+ .row .ten         { width: 83.33333%; }
+ .row .eleven      { width: 91.66667%; }
+ .row .twelve      { width: 100%; }
+ 
+ /* Offsets */
+ .row .offset-1    { margin-left: 8.33333%; }
+ .row .offset-2    { margin-left: 16.66667%; }
+ .row .offset-3    { margin-left: 25%; }
+ .row .offset-4    { margin-left: 33.33333%; }
+ .row .offset-5    { margin-left: 41.66667%; }
+ .row .offset-6    { margin-left: 50%; }
+ .row .offset-7    { margin-left: 58.33333%; }
+ .row .offset-8    { margin-left: 66.66667%; }
+ .row .offset-9    { margin-left: 75%; }
+ .row .offset-10   { margin-left: 83.33333%; }
+ .row .offset-11   { margin-left: 91.66667%; }
+ 
+ /* Push/Pull */
+ .row .push-1      { left: 8.33333%; }
+ .row .pull-1      { right: 8.33333%; }
+ .row .push-2      { left: 16.66667%; 	}
+ .row .pull-2      { right: 16.66667%; }
+ .row .push-3      { left: 25%; }
+ .row .pull-3      { right: 25%;	}
+ .row .push-4      { left: 33.33333%; }
+ .row .pull-4      { right: 33.33333%; }
+ .row .push-5      { left: 41.66667%; }
+ .row .pull-5      { right: 41.66667%; }
+ .row .push-6      { left: 50%; }
+ .row .pull-6      { right: 50%; }
+ .row .push-7      { left: 58.33333%; }
+ .row .pull-7      { right: 58.33333%; }
+ .row .push-8      { left: 66.66667%; 	}
+ .row .pull-8      { right: 66.66667%; }
+ .row .push-9      { left: 75%; }
+ .row .pull-9      { right: 75%; }
+ .row .push-10     { left: 83.33333%; }
+ .row .pull-10     { right: 83.33333%; }
+ .row .push-11     { left: 91.66667%; }
+ .row .pull-11     { right: 91.66667%; }
+ 
+ /* block grids
+ --------------------------------------------------------------------- */
+ .bgrid-sixths [class*=&quot;column&quot;]   { width: 16.66667%; }
+ .bgrid-quarters [class*=&quot;column&quot;] { width: 25%; }
+ .bgrid-thirds [class*=&quot;column&quot;]   { width: 33.33333%; }
+ .bgrid-halves [class*=&quot;column&quot;]   { width: 50%; }
+ 
+ [class*=&quot;bgrid&quot;] [class*=&quot;column&quot;] + [class*=&quot;column&quot;]:last-child { float: left; }
+ 
+ /* Left clearing for block grid columns - columns that changes width in
+ different screen sizes. Allows columns with different heights to align
+ properly.
+ --------------------------------------------------------------------- */
+ .first { clear: left; }   /* first column in default screen */
+ .s-first { clear: none; } /* first column in smaller screens */
+ 
+ /* smaller screens
+ --------------------------------------------------------------- */
+ @media only screen and (max-width: 900px) {
+ 
+    /* block grids on small screens */
+    .s-bgrid-sixths [class*=&quot;column&quot;]   { width: 16.66667%; }
+    .s-bgrid-quarters [class*=&quot;column&quot;] { width: 25%; }
+    .s-bgrid-thirds [class*=&quot;column&quot;]   { width: 33.33333%; }
+    .s-bgrid-halves [class*=&quot;column&quot;]   { width: 50%; }
+ 
+    /* block grids left clearing */
+    .first { clear: none; }
+    .s-first { clear: left; }
+ 
+ }
+ 
+ /* mobile wide/smaller tablets
+ --------------------------------------------------------------- */
+ @media only screen and (max-width: 767px) {
+ 
+    .row {
+        width: 460px;
+        margin: 0 auto;
+       padding: 0;
+     }
+    .column, .columns {
+        width: auto !important;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+       padding: 0 30px;
+    }
+    .row .row { width: auto; max-width: none; margin: 0 -30px; }
+ 
+    [class*=&quot;column&quot;] + [class*=&quot;column&quot;]:last-child { float: none; }
+    [class*=&quot;bgrid&quot;] [class*=&quot;column&quot;] + [class*=&quot;column&quot;]:last-child { float: none; }
+ 
+    /* Offsets */
+    .row .offset-1    { margin-left: 0%; }
+    .row .offset-2    { margin-left: 0%; }
+    .row .offset-3    { margin-left: 0%; }
+    .row .offset-4    { margin-left: 0%; }
+    .row .offset-5    { margin-left: 0%; }
+    .row .offset-6    { margin-left: 0%; }
+    .row .offset-7    { margin-left: 0%; }
+    .row .offset-8    { margin-left: 0%; }
+    .row .offset-9    { margin-left: 0%; }
+    .row .offset-10   { margin-left: 0%; }
+    .row .offset-11   { margin-left: 0%; }
+ }
+ 
+ /* mobile narrow
+ --------------------------------------------------------------- */
+ @media only screen and (max-width: 460px) {
+ 
+    .row { width: auto; }
+ 
+ }
+ 
+ /* larger screens
+ --------------------------------------------------------------- */
+ @media screen and (min-width: 1200px) {
+ 
+    .wide .row { max-width: 1180px; }
+ 
+ }
+ 
+ /* ------------------------------------------------------------------ */
+ /* e. Others
+ /* ------------------------------------------------------------------ */
+ 
+ /*  1. Clearing
+     (http://nicolasgallagher.com/micro-clearfix-hack/
+ --------------------------------------------------------------------- */
+ 
+ .cf:before,
+ .cf:after {
+     content: &quot; &quot;;
+     display: table;
+ }
+ .cf:after {
+     clear: both;
+ }
+ 
+ /*  2. Misc -------------------------------------------------------- */
+ 
+ .remove-bottom { margin-bottom: 0 !important; }
+ .half-bottom { margin-bottom: 12px !important; }
+ .add-bottom { margin-bottom: 24px !important; }
+ .no-border { border: none; }
+ 
+ .text-center  { text-align: center !important; }
+ .text-left    { text-align: left !important; }
+ .text-right   { text-align: right !important; }
+ .pull-left    { float: left !important; }
+ .pull-right   { float: right !important; }
+ .align-center {
+     margin-left: auto !important;
+     margin-right: auto !important;
+     text-align: center !important;
+ } 
+
+ /* ------------------------------------------------------------------ */
+/* i. Footer
+/* ------------------------------------------------------------------ */
+
+footer {
+   padding-top: 48px;
+   margin-bottom: 48px;
+   color: #303030;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+}
+
+footer a, footer a:visited { color: #525252; }
+footer a:hover, footer a:focus { color: #fff; }
+
+/* copyright */
+footer .copyright {
+    margin: 0;
+    padding: 0;
+ }
+footer .copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.ie footer .copyright li {
+   display: inline;
+}
+footer .copyright li:before {
+    content: &quot;\2022&quot;;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #095153;
+}
+footer .copyright  li:first-child:before {
+    display: none;
+}
+
+/* social links */
+footer .social-links {
+   margin: 18px 0 30px 0;
+   padding: 0;
+   font-size: 30px;
+}
+footer .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #F06000;
+}
+
+footer .social-links li:first-child { margin-left: 0; }
+
+/* Go To Top Button */
+#go-top {
+	position: absolute;
+	top: -24px;
+   left: 50%;
+   margin-left: -30px;
+}
+#go-top a {
+	text-decoration: none;
+	border: 0 none;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: #525252;
+
+	-webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+
+   color: #fff;
+   font-size: 21px;
+   line-height: 60px;
+ 	border-radius: 100%;
+}
+#go-top a:hover { background-color: #0F9095; }
+
+ </style><a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a></p><div class="section light" id="home"><div><style>
             .centered-text {
                 position: absolute;
                 height: 200px;
@@ -152,7 +1049,81 @@
         height:100vh;
         object-fit: contain;
     }
-    </style><br/><br/><br/><div><div class="carousel carousel-slider" style="width:100%"><button type="button" aria-label="previous slide / item" class="control-arrow control-prev control-disabled"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(0%,0,0);-moz-transform:translate3d(0%,0,0);-ms-transform:translate3d(0%,0,0);-o-transform:translate3d(0%,0,0);transform:translate3d(0%,0,0);-ms-transform:translate3d(0%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-ms-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide selected"><div><img src="./static/images/res1.jpg" height="100%"/><p class="legend">res 1</p></div></li><li class="slide"><div><img src="./static/images/res2.jpg" height="100%"/><p class="legend">res 2</p></div></li><li class="slide"><div><img src="./static/images/res3.jpg" height="100%"/><p class="legend">res 3</p></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li><li class="dot" value="2" role="button" tabindex="0" aria-label="slide item 3"></li></ul><p class="carousel-status">1 of 3</p></div><div class="carousel"><div class="thumbs-wrapper axis-vertical"><button type="button" class="control-arrow control-prev control-disabled" aria-label="previous slide / item"></button><ul class="thumbs animated" style="-webkit-transform:translate3d(0px,0,0);-moz-transform:translate3d(0px,0,0);-ms-transform:translate3d(0px,0,0);-o-transform:translate3d(0px,0,0);transform:translate3d(0px,0,0);-ms-transform:translate3d(0px,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-ms-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="thumb" aria-label="slide item 1" role="button" tabindex="0"><img src="./static/images/res1.jpg" height="100%"/></li><li class="thumb" aria-label="slide item 2" role="button" tabindex="0"><img src="./static/images/res2.jpg" height="100%"/></li><li class="thumb" aria-label="slide item 3" role="button" tabindex="0"><img src="./static/images/res3.jpg" height="100%"/></li></ul><button type="button" class="control-arrow control-next control-disabled" aria-label="next slide / item"></button></div></div></div><br/><br/><br/></div><div class="overlay"></div><div class="centered-text"><h1>Research Scholar Day</h1><div></div><h3>March 7, 2020</h3><h4>Indian Institute Of Technology, Patna</h4></div></div></div><div class="section light" id="about"><div class="container"><h2>About the event</h2><p>We’re planning for JSHeroes to be the biggest tech Conference in Romania, dedicated solely to JavaScript. We’ll get our engine going with 20 international JavaScript experts and we’ve chosen a venue that allows a crowd of up to 500 attendees.</p><p>We kick-started the Cluj JavaScripters community in August 2015. Since then we’ve grown to 900+ members and formed one of the most active knowledge sharing groups worldwide. We organized more than 42 Meetups and Trainings for the JS community in Cluj. So far we partnered with technical conferences to deliver high-quality JS knowledge and held an entire conference track for CodeCamp. What can we say, it was a full-house track and it was brilliant!</p><p>We kick-started the Cluj JavaScripters community in August 2015. Since then we’ve grown to 900+ members and formed one of the most active knowledge sharing groups worldwide. We organized more than 42 Meetups and Trainings for the JS community in Cluj. So far we partnered with technical conferences to deliver high-quality JS knowledge and held an entire conference track for CodeCamp. What can we say, it was a full-house track and it was brilliant!</p><div class="MuiGrid-root MuiGrid-container"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"><div class="MuiPaper-root MuiCard-root jss104 MuiPaper-elevation1 MuiPaper-rounded"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss105" style="background-image:url(&quot;./static/images/poster.jpeg&quot;)" title="Poster Presentation"></div><div class="MuiCardContent-root"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Poster Presentation</h2><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary">Description</p></div><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiCardActions-root MuiCardActions-spacing"><a href="https://www.google.com" class="button" color="primary">Register</a><a href="https://www.google.com" class="button" color="primary">Format</a><a href="https://www.google.com" class="button">Format</a></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"><div class="MuiPaper-root MuiCard-root jss177 MuiPaper-elevation1 MuiPaper-rounded"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss178" style="background-image:url(&quot;./static/images/register.jpg&quot;)" title="Register Presentation"></div><div class="MuiCardContent-root"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Register For the Events</h2><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary">Paper and Poster Presentation</p></div><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiCardActions-root MuiCardActions-spacing"><a href="https://www.google.com" class="button">Schedule of the Day</a></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"><div class="MuiPaper-root MuiCard-root jss179 MuiPaper-elevation1 MuiPaper-rounded"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss180" style="background-image:url(&quot;./static/images/paper.jpeg&quot;)" title="Paper Presentation"></div><div class="MuiCardContent-root"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Paper Presentation</h2><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary">Description</p></div><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiCardActions-root MuiCardActions-spacing"><a href="https://www.google.com" class="button" align="center">Register</a></div></div></div></div></div></div><div class="section dark"><div class="container"><h2>Director&#x27;s Message</h2><p>Mauris placerat nunc sit amet turpis pulvinar, nec iaculis massa posuere. Aenean orci tortor, aliquet sed neque eu, dictum suscipit nisi. Morbi interdum vitae nunc sit amet varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam non enim orci. Suspendisse mauris quam, porttitor vel lorem nec, malesuada suscipit velit. Duis lacinia cursus mattis. Vestibulum vel nisl vestibulum neque tincidunt fringilla at a dui. Nam nisi lacus, viverra vitae eros quis, maximus vehicula nisi. Phasellus euismod, tortor et rutrum tempus, libero risus vestibulum nisi, non malesuada eros orci quis sem. Quisque iaculis pharetra placerat. Integer ut urna sit amet dui pretium pharetra at sit amet nisl. Aliquam rutrum velit ipsum, scelerisque pretium purus ultrices nec.</p><p>Prof. Pushpak Bhattacharyya</p></div></div><div class="section color" id="speakers"><div class="sc-htoDjs lbRpxv"><h1>KEYNOTE Speakers</h1><div><div class="sc-ifAKCX jziwJG"><button class="sc-bxivhb bKOzTU"></button><div class="sc-bdVaJa TqLrp"><div class="sc-EHOje jAMlvv"><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
+    </style><br/><br/><div><div class="carousel carousel-slider" style="width:100%"><button type="button" aria-label="previous slide / item" class="control-arrow control-prev control-disabled"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(0%,0,0);-moz-transform:translate3d(0%,0,0);-ms-transform:translate3d(0%,0,0);-o-transform:translate3d(0%,0,0);transform:translate3d(0%,0,0);-ms-transform:translate3d(0%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-ms-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide selected"><div><img src="./static/images/iit2.jpg" height="100%"/><p class="legend"></p></div></li><li class="slide"><div><img src="./static/images/iit2.jpg" height="100%"/><p class="legend"></p></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li></ul><p class="carousel-status">1 of 2</p></div><div class="carousel"><div class="thumbs-wrapper axis-vertical"><button type="button" class="control-arrow control-prev control-disabled" aria-label="previous slide / item"></button><ul class="thumbs animated" style="-webkit-transform:translate3d(0px,0,0);-moz-transform:translate3d(0px,0,0);-ms-transform:translate3d(0px,0,0);-o-transform:translate3d(0px,0,0);transform:translate3d(0px,0,0);-ms-transform:translate3d(0px,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-ms-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="thumb" aria-label="slide item 1" role="button" tabindex="0"><img src="./static/images/iit2.jpg" height="100%"/></li><li class="thumb" aria-label="slide item 2" role="button" tabindex="0"><img src="./static/images/iit2.jpg" height="100%"/></li></ul><button type="button" class="control-arrow control-next control-disabled" aria-label="next slide / item"></button></div></div></div></div><div class="overlay"></div><div class="centered-text"><h1>Research Scholar Day</h1><div></div><h3>March 7, 2020</h3><h4>Indian Institute Of Technology, Patna</h4></div></div></div><div class="section light" id="about"><div class="container"><h2>About the event</h2><br/><p>Research scholars’ day is an initiative by the research scholars of IIT Patna to make research more accessible. It is a platform for scholars to collaborate with the prominent personalities of their field by  sharing their knowledge through short talks and poster presentations.</p><p>This event is an effort by the scholars of IIT Patna to bring academic researches to the real-world. Scholars get an opportunity to showcase their research work and interact with prominent scientists.</p><p>Poster presentation and 3-minute talk are the two main events for the scholars. These events are ways to present the research work in limited words. In poster-presentation scholars present their work precisely through posters to the eminent dignitaries. Another way of sharing the research work is through a 3-minute talk. Researchers share the understanding of their research area in limited words through the slides. The best presentation will be published on YouTube, Facebook and, Twitter handles of RSD. All the submitted and presented work will be finally published in the RSD IIT Patna booklet. The annual festival ends with a beautiful evening which includes a program, generally spicmacy program, to feel the rich and authentic classical music of India with some refreshments.</p></div></div><div><style>
+        /* ------------------------------------------------------------------
+        /* g. Testimonials
+        /* ------------------------------------------------------------------ */
+
+        #testimonials {
+        background: #1F1F1F url(./static/images/testimonials-bg.jpg) no-repeat center center;
+        background-size: cover !important;
+            -webkit-background-size: cover !important;
+        background-attachment: fixed;
+
+        position: relative;
+        min-height: 200px;
+        width: 100%;
+        overflow: hidden;
+        }
+
+        #testimonials .profile-pic {
+         position: relative;
+         width: 200px;
+         height: 200px;
+         border-radius: 100%;
+       }
+
+        #testimonials .text-container {
+        padding-top: 96px;
+        padding-bottom: 66px;
+        padding-left: 266px;
+        padding-right: 266px;
+        }
+        #testimonials h1 {
+        font: 18px/24px &#x27;opensans-bold&#x27;, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #fff;
+        }
+        #testimonials h1 span { display: none; }
+        #testimonials .header-col { padding-top: 9px; }
+        #testimonials .header-col h1:before {
+        font-family: &#x27;FontAwesome&#x27;;
+        content: &quot;10d&quot;;
+            padding-right: 10px;
+            font-size: 72px;
+        line-height: 72px;
+        text-align: left;
+        float: left;
+        color: #fff;
+        }
+
+        /*	Blockquotes */
+        #testimonials blockquote {
+        margin: 0 0px 30px 0px;
+        padding-left: 0;
+        position: relative;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+        }
+        #testimonials blockquote:before { content: none; }
+        #testimonials blockquote p {
+        font-family: &#x27;librebaskerville-italic&#x27;, serif;
+        padding: 0;
+        font-size: 24px;
+        line-height: 48px;
+        color: #fff
+        }
+        #testimonials blockquote cite {
+        display: block;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 18px;
+        color: #fff;
+        }
+        #testimonials blockquote cite:before { content: &quot;\2014 \0020&quot;; }
+        #testimonials blockquote cite a,
+        #testimonials blockquote cite a:visited { color: #8B9798; border: none }
+        </style><section id="testimonials"><div class="text-container"><div class="row1"><div class="two1 columns1"><img class="profile-pic" src="./static/images/director.jpg" alt="Director"/></div><div class="ten1 columns1 flex-container"><ul class="slides"><li><blockquote><p>I am very happy that the 9th Research Scholar Day of IIT Patna is going to be held with the usual thoroughness and excellent content. We have eminent speakers from Science, Engineering, Humanities and Social Sciences and Industry sharing their wisdom with the research scholars of the institute. Research is what separates institutes of higher learning from others, and it is really praiseworthy that RSD is considered a flagship event of IIT patna. I am sure the days event along with pre and post workshops/tutorial etc will be very interesting and informative for everybody Wish you all the best. Jai Hind .</p><cite>Prof. Pushpak Bhattacharyya</cite></blockquote></li></ul></div></div></div></section></div><div class="section light" id="register"><div class="container"><br/><h2>Enroll your participation here!</h2><br/><div class="MuiGrid-root MuiGrid-container"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"><div class="MuiPaper-root MuiCard-root jss104 MuiPaper-elevation1 MuiPaper-rounded"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss105" style="background-image:url(&quot;./static/images/poster.jpeg&quot;)" title="Poster Presentation"></div><div class="MuiCardContent-root"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Poster Presentation</h2><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary">Description</p></div><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiCardActions-root MuiCardActions-spacing"><a href="https://www.google.com" class="button" color="primary">Register</a><a href="https://www.google.com" class="button" color="primary">Format</a><a href="https://www.google.com" class="button">Format</a></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"><div class="MuiPaper-root MuiCard-root jss177 MuiPaper-elevation1 MuiPaper-rounded"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss178" style="background-image:url(&quot;./static/images/register.jpg&quot;)" title="Register Presentation"></div><div class="MuiCardContent-root"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Register For the Events</h2><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary">Paper and Poster Presentation</p></div><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiCardActions-root MuiCardActions-spacing"><a href="https://www.google.com" class="button">Schedule of the Day</a></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"><div class="MuiPaper-root MuiCard-root jss179 MuiPaper-elevation1 MuiPaper-rounded"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss180" style="background-image:url(&quot;./static/images/paper.jpeg&quot;)" title="Paper Presentation"></div><div class="MuiCardContent-root"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">Paper Presentation</h2><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary">Description</p></div><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiCardActions-root MuiCardActions-spacing"><a href="https://www.google.com" class="button" align="center">Register</a></div></div></div></div></div></div><div class="section light" id="speakers"><h2>KEYNOTE Speakers</h2><br/><div><div class="speaker-pic"><style>
             .speaker-pic {
                 display: inline-block;
                 width: 25%;
@@ -211,7 +1182,7 @@
                 text-decoration: none;
                 color: #333333;
             }
-        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Guillermo Rauch"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/rauchg" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/rauchg" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="https://rauchg.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Guillermo Rauch</strong></p><p>Founder</p><p>Zeit</p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
+        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Guillermo Rauch"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/rauchg" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/rauchg" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="https://rauchg.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Guillermo Rauch</strong></p><p>Founder</p><p>Zeit</p></div><div class="speaker-pic"><style>
             .speaker-pic {
                 display: inline-block;
                 width: 25%;
@@ -270,7 +1241,7 @@
                 text-decoration: none;
                 color: #333333;
             }
-        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Liran Tal"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/liran_tal" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/lirantal" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="https://medium.com/@liran.tal" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Liran Tal</strong></p><p>Engineering Manager</p><p>Marketing Cloud, Nielsen</p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
+        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Liran Tal"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/liran_tal" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/lirantal" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="https://medium.com/@liran.tal" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Liran Tal</strong></p><p>Engineering Manager</p><p>Marketing Cloud, Nielsen</p></div><div class="speaker-pic"><style>
             .speaker-pic {
                 display: inline-block;
                 width: 25%;
@@ -329,766 +1300,17 @@
                 text-decoration: none;
                 color: #333333;
             }
-        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Martin Splitt"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/g33konaut" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/avgp" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="http://50linesofco.de/" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Martin Splitt</strong></p><p>Senior Software Engineer</p><p>Archilogic</p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                overflow: hidden;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Gautam Arora"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/gautam" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/gautamarora" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="http://www.gautamarora.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Gautam Arora</strong></p><p>Developer Evangelist</p><p>Conde Nast</p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                overflow: hidden;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Mark Dalgleish"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/markdalgleish" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/markdalgleish" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Mark Dalgleish</strong></p><p>DesignOps Lead</p><p>SEEK</p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                overflow: hidden;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Alex Moldovan"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/alexnmoldovan" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/alexnm" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="https://medium.com/@alexnm" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Alex Moldovan</strong></p><p>Full Stack Developer</p><p>Fortech</p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                overflow: hidden;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Tudor Gergely"/><div class="overlay"></div><div class="social"><a target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/tudorgergely" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Tudor Gergely</strong></p><p>Fullstack developer</p><p>Catalysts</p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                overflow: hidden;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Xavier Cazalot"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/xav_cz" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/xavcz" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="http://xav.cz/" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Xavier Cazalot</strong></p><p>Javascript Engineer</p><p>Consultant</p></div></div></div></div><button class="sc-htpNat hUeBZS"></button></div><ul class="sc-bZQynM dhTOCp"><li class="sc-gzVnrw cVnokl"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li></ul></div></div></div><div class="section light" id="sponsors"><div class="sc-htoDjs lbRpxv"><h1>Sponsors And Partners</h1><div><div class="sc-ifAKCX jziwJG"><button class="sc-bxivhb bKOzTU"></button><div class="sc-bdVaJa TqLrp"><div class="sc-EHOje jAMlvv"><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/abc.png" alt="ABC"/><div class="overlay"></div></a></div><p><strong>ABC</strong></p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/abc.png" alt="ABC"/><div class="overlay"></div></a></div><p><strong>ABC</strong></p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/abc.png" alt="ABC"/><div class="overlay"></div></a></div><p><strong>ABC</strong></p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/abc.png" alt="ABC"/><div class="overlay"></div></a></div><p><strong>ABC</strong></p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/abc.png" alt="ABC"/><div class="overlay"></div></a></div><p><strong>ABC</strong></p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/abc.png" alt="ABC"/><div class="overlay"></div></a></div><p><strong>ABC</strong></p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/abc.png" alt="ABC"/><div class="overlay"></div></a></div><p><strong>ABC</strong></p></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
-            .speaker-pic {
-                display: inline-block;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-
-            .rounded {
-                border-radius: 200px;
-                height: 200px;
-                width: 200px;
-                margin: auto;
-                position: relative;
-                cursor: pointer;
-            }
-
-            .speaker-pic img {
-                width: 200px;
-            }
-
-            .rounded:hover .social {
-                opacity: 1;
-                transform: translateY( 0 );
-            }
-
-            .rounded:hover .overlay {
-                opacity: 0.5;
-            }
-
-            .social {
-                position: absolute;
-                margin: auto;
-                transition: all 0.2s;
-                top: 45%;
-                opacity: 0;
-                width: 100%;
-                transform: translateY( 100px );
-            }
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                background-color: #f1c40f;
-                transition: all 1s;
-            }
-
-            .social a {
-                margin: 10px;
-                border: 1px solid black;
-                padding: 5px 7px;
-                border-radius: 100%;
-                text-decoration: none;
-                color: #333333;
-            }
-        </style><div class="rounded"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/abc.png" alt="ABC"/><div class="overlay"></div></a></div><p><strong>ABC</strong></p></div></div></div></div><button class="sc-htpNat hUeBZS"></button></div><ul class="sc-bZQynM dhTOCp"><li class="sc-gzVnrw cVnokl"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li></ul></div></div></div><div class="section dark" id="contact"><div class="sc-htoDjs lbRpxv"><h1>Team-RSD</h1><div><div class="sc-ifAKCX jziwJG"><button class="sc-bxivhb bKOzTU"></button><div class="sc-bdVaJa TqLrp"><div class="sc-EHOje jAMlvv"><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
+        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Martin Splitt"/><div class="overlay"></div><div class="social"><a href="https://twitter.com/g33konaut" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/avgp" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="http://50linesofco.de/" target="_blank" rel="noopener noreferrer"><i class="fa fa-link"></i></a></div></div><p><strong>Martin Splitt</strong></p><p>Senior Software Engineer</p><p>Archilogic</p></div></div></div><div class="section light" id="gallery"><h2>Shades of Previous Events</h2><div><style>
+    .carousel {
+        height:100vh;
+        position: absolute;
+    }
+        
+    .carousel-inner &amp;gt; .item &amp;gt; img {
+        height:100vh;
+        object-fit: contain;
+    }
+    </style><br/><div><div class="carousel carousel-slider" style="width:100%"><button type="button" aria-label="previous slide / item" class="control-arrow control-prev control-disabled"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(0%,0,0);-moz-transform:translate3d(0%,0,0);-ms-transform:translate3d(0%,0,0);-o-transform:translate3d(0%,0,0);transform:translate3d(0%,0,0);-ms-transform:translate3d(0%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-ms-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide selected"><div><img src="./static/images/gallery/inaug.JPG" height="100%"/><p class="legend">legend</p></div></li><li class="slide"><div><img src="./static/images/gallery/welcome1.JPG" height="100%"/><p class="legend">legend</p></div></li><li class="slide"><div><img src="./static/images/gallery/welcome2.JPG" height="100%"/><p class="legend">legend</p></div></li><li class="slide"><div><img src="./static/images/gallery/winner.jpg" height="100%"/><p class="legend">legend</p></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li><li class="dot" value="2" role="button" tabindex="0" aria-label="slide item 3"></li><li class="dot" value="3" role="button" tabindex="0" aria-label="slide item 4"></li></ul><p class="carousel-status">1 of 4</p></div><div class="carousel"><div class="thumbs-wrapper axis-vertical"><button type="button" class="control-arrow control-prev control-disabled" aria-label="previous slide / item"></button><ul class="thumbs animated" style="-webkit-transform:translate3d(0px,0,0);-moz-transform:translate3d(0px,0,0);-ms-transform:translate3d(0px,0,0);-o-transform:translate3d(0px,0,0);transform:translate3d(0px,0,0);-ms-transform:translate3d(0px,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-ms-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="thumb" aria-label="slide item 1" role="button" tabindex="0"><img src="./static/images/gallery/inaug.JPG" height="100%"/></li><li class="thumb" aria-label="slide item 2" role="button" tabindex="0"><img src="./static/images/gallery/welcome1.JPG" height="100%"/></li><li class="thumb" aria-label="slide item 3" role="button" tabindex="0"><img src="./static/images/gallery/welcome2.JPG" height="100%"/></li><li class="thumb" aria-label="slide item 4" role="button" tabindex="0"><img src="./static/images/gallery/winner.jpg" height="100%"/></li></ul><button type="button" class="control-arrow control-next control-disabled" aria-label="next slide / item"></button></div></div></div><br/><br/><br/></div></div><div class="section color" id="contact"><div class="sc-htoDjs lbRpxv"><h1>Team-RSD</h1><div><div class="sc-ifAKCX jziwJG"><button class="sc-bxivhb bKOzTU"></button><div class="sc-bdVaJa TqLrp"><div class="sc-EHOje jAMlvv"><div width="0" class="sc-bwzfXH elOifl"><div class="speaker-pic"><style>
             .speaker-pic {
                 display: inline-block;
                 width: 25%;
@@ -1560,4 +1782,476 @@
                 text-decoration: none;
                 color: #333333;
             }
-        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Guillermo Rauch"/><div class="overlay"></div></div><p><strong>Guillermo Rauch</strong></p><p>Convener</p><p></p></div></div></div></div><button class="sc-htpNat hUeBZS"></button></div><ul class="sc-bZQynM dhTOCp"><li class="sc-gzVnrw cVnokl"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li></ul></div></div></div><div class="section color"><div class="container"><p>Join us on 7th, March 2020. @ IIT Patna</p></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"dataManager":"[]","props":{"pageProps":{}},"page":"/","query":{},"buildId":"b5Z8xXHVRA0vBv2q3T_Of","assetPrefix":".","nextExport":true,"autoExport":true}</script><script nomodule="" src="./_next/static/runtime/polyfills-a87a8490047fa7641894.js"></script><script async="" data-next-page="/" src="./_next/static/b5Z8xXHVRA0vBv2q3T_Of/pages/index.js"></script><script async="" data-next-page="/_app" src="./_next/static/b5Z8xXHVRA0vBv2q3T_Of/pages/_app.js"></script><script src="./_next/static/runtime/webpack-08f7b238829422e3b9b2.js" async=""></script><script src="./_next/static/chunks/commons.ad3ca390b50797445405.js" async=""></script><script src="./_next/static/runtime/main-7b9273b1ac62fdc39484.js" async=""></script></body></html>
+        </style><div class="rounded"><img src="./static/images/speakers/speaker.png" alt="Guillermo Rauch"/><div class="overlay"></div></div><p><strong>Guillermo Rauch</strong></p><p>Convener</p><p></p></div></div></div></div><button class="sc-htpNat hUeBZS"></button></div><ul class="sc-bZQynM dhTOCp"><li class="sc-gzVnrw cVnokl"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li><li class="sc-gzVnrw fIFxfh"><button type="button">•</button></li></ul></div></div></div><div class="section light" id="gallery"><h2>Sponsors and Partners</h2><br/><div class="sc-htoDjs lbRpxv"><div><div class="sc-ifAKCX jziwJG"><button class="sc-bxivhb bKOzTU"></button><div class="sc-bdVaJa TqLrp"><div class="sc-EHOje jAMlvv"><div width="0" class="sc-bwzfXH elOifl"><div class="sponsor-pic"><style>
+            .sponsor-pic {
+                display: inline-block;
+                width: 25%;
+                // margin-bottom: 30px;
+            }
+
+            .rounded-sps {
+                border-radius: 200px;
+                height: 75px;
+                width: 75px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .sponsor-pic img {
+                width: 75px;
+            }
+
+            .rounded-sps:hover .social {
+                opacity: 1;
+                transform: translateY( 0 );
+            }
+
+            .rounded-sps:hover .overlay {
+                opacity: 0.5;
+            }
+
+            .social {
+                position: absolute;
+                margin: auto;
+                transition: all 0.2s;
+                top: 45%;
+                opacity: 0;
+                width: 100%;
+                transform: translateY( 100px );
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                background-color: #f1c40f;
+                transition: all 1s;
+            }
+
+            .social a {
+                margin: 10px;
+                border: 1px solid black;
+                padding: 5px 7px;
+                border-radius: 100%;
+                text-decoration: none;
+                color: #333333;
+            }
+        </style><div class="rounded-sps"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/iitp.png" alt="ABC"/><div class="overlay"></div></a></div></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="sponsor-pic"><style>
+            .sponsor-pic {
+                display: inline-block;
+                width: 25%;
+                // margin-bottom: 30px;
+            }
+
+            .rounded-sps {
+                border-radius: 200px;
+                height: 75px;
+                width: 75px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .sponsor-pic img {
+                width: 75px;
+            }
+
+            .rounded-sps:hover .social {
+                opacity: 1;
+                transform: translateY( 0 );
+            }
+
+            .rounded-sps:hover .overlay {
+                opacity: 0.5;
+            }
+
+            .social {
+                position: absolute;
+                margin: auto;
+                transition: all 0.2s;
+                top: 45%;
+                opacity: 0;
+                width: 100%;
+                transform: translateY( 100px );
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                background-color: #f1c40f;
+                transition: all 1s;
+            }
+
+            .social a {
+                margin: 10px;
+                border: 1px solid black;
+                padding: 5px 7px;
+                border-radius: 100%;
+                text-decoration: none;
+                color: #333333;
+            }
+        </style><div class="rounded-sps"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/iitp.png" alt="ABC"/><div class="overlay"></div></a></div></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="sponsor-pic"><style>
+            .sponsor-pic {
+                display: inline-block;
+                width: 25%;
+                // margin-bottom: 30px;
+            }
+
+            .rounded-sps {
+                border-radius: 200px;
+                height: 75px;
+                width: 75px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .sponsor-pic img {
+                width: 75px;
+            }
+
+            .rounded-sps:hover .social {
+                opacity: 1;
+                transform: translateY( 0 );
+            }
+
+            .rounded-sps:hover .overlay {
+                opacity: 0.5;
+            }
+
+            .social {
+                position: absolute;
+                margin: auto;
+                transition: all 0.2s;
+                top: 45%;
+                opacity: 0;
+                width: 100%;
+                transform: translateY( 100px );
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                background-color: #f1c40f;
+                transition: all 1s;
+            }
+
+            .social a {
+                margin: 10px;
+                border: 1px solid black;
+                padding: 5px 7px;
+                border-radius: 100%;
+                text-decoration: none;
+                color: #333333;
+            }
+        </style><div class="rounded-sps"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/iitp.png" alt="ABC"/><div class="overlay"></div></a></div></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="sponsor-pic"><style>
+            .sponsor-pic {
+                display: inline-block;
+                width: 25%;
+                // margin-bottom: 30px;
+            }
+
+            .rounded-sps {
+                border-radius: 200px;
+                height: 75px;
+                width: 75px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .sponsor-pic img {
+                width: 75px;
+            }
+
+            .rounded-sps:hover .social {
+                opacity: 1;
+                transform: translateY( 0 );
+            }
+
+            .rounded-sps:hover .overlay {
+                opacity: 0.5;
+            }
+
+            .social {
+                position: absolute;
+                margin: auto;
+                transition: all 0.2s;
+                top: 45%;
+                opacity: 0;
+                width: 100%;
+                transform: translateY( 100px );
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                background-color: #f1c40f;
+                transition: all 1s;
+            }
+
+            .social a {
+                margin: 10px;
+                border: 1px solid black;
+                padding: 5px 7px;
+                border-radius: 100%;
+                text-decoration: none;
+                color: #333333;
+            }
+        </style><div class="rounded-sps"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/iitp.png" alt="ABC"/><div class="overlay"></div></a></div></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="sponsor-pic"><style>
+            .sponsor-pic {
+                display: inline-block;
+                width: 25%;
+                // margin-bottom: 30px;
+            }
+
+            .rounded-sps {
+                border-radius: 200px;
+                height: 75px;
+                width: 75px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .sponsor-pic img {
+                width: 75px;
+            }
+
+            .rounded-sps:hover .social {
+                opacity: 1;
+                transform: translateY( 0 );
+            }
+
+            .rounded-sps:hover .overlay {
+                opacity: 0.5;
+            }
+
+            .social {
+                position: absolute;
+                margin: auto;
+                transition: all 0.2s;
+                top: 45%;
+                opacity: 0;
+                width: 100%;
+                transform: translateY( 100px );
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                background-color: #f1c40f;
+                transition: all 1s;
+            }
+
+            .social a {
+                margin: 10px;
+                border: 1px solid black;
+                padding: 5px 7px;
+                border-radius: 100%;
+                text-decoration: none;
+                color: #333333;
+            }
+        </style><div class="rounded-sps"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/iitp.png" alt="ABC"/><div class="overlay"></div></a></div></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="sponsor-pic"><style>
+            .sponsor-pic {
+                display: inline-block;
+                width: 25%;
+                // margin-bottom: 30px;
+            }
+
+            .rounded-sps {
+                border-radius: 200px;
+                height: 75px;
+                width: 75px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .sponsor-pic img {
+                width: 75px;
+            }
+
+            .rounded-sps:hover .social {
+                opacity: 1;
+                transform: translateY( 0 );
+            }
+
+            .rounded-sps:hover .overlay {
+                opacity: 0.5;
+            }
+
+            .social {
+                position: absolute;
+                margin: auto;
+                transition: all 0.2s;
+                top: 45%;
+                opacity: 0;
+                width: 100%;
+                transform: translateY( 100px );
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                background-color: #f1c40f;
+                transition: all 1s;
+            }
+
+            .social a {
+                margin: 10px;
+                border: 1px solid black;
+                padding: 5px 7px;
+                border-radius: 100%;
+                text-decoration: none;
+                color: #333333;
+            }
+        </style><div class="rounded-sps"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/iitp.png" alt="ABC"/><div class="overlay"></div></a></div></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="sponsor-pic"><style>
+            .sponsor-pic {
+                display: inline-block;
+                width: 25%;
+                // margin-bottom: 30px;
+            }
+
+            .rounded-sps {
+                border-radius: 200px;
+                height: 75px;
+                width: 75px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .sponsor-pic img {
+                width: 75px;
+            }
+
+            .rounded-sps:hover .social {
+                opacity: 1;
+                transform: translateY( 0 );
+            }
+
+            .rounded-sps:hover .overlay {
+                opacity: 0.5;
+            }
+
+            .social {
+                position: absolute;
+                margin: auto;
+                transition: all 0.2s;
+                top: 45%;
+                opacity: 0;
+                width: 100%;
+                transform: translateY( 100px );
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                background-color: #f1c40f;
+                transition: all 1s;
+            }
+
+            .social a {
+                margin: 10px;
+                border: 1px solid black;
+                padding: 5px 7px;
+                border-radius: 100%;
+                text-decoration: none;
+                color: #333333;
+            }
+        </style><div class="rounded-sps"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/iitp.png" alt="ABC"/><div class="overlay"></div></a></div></div></div><div width="0" class="sc-bwzfXH elOifl"><div class="sponsor-pic"><style>
+            .sponsor-pic {
+                display: inline-block;
+                width: 25%;
+                // margin-bottom: 30px;
+            }
+
+            .rounded-sps {
+                border-radius: 200px;
+                height: 75px;
+                width: 75px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .sponsor-pic img {
+                width: 75px;
+            }
+
+            .rounded-sps:hover .social {
+                opacity: 1;
+                transform: translateY( 0 );
+            }
+
+            .rounded-sps:hover .overlay {
+                opacity: 0.5;
+            }
+
+            .social {
+                position: absolute;
+                margin: auto;
+                transition: all 0.2s;
+                top: 45%;
+                opacity: 0;
+                width: 100%;
+                transform: translateY( 100px );
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                background-color: #f1c40f;
+                transition: all 1s;
+            }
+
+            .social a {
+                margin: 10px;
+                border: 1px solid black;
+                padding: 5px 7px;
+                border-radius: 100%;
+                text-decoration: none;
+                color: #333333;
+            }
+        </style><div class="rounded-sps"><a target="_blank" rel="noopener noreferrer" href="http://www.fortech.ro"><img src="./static/images/sponsors/iitp.png" alt="ABC"/><div class="overlay"></div></a></div></div></div></div></div><button class="sc-htpNat hUeBZS"></button></div></div></div></div><footer><div class="row"><div class="twelve columns"><ul class="social-links"><li><a href="https://www.facebook.com/RSD-IITP-2020-102558154591391/?epa=SEARCH_BOX"><i class="fa fa-facebook"></i></a></li><li><a href="https://twitter.com/RsdIit"><i class="fa fa-twitter"></i></a></li></ul><ul class="copyright"><li>© Copyright ©2020 All Rights Reserved | Design by Design By RSDP Team</li></ul></div><div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"dataManager":"[]","props":{"pageProps":{}},"page":"/","query":{},"buildId":"djUyERgSc5SKYZAjJwsds","assetPrefix":".","nextExport":true,"autoExport":true}</script><script nomodule="" src="./_next/static/runtime/polyfills-a87a8490047fa7641894.js"></script><script async="" data-next-page="/" src="./_next/static/djUyERgSc5SKYZAjJwsds/pages/index.js"></script><script async="" data-next-page="/_app" src="./_next/static/djUyERgSc5SKYZAjJwsds/pages/_app.js"></script><script src="./_next/static/runtime/webpack-08f7b238829422e3b9b2.js" async=""></script><script src="./_next/static/chunks/commons.ad3ca390b50797445405.js" async=""></script><script src="./_next/static/runtime/main-7b9273b1ac62fdc39484.js" async=""></script></body></html>

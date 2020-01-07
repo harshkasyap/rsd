@@ -47,6 +47,14 @@ export default ( ) => (
             z-index: 10;
         }
 
+       /*  .footer {
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+            background-color: #eee;
+            color: #333;
+        } */
+
         .main {
             padding-top: 59px;
         }
@@ -103,5 +111,6 @@ export default ( ) => (
             font-weight: 300;
             font-size: 1.2rem;
         }
+
     ` }</style>
 );

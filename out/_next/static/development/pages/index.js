@@ -18,25 +18,242 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true
-  }, "\n    .carousel {\n        height:100vh;\n        position: absolute;\n    }\n        \n    .carousel-inner &gt; .item &gt; img {\n        height:100vh;\n        object-fit: contain;\n    }\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__["Carousel"], {
+  }, "\n    .carousel {\n        height:100vh;\n        position: absolute;\n    }\n        \n    .carousel-inner &gt; .item &gt; img {\n        height:100vh;\n        object-fit: contain;\n    }\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__["Carousel"], {
     autoPlay: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/res1.jpg",
+    src: "./static/images/iit2.jpg",
     height: "100%"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "legend"
-  }, "res 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/res2.jpg",
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/iit2.jpg",
     height: "100%"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "legend"
-  }, "res 2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/res3.jpg",
-    height: "100%"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "legend"
-  }, "res 3"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null));
+  }))));
 });
+
+/***/ }),
+
+/***/ "./components/Footer.js":
+/*!******************************!*\
+  !*** ./components/Footer.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Footer =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Footer, _Component);
+
+  function Footer() {
+    _classCallCheck(this, Footer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Footer).apply(this, arguments));
+  }
+
+  _createClass(Footer, [{
+    key: "render",
+    value: function render() {
+      if (_data_dictionary__WEBPACK_IMPORTED_MODULE_1__["default"].social) {
+        var networks = _data_dictionary__WEBPACK_IMPORTED_MODULE_1__["default"].social.map(function (network) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+            key: network.name
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: network.url
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+            className: network.className
+          })));
+        });
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "twelve columns"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "social-links"
+      }, networks), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "copyright"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "\xA9 Copyright \xA92020 All Rights Reserved | Design by Design By RSDP Team"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "go-top"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+        href: "#home"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "smoothscroll",
+        title: "Back to Top"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-up-open"
+      }))))));
+    }
+  }]);
+
+  return Footer;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./components/Gallery.js":
+/*!*******************************!*\
+  !*** ./components/Gallery.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Gallery; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-responsive-carousel */ "./node_modules/react-responsive-carousel/lib/index.js");
+/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function Gallery() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+    jsx: true
+  }, "\n    .carousel {\n        height:100vh;\n        position: absolute;\n    }\n        \n    .carousel-inner &gt; .item &gt; img {\n        height:100vh;\n        object-fit: contain;\n    }\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__["Carousel"], {
+    autoPlay: true
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/gallery/inaug.JPG",
+    height: "100%"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "legend"
+  }, "legend")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/gallery/welcome1.JPG",
+    height: "100%"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "legend"
+  }, "legend")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/gallery/welcome2.JPG",
+    height: "100%"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "legend"
+  }, "legend")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/gallery/winner.jpg",
+    height: "100%"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "legend"
+  }, "legend"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null));
+}
+;
+
+/***/ }),
+
+/***/ "./components/Testimonials.js":
+/*!************************************!*\
+  !*** ./components/Testimonials.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _importStyle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./importStyle */ "./components/importStyle.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var Testimonials =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Testimonials, _Component);
+
+  function Testimonials() {
+    _classCallCheck(this, Testimonials);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Testimonials).apply(this, arguments));
+  }
+
+  _createClass(Testimonials, [{
+    key: "render",
+    value: function render() {
+      if (this.props.data) {
+        var testimonials = this.props.data.testimonials.map(function (testimonials) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+            key: testimonials.user
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, testimonials.text), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", null, testimonials.user)));
+        });
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+        jsx: true,
+        global: true
+      }, "\n        /* ------------------------------------------------------------------\n        /* g. Testimonials\n        /* ------------------------------------------------------------------ */\n\n        #testimonials {\n        background: #1F1F1F url(./static/images/testimonials-bg.jpg) no-repeat center center;\n        background-size: cover !important;\n            -webkit-background-size: cover !important;\n        background-attachment: fixed;\n\n        position: relative;\n        min-height: 200px;\n        width: 100%;\n        overflow: hidden;\n        }\n\n        #testimonials .profile-pic {\n         position: relative;\n         width: 200px;\n         height: 200px;\n         border-radius: 100%;\n       }\n\n        #testimonials .text-container {\n        padding-top: 96px;\n        padding-bottom: 66px;\n        padding-left: 266px;\n        padding-right: 266px;\n        }\n        #testimonials h1 {\n        font: 18px/24px 'opensans-bold', sans-serif;\n        text-transform: uppercase;\n        letter-spacing: 3px;\n        color: #fff;\n        }\n        #testimonials h1 span { display: none; }\n        #testimonials .header-col { padding-top: 9px; }\n        #testimonials .header-col h1:before {\n        font-family: 'FontAwesome';\n        content: \"\f10d\";\n            padding-right: 10px;\n            font-size: 72px;\n        line-height: 72px;\n        text-align: left;\n        float: left;\n        color: #fff;\n        }\n\n        /*\tBlockquotes */\n        #testimonials blockquote {\n        margin: 0 0px 30px 0px;\n        padding-left: 0;\n        position: relative;\n        text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);\n        }\n        #testimonials blockquote:before { content: none; }\n        #testimonials blockquote p {\n        font-family: 'librebaskerville-italic', serif;\n        padding: 0;\n        font-size: 24px;\n        line-height: 48px;\n        color: #fff\n        }\n        #testimonials blockquote cite {\n        display: block;\n        font-size: 12px;\n        font-style: normal;\n        line-height: 18px;\n        color: #fff;\n        }\n        #testimonials blockquote cite:before { content: \"\\2014 \\0020\"; }\n        #testimonials blockquote cite a,\n        #testimonials blockquote cite a:visited { color: #8B9798; border: none }\n        "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        id: "testimonials"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "two1 columns1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "profile-pic",
+        src: "./static/images/director.jpg",
+        alt: "Director"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "ten1 columns1 flex-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "slides"
+      }, testimonials))))));
+    }
+  }]);
+
+  return Testimonials;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Testimonials);
 
 /***/ }),
 
@@ -56,7 +273,28 @@ __webpack_require__.r(__webpack_exports__);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true,
     global: true
-  }, "\n        .button {\n            margin: 20px;\n            border-style: solid;\n            border-width: 3px;\n            padding: 10px 30px;\n            font-size: 1.5rem;\n            transition: all 0.35s ease-in-out;\n            cursor: pointer;\n        }\n\n        .button.light {\n            background-color: transparent;\n            color: #eee;\n            border-color: #eee;\n        }\n\n        .button.light:hover {\n            background-color: #f1c40f;\n            color: #333;\n            border-color: #f1c40f;\n        }\n\n        .button.dark {\n            background-color: transparent;\n            color: #333;\n            border-color: #333;\n        }\n\n        .button.dark:hover {\n            background-color: #333;\n            color: #eee;\n            border-color: #333;\n        }\n\n        .container {\n            width: 1024px;\n            margin: auto;\n        }\n\n        .header {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n        }\n\n        .main {\n            padding-top: 59px;\n        }\n\n        .navlink {\n            padding: 20px 30px;\n            color: #eee;\n            text-decoration: none;\n            background-color: #333;\n            transition: all 0.7s ease-out;\n            cursor: pointer;\n        }\n\n        .navlink.highlight {\n            color: #f1c40f;\n        }\n\n        .navlink:hover {\n            background-color: #f1c40f;\n            transition: all 0.35s ease-out;\n            color: #333;\n        }\n\n        .section {\n            padding: 20px;\n        }\n\n        .section.dark {\n            background-color: #333;\n            color: #eee;\n        }\n\n        .section.color {\n            background-color: #f1c40f;\n            color: #333;\n        }\n\n        .section.light {\n            background-color: #eee;\n            color: #333;\n        }\n\n        body {\n            margin: 0;\n            font-family: 'Roboto', sans-serif;\n            text-align: center;\n        }\n\n        h1, h2, h3, h4 {\n            margin: 0;\n        }\n\n        p {\n            font-weight: 300;\n            font-size: 1.2rem;\n        }\n    ");
+  }, "\n        .button {\n            margin: 20px;\n            border-style: solid;\n            border-width: 3px;\n            padding: 10px 30px;\n            font-size: 1.5rem;\n            transition: all 0.35s ease-in-out;\n            cursor: pointer;\n        }\n\n        .button.light {\n            background-color: transparent;\n            color: #eee;\n            border-color: #eee;\n        }\n\n        .button.light:hover {\n            background-color: #f1c40f;\n            color: #333;\n            border-color: #f1c40f;\n        }\n\n        .button.dark {\n            background-color: transparent;\n            color: #333;\n            border-color: #333;\n        }\n\n        .button.dark:hover {\n            background-color: #333;\n            color: #eee;\n            border-color: #333;\n        }\n\n        .container {\n            width: 1024px;\n            margin: auto;\n        }\n\n        .header {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n        }\n\n       /*  .footer {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n            background-color: #eee;\n            color: #333;\n        } */\n\n        .main {\n            padding-top: 59px;\n        }\n\n        .navlink {\n            padding: 20px 30px;\n            color: #eee;\n            text-decoration: none;\n            background-color: #333;\n            transition: all 0.7s ease-out;\n            cursor: pointer;\n        }\n\n        .navlink.highlight {\n            color: #f1c40f;\n        }\n\n        .navlink:hover {\n            background-color: #f1c40f;\n            transition: all 0.35s ease-out;\n            color: #333;\n        }\n\n        .section {\n            padding: 20px;\n        }\n\n        .section.dark {\n            background-color: #333;\n            color: #eee;\n        }\n\n        .section.color {\n            background-color: #f1c40f;\n            color: #333;\n        }\n\n        .section.light {\n            background-color: #eee;\n            color: #333;\n        }\n\n        body {\n            margin: 0;\n            font-family: 'Roboto', sans-serif;\n            text-align: center;\n        }\n\n        h1, h2, h3, h4 {\n            margin: 0;\n        }\n\n        p {\n            font-weight: 300;\n            font-size: 1.2rem;\n        }\n\n    ");
+});
+
+/***/ }),
+
+/***/ "./components/importStyle.js":
+/*!***********************************!*\
+  !*** ./components/importStyle.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+    jsx: true,
+    global: true
+  }, "/*\n=====================================================================\n*   Ceevee v1.0 Default Stylesheet\n*   url: styleshout.com\n*   03-17-2014\n=====================================================================\n\nTOC:\na. Webfonts and Icon fonts\nb. Reset\nc. Default Styles\n   1. Basic\n   2. Typography\n   3. Links\n   4. Images\n   5. Buttons\n   6. Forms\nd. Grid\ne. Others\n   1. Clearing\n   2. Misc\n\n=====================================================================  */\n\n/* ------------------------------------------------------------------ */\n/* a. Webfonts and Icon fonts\n ------------------------------------------------------------------ */\n\n @import url(\"fonts.css\");\n @import url(\"fontello/css/fontello.css\");\n @import url(\"font-awesome/css/font-awesome.min.css\");\n \n /* ------------------------------------------------------------------\n /* b. Reset\n       Adapted from:\n       Normalize.css - https://github.com/necolas/normalize.css/\n       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/\n /* ------------------------------------------------------------------ */\n \n html, body, div, span, object, iframe,\n h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n abbr, address, cite, code,\n del, dfn, em, img, ins, kbd, q, samp,\n small, strong, sub, sup, var,\n b, i,\n dl, dt, dd, ol, ul, li,\n fieldset, form, label, legend,\n table, caption, tbody, tfoot, thead, tr, th, td,\n article, aside, canvas, details, figcaption, figure,\n footer, header, hgroup, menu, nav, section, summary,\n time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    outline: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n    background: transparent;\n }\n \n article,aside,details,figcaption,figure,\n footer,header,hgroup,menu,nav,section {\n    display: block;\n }\n \n audio,\n canvas,\n video {\n    display: inline-block;\n }\n \n audio:not([controls]) {\n    display: none;\n    height: 0;\n }\n \n [hidden] { display: none; }\n \n code, kbd, pre, samp {\n    font-family: monospace, serif;\n    font-size: 1em;\n }\n \n pre {\n    white-space: pre;\n    white-space: pre-wrap;\n    word-wrap: break-word;\n }\n \n blockquote, q { quotes: &#8220 &#8220; }\n \n blockquote:before, blockquote:after,\n q:before, q:after {\n    content: '';\n    content: none;\n }\n \n ins {\n    background-color: #ff9;\n    color: #000;\n    text-decoration: none;\n }\n \n mark {\n    background-color: #A7F4F6;\n    color: #555;\n }\n \n del { text-decoration: line-through; }\n \n abbr[title], dfn[title] {\n    border-bottom: 1px dotted;\n    cursor: help;\n }\n \n table {\n    border-collapse: collapse;\n    border-spacing: 0;\n }\n \n \n /* ------------------------------------------------------------------ */\n /* c. Default and Basic Styles\n       Adapted from:\n       Skeleton CSS Framework - http://www.getskeleton.com/\n       Typeplate Typographic Starter Kit - http://typeplate.com/\n /* ------------------------------------------------------------------ */\n \n /*  1. Basic  ------------------------------------------------------- */\n \n *,\n *:before,\n *:after {\n    -moz-box-sizing: border-box;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n }\n \n html {\n    font-size: 62.5%;\n    -webkit-font-smoothing: antialiased;\n }\n \n body {\n    background: #fff;\n    font-family: 'opensans-regular', sans-serif;\n    font-weight: normal;\n    font-size: 15px;\n    line-height: 30px;\n     color: #838C95;\n \n    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */\n     -webkit-text-size-adjust: 100%;\n }\n \n /*  2. Typography\n        Vertical rhythm with leading derived from 6\n --------------------------------------------------------------------- */\n \n h1, h2, h3, h4, h5, h6 {\n    color: #313131;\n     font-family: 'opensans-bold', sans-serif;\n    font-weight: normal;\n }\n h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }\n h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }\n h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }\n h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }\n h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }\n h5 { font-size: 18px; line-height: 30px; }\n h6 { font-size: 14px; line-height: 30px; }\n .subheader { }\n \n p { margin: 0 0 30px 0; }\n p img { margin: 0; }\n p.lead {\n    font: 19px/36px 'opensans-light', sans-serif;\n    margin-bottom: 18px;\n }\n \n /* for 'em' and 'strong' tags, font-size and line-height should be same with\n the body tag due to rendering problems in some browsers */\n em { font: 15px/30px 'opensans-italic', sans-serif; }\n strong, b { font: 15px/30px 'opensans-bold', sans-serif; }\n small { font-size: 11px; line-height: inherit; }\n \n /*\tBlockquotes */\n blockquote {\n    margin: 30px 0px;\n    padding-left: 40px;\n    position: relative;\n }\n blockquote:before {\n    content: \"\\201C\";\n    opacity: 0.45;\n    font-size: 80px;\n    line-height: 0px;\n    margin: 0;\n    font-family: arial, sans-serif;\n \n    position: absolute;\n    top:  30px;\n     left: 0;\n }\n blockquote p {\n    font-family: 'librebaskerville-italic', serif;\n    padding: 0;\n    font-size: 18px;\n    line-height: 36px;\n }\n blockquote cite {\n    display: block;\n    font-size: 12px;\n    font-style: normal;\n    line-height: 18px;\n }\n blockquote cite:before { content: \"\\2014 \\0020\"; }\n blockquote cite a,\n blockquote cite a:visited { color: #8B9798; border: none }\n \n /* ---------------------------------------------------------------------\n /*  Pull Quotes Markup\n /*\n     <aside class=\"pull-quote\">\n         <blockquote>\n             <p></p>\n         </blockquote>\n      </aside>\n /*\n /* --------------------------------------------------------------------- */\n .pull-quote {\n    position: relative;\n     padding: 18px 30px 18px 0px;\n }\n .pull-quote:before,\n .pull-quote:after {\n     height: 1em;\n     opacity: 0.45;\n     position: absolute;\n     font-size: 80px;\n    font-family: Arial, Sans-Serif;\n }\n .pull-quote:before {\n     content: \"\\201C\";\n     top:  33px;\n     left: 0;\n }\n .pull-quote:after {\n     content: '\\201D';\n     bottom: -33px;\n     right: 0;\n }\n .pull-quote blockquote {\n    margin: 0;\n }\n .pull-quote blockquote:before {\n    content: none;\n }\n \n /* Abbreviations */\n abbr {\n    font-family: 'opensans-bold', sans-serif;\n     font-variant: small-caps;\n     text-transform: lowercase;\n    letter-spacing: .5px;\n     color: gray;\n }\n abbr:hover { cursor: help; }\n \n /* drop cap */\n .drop-cap:first-letter {\n     float: left;\n     margin: 0;\n     padding: 14px 6px 0 0;\n     font-size: 84px;\n     font-family: /* Copperplate */ 'opensans-bold', sans-serif;\n    line-height: 60px;\n     text-indent: 0;\n     background: transparent;\n     color: inherit;\n }\n \n hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }\n \n \n /*  3. Links  ------------------------------------------------------- */\n \n a, a:visited {\n    text-decoration: none;\n    outline: 0;\n    color: #11ABB0;\n \n    -webkit-transition: color .3s ease-in-out;\n    -moz-transition: color .3s ease-in-out;\n    -o-transition: color .3s ease-in-out;\n    transition: color .3s ease-in-out;\n }\n a:hover, a:focus { color: #313131; }\n p a, p a:visited { line-height: inherit; }\n \n \n /*  4. List  --------------------------------------------------------- */\n \n ul, ol { margin-bottom: 24px; margin-top: 12px; }\n ul { list-style: none outside; }\n ol { list-style: decimal; }\n ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }\n ul.square { list-style: square outside; }\n ul.circle { list-style: circle outside; }\n ul.disc { list-style: disc outside; }\n ul ul, ul ol,\n ol ol, ol ul { margin: 6px 0 6px 30px; }\n ul ul li, ul ol li,\n ol ol li, ol ul li { margin-bottom: 6px; }\n li { line-height: 18px; margin-bottom: 12px; }\n ul.large li { }\n li p { }\n \n /* ---------------------------------------------------------------------\n /*  Stats Tab Markup\n \n     <ul class=\"stats-tabs\">\n         <li><a href=\"#\">[value]<b>[name]</b></a></li>\n      </ul>\n \n     Extend this object into your markup.\n /*\n /* --------------------------------------------------------------------- */\n .stats-tabs {\n    padding: 0;\n    margin: 24px 0;\n }\n .stats-tabs li {\n     display: inline-block;\n     margin: 0 10px 18px 0;\n     padding: 0 10px 0 0;\n     border-right: 1px solid #ccc;\n }\n .stats-tabs li:last-child {\n     margin: 0;\n     padding: 0;\n     border: none;\n }\n .stats-tabs li a {\n     display: inline-block;\n     font-size: 22px;\n     font-family: 'opensans-bold', sans-serif;\n    border: none;\n    color: #313131;\n }\n .stats-tabs li a:hover {\n    color:#11ABB0;\n }\n .stats-tabs li a b {\n     display: block;\n     margin: 6px 0 0 0;\n     font-size: 13px;\n     font-family: 'opensans-regular', sans-serif;\n    color: #8B9798;\n }\n \n /* definition list */\n dl { margin: 12px 0; }\n dt { margin: 0; color:#11ABB0; }\n dd { margin: 0 0 0 20px; }\n \n /* Lining Definition Style Markup */\n .lining dt,\n .lining dd {\n     display: inline;\n     margin: 0;\n }\n .lining dt + dt:before,\n .lining dd + dt:before {\n     content: \"A\";\n     white-space: pre;\n }\n .lining dd + dd:before {\n     content: \", \";\n }\n .lining dd:before {\n     content: \": \";\n     margin-left: -0.2em;\n }\n \n /* Dictionary Definition Style Markup */\n .dictionary-style dt {\n     display: inline;\n     counter-reset: definitions;\n }\n .dictionary-style dt + dt:before {\n     content: \", \";\n     margin-left: -0.2em;\n }\n .dictionary-style dd {\n     display: block;\n     counter-increment: definitions;\n }\n .dictionary-style dd:before {\n     content: counter(definitions, decimal) \". \";\n }\n \n /* Pagination */\n .pagination {\n    margin: 36px auto;\n    text-align: center;\n }\n .pagination ul li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n }\n .pagination .page-numbers {\n    font: 15px/18px 'opensans-bold', sans-serif;\n    display: inline-block;\n    padding: 6px 10px;\n    margin-right: 3px;\n    margin-bottom: 6px;\n     color: #6E757C;\n     background-color: #E6E8EB;\n \n     -webkit-transition: all 200ms ease-in-out;\n     -moz-transition: all 200ms ease-in-out;\n     -o-transition: all 200ms ease-in-out;\n     -ms-transition: all 200ms ease-in-out;\n     transition: all 200ms ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n     border-radius: 3px;\n }\n .pagination .page-numbers:hover {\n    background: #838A91;\n    color: #fff;\n }\n .pagination .current,\n .pagination .current:hover {\n    background-color: #11ABB0;\n    color: #fff;\n }\n .pagination .inactive,\n .pagination .inactive:hover {\n    background-color: #E6E8EB;\n     color: #A9ADB2;\n }\n .pagination .prev, .pagination .next {}\n \n /*  5. Images  --------------------------------------------------------- */\n \n img {\n    max-width: 100%;\n    height: auto;\n }\n img.pull-right { margin: 12px 0px 0px 18px; }\n img.pull-left { margin: 12px 18px 0px 0px; }\n \n /*  6. Buttons  --------------------------------------------------------- */\n \n .button,\n .button:visited,\n button,\n input[type=\"submit\"],\n input[type=\"reset\"],\n input[type=\"button\"] {\n    font: 16px/30px 'opensans-bold', sans-serif;\n    background: #11ABB0;\n    display: inline-block;\n     text-decoration: none;\n    letter-spacing: 0;\n    color: #fff;\n     padding: 12px 20px;\n     margin-bottom: 18px;\n    border: none;\n    cursor: pointer;\n    height: auto;\n \n    -webkit-transition: all .2s ease-in-out;\n     -moz-transition: all .2s ease-in-out;\n     -o-transition: all .2s ease-in-out;\n     -ms-transition: all .2s ease-in-out;\n     transition: all .2s ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n    border-radius: 3px;\n }\n \n .button:hover,\n button:hover,\n input[type=\"submit\"]:hover,\n input[type=\"reset\"]:hover,\n input[type=\"button\"]:hover {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button:active,\n button:active,\n input[type=\"submit\"]:active,\n input[type=\"reset\"]:active,\n input[type=\"button\"]:active {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button.full-width,\n button.full-width,\n input[type=\"submit\"].full-width,\n input[type=\"reset\"].full-width,\n input[type=\"button\"].full-width {\n     width: 100%;\n     padding-left: 0 !important;\n     padding-right: 0 !important;\n     text-align: center;\n }\n \n /* Fix for odd Mozilla border & padding issues */\n button::-moz-focus-inner,\n input::-moz-focus-inner {\n     border: 0;\n     padding: 0;\n }\n \n \n /*  7. Forms  --------------------------------------------------------- */\n \n form { margin-bottom: 24px; }\n fieldset { margin-bottom: 24px; }\n \n input[type=\"text\"],\n input[type=\"password\"],\n input[type=\"email\"],\n textarea,\n select {\n    display: block;\n    padding: 18px 15px;\n    margin: 0 0 24px 0;\n    border: 0;\n    outline: none;\n    vertical-align: middle;\n    min-width: 225px;\n     max-width: 100%;\n    font-size: 15px;\n    line-height: 24px;\n     color: #647373;\n     background: #D3D9D9;\n \n }\n \n /* select { padding: 0;\n    width: 220px;\n    } */\n \n input[type=\"text\"]:focus,\n input[type=\"password\"]:focus,\n input[type=\"email\"]:focus,\n textarea:focus {\n    color: #B3B7BC;\n     background-color: #3d4145;\n }\n \n textarea { min-height: 220px; }\n \n label,\n legend {\n    font: 16px/24px 'opensans-bold', sans-serif;\n     margin: 12px 0;\n    color: #3d4145;\n    display: block;\n }\n label span,\n legend span {\n     color: #8B9798;\n    font: 14px/24px 'opensans-regular', sans-serif;\n }\n \n input[type=\"checkbox\"],\n input[type=\"radio\"] {\n     font-size: 15px;\n     color: #737373;\n }\n \n input[type=\"checkbox\"] { display: inline; }\n \n /* ------------------------------------------------------------------ */\n /* d. Grid\n ---------------------------------------------------------------------\n    gutter = 40px.\n /* ------------------------------------------------------------------ */\n \n /* default\n --------------------------------------------------------------- */\n .row {\n    width: 96%;\n    max-width: 1020px;\n    margin: 0 auto;\n }\n /* fixed width for IE8 */\n .ie .row { width: 1000px ; }\n \n .narrow .row { max-width: 980px; }\n \n .row .row { width: auto; max-width: none; margin: 0 -20px; }\n \n /* row clearing */\n .row:before,\n .row:after {\n     content: \" \";\n     display: table;\n }\n .row:after {\n     clear: both;\n }\n \n .column, .columns {\n    position: relative;\n    padding: 0 20px;\n    min-height: 1px;\n    float: left;\n }\n .column.centered, .columns.centered  {\n     float: none;\n     margin: 0 auto;\n }\n \n /* removed gutters */\n .row.collapsed > .column,\n .row.collapsed > .columns,\n .column.collapsed, .columns.collapsed  { padding: 0; }\n \n [class*=\"column\"] + [class*=\"column\"]:last-child { float: right; }\n [class*=\"column\"] + [class*=\"column\"].end { float: right; }\n \n /* column widths */\n .row .one         { width: 8.33333%; }\n .row .two         { width: 16.66667%; }\n .row .three       { width: 25%; }\n .row .four        { width: 33.33333%; }\n .row .five        { width: 41.66667%; }\n .row .six         { width: 50%; }\n .row .seven       { width: 58.33333%; }\n .row .eight       { width: 66.66667%; }\n .row .nine        { width: 75%; }\n .row .ten         { width: 83.33333%; }\n .row .eleven      { width: 91.66667%; }\n .row .twelve      { width: 100%; }\n \n /* Offsets */\n .row .offset-1    { margin-left: 8.33333%; }\n .row .offset-2    { margin-left: 16.66667%; }\n .row .offset-3    { margin-left: 25%; }\n .row .offset-4    { margin-left: 33.33333%; }\n .row .offset-5    { margin-left: 41.66667%; }\n .row .offset-6    { margin-left: 50%; }\n .row .offset-7    { margin-left: 58.33333%; }\n .row .offset-8    { margin-left: 66.66667%; }\n .row .offset-9    { margin-left: 75%; }\n .row .offset-10   { margin-left: 83.33333%; }\n .row .offset-11   { margin-left: 91.66667%; }\n \n /* Push/Pull */\n .row .push-1      { left: 8.33333%; }\n .row .pull-1      { right: 8.33333%; }\n .row .push-2      { left: 16.66667%; \t}\n .row .pull-2      { right: 16.66667%; }\n .row .push-3      { left: 25%; }\n .row .pull-3      { right: 25%;\t}\n .row .push-4      { left: 33.33333%; }\n .row .pull-4      { right: 33.33333%; }\n .row .push-5      { left: 41.66667%; }\n .row .pull-5      { right: 41.66667%; }\n .row .push-6      { left: 50%; }\n .row .pull-6      { right: 50%; }\n .row .push-7      { left: 58.33333%; }\n .row .pull-7      { right: 58.33333%; }\n .row .push-8      { left: 66.66667%; \t}\n .row .pull-8      { right: 66.66667%; }\n .row .push-9      { left: 75%; }\n .row .pull-9      { right: 75%; }\n .row .push-10     { left: 83.33333%; }\n .row .pull-10     { right: 83.33333%; }\n .row .push-11     { left: 91.66667%; }\n .row .pull-11     { right: 91.66667%; }\n \n /* block grids\n --------------------------------------------------------------------- */\n .bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n .bgrid-quarters [class*=\"column\"] { width: 25%; }\n .bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n .bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: left; }\n \n /* Left clearing for block grid columns - columns that changes width in\n different screen sizes. Allows columns with different heights to align\n properly.\n --------------------------------------------------------------------- */\n .first { clear: left; }   /* first column in default screen */\n .s-first { clear: none; } /* first column in smaller screens */\n \n /* smaller screens\n --------------------------------------------------------------- */\n @media only screen and (max-width: 900px) {\n \n    /* block grids on small screens */\n    .s-bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n    .s-bgrid-quarters [class*=\"column\"] { width: 25%; }\n    .s-bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n    .s-bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n    /* block grids left clearing */\n    .first { clear: none; }\n    .s-first { clear: left; }\n \n }\n \n /* mobile wide/smaller tablets\n --------------------------------------------------------------- */\n @media only screen and (max-width: 767px) {\n \n    .row {\n        width: 460px;\n        margin: 0 auto;\n       padding: 0;\n     }\n    .column, .columns {\n        width: auto !important;\n        float: none;\n        margin-left: 0;\n        margin-right: 0;\n       padding: 0 30px;\n    }\n    .row .row { width: auto; max-width: none; margin: 0 -30px; }\n \n    [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n    [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n \n    /* Offsets */\n    .row .offset-1    { margin-left: 0%; }\n    .row .offset-2    { margin-left: 0%; }\n    .row .offset-3    { margin-left: 0%; }\n    .row .offset-4    { margin-left: 0%; }\n    .row .offset-5    { margin-left: 0%; }\n    .row .offset-6    { margin-left: 0%; }\n    .row .offset-7    { margin-left: 0%; }\n    .row .offset-8    { margin-left: 0%; }\n    .row .offset-9    { margin-left: 0%; }\n    .row .offset-10   { margin-left: 0%; }\n    .row .offset-11   { margin-left: 0%; }\n }\n \n /* mobile narrow\n --------------------------------------------------------------- */\n @media only screen and (max-width: 460px) {\n \n    .row { width: auto; }\n \n }\n \n /* larger screens\n --------------------------------------------------------------- */\n @media screen and (min-width: 1200px) {\n \n    .wide .row { max-width: 1180px; }\n \n }\n \n /* ------------------------------------------------------------------ */\n /* e. Others\n /* ------------------------------------------------------------------ */\n \n /*  1. Clearing\n     (http://nicolasgallagher.com/micro-clearfix-hack/\n --------------------------------------------------------------------- */\n \n .cf:before,\n .cf:after {\n     content: \" \";\n     display: table;\n }\n .cf:after {\n     clear: both;\n }\n \n /*  2. Misc -------------------------------------------------------- */\n \n .remove-bottom { margin-bottom: 0 !important; }\n .half-bottom { margin-bottom: 12px !important; }\n .add-bottom { margin-bottom: 24px !important; }\n .no-border { border: none; }\n \n .text-center  { text-align: center !important; }\n .text-left    { text-align: left !important; }\n .text-right   { text-align: right !important; }\n .pull-left    { float: left !important; }\n .pull-right   { float: right !important; }\n .align-center {\n     margin-left: auto !important;\n     margin-right: auto !important;\n     text-align: center !important;\n } \n\n /* ------------------------------------------------------------------ */\n/* i. Footer\n/* ------------------------------------------------------------------ */\n\nfooter {\n   padding-top: 48px;\n   margin-bottom: 48px;\n   color: #303030;\n   font-size: 14px;\n   text-align: center;\n   position: relative;\n}\n\nfooter a, footer a:visited { color: #525252; }\nfooter a:hover, footer a:focus { color: #fff; }\n\n/* copyright */\nfooter .copyright {\n    margin: 0;\n    padding: 0;\n }\nfooter .copyright li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    line-height: 24px;\n}\n.ie footer .copyright li {\n   display: inline;\n}\nfooter .copyright li:before {\n    content: \"\\2022\";\n    padding-left: 10px;\n    padding-right: 10px;\n    color: #095153;\n}\nfooter .copyright  li:first-child:before {\n    display: none;\n}\n\n/* social links */\nfooter .social-links {\n   margin: 18px 0 30px 0;\n   padding: 0;\n   font-size: 30px;\n}\nfooter .social-links li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    margin-left: 42px;\n    color: #F06000;\n}\n\nfooter .social-links li:first-child { margin-left: 0; }\n\n/* Go To Top Button */\n#go-top {\n\tposition: absolute;\n\ttop: -24px;\n   left: 50%;\n   margin-left: -30px;\n}\n#go-top a {\n\ttext-decoration: none;\n\tborder: 0 none;\n\tdisplay: block;\n\twidth: 60px;\n\theight: 60px;\n\tbackground-color: #525252;\n\n\t-webkit-transition: all 0.2s ease-in-out;\n   -moz-transition: all 0.2s ease-in-out;\n   -o-transition: all 0.2s ease-in-out;\n   -ms-transition: all 0.2s ease-in-out;\n   transition: all 0.2s ease-in-out;\n\n   color: #fff;\n   font-size: 21px;\n   line-height: 60px;\n \tborder-radius: 100%;\n}\n#go-top a:hover { background-color: #0F9095; }\n\n ");
 });
 
 /***/ }),
@@ -77,6 +315,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _globalStyle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./globalStyle */ "./components/globalStyle.js");
+/* harmony import */ var _importStyle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./importStyle */ "./components/importStyle.js");
+/* harmony import */ var _slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./slider/sponsorSlider */ "./components/slider/sponsorSlider.js");
+
+
 
 
 
@@ -108,10 +350,18 @@ var Layout = function Layout(_ref) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "navlink"
   }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "#register"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "navlink"
+  }, "Register")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "#speakers"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "navlink"
   }, "Speakers")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "#gallery"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "navlink"
+  }, "Gallery")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "#sponsors"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "navlink"
@@ -119,7 +369,14 @@ var Layout = function Layout(_ref) {
     href: "#contact"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "navlink"
-  }, "Team"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_globalStyle__WEBPACK_IMPORTED_MODULE_3__["default"], null)), children);
+  }, "Team"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_globalStyle__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "scrolldown"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_importStyle__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "smoothscroll",
+    href: "#about"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "icon-down-circle"
+  }))), children);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -1026,53 +1283,375 @@ var SliderWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].di
 
 /***/ }),
 
-/***/ "./components/slider/speakerSlider.js":
-/*!********************************************!*\
-  !*** ./components/slider/speakerSlider.js ***!
-  \********************************************/
+/***/ "./components/slider/components/footer.js":
+/*!************************************************!*\
+  !*** ./components/slider/components/footer.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js");
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Slider */ "./components/slider/components/Slider.js");
-/* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Container */ "./components/slider/components/Container.js");
-/* harmony import */ var _speakerSpotlight__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../speakerSpotlight */ "./components/speakerSpotlight.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _SliderTrack__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SliderTrack */ "./components/slider/components/SliderTrack.js");
+/* harmony import */ var _CardWrapper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CardWrapper */ "./components/slider/components/CardWrapper.js");
+/* harmony import */ var _RightArrow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RightArrow */ "./components/slider/components/RightArrow.js");
+/* harmony import */ var _LeftArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LeftArrow */ "./components/slider/components/LeftArrow.js");
+/* harmony import */ var _SliderWrapper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SliderWrapper */ "./components/slider/components/SliderWrapper.js");
+/* harmony import */ var _SliderList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SliderList */ "./components/slider/components/SliderList.js");
+/* harmony import */ var _DotsWrapper__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./DotsWrapper */ "./components/slider/components/DotsWrapper.js");
+/* harmony import */ var _Dot__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Dot */ "./components/slider/components/Dot.js");
+/* harmony import */ var _utils_Timer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/Timer */ "./components/slider/utils/Timer.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
 
 
 
-var speakers = __webpack_require__(/*! ../../data/speakers */ "./data/speakers.js");
 
-var responsive = [{
-  breakPoint: 1280,
-  cardsToShow: 4
-}, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
-{
-  breakPoint: 760,
-  cardsToShow: 2
-}];
-var speakerSpotlights = speakers.map(function (speaker) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_speakerSpotlight__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    details: speaker,
-    key: speaker.id
-  });
-});
 
-var SpeakerSlider = function SpeakerSlider() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "KEYNOTE Speakers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Slider__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    responsive: responsive
-  }, speakerSpotlights));
+
+
+
+
+
+var Slider =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Slider, _React$Component);
+
+  function Slider(props) {
+    var _this;
+
+    _classCallCheck(this, Slider);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Slider).call(this, props));
+    _this.renderChildren = _this.renderChildren.bind(_assertThisInitialized(_this));
+    _this.handleLeftArrowClick = _this.handleLeftArrowClick.bind(_assertThisInitialized(_this));
+    _this.handleRightArrowClick = _this.handleRightArrowClick.bind(_assertThisInitialized(_this));
+    _this.changeInitialCard = _this.changeInitialCard.bind(_assertThisInitialized(_this));
+    _this.renderDots = _this.renderDots.bind(_assertThisInitialized(_this));
+    _this.renderLeftArrow = _this.renderLeftArrow.bind(_assertThisInitialized(_this));
+    _this.renderRightArrow = _this.renderRightArrow.bind(_assertThisInitialized(_this));
+    _this.updateResponsiveView = _this.updateResponsiveView.bind(_assertThisInitialized(_this));
+    _this.state = {
+      initialCard: 0,
+      childWidth: 0,
+      cardsToShow: 0,
+      hideArrows: false
+    };
+    return _this;
+  }
+
+  _createClass(Slider, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var _this$props = this.props,
+          children = _this$props.children,
+          cardsToShowProp = _this$props.cardsToShow,
+          autoSlide = _this$props.autoSlide,
+          hideArrowsOnNoSlides = _this$props.hideArrowsOnNoSlides;
+      var numberOfChildren = children ? children.length || 1 : 0;
+      var cardsToShow = cardsToShowProp || numberOfChildren;
+      var childWidth = 100 / cardsToShow;
+      this.setState({
+        childWidth: childWidth,
+        cardsToShow: cardsToShow,
+        hideArrows: hideArrowsOnNoSlides && numberOfChildren <= cardsToShow
+      }, function () {
+        return _this2.updateResponsiveView();
+      });
+       true && window.addEventListener('resize', this.updateResponsiveView);
+
+      if (autoSlide) {
+        this.autoSlider = new _utils_Timer__WEBPACK_IMPORTED_MODULE_10__["default"](function () {
+          var updatedInitialCard = 0;
+
+          if (numberOfChildren - _this2.state.cardsToShow > _this2.state.initialCard) {
+            updatedInitialCard = _this2.state.initialCard + 1;
+          }
+
+          _this2.setState({
+            initialCard: updatedInitialCard
+          });
+        }, autoSlide === true ? 2000 : autoSlide);
+        this.autoSlider.start();
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+       true && // eslint-disable-line no-unused-expressions
+      window.removeEventListener('resize', this.updateResponsiveView);
+
+      if (this.autoSlider) {
+        this.autoSlider.pause();
+        this.autoSlider = null;
+      }
+    }
+  }, {
+    key: "updateResponsiveView",
+    value: function updateResponsiveView() {
+      var _this$props2 = this.props,
+          children = _this$props2.children,
+          hideArrowsOnNoSlides = _this$props2.hideArrowsOnNoSlides;
+      var responsive = this.props.responsive;
+      var numberOfChildren = children ? children.length || 1 : 0;
+
+      if (responsive) {
+        responsive = responsive.map(function (obj) {
+          return Object.assign({}, obj);
+        }).sort(function (key) {
+          return function (a, b) {
+            return a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0;
+          };
+        }('breakPoint')); // eslint-disable-line
+
+        var updatedCardsToShow = this.state.cardsToShow;
+        responsive.forEach(function (_ref) {
+          var breakPoint = _ref.breakPoint,
+              cardsToShow = _ref.cardsToShow;
+
+          if (breakPoint <= window.innerWidth) {
+            updatedCardsToShow = cardsToShow;
+          }
+        });
+        var updatedInitialCard = numberOfChildren - updatedCardsToShow < this.state.initialCard ? numberOfChildren - updatedCardsToShow : this.state.initialCard;
+        this.setState({
+          cardsToShow: updatedCardsToShow,
+          childWidth: 100 / updatedCardsToShow,
+          initialCard: updatedInitialCard,
+          hideArrows: hideArrowsOnNoSlides && numberOfChildren <= updatedCardsToShow
+        });
+      }
+    }
+  }, {
+    key: "changeInitialCard",
+    value: function changeInitialCard(initialCard) {
+      var _this$props3 = this.props,
+          afterSlide = _this$props3.afterSlide,
+          beforeSlide = _this$props3.beforeSlide;
+
+      if (beforeSlide) {
+        beforeSlide();
+      }
+
+      this.setState({
+        initialCard: initialCard
+      }, function () {
+        if (afterSlide) {
+          afterSlide();
+        }
+      });
+    }
+  }, {
+    key: "handleLeftArrowClick",
+    value: function handleLeftArrowClick(evt) {
+      var children = this.props.children;
+      var cardsToShow = this.state.cardsToShow;
+      var childrenCount = children ? children.length : 0;
+
+      if (evt && evt.preventDefault) {
+        evt.preventDefault();
+      }
+
+      var nextInitialCard = this.state.initialCard - 1;
+
+      if (nextInitialCard < 0) {
+        nextInitialCard = childrenCount - cardsToShow;
+      }
+
+      this.changeInitialCard(nextInitialCard);
+    }
+  }, {
+    key: "handleRightArrowClick",
+    value: function handleRightArrowClick(evt) {
+      var children = this.props.children;
+      var cardsToShow = this.state.cardsToShow;
+      var childrenCount = children ? children.length : 0;
+
+      if (evt && evt.preventDefault) {
+        evt.preventDefault();
+      }
+
+      var nextInitialCard = this.state.initialCard + 1;
+
+      if (childrenCount - cardsToShow < nextInitialCard) {
+        nextInitialCard = 0;
+      }
+
+      this.changeInitialCard(nextInitialCard);
+    }
+  }, {
+    key: "renderChildren",
+    value: function renderChildren(children) {
+      var childWidth = this.state.childWidth;
+      var displayCards = [];
+      react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.forEach(children, function (child, index) {
+        displayCards.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardWrapper__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          key: index,
+          width: childWidth
+        }, child));
+      });
+      return displayCards;
+    }
+  }, {
+    key: "renderDots",
+    value: function renderDots() {
+      var _this3 = this;
+
+      var dots = [];
+      var _this$props4 = this.props,
+          children = _this$props4.children,
+          Dot = _this$props4.Dot;
+      var numberOfChildren = children ? children.length || 1 : 0;
+      var i;
+
+      var _loop = function _loop() {
+        var index = i;
+        dots.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(Dot, {
+          active: index === _this3.state.initialCard,
+          key: index,
+          onClick: function onClick() {
+            return _this3.changeInitialCard(index);
+          }
+        }));
+      };
+
+      for (i = 0; i <= numberOfChildren - this.state.cardsToShow; i += 1) {
+        _loop();
+      }
+
+      return dots;
+    }
+  }, {
+    key: "renderLeftArrow",
+    value: function renderLeftArrow() {
+      var _this$props5 = this.props,
+          LeftArrow = _this$props5.LeftArrow,
+          infinite = _this$props5.infinite;
+      var initialCard = this.state.initialCard;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(LeftArrow, {
+        onClick: this.handleLeftArrowClick,
+        disabled: !infinite && !initialCard
+      });
+    }
+  }, {
+    key: "renderRightArrow",
+    value: function renderRightArrow() {
+      var _this$props6 = this.props,
+          RightArrow = _this$props6.RightArrow,
+          children = _this$props6.children,
+          infinite = _this$props6.infinite;
+      var numberOfChildren = children ? children.length || 1 : 0;
+      var _this$state = this.state,
+          initialCard = _this$state.initialCard,
+          cardsToShow = _this$state.cardsToShow;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(RightArrow, {
+        onClick: this.handleRightArrowClick,
+        disabled: !infinite && initialCard + cardsToShow === numberOfChildren
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      var _this$props7 = this.props,
+          children = _this$props7.children,
+          cardsToShow = _this$props7.cardsToShow,
+          showDots = _this$props7.showDots,
+          showArrows = _this$props7.showArrows,
+          pauseOnMouseOver = _this$props7.pauseOnMouseOver,
+          DotsWrapper = _this$props7.DotsWrapper,
+          otherProps = _objectWithoutProperties(_this$props7, ["children", "cardsToShow", "showDots", "showArrows", "pauseOnMouseOver", "DotsWrapper"]);
+
+      var _this$state2 = this.state,
+          initialCard = _this$state2.initialCard,
+          childWidth = _this$state2.childWidth;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        onMouseLeave: function onMouseLeave() {
+          return pauseOnMouseOver && _this4.autoSlider && _this4.autoSlider.resume();
+        },
+        onMouseEnter: function onMouseEnter() {
+          return pauseOnMouseOver && _this4.autoSlider && _this4.autoSlider.pause();
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SliderWrapper__WEBPACK_IMPORTED_MODULE_6__["default"], otherProps, showArrows && !this.state.hideArrows && this.renderLeftArrow(), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SliderTrack__WEBPACK_IMPORTED_MODULE_2__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SliderList__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        translateX: initialCard * childWidth
+      }, this.renderChildren(children, cardsToShow || children.length))), showArrows && !this.state.hideArrows && this.renderRightArrow()));
+    }
+  }]);
+
+  return Slider;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+Slider.defaultProps = {
+  showDots: true,
+  showArrows: true,
+  LeftArrow: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LeftArrow__WEBPACK_IMPORTED_MODULE_5__["default"], null),
+  RightArrow: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RightArrow__WEBPACK_IMPORTED_MODULE_4__["default"], null),
+  Dot: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dot__WEBPACK_IMPORTED_MODULE_9__["default"], null),
+  DotsWrapper: _DotsWrapper__WEBPACK_IMPORTED_MODULE_8__["default"],
+  cardsToShow: null,
+  afterSlide: null,
+  beforeSlide: null,
+  infinite: true,
+  responsive: null,
+  autoSlide: 2000,
+  pauseOnMouseOver: true,
+  padding: '0px 20px',
+  margin: '0px',
+  hideArrowsOnNoSlides: true
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_hot_loader__WEBPACK_IMPORTED_MODULE_1__["hot"])(module)(SpeakerSlider));
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/next/node_modules/webpack/buildin/harmony-module.js */ "./node_modules/next/node_modules/webpack/buildin/harmony-module.js")(module)))
+Slider.propTypes = {
+  LeftArrow: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
+  RightArrow: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
+  Dot: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
+  showArrows: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  showDots: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node.isRequired,
+  cardsToShow: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  afterSlide: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  beforeSlide: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  infinite: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  responsive: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
+    breakPoint: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+    cardsToShow: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number
+  })),
+  autoSlide: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool]),
+  pauseOnMouseOver: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  padding: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  margin: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  hideArrowsOnNoSlides: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  DotsWrapper: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object])
+};
+/* harmony default export */ __webpack_exports__["default"] = (Slider);
 
 /***/ }),
 
@@ -1089,7 +1668,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js");
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Slider */ "./components/slider/components/Slider.js");
+/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/footer */ "./components/slider/components/footer.js");
 /* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Container */ "./components/slider/components/Container.js");
 /* harmony import */ var _sponsorSpotlight__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../sponsorSpotlight */ "./components/sponsorSpotlight.js");
 
@@ -1102,11 +1681,11 @@ var sponsors = __webpack_require__(/*! ../../data/sponsors */ "./data/sponsors.j
 
 var responsive = [{
   breakPoint: 1280,
-  cardsToShow: 4
+  cardsToShow: 6
 }, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
 {
   breakPoint: 760,
-  cardsToShow: 2
+  cardsToShow: 3
 }];
 var sponsorSpotlights = sponsors.map(function (sponsor) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sponsorSpotlight__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1116,7 +1695,7 @@ var sponsorSpotlights = sponsors.map(function (sponsor) {
 });
 
 var SponsorSlider = function SponsorSlider() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Sponsors And Partners"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Slider__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
     responsive: responsive
   }, sponsorSpotlights));
 };
@@ -1315,11 +1894,11 @@ __webpack_require__.r(__webpack_exports__);
 var SponsorSpotlight = function SponsorSpotlight(_ref) {
   var details = _ref.details;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "speaker-pic"
+    className: "sponsor-pic"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true
-  }, "\n            .speaker-pic {\n                display: inline-block;\n                width: 25%;\n                margin-bottom: 30px;\n            }\n\n            .rounded {\n                border-radius: 200px;\n                height: 200px;\n                width: 200px;\n                margin: auto;\n                position: relative;\n                cursor: pointer;\n            }\n\n            .speaker-pic img {\n                width: 200px;\n            }\n\n            .rounded:hover .social {\n                opacity: 1;\n                transform: translateY( 0 );\n            }\n\n            .rounded:hover .overlay {\n                opacity: 0.5;\n            }\n\n            .social {\n                position: absolute;\n                margin: auto;\n                transition: all 0.2s;\n                top: 45%;\n                opacity: 0;\n                width: 100%;\n                transform: translateY( 100px );\n            }\n\n            .overlay {\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                opacity: 0;\n                background-color: ".concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].primaryColor, ";\n                transition: all 1s;\n            }\n\n            .social a {\n                margin: 10px;\n                border: 1px solid black;\n                padding: 5px 7px;\n                border-radius: 100%;\n                text-decoration: none;\n                color: ").concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].secondaryColor, ";\n            }\n        ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "rounded"
+  }, "\n            .sponsor-pic {\n                display: inline-block;\n                width: 25%;\n                // margin-bottom: 30px;\n            }\n\n            .rounded-sps {\n                border-radius: 200px;\n                height: 75px;\n                width: 75px;\n                margin: auto;\n                overflow: hidden;\n                position: relative;\n                cursor: pointer;\n            }\n\n            .sponsor-pic img {\n                width: 75px;\n            }\n\n            .rounded-sps:hover .social {\n                opacity: 1;\n                transform: translateY( 0 );\n            }\n\n            .rounded-sps:hover .overlay {\n                opacity: 0.5;\n            }\n\n            .social {\n                position: absolute;\n                margin: auto;\n                transition: all 0.2s;\n                top: 45%;\n                opacity: 0;\n                width: 100%;\n                transform: translateY( 100px );\n            }\n\n            .overlay {\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                opacity: 0;\n                background-color: ".concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].primaryColor, ";\n                transition: all 1s;\n            }\n\n            .social a {\n                margin: 10px;\n                border: 1px solid black;\n                padding: 5px 7px;\n                border-radius: 100%;\n                text-decoration: none;\n                color: ").concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].secondaryColor, ";\n            }\n        ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rounded-sps"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     target: "_blank",
     rel: "noopener noreferrer",
@@ -1329,7 +1908,7 @@ var SponsorSpotlight = function SponsorSpotlight(_ref) {
     alt: details.name
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "overlay"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, details.name)));
+  }))));
 };
 
 var shape = prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape,
@@ -1604,7 +2183,22 @@ __webpack_require__.r(__webpack_exports__);
     place: "Indian Institute Of Technology, Patna",
     inaugralTime: "03 07 2020, 9:00 am"
   },
-  footer: "Join us on 7th, March 2020. @ IIT Patna"
+  footer: "Join us on 7th, March 2020. @ IIT Patna",
+  testimonials: {
+    "testimonials": [{
+      "text": "I am very happy that the 9th Research Scholar Day of IIT Patna is going to be held with the usual thoroughness and excellent content. We have eminent speakers from Science, Engineering, Humanities and Social Sciences and Industry sharing their wisdom with the research scholars of the institute. Research is what separates institutes of higher learning from others, and it is really praiseworthy that RSD is considered a flagship event of IIT patna. I am sure the days event along with pre and post workshops/tutorial etc will be very interesting and informative for everybody Wish you all the best. Jai Hind .",
+      "user": "Prof. Pushpak Bhattacharyya"
+    }]
+  },
+  social: [{
+    "name": "facebook",
+    "url": "https://www.facebook.com/RSD-IITP-2020-102558154591391/?epa=SEARCH_BOX",
+    "className": "fa fa-facebook"
+  }, {
+    "name": "twitter",
+    "url": "https://twitter.com/RsdIit",
+    "className": "fa fa-twitter"
+  }]
 });
 
 /***/ }),
@@ -1646,48 +2240,6 @@ module.exports = [{
   twitter: "https://twitter.com/g33konaut",
   github: "https://github.com/avgp",
   site: "http://50linesofco.de/"
-}, {
-  id: 4,
-  name: "Gautam Arora",
-  position: "Developer Evangelist",
-  company: "Conde Nast",
-  imageUrl: "./static/images/speakers/speaker.png",
-  twitter: "https://twitter.com/gautam",
-  github: "https://github.com/gautamarora",
-  site: "http://www.gautamarora.com/"
-}, {
-  id: 5,
-  name: "Mark Dalgleish",
-  position: "DesignOps Lead",
-  company: "SEEK",
-  imageUrl: "./static/images/speakers/speaker.png",
-  twitter: "https://twitter.com/markdalgleish",
-  github: "https://github.com/markdalgleish"
-}, {
-  id: 6,
-  name: "Alex Moldovan",
-  position: "Full Stack Developer",
-  company: "Fortech",
-  imageUrl: "./static/images/speakers/speaker.png",
-  twitter: "https://twitter.com/alexnmoldovan",
-  github: "https://github.com/alexnm",
-  site: "https://medium.com/@alexnm"
-}, {
-  id: 7,
-  name: "Tudor Gergely",
-  position: "Fullstack developer",
-  company: "Catalysts",
-  imageUrl: "./static/images/speakers/speaker.png",
-  github: "https://github.com/tudorgergely"
-}, {
-  id: 8,
-  name: "Xavier Cazalot",
-  position: "Javascript Engineer",
-  company: "Consultant",
-  imageUrl: "./static/images/speakers/speaker.png",
-  twitter: "https://twitter.com/xav_cz",
-  github: "https://github.com/xavcz",
-  site: "http://xav.cz/"
 }];
 
 /***/ }),
@@ -1705,42 +2257,42 @@ module.exports = [{
 module.exports = [{
   id: 1,
   name: "ABC",
-  logoUrl: "./static/images/sponsors/abc.png",
+  logoUrl: "./static/images/sponsors/iitp.png",
   linkUrl: "http://www.fortech.ro"
 }, {
   id: 2,
   name: "ABC",
-  logoUrl: "./static/images/sponsors/abc.png",
+  logoUrl: "./static/images/sponsors/iitp.png",
   linkUrl: "http://www.fortech.ro"
 }, {
   id: 3,
   name: "ABC",
-  logoUrl: "./static/images/sponsors/abc.png",
+  logoUrl: "./static/images/sponsors/iitp.png",
   linkUrl: "http://www.fortech.ro"
 }, {
   id: 4,
   name: "ABC",
-  logoUrl: "./static/images/sponsors/abc.png",
+  logoUrl: "./static/images/sponsors/iitp.png",
   linkUrl: "http://www.fortech.ro"
 }, {
   id: 5,
   name: "ABC",
-  logoUrl: "./static/images/sponsors/abc.png",
+  logoUrl: "./static/images/sponsors/iitp.png",
   linkUrl: "http://www.fortech.ro"
 }, {
   id: 6,
   name: "ABC",
-  logoUrl: "./static/images/sponsors/abc.png",
+  logoUrl: "./static/images/sponsors/iitp.png",
   linkUrl: "http://www.fortech.ro"
 }, {
   id: 7,
   name: "ABC",
-  logoUrl: "./static/images/sponsors/abc.png",
+  logoUrl: "./static/images/sponsors/iitp.png",
   linkUrl: "http://www.fortech.ro"
 }, {
   id: 8,
   name: "ABC",
-  logoUrl: "./static/images/sponsors/abc.png",
+  logoUrl: "./static/images/sponsors/iitp.png",
   linkUrl: "http://www.fortech.ro"
 }];
 
@@ -1811,10 +2363,10 @@ module.exports = [{
 
 
 module.exports = {
-  aboutPara1: "We’re planning for JSHeroes to be the biggest tech Conference in Romania, dedicated solely to JavaScript. We’ll get our engine going with 20 international JavaScript experts and we’ve chosen a venue that allows a crowd of up to 500 attendees.",
-  aboutPara2: "We kick-started the Cluj JavaScripters community in August 2015. Since then we’ve grown to 900+ members and formed one of the most active knowledge sharing groups worldwide. We organized more than 42 Meetups and Trainings for the JS community in Cluj. So far we partnered with technical conferences to deliver high-quality JS knowledge and held an entire conference track for CodeCamp. What can we say, it was a full-house track and it was brilliant!",
-  aboutPara3: "We kick-started the Cluj JavaScripters community in August 2015. Since then we’ve grown to 900+ members and formed one of the most active knowledge sharing groups worldwide. We organized more than 42 Meetups and Trainings for the JS community in Cluj. So far we partnered with technical conferences to deliver high-quality JS knowledge and held an entire conference track for CodeCamp. What can we say, it was a full-house track and it was brilliant!",
-  directorMsg: "Mauris placerat nunc sit amet turpis pulvinar, nec iaculis massa posuere. Aenean orci tortor, aliquet sed neque eu, dictum suscipit nisi. Morbi interdum vitae nunc sit amet varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam non enim orci. Suspendisse mauris quam, porttitor vel lorem nec, malesuada suscipit velit. Duis lacinia cursus mattis. Vestibulum vel nisl vestibulum neque tincidunt fringilla at a dui. Nam nisi lacus, viverra vitae eros quis, maximus vehicula nisi. Phasellus euismod, tortor et rutrum tempus, libero risus vestibulum nisi, non malesuada eros orci quis sem. Quisque iaculis pharetra placerat. Integer ut urna sit amet dui pretium pharetra at sit amet nisl. Aliquam rutrum velit ipsum, scelerisque pretium purus ultrices nec.",
+  aboutPara1: "Research scholars’ day is an initiative by the research scholars of IIT Patna to make research more accessible. It is a platform for scholars to collaborate with the prominent personalities of their field by  sharing their knowledge through short talks and poster presentations.",
+  aboutPara2: "This event is an effort by the scholars of IIT Patna to bring academic researches to the real-world. Scholars get an opportunity to showcase their research work and interact with prominent scientists.",
+  aboutPara3: "Poster presentation and 3-minute talk are the two main events for the scholars. These events are ways to present the research work in limited words. In poster-presentation scholars present their work precisely through posters to the eminent dignitaries. Another way of sharing the research work is through a 3-minute talk. Researchers share the understanding of their research area in limited words through the slides. The best presentation will be published on YouTube, Facebook and, Twitter handles of RSD. All the submitted and presented work will be finally published in the RSD IIT Patna booklet. The annual festival ends with a beautiful evening which includes a program, generally spicmacy program, to feel the rich and authentic classical music of India with some refreshments.",
+  directorMsg: "I am very happy that the 9th Research Scholar Day of IIT Patna is going to be held with the usual thoroughness and excellent content. We have eminent speakers from Science, Engineering, Humanities and Social Sciences and Industry sharing their wisdom with the research scholars of the institute. Research is what separates institutes of higher learning from others, and it is really praiseworthy that RSD is considered a flagship event of IIT patna. I am sure the days event along with pre and post workshops/tutorial etc will be very interesting and informative for everybody Wish you all the best. Jai Hind .",
   directorName: "Prof. Pushpak Bhattacharyya"
 };
 
@@ -50825,14 +51377,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_poster__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/poster */ "./components/poster.js");
 /* harmony import */ var _components_register__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/register */ "./components/register.js");
 /* harmony import */ var _components_paper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/paper */ "./components/paper.js");
-/* harmony import */ var _components_timer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/timer */ "./components/timer.js");
+/* harmony import */ var _components_Gallery__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Gallery */ "./components/Gallery.js");
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
 /* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/slider */ "./components/slider.js");
-/* harmony import */ var _components_slider_speakerSlider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/slider/speakerSlider */ "./components/slider/speakerSlider.js");
+/* harmony import */ var _components_speakerSpotlight__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/speakerSpotlight */ "./components/speakerSpotlight.js");
 /* harmony import */ var _components_slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/slider/sponsorSlider */ "./components/slider/sponsorSlider.js");
 /* harmony import */ var _components_slider_teamSlider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/slider/teamSlider */ "./components/slider/teamSlider.js");
+/* harmony import */ var _components_Testimonials__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Testimonials */ "./components/Testimonials.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
 
 
 
@@ -50840,6 +51394,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+ //import SpeakerSlider from "../components/slider/speakerSlider"
+
+
+
+var speakers = __webpack_require__(/*! ../data/speakers */ "./data/speakers.js");
 
 
 
@@ -50849,6 +51409,12 @@ __webpack_require__.r(__webpack_exports__);
 var text = __webpack_require__(/*! ../data/text */ "./data/text.js");
 
 var Home = function Home(props) {
+  var speakerSpotlights = speakers.map(function (speaker) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_speakerSpotlight__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      details: speaker,
+      key: speaker.id
+    });
+  });
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section light",
     id: "home"
@@ -50857,7 +51423,14 @@ var Home = function Home(props) {
     id: "about"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "About the event"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.aboutPara1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.aboutPara2), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.aboutPara3), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "About the event"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.aboutPara1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.aboutPara2), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.aboutPara3))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Testimonials__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    data: _data_dictionary__WEBPACK_IMPORTED_MODULE_6__["default"].testimonials
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "section light",
+    id: "register"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Enroll your participation here!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
     container: true,
     spacing: 24
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -50870,30 +51443,25 @@ var Home = function Home(props) {
     item: true,
     xs: 4
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_paper__WEBPACK_IMPORTED_MODULE_3__["default"], null))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section dark"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Director's Message"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.directorMsg), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.directorName))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section color",
-    id: "speakers"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider_speakerSlider__WEBPACK_IMPORTED_MODULE_9__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section light",
-    id: "sponsors"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_10__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section dark",
+    id: "speakers"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "KEYNOTE Speakers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, speakerSpotlights)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "section light",
+    id: "gallery"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Shades of Previous Events"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Gallery__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "section color",
     id: "contact"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider_teamSlider__WEBPACK_IMPORTED_MODULE_11__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section color"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _data_dictionary__WEBPACK_IMPORTED_MODULE_6__["default"].footer))));
+    className: "section light",
+    id: "gallery"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sponsors and Partners"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_10__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_13__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!***************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FPlayGround%2FRepos%2Frsd%2Fpages%2Findex.js ***!
   \***************************************************************************************************************/
@@ -50916,5 +51484,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

@@ -16,23 +16,15 @@ export default () => (
     ` }</style>
     <br></br>
     <br></br>
-    <br></br>
   <Carousel autoPlay>
     <div>
-      <img src="./static/images/res1.jpg" height="100%"/>
-      <p className="legend">res 1</p>
+      <img src="./static/images/iit2.jpg" height="100%"/>
+      <p className="legend"></p>
     </div>
     <div>
-      <img src="./static/images/res2.jpg" height="100%"/>
-      <p className="legend">res 2</p>
-    </div>
-    <div>
-      <img src="./static/images/res3.jpg" height="100%"/>
-      <p className="legend">res 3</p>
+      <img src="./static/images/iit2.jpg" height="100%"/>
+      <p className="legend"></p>
     </div>
   </Carousel>
-  <br></br>
-  <br></br>
-  <br></br>
   </div>
 );
