@@ -127,6 +127,96 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./components/Modal.js":
+/*!*****************************!*\
+  !*** ./components/Modal.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AnimatedModal; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_core_Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Modal */ "./node_modules/@material-ui/core/esm/Modal/index.js");
+/* harmony import */ var _material_ui_core_Backdrop__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Backdrop */ "./node_modules/@material-ui/core/esm/Backdrop/index.js");
+/* harmony import */ var _material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Fade */ "./node_modules/@material-ui/core/esm/Fade/index.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(function (theme) {
+  return {
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    paper: {
+      background: '#1F1F1F url(./static/images/back.jpeg) no-repeat center center',
+      width: '50vw',
+      backgroundColor: theme.palette.background.paper,
+      border: '2px solid #000',
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3)
+    }
+  };
+});
+function AnimatedModal(_ref) {
+  var name = _ref.name,
+      msg = _ref.msg;
+  var classes = useStyles();
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      open = _React$useState2[0],
+      setOpen = _React$useState2[1];
+
+  var handleOpen = function handleOpen() {
+    setOpen(true);
+  };
+
+  var handleClose = function handleClose() {
+    setOpen(false);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "contained",
+    color: "secondary",
+    onClick: handleOpen
+  }, "Read Message"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Modal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    "aria-labelledby": "transition-modal-title",
+    "aria-describedby": "transition-modal-description",
+    className: classes.modal,
+    open: open,
+    onClose: handleClose,
+    closeAfterTransition: true,
+    BackdropComponent: _material_ui_core_Backdrop__WEBPACK_IMPORTED_MODULE_4__["default"],
+    BackdropProps: {
+      timeout: 500
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    "in": open
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classes.paper
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, msg), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "-", name)))));
+}
+
+/***/ }),
+
 /***/ "./components/Speakers.js":
 /*!********************************!*\
   !*** ./components/Speakers.js ***!
@@ -139,6 +229,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Modal */ "./components/Modal.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -156,6 +247,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -196,7 +288,10 @@ function (_Component) {
             className: "link-icon"
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
             className: "fa fa-link"
-          })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, speaker.name));
+          })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, speaker.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            name: speaker.name,
+            msg: speaker.msg
+          }));
         });
       }
 
@@ -215,6 +310,20 @@ function (_Component) {
 
   return Speakers;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+var Modal = function Modal(_ref) {
+  var handleClose = _ref.handleClose,
+      show = _ref.show,
+      children = _ref.children;
+  var showHideClassName = show ? 'modal display-block' : 'modal display-none';
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: showHideClassName
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "modal-main"
+  }, children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: handleClose
+  }, "Close")));
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (Speakers);
 
@@ -321,7 +430,7 @@ __webpack_require__.r(__webpack_exports__);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true,
     global: true
-  }, "\n        .button {\n            margin: 20px;\n            border-style: solid;\n            border-width: 3px;\n            padding: 10px 30px;\n            font-size: 1.5rem;\n            transition: all 0.35s ease-in-out;\n            cursor: pointer;\n        }\n\n        .button.light {\n            background-color: transparent;\n            color: #eee;\n            border-color: #eee;\n        }\n\n        .button.light:hover {\n            background-color: #f1c40f;\n            color: #333;\n            border-color: #f1c40f;\n        }\n\n        .button.dark {\n            background-color: transparent;\n            color: #333;\n            border-color: #333;\n        }\n\n        .button.dark:hover {\n            background-color: #333;\n            color: #eee;\n            border-color: #333;\n        }\n\n        .speaker-background{\n            background: #1F1F1F url(./static/images/testimonials-bg.jpg) no-repeat center center;\n        }\n\n        .container {\n            width: 80vw;\n            margin: auto;\n        }\n\n        .reg-event {\n            width: 100vw;\n            margin-left: 6vw;\n        }\n\n        .header {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n        }\n\n       /*  .footer {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n            background-color: #eee;\n            color: #333;\n        } */\n\n        .main {\n            padding-top: 59px;\n        }\n\n        .navlink {\n            padding: 20px 30px;\n            color: #eee;\n            text-decoration: none;\n            background-color: #333;\n            transition: all 0.7s ease-out;\n            cursor: pointer;\n        }\n\n        .navlink.highlight {\n            color: #f1c40f;\n        }\n\n        .navlink:hover {\n            background-color: #f1c40f;\n            transition: all 0.35s ease-out;\n            color: #333;\n        }\n\n        .section {\n            padding: 20px;\n        }\n\n        .section.dark {\n            background-color: #333;\n            color: #eee;\n        }\n\n        .section.color {\n            background-color: #f1c40f;\n            color: #333;\n        }\n\n        .section.light {\n            background-color: #eee;\n            color: #333;\n        }\n\n        body {\n            margin: 0;\n            font-family: 'Roboto', sans-serif;\n            text-align: center;\n        }\n\n        h1, h2, h3, h4 {\n            margin: 0;\n        }\n\n        p {\n            font-weight: 300;\n            font-size: 1.2rem;\n        }\n\n    ");
+  }, "\n        .button {\n            margin: 20px;\n            border-style: solid;\n            border-width: 3px;\n            padding: 10px 30px;\n            font-size: 1.5rem;\n            transition: all 0.35s ease-in-out;\n            cursor: pointer;\n        }\n\n        .button.light {\n            background-color: transparent;\n            color: #eee;\n            border-color: #eee;\n        }\n\n        .button.light:hover {\n            background-color: #f1c40f;\n            color: #333;\n            border-color: #f1c40f;\n        }\n\n        .button.dark {\n            background-color: transparent;\n            color: #333;\n            border-color: #333;\n        }\n\n        .button.dark:hover {\n            background-color: #333;\n            color: #eee;\n            border-color: #333;\n        }\n\n        .speaker-background{\n            background: #1F1F1F url(./static/images/testimonials-bg.jpg) no-repeat center center;\n        }\n\n        .container {\n            width: 80vw;\n            margin: auto;\n        }\n\n        .reg-event {\n            width: 100vw;\n            margin-left: 6vw;\n        }\n\n        .header {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n        }\n\n       /*  .footer {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n            background-color: #eee;\n            color: #333;\n        } */\n\n        .main {\n            padding-top: 59px;\n        }\n\n        .navlink {\n            padding: 20px 30px;\n            color: #eee;\n            text-decoration: none;\n            background-color: #333;\n            transition: all 0.7s ease-out;\n            cursor: pointer;\n        }\n\n        .navlink.highlight {\n            color: #f1c40f;\n        }\n\n        .navlink:hover {\n            background-color: #f1c40f;\n            transition: all 0.35s ease-out;\n            color: #333;\n        }\n\n        .section {\n            padding: 20px;\n        }\n\n        .section.dark {\n            background-color: #333;\n            color: #eee;\n        }\n\n        .section.color {\n            background-color: #f1c40f;\n            color: #333;\n        }\n\n        .section.light {\n            background-color: #eee;\n            color: #333;\n        }\n\n        body {\n            margin: 0;\n            font-family: 'Roboto', sans-serif;\n            text-align: center;\n        }\n\n        h1, h2, h3, h4, h5, h6 {\n            margin: 0;\n        }\n\n        p {\n            font-weight: 300;\n            font-size: 1.2rem;\n        }\n\n    ");
 });
 
 /***/ }),
@@ -342,7 +451,7 @@ __webpack_require__.r(__webpack_exports__);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true,
     global: true
-  }, "/*\n=====================================================================\n*   Ceevee v1.0 Default Stylesheet\n*   url: styleshout.com\n*   03-17-2014\n=====================================================================\n\nTOC:\na. Webfonts and Icon fonts\nb. Reset\nc. Default Styles\n   1. Basic\n   2. Typography\n   3. Links\n   4. Images\n   5. Buttons\n   6. Forms\nd. Grid\ne. Others\n   1. Clearing\n   2. Misc\n\n=====================================================================  */\n\n/* ------------------------------------------------------------------ */\n/* a. Webfonts and Icon fonts\n ------------------------------------------------------------------ */\n\n @import url(\"fonts.css\");\n @import url(\"fontello/css/fontello.css\");\n @import url(\"font-awesome/css/font-awesome.min.css\");\n \n /* ------------------------------------------------------------------\n /* b. Reset\n       Adapted from:\n       Normalize.css - https://github.com/necolas/normalize.css/\n       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/\n /* ------------------------------------------------------------------ */\n \n html, body, div, span, object, iframe,\n h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n abbr, address, cite, code,\n del, dfn, em, img, ins, kbd, q, samp,\n small, strong, sub, sup, var,\n b, i,\n dl, dt, dd, ol, ul, li,\n fieldset, form, label, legend,\n table, caption, tbody, tfoot, thead, tr, th, td,\n article, aside, canvas, details, figcaption, figure,\n footer-c, header, hgroup, menu, nav, section, summary,\n time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    outline: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n    background: transparent;\n }\n \n article,aside,details,figcaption,figure,\n footer-c,header,hgroup,menu,nav,section {\n    display: block;\n }\n \n audio,\n canvas,\n video {\n    display: inline-block;\n }\n \n audio:not([controls]) {\n    display: none;\n    height: 0;\n }\n \n [hidden] { display: none; }\n \n code, kbd, pre, samp {\n    font-family: monospace, serif;\n    font-size: 1em;\n }\n \n pre {\n    white-space: pre;\n    white-space: pre-wrap;\n    word-wrap: break-word;\n }\n \n blockquote, q { quotes: &#8220 &#8220; }\n \n blockquote:before, blockquote:after,\n q:before, q:after {\n    content: '';\n    content: none;\n }\n \n ins {\n    background-color: #ff9;\n    color: #000;\n    text-decoration: none;\n }\n \n mark {\n    background-color: #A7F4F6;\n    color: #555;\n }\n \n del { text-decoration: line-through; }\n \n abbr[title], dfn[title] {\n    border-bottom: 1px dotted;\n    cursor: help;\n }\n \n table {\n    border-collapse: collapse;\n    border-spacing: 0;\n }\n \n \n /* ------------------------------------------------------------------ */\n /* c. Default and Basic Styles\n       Adapted from:\n       Skeleton CSS Framework - http://www.getskeleton.com/\n       Typeplate Typographic Starter Kit - http://typeplate.com/\n /* ------------------------------------------------------------------ */\n \n /*  1. Basic  ------------------------------------------------------- */\n \n *,\n *:before,\n *:after {\n    -moz-box-sizing: border-box;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n }\n \n html {\n    font-size: 62.5%;\n    -webkit-font-smoothing: antialiased;\n }\n \n body {\n    background: #fff;\n    font-family: 'opensans-regular', sans-serif;\n    font-weight: normal;\n    font-size: 15px;\n    line-height: 30px;\n     color: #838C95;\n \n    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */\n     -webkit-text-size-adjust: 100%;\n }\n \n /*  2. Typography\n        Vertical rhythm with leading derived from 6\n --------------------------------------------------------------------- */\n \n h1, h2, h3, h4, h5, h6 {\n    color: #313131;\n     font-family: 'opensans-bold', sans-serif;\n    font-weight: normal;\n }\n h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }\n h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }\n h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }\n h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }\n h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }\n h5 { font-size: 18px; line-height: 30px; }\n h6 { font-size: 14px; line-height: 30px; }\n .subheader { }\n \n p { margin: 0 0 1vh 0; }\n p img { margin: 0; }\n p.lead {\n    font: 19px/36px 'opensans-light', sans-serif;\n    margin-bottom: 18px;\n }\n \n /* for 'em' and 'strong' tags, font-size and line-height should be same with\n the body tag due to rendering problems in some browsers */\n em { font: 15px/30px 'opensans-italic', sans-serif; }\n strong, b { font: 15px/30px 'opensans-bold', sans-serif; }\n small { font-size: 11px; line-height: inherit; }\n \n /*\tBlockquotes */\n blockquote {\n    margin: 30px 0px;\n    padding-left: 40px;\n    position: relative;\n }\n blockquote:before {\n    content: \"\\201C\";\n    opacity: 0.45;\n    font-size: 80px;\n    line-height: 0px;\n    margin: 0;\n    font-family: arial, sans-serif;\n \n    position: absolute;\n    top:  30px;\n     left: 0;\n }\n blockquote p {\n    font-family: 'librebaskerville-italic', serif;\n    padding: 0;\n    font-size: 18px;\n    line-height: 36px;\n }\n blockquote cite {\n    display: block;\n    font-size: 12px;\n    font-style: normal;\n    line-height: 18px;\n }\n blockquote cite:before { content: \"\\2014 \\0020\"; }\n blockquote cite a,\n blockquote cite a:visited { color: #8B9798; border: none }\n \n /* ---------------------------------------------------------------------\n /*  Pull Quotes Markup\n /*\n     <aside class=\"pull-quote\">\n         <blockquote>\n             <p></p>\n         </blockquote>\n      </aside>\n /*\n /* --------------------------------------------------------------------- */\n .pull-quote {\n    position: relative;\n     padding: 18px 30px 18px 0px;\n }\n .pull-quote:before,\n .pull-quote:after {\n     height: 1em;\n     opacity: 0.45;\n     position: absolute;\n     font-size: 80px;\n    font-family: Arial, Sans-Serif;\n }\n .pull-quote:before {\n     content: \"\\201C\";\n     top:  33px;\n     left: 0;\n }\n .pull-quote:after {\n     content: '\\201D';\n     bottom: -33px;\n     right: 0;\n }\n .pull-quote blockquote {\n    margin: 0;\n }\n .pull-quote blockquote:before {\n    content: none;\n }\n \n /* Abbreviations */\n abbr {\n    font-family: 'opensans-bold', sans-serif;\n     font-variant: small-caps;\n     text-transform: lowercase;\n    letter-spacing: .5px;\n     color: gray;\n }\n abbr:hover { cursor: help; }\n \n /* drop cap */\n .drop-cap:first-letter {\n     float: left;\n     margin: 0;\n     padding: 14px 6px 0 0;\n     font-size: 84px;\n     font-family: /* Copperplate */ 'opensans-bold', sans-serif;\n    line-height: 60px;\n     text-indent: 0;\n     background: transparent;\n     color: inherit;\n }\n \n hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }\n \n \n /*  3. Links  ------------------------------------------------------- */\n \n a, a:visited {\n    text-decoration: none;\n    outline: 0;\n    color: #11ABB0;\n \n    -webkit-transition: color .3s ease-in-out;\n    -moz-transition: color .3s ease-in-out;\n    -o-transition: color .3s ease-in-out;\n    transition: color .3s ease-in-out;\n }\n a:hover, a:focus { color: #313131; }\n p a, p a:visited { line-height: inherit; }\n \n \n /*  4. List  --------------------------------------------------------- */\n \n ul, ol { margin-bottom: 24px; margin-top: 12px; }\n ul { list-style: none outside; }\n ol { list-style: decimal; }\n ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }\n ul.square { list-style: square outside; }\n ul.circle { list-style: circle outside; }\n ul.disc { list-style: disc outside; }\n ul ul, ul ol,\n ol ol, ol ul { margin: 6px 0 6px 30px; }\n ul ul li, ul ol li,\n ol ol li, ol ul li { margin-bottom: 6px; }\n li { line-height: 18px; margin-bottom: 12px; }\n ul.large li { }\n li p { }\n \n /* ---------------------------------------------------------------------\n /*  Stats Tab Markup\n \n     <ul class=\"stats-tabs\">\n         <li><a href=\"#\">[value]<b>[name]</b></a></li>\n      </ul>\n \n     Extend this object into your markup.\n /*\n /* --------------------------------------------------------------------- */\n .stats-tabs {\n    padding: 0;\n    margin: 24px 0;\n }\n .stats-tabs li {\n     display: inline-block;\n     margin: 0 10px 18px 0;\n     padding: 0 10px 0 0;\n     border-right: 1px solid #ccc;\n }\n .stats-tabs li:last-child {\n     margin: 0;\n     padding: 0;\n     border: none;\n }\n .stats-tabs li a {\n     display: inline-block;\n     font-size: 22px;\n     font-family: 'opensans-bold', sans-serif;\n    border: none;\n    color: #313131;\n }\n .stats-tabs li a:hover {\n    color:#11ABB0;\n }\n .stats-tabs li a b {\n     display: block;\n     margin: 6px 0 0 0;\n     font-size: 13px;\n     font-family: 'opensans-regular', sans-serif;\n    color: #8B9798;\n }\n \n /* definition list */\n dl { margin: 12px 0; }\n dt { margin: 0; color:#11ABB0; }\n dd { margin: 0 0 0 20px; }\n \n /* Lining Definition Style Markup */\n .lining dt,\n .lining dd {\n     display: inline;\n     margin: 0;\n }\n .lining dt + dt:before,\n .lining dd + dt:before {\n     content: \"A\";\n     white-space: pre;\n }\n .lining dd + dd:before {\n     content: \", \";\n }\n .lining dd:before {\n     content: \": \";\n     margin-left: -0.2em;\n }\n \n /* Dictionary Definition Style Markup */\n .dictionary-style dt {\n     display: inline;\n     counter-reset: definitions;\n }\n .dictionary-style dt + dt:before {\n     content: \", \";\n     margin-left: -0.2em;\n }\n .dictionary-style dd {\n     display: block;\n     counter-increment: definitions;\n }\n .dictionary-style dd:before {\n     content: counter(definitions, decimal) \". \";\n }\n \n /* Pagination */\n .pagination {\n    margin: 36px auto;\n    text-align: center;\n }\n .pagination ul li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n }\n .pagination .page-numbers {\n    font: 15px/18px 'opensans-bold', sans-serif;\n    display: inline-block;\n    padding: 6px 10px;\n    margin-right: 3px;\n    margin-bottom: 6px;\n     color: #6E757C;\n     background-color: #E6E8EB;\n \n     -webkit-transition: all 200ms ease-in-out;\n     -moz-transition: all 200ms ease-in-out;\n     -o-transition: all 200ms ease-in-out;\n     -ms-transition: all 200ms ease-in-out;\n     transition: all 200ms ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n     border-radius: 3px;\n }\n .pagination .page-numbers:hover {\n    background: #838A91;\n    color: #fff;\n }\n .pagination .current,\n .pagination .current:hover {\n    background-color: #11ABB0;\n    color: #fff;\n }\n .pagination .inactive,\n .pagination .inactive:hover {\n    background-color: #E6E8EB;\n     color: #A9ADB2;\n }\n .pagination .prev, .pagination .next {}\n \n /*  5. Images  --------------------------------------------------------- */\n \n img {\n    max-width: 100%;\n    height: auto;\n }\n img.pull-right { margin: 12px 0px 0px 18px; }\n img.pull-left { margin: 12px 18px 0px 0px; }\n \n /*  6. Buttons  --------------------------------------------------------- */\n \n .button-c,\n .button-c:visited,\n button-c,\n input[type=\"submit\"],\n input[type=\"reset\"],\n input[type=\"button-c\"] {\n    font: 16px/30px 'opensans-bold', sans-serif;\n    background: #11ABB0;\n    display: inline-block;\n     text-decoration: none;\n    letter-spacing: 0;\n    color: #fff;\n     padding: 12px 20px;\n     margin-bottom: 18px;\n    border: none;\n    cursor: pointer;\n    height: auto;\n \n    -webkit-transition: all .2s ease-in-out;\n     -moz-transition: all .2s ease-in-out;\n     -o-transition: all .2s ease-in-out;\n     -ms-transition: all .2s ease-in-out;\n     transition: all .2s ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n    border-radius: 3px;\n }\n \n .button-c:hover,\n button-c:hover,\n input[type=\"submit\"]:hover,\n input[type=\"reset\"]:hover,\n input[type=\"button-c\"]:hover {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button-c:active,\n button-c:active,\n input[type=\"submit\"]:active,\n input[type=\"reset\"]:active,\n input[type=\"button-c\"]:active {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button-c.full-width,\n button-c.full-width,\n input[type=\"submit\"].full-width,\n input[type=\"reset\"].full-width,\n input[type=\"button-c\"].full-width {\n     width: 100%;\n     padding-left: 0 !important;\n     padding-right: 0 !important;\n     text-align: center;\n }\n \n /* Fix for odd Mozilla border & padding issues */\n button-c::-moz-focus-inner,\n input::-moz-focus-inner {\n     border: 0;\n     padding: 0;\n }\n \n \n /*  7. Forms  --------------------------------------------------------- */\n \n form { margin-bottom: 24px; }\n fieldset { margin-bottom: 24px; }\n \n input[type=\"text\"],\n input[type=\"password\"],\n input[type=\"email\"],\n textarea,\n select {\n    display: block;\n    padding: 18px 15px;\n    margin: 0 0 24px 0;\n    border: 0;\n    outline: none;\n    vertical-align: middle;\n    min-width: 225px;\n     max-width: 100%;\n    font-size: 15px;\n    line-height: 24px;\n     color: #647373;\n     background: #D3D9D9;\n \n }\n \n /* select { padding: 0;\n    width: 220px;\n    } */\n \n input[type=\"text\"]:focus,\n input[type=\"password\"]:focus,\n input[type=\"email\"]:focus,\n textarea:focus {\n    color: #B3B7BC;\n     background-color: #3d4145;\n }\n \n textarea { min-height: 220px; }\n \n label,\n legend {\n    font: 16px/24px 'opensans-bold', sans-serif;\n     margin: 12px 0;\n    color: #3d4145;\n    display: block;\n }\n label span,\n legend span {\n     color: #8B9798;\n    font: 14px/24px 'opensans-regular', sans-serif;\n }\n \n input[type=\"checkbox\"],\n input[type=\"radio\"] {\n     font-size: 15px;\n     color: #737373;\n }\n \n input[type=\"checkbox\"] { display: inline; }\n \n /* ------------------------------------------------------------------ */\n /* d. Grid\n ---------------------------------------------------------------------\n    gutter = 40px.\n /* ------------------------------------------------------------------ */\n \n /* default\n --------------------------------------------------------------- */\n .row {\n    width: 96%;\n    max-width: 1020px;\n    margin: 0 auto;\n }\n /* fixed width for IE8 */\n .ie .row { width: 1000px ; }\n \n .narrow .row { max-width: 980px; }\n \n .row .row { width: auto; max-width: none; margin: 0 -20px; }\n \n /* row clearing */\n .row:before,\n .row:after {\n     content: \" \";\n     display: table;\n }\n .row:after {\n     clear: both;\n }\n \n .column, .columns {\n    position: relative;\n    padding: 0 20px;\n    min-height: 1px;\n    float: left;\n }\n .column.centered, .columns.centered  {\n     float: none;\n     margin: 0 auto;\n }\n \n /* removed gutters */\n .row.collapsed > .column,\n .row.collapsed > .columns,\n .column.collapsed, .columns.collapsed  { padding: 0; }\n \n [class*=\"column\"] + [class*=\"column\"]:last-child { float: right; }\n [class*=\"column\"] + [class*=\"column\"].end { float: right; }\n \n /* column widths */\n .row .one         { width: 8.33333%; }\n .row .two         { width: 16.66667%; }\n .row .three       { width: 25%; }\n .row .four        { width: 33.33333%; }\n .row .five        { width: 41.66667%; }\n .row .six         { width: 50%; }\n .row .seven       { width: 58.33333%; }\n .row .eight       { width: 66.66667%; }\n .row .nine        { width: 75%; }\n .row .ten         { width: 83.33333%; }\n .row .eleven      { width: 91.66667%; }\n .row .twelve      { width: 100%; }\n \n /* Offsets */\n .row .offset-1    { margin-left: 8.33333%; }\n .row .offset-2    { margin-left: 16.66667%; }\n .row .offset-3    { margin-left: 25%; }\n .row .offset-4    { margin-left: 33.33333%; }\n .row .offset-5    { margin-left: 41.66667%; }\n .row .offset-6    { margin-left: 50%; }\n .row .offset-7    { margin-left: 58.33333%; }\n .row .offset-8    { margin-left: 66.66667%; }\n .row .offset-9    { margin-left: 75%; }\n .row .offset-10   { margin-left: 83.33333%; }\n .row .offset-11   { margin-left: 91.66667%; }\n \n /* Push/Pull */\n .row .push-1      { left: 8.33333%; }\n .row .pull-1      { right: 8.33333%; }\n .row .push-2      { left: 16.66667%; \t}\n .row .pull-2      { right: 16.66667%; }\n .row .push-3      { left: 25%; }\n .row .pull-3      { right: 25%;\t}\n .row .push-4      { left: 33.33333%; }\n .row .pull-4      { right: 33.33333%; }\n .row .push-5      { left: 41.66667%; }\n .row .pull-5      { right: 41.66667%; }\n .row .push-6      { left: 50%; }\n .row .pull-6      { right: 50%; }\n .row .push-7      { left: 58.33333%; }\n .row .pull-7      { right: 58.33333%; }\n .row .push-8      { left: 66.66667%; \t}\n .row .pull-8      { right: 66.66667%; }\n .row .push-9      { left: 75%; }\n .row .pull-9      { right: 75%; }\n .row .push-10     { left: 83.33333%; }\n .row .pull-10     { right: 83.33333%; }\n .row .push-11     { left: 91.66667%; }\n .row .pull-11     { right: 91.66667%; }\n \n /* block grids\n --------------------------------------------------------------------- */\n .bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n .bgrid-quarters [class*=\"column\"] { width: 25%; }\n .bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n .bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: left; }\n \n /* Left clearing for block grid columns - columns that changes width in\n different screen sizes. Allows columns with different heights to align\n properly.\n --------------------------------------------------------------------- */\n .first { clear: left; }   /* first column in default screen */\n .s-first { clear: none; } /* first column in smaller screens */\n \n /* smaller screens\n --------------------------------------------------------------- */\n @media only screen and (max-width: 900px) {\n \n    /* block grids on small screens */\n    .s-bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n    .s-bgrid-quarters [class*=\"column\"] { width: 25%; }\n    .s-bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n    .s-bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n    /* block grids left clearing */\n    .first { clear: none; }\n    .s-first { clear: left; }\n \n }\n \n /* mobile wide/smaller tablets\n --------------------------------------------------------------- */\n @media only screen and (max-width: 767px) {\n \n    .row {\n        width: 460px;\n        margin: 0 auto;\n       padding: 0;\n     }\n    .column, .columns {\n        width: auto !important;\n        float: none;\n        margin-left: 0;\n        margin-right: 0;\n       padding: 0 30px;\n    }\n    .row .row { width: auto; max-width: none; margin: 0 -30px; }\n \n    [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n    [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n \n    /* Offsets */\n    .row .offset-1    { margin-left: 0%; }\n    .row .offset-2    { margin-left: 0%; }\n    .row .offset-3    { margin-left: 0%; }\n    .row .offset-4    { margin-left: 0%; }\n    .row .offset-5    { margin-left: 0%; }\n    .row .offset-6    { margin-left: 0%; }\n    .row .offset-7    { margin-left: 0%; }\n    .row .offset-8    { margin-left: 0%; }\n    .row .offset-9    { margin-left: 0%; }\n    .row .offset-10   { margin-left: 0%; }\n    .row .offset-11   { margin-left: 0%; }\n }\n \n /* mobile narrow\n --------------------------------------------------------------- */\n @media only screen and (max-width: 460px) {\n \n    .row { width: auto; }\n \n }\n \n /* larger screens\n --------------------------------------------------------------- */\n @media screen and (min-width: 1200px) {\n \n    .wide .row { max-width: 1180px; }\n \n }\n \n /* ------------------------------------------------------------------ */\n /* e. Others\n /* ------------------------------------------------------------------ */\n \n /*  1. Clearing\n     (http://nicolasgallagher.com/micro-clearfix-hack/\n --------------------------------------------------------------------- */\n \n .cf:before,\n .cf:after {\n     content: \" \";\n     display: table;\n }\n .cf:after {\n     clear: both;\n }\n \n /*  2. Misc -------------------------------------------------------- */\n \n .remove-bottom { margin-bottom: 0 !important; }\n .half-bottom { margin-bottom: 12px !important; }\n .add-bottom { margin-bottom: 24px !important; }\n .no-border { border: none; }\n \n .text-center  { text-align: center !important; }\n .text-left    { text-align: left !important; }\n .text-right   { text-align: right !important; }\n .pull-left    { float: left !important; }\n .pull-right   { float: right !important; }\n .align-center {\n     margin-left: auto !important;\n     margin-right: auto !important;\n     text-align: center !important;\n } \n\n /* ------------------------------------------------------------------ */\n/* i. Footer\n/* ------------------------------------------------------------------ */\n\nfooter-c {\n   background: #1F1F1F url(./static/images/back1.jpg) no-repeat center center;\n   padding-top: 48px;\n   //margin-bottom: 48px;\n   color: #303030;\n   font-size: 14px;\n   text-align: center;\n   position: relative;\n   size: 100vw;\n}\n\nfooter-c a, footer-c a:visited { color: #525252; }\nfooter-c a:hover, footer-c a:focus { color: #fff; }\n\n/* copyright */\nfooter-c .copyright {\n    margin: 0;\n    padding: 0;\n }\nfooter-c .copyright li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    line-height: 1vh;\n}\n.ie footer-c .copyright li {\n   display: inline;\n}\nfooter-c .copyright li:before {\n    content: \"\\2022\";\n    padding-left: 0.5vw;\n    padding-right: 0.5vw;\n    color: #095153;\n}\nfooter-c .copyright  li:first-child:before {\n    display: none;\n}\n\n/* social links */\nfooter-c .social-links {\n   margin: 2.5vh 0 0.5vh 0;\n   padding: 0;\n   font-size: 30px;\n}\nfooter-c .social-links li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    margin-left: 1.5vw;\n    color: #F06000;\n}\n\nfooter-c .social-links li:first-child { margin-left: 0; }\n\n/* Go To Top Button */\n#go-top {\n\tposition: absolute;\n\ttop: -24px;\n   left: 50%;\n   margin-left: -30px;\n}\n#go-top a {\n\ttext-decoration: none;\n\tborder: 0 none;\n\tdisplay: block;\n\twidth: 60px;\n\theight: 60px;\n\tbackground-color: #525252;\n\n\t-webkit-transition: all 0.2s ease-in-out;\n   -moz-transition: all 0.2s ease-in-out;\n   -o-transition: all 0.2s ease-in-out;\n   -ms-transition: all 0.2s ease-in-out;\n   transition: all 0.2s ease-in-out;\n\n   color: #fff;\n   font-size: 21px;\n   line-height: 60px;\n \tborder-radius: 100%;\n}\n#go-top a:hover { background-color: #0F9095; }\n\n/* ------------------------------------------------------------------ */\n/* e. Portfolio Section\n/* ------------------------------------------------------------------ */\n\n#portfolio {\n   background: #ebeeee;\n   padding-top: 5vh;\n   padding-bottom: 60px;\n}\n#portfolio h1 {\n   font: 1.5vw/1.5vw 'opensans-semibold', sans-serif;\n   text-transform: uppercase;\n   letter-spacing: 1px;\n   text-align: center;\n   margin-bottom: 48px;\n   color: #3f51b5;\n}\n\n/* Portfolio Content */\n#portfolio-wrapper .columns { margin-bottom: 36px; }\n.portfolio-item .item-wrap {\n   background: #fff;\n   overflow: hidden;\n   position: relative;\n\n   -webkit-transition: all 0.3s ease-in-out;\n\t-moz-transition: all 0.3s ease-in-out;\n\t-o-transition: all 0.3s ease-in-out;\n\t-ms-transition: all 0.3s ease-in-out;\n\ttransition: all 0.3s ease-in-out;\n}\n.portfolio-item .item-wrap a {\n   display: block;\n   cursor: pointer;\n}\n\n/* overlay */\n.portfolio-item .item-wrap .overlay {\n   position: absolute;\n   left: 0;\n   top: 0;\n   width: 100%;\n   height: 100%;\n\n\topacity: 0;\n\t-moz-opacity: 0;\n\tfilter:alpha(opacity=0);\n\n   -webkit-transition: opacity 0.3s ease-in-out;\n\t-moz-transition: opacity 0.3s ease-in-out;\n\t-o-transition: opacity 0.3s ease-in-out;\n\ttransition: opacity 0.3s ease-in-out;\n\n   background: url(./static/images/overlay-bg.png) repeat;\n}\n.portfolio-item .item-wrap .link-icon {\n   display: block;\n   color: #fff;\n   height: 30px;\n   width: 30px;\n   font-size: 18px;\n   line-height: 30px;\n   text-align: center;\n\n   opacity: 0;\n\t-moz-opacity: 0;\n\tfilter:alpha(opacity=0);\n\n   -webkit-transition: opacity 0.3s ease-in-out;\n\t-moz-transition: opacity 0.3s ease-in-out;\n\t-o-transition: opacity 0.3s ease-in-out;\n\ttransition: opacity 0.3s ease-in-out;\n\n   position: absolute;\n   top: 50%;\n   left: 50%;\n   margin-left: -15px;\n   margin-top: -15px;\n}\n.portfolio-item .item-wrap img {\n   vertical-align: bottom;\n}\n.portfolio-item .portfolio-item-meta { padding: 18px }\n.portfolio-item .portfolio-item-meta h5 {\n   font: 14px/21px 'opensans-bold', sans-serif;\n   color: #fff;\n}\n.portfolio-item .portfolio-item-meta p {\n   font: 12px/18px 'opensans-light', sans-serif;\n   color: #c6c7c7;\n   margin-bottom: 0;\n}\n\n/* on hover */\n.portfolio-item:hover .overlay {\n\topacity: 1;\n\t-moz-opacity: 1;\n\tfilter:alpha(opacity=100);\n}\n.portfolio-item:hover .link-icon {\n   opacity: 1;\n\t-moz-opacity: 1;\n\tfilter:alpha(opacity=100);\n}\n\n/* primary navigation\n--------------------------------------------------------------------- */\n#nav-wrap ul, #nav-wrap li, #nav-wrap a {\n\t margin: 0;\n\t padding: 0;\n\t border: none;\n\t outline: none;\n}\n\n/* nav-wrap */\n#nav-wrap {\n   font: 12px 'opensans-bold', sans-serif;\n   width: 100%;\n   text-transform: uppercase;\n   letter-spacing: 2.5px;\n   margin: 0 auto;\n   z-index: 100;\n   position: fixed;\n   left: 0;\n   top: 0;\n}\n.opaque { background-color: #333; }\n\n/* hide toggle button */\n#nav-wrap > a.mobile-btn { display: none; }\n\nul#nav {\n   min-height: 48px;\n   width: auto;\n\n   /* center align the menu */\n   text-align: center;\n}\nul#nav li {\n   position: relative;\n   list-style: none;\n   height: 48px;\n   display: inline-block;\n}\n\n/* Links */\nul#nav li a {\n\n/* 8px padding top + 8px padding bottom + 32px line-height = 48px */\n\n   display: inline-block;\n   padding: 8px 13px;\n   line-height: 32px;\n\ttext-decoration: none;\n   text-align: left;\n   color: #fff;\n\n\t-webkit-transition: color .2s ease-in-out;\n\t-moz-transition: color .2s ease-in-out;\n\t-o-transition: color .2s ease-in-out;\n\t-ms-transition: color .2s ease-in-out;\n\ttransition: color .2s ease-in-out;\n}\n\nul#nav li a:active { background-color: transparent !important; }\nul#nav li.current a { color: #F06000; }\n\n/* mobile wide/smaller tablets\n---------------------------------------------------------------------- */\n\n@media only screen and (max-width: 767px) {\n\n   /* mobile navigation\n   -------------------------------------------------------------------- */\n   #nav-wrap {\n      font: 12px 'opensans-bold', sans-serif;\n      background: transparent !important;\n      letter-spacing: 1.5px;  \n      width: auto;\n      position: fixed;\n      top: 0;\n      right: 0;\n   }\n   #nav-wrap > a {\n\t   width: 48px;\n\t\theight: 48px;\n\t\ttext-align: left;\n\t\tbackground-color: #CC5200;\n\t\tposition: relative;\n      border: none;\n      float: right;\n\n      font: 0/0 a;\n      text-shadow: none;\n      color: transparent;\n\n      position: relative;\n      top: 0px;\n      right: 30px;\n   }\n\n\t#nav-wrap > a:before,\n   #nav-wrap > a:after {\n\t   position: absolute;\n\t\tborder: 2px solid #fff;\n\t\ttop: 35%;\n\t\tleft: 25%;\n\t\tright: 25%;\n\t\tcontent: '';\n\t}\n   #nav-wrap > a:after { top: 60%; }\n\n   /* toggle buttons */\n\t#nav-wrap:not( :target ) > a:first-of-type,\n\t#nav-wrap:target > a:last-of-type  {\n\t   display: block;\n\t}\n\n   /* hide menu panel */\n   #nav-wrap ul#nav {\n      height: auto;\n\t\tdisplay: none;\n      clear: both;\n      width: auto; \n      float: right;     \n\n      position: relative;\n      top: 12px;\n      right: 0;\n   }\n\n   /* display menu panels */\n\t#nav-wrap:target > ul#nav\t{\n\t   display: block;\n      padding: 30px 20px 48px 20px;\n      background: #1f2024;\n      margin: 0 30px;\n      clear: both;\n   }\n\n   ul#nav li {\n      display: block;\n      height: auto;      \n      margin: 0 auto; \n      padding: 0 4%;           \n      text-align: left;\n      border-bottom: 1px solid #2D2E34;\n      border-bottom-style: dotted; \n   }\n  \n   ul#nav li a {  \n      display: block;    \n      margin: 0;\n      padding: 0;      \n      margin: 12px 0; \n      line-height: 16px; /* reset line-height from 48px */\n      border: none;\n   }  \n}\n\n ");
+  }, "/*\n=====================================================================\n*   Ceevee v1.0 Default Stylesheet\n*   url: styleshout.com\n*   03-17-2014\n=====================================================================\n\nTOC:\na. Webfonts and Icon fonts\nb. Reset\nc. Default Styles\n   1. Basic\n   2. Typography\n   3. Links\n   4. Images\n   5. Buttons\n   6. Forms\nd. Grid\ne. Others\n   1. Clearing\n   2. Misc\n\n=====================================================================  */\n\n/* ------------------------------------------------------------------ */\n/* a. Webfonts and Icon fonts\n ------------------------------------------------------------------ */\n\n //@import url(\"fonts.css\");\n //@import url(\"fontello/css/fontello.css\");\n //@import url(\"font-awesome/css/font-awesome.min.css\");\n \n /* ------------------------------------------------------------------\n /* b. Reset\n       Adapted from:\n       Normalize.css - https://github.com/necolas/normalize.css/\n       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/\n /* ------------------------------------------------------------------ */\n \n html, body, div, span, object, iframe,\n h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n abbr, address, cite, code,\n del, dfn, em, img, ins, kbd, q, samp,\n small, strong, sub, sup, var,\n b, i,\n dl, dt, dd, ol, ul, li,\n fieldset, form, label, legend,\n table, caption, tbody, tfoot, thead, tr, th, td,\n article, aside, canvas, details, figcaption, figure,\n footer-c, header, hgroup, menu, nav, section, summary,\n time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    outline: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n    background: transparent;\n }\n \n article,aside,details,figcaption,figure,\n footer-c,header,hgroup,menu,nav,section {\n    display: block;\n }\n \n audio,\n canvas,\n video {\n    display: inline-block;\n }\n \n audio:not([controls]) {\n    display: none;\n    height: 0;\n }\n \n [hidden] { display: none; }\n \n code, kbd, pre, samp {\n    font-family: monospace, serif;\n    font-size: 1em;\n }\n \n pre {\n    white-space: pre;\n    white-space: pre-wrap;\n    word-wrap: break-word;\n }\n \n blockquote, q { quotes: &#8220 &#8220; }\n \n blockquote:before, blockquote:after,\n q:before, q:after {\n    content: '';\n    content: none;\n }\n \n ins {\n    background-color: #ff9;\n    color: #000;\n    text-decoration: none;\n }\n \n mark {\n    background-color: #A7F4F6;\n    color: #555;\n }\n \n del { text-decoration: line-through; }\n \n abbr[title], dfn[title] {\n    border-bottom: 1px dotted;\n    cursor: help;\n }\n \n table {\n    border-collapse: collapse;\n    border-spacing: 0;\n }\n \n \n /* ------------------------------------------------------------------ */\n /* c. Default and Basic Styles\n       Adapted from:\n       Skeleton CSS Framework - http://www.getskeleton.com/\n       Typeplate Typographic Starter Kit - http://typeplate.com/\n /* ------------------------------------------------------------------ */\n \n /*  1. Basic  ------------------------------------------------------- */\n \n *,\n *:before,\n *:after {\n    -moz-box-sizing: border-box;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n }\n \n html {\n    font-size: 62.5%;\n    -webkit-font-smoothing: antialiased;\n }\n \n body {\n    background: #fff;\n    font-family: 'opensans-regular', sans-serif;\n    font-weight: normal;\n    font-size: 15px;\n    line-height: 30px;\n     color: #838C95;\n \n    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */\n     -webkit-text-size-adjust: 100%;\n }\n \n /*  2. Typography\n        Vertical rhythm with leading derived from 6\n --------------------------------------------------------------------- */\n \n h1, h2, h3, h4, h5, h6 {\n    color: #313131;\n     font-family: 'opensans-bold', sans-serif;\n    font-weight: normal;\n }\n h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }\n h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }\n h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }\n h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }\n h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }\n h5 { font-size: 18px; line-height: 30px; }\n h6 { font-size: 14px; line-height: 30px; }\n .subheader { }\n \n p { margin: 0 0 1vh 0; }\n p img { margin: 0; }\n p.lead {\n    font: 19px/36px 'opensans-light', sans-serif;\n    margin-bottom: 18px;\n }\n \n /* for 'em' and 'strong' tags, font-size and line-height should be same with\n the body tag due to rendering problems in some browsers */\n em { font: 15px/30px 'opensans-italic', sans-serif; }\n strong, b { font: 15px/30px 'opensans-bold', sans-serif; }\n small { font-size: 11px; line-height: inherit; }\n \n /*\tBlockquotes */\n blockquote {\n    margin: 30px 0px;\n    padding-left: 40px;\n    position: relative;\n }\n blockquote:before {\n    content: \"\\201C\";\n    opacity: 0.45;\n    font-size: 80px;\n    line-height: 0px;\n    margin: 0;\n    font-family: arial, sans-serif;\n \n    position: absolute;\n    top:  30px;\n     left: 0;\n }\n blockquote p {\n    font-family: 'librebaskerville-italic', serif;\n    padding: 0;\n    font-size: 18px;\n    line-height: 36px;\n }\n blockquote cite {\n    display: block;\n    font-size: 12px;\n    font-style: normal;\n    line-height: 18px;\n }\n blockquote cite:before { content: \"\\2014 \\0020\"; }\n blockquote cite a,\n blockquote cite a:visited { color: #8B9798; border: none }\n \n /* ---------------------------------------------------------------------\n /*  Pull Quotes Markup\n /*\n     <aside class=\"pull-quote\">\n         <blockquote>\n             <p></p>\n         </blockquote>\n      </aside>\n /*\n /* --------------------------------------------------------------------- */\n .pull-quote {\n    position: relative;\n     padding: 18px 30px 18px 0px;\n }\n .pull-quote:before,\n .pull-quote:after {\n     height: 1em;\n     opacity: 0.45;\n     position: absolute;\n     font-size: 80px;\n    font-family: Arial, Sans-Serif;\n }\n .pull-quote:before {\n     content: \"\\201C\";\n     top:  33px;\n     left: 0;\n }\n .pull-quote:after {\n     content: '\\201D';\n     bottom: -33px;\n     right: 0;\n }\n .pull-quote blockquote {\n    margin: 0;\n }\n .pull-quote blockquote:before {\n    content: none;\n }\n \n /* Abbreviations */\n abbr {\n    font-family: 'opensans-bold', sans-serif;\n     font-variant: small-caps;\n     text-transform: lowercase;\n    letter-spacing: .5px;\n     color: gray;\n }\n abbr:hover { cursor: help; }\n \n /* drop cap */\n .drop-cap:first-letter {\n     float: left;\n     margin: 0;\n     padding: 14px 6px 0 0;\n     font-size: 84px;\n     font-family: /* Copperplate */ 'opensans-bold', sans-serif;\n    line-height: 60px;\n     text-indent: 0;\n     background: transparent;\n     color: inherit;\n }\n \n hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }\n \n \n /*  3. Links  ------------------------------------------------------- */\n \n a, a:visited {\n    text-decoration: none;\n    outline: 0;\n    color: #11ABB0;\n \n    -webkit-transition: color .3s ease-in-out;\n    -moz-transition: color .3s ease-in-out;\n    -o-transition: color .3s ease-in-out;\n    transition: color .3s ease-in-out;\n }\n a:hover, a:focus { color: #313131; }\n p a, p a:visited { line-height: inherit; }\n \n \n /*  4. List  --------------------------------------------------------- */\n \n ul, ol { margin-bottom: 24px; margin-top: 12px; }\n ul { list-style: none outside; }\n ol { list-style: decimal; }\n ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }\n ul.square { list-style: square outside; }\n ul.circle { list-style: circle outside; }\n ul.disc { list-style: disc outside; }\n ul ul, ul ol,\n ol ol, ol ul { margin: 6px 0 6px 30px; }\n ul ul li, ul ol li,\n ol ol li, ol ul li { margin-bottom: 6px; }\n li { line-height: 18px; margin-bottom: 12px; }\n ul.large li { }\n li p { }\n \n /* ---------------------------------------------------------------------\n /*  Stats Tab Markup\n \n     <ul class=\"stats-tabs\">\n         <li><a href=\"#\">[value]<b>[name]</b></a></li>\n      </ul>\n \n     Extend this object into your markup.\n /*\n /* --------------------------------------------------------------------- */\n .stats-tabs {\n    padding: 0;\n    margin: 24px 0;\n }\n .stats-tabs li {\n     display: inline-block;\n     margin: 0 10px 18px 0;\n     padding: 0 10px 0 0;\n     border-right: 1px solid #ccc;\n }\n .stats-tabs li:last-child {\n     margin: 0;\n     padding: 0;\n     border: none;\n }\n .stats-tabs li a {\n     display: inline-block;\n     font-size: 22px;\n     font-family: 'opensans-bold', sans-serif;\n    border: none;\n    color: #313131;\n }\n .stats-tabs li a:hover {\n    color:#11ABB0;\n }\n .stats-tabs li a b {\n     display: block;\n     margin: 6px 0 0 0;\n     font-size: 13px;\n     font-family: 'opensans-regular', sans-serif;\n    color: #8B9798;\n }\n \n /* definition list */\n dl { margin: 12px 0; }\n dt { margin: 0; color:#11ABB0; }\n dd { margin: 0 0 0 20px; }\n \n /* Lining Definition Style Markup */\n .lining dt,\n .lining dd {\n     display: inline;\n     margin: 0;\n }\n .lining dt + dt:before,\n .lining dd + dt:before {\n     content: \"A\";\n     white-space: pre;\n }\n .lining dd + dd:before {\n     content: \", \";\n }\n .lining dd:before {\n     content: \": \";\n     margin-left: -0.2em;\n }\n \n /* Dictionary Definition Style Markup */\n .dictionary-style dt {\n     display: inline;\n     counter-reset: definitions;\n }\n .dictionary-style dt + dt:before {\n     content: \", \";\n     margin-left: -0.2em;\n }\n .dictionary-style dd {\n     display: block;\n     counter-increment: definitions;\n }\n .dictionary-style dd:before {\n     content: counter(definitions, decimal) \". \";\n }\n \n /* Pagination */\n .pagination {\n    margin: 36px auto;\n    text-align: center;\n }\n .pagination ul li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n }\n .pagination .page-numbers {\n    font: 15px/18px 'opensans-bold', sans-serif;\n    display: inline-block;\n    padding: 6px 10px;\n    margin-right: 3px;\n    margin-bottom: 6px;\n     color: #6E757C;\n     background-color: #E6E8EB;\n \n     -webkit-transition: all 200ms ease-in-out;\n     -moz-transition: all 200ms ease-in-out;\n     -o-transition: all 200ms ease-in-out;\n     -ms-transition: all 200ms ease-in-out;\n     transition: all 200ms ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n     border-radius: 3px;\n }\n .pagination .page-numbers:hover {\n    background: #838A91;\n    color: #fff;\n }\n .pagination .current,\n .pagination .current:hover {\n    background-color: #11ABB0;\n    color: #fff;\n }\n .pagination .inactive,\n .pagination .inactive:hover {\n    background-color: #E6E8EB;\n     color: #A9ADB2;\n }\n .pagination .prev, .pagination .next {}\n \n /*  5. Images  --------------------------------------------------------- */\n \n img {\n    max-width: 100%;\n    height: auto;\n }\n img.pull-right { margin: 12px 0px 0px 18px; }\n img.pull-left { margin: 12px 18px 0px 0px; }\n \n /*  6. Buttons  --------------------------------------------------------- */\n \n .button-c,\n .button-c:visited,\n button-c,\n input[type=\"submit\"],\n input[type=\"reset\"],\n input[type=\"button-c\"] {\n    font: 16px/30px 'opensans-bold', sans-serif;\n    background: #11ABB0;\n    display: inline-block;\n     text-decoration: none;\n    letter-spacing: 0;\n    color: #fff;\n     padding: 12px 20px;\n     margin-bottom: 18px;\n    border: none;\n    cursor: pointer;\n    height: auto;\n \n    -webkit-transition: all .2s ease-in-out;\n     -moz-transition: all .2s ease-in-out;\n     -o-transition: all .2s ease-in-out;\n     -ms-transition: all .2s ease-in-out;\n     transition: all .2s ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n    border-radius: 3px;\n }\n \n .button-c:hover,\n button-c:hover,\n input[type=\"submit\"]:hover,\n input[type=\"reset\"]:hover,\n input[type=\"button-c\"]:hover {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button-c:active,\n button-c:active,\n input[type=\"submit\"]:active,\n input[type=\"reset\"]:active,\n input[type=\"button-c\"]:active {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button-c.full-width,\n button-c.full-width,\n input[type=\"submit\"].full-width,\n input[type=\"reset\"].full-width,\n input[type=\"button-c\"].full-width {\n     width: 100%;\n     padding-left: 0 !important;\n     padding-right: 0 !important;\n     text-align: center;\n }\n \n /* Fix for odd Mozilla border & padding issues */\n button-c::-moz-focus-inner,\n input::-moz-focus-inner {\n     border: 0;\n     padding: 0;\n }\n \n \n /*  7. Forms  --------------------------------------------------------- */\n \n form { margin-bottom: 24px; }\n fieldset { margin-bottom: 24px; }\n \n input[type=\"text\"],\n input[type=\"password\"],\n input[type=\"email\"],\n textarea,\n select {\n    display: block;\n    padding: 18px 15px;\n    margin: 0 0 24px 0;\n    border: 0;\n    outline: none;\n    vertical-align: middle;\n    min-width: 225px;\n     max-width: 100%;\n    font-size: 15px;\n    line-height: 24px;\n     color: #647373;\n     background: #D3D9D9;\n \n }\n \n /* select { padding: 0;\n    width: 220px;\n    } */\n \n input[type=\"text\"]:focus,\n input[type=\"password\"]:focus,\n input[type=\"email\"]:focus,\n textarea:focus {\n    color: #B3B7BC;\n     background-color: #3d4145;\n }\n \n textarea { min-height: 220px; }\n \n label,\n legend {\n    font: 16px/24px 'opensans-bold', sans-serif;\n     margin: 12px 0;\n    color: #3d4145;\n    display: block;\n }\n label span,\n legend span {\n     color: #8B9798;\n    font: 14px/24px 'opensans-regular', sans-serif;\n }\n \n input[type=\"checkbox\"],\n input[type=\"radio\"] {\n     font-size: 15px;\n     color: #737373;\n }\n \n input[type=\"checkbox\"] { display: inline; }\n \n /* ------------------------------------------------------------------ */\n /* d. Grid\n ---------------------------------------------------------------------\n    gutter = 40px.\n /* ------------------------------------------------------------------ */\n \n /* default\n --------------------------------------------------------------- */\n .row {\n    width: 96%;\n    max-width: 1020px;\n    margin: 0 auto;\n }\n /* fixed width for IE8 */\n .ie .row { width: 1000px ; }\n \n .narrow .row { max-width: 980px; }\n \n .row .row { width: auto; max-width: none; margin: 0 -20px; }\n \n /* row clearing */\n .row:before,\n .row:after {\n     content: \" \";\n     display: table;\n }\n .row:after {\n     clear: both;\n }\n \n .column, .columns {\n    position: relative;\n    padding: 0 20px;\n    min-height: 1px;\n    float: left;\n }\n .column.centered, .columns.centered  {\n     float: none;\n     margin: 0 auto;\n }\n \n /* removed gutters */\n .row.collapsed > .column,\n .row.collapsed > .columns,\n .column.collapsed, .columns.collapsed  { padding: 0; }\n \n [class*=\"column\"] + [class*=\"column\"]:last-child { float: right; }\n [class*=\"column\"] + [class*=\"column\"].end { float: right; }\n \n /* column widths */\n .row .one         { width: 8.33333%; }\n .row .two         { width: 16.66667%; }\n .row .three       { width: 25%; }\n .row .four        { width: 33.33333%; }\n .row .five        { width: 41.66667%; }\n .row .six         { width: 50%; }\n .row .seven       { width: 58.33333%; }\n .row .eight       { width: 66.66667%; }\n .row .nine        { width: 75%; }\n .row .ten         { width: 83.33333%; }\n .row .eleven      { width: 91.66667%; }\n .row .twelve      { width: 100%; }\n \n /* Offsets */\n .row .offset-1    { margin-left: 8.33333%; }\n .row .offset-2    { margin-left: 16.66667%; }\n .row .offset-3    { margin-left: 25%; }\n .row .offset-4    { margin-left: 33.33333%; }\n .row .offset-5    { margin-left: 41.66667%; }\n .row .offset-6    { margin-left: 50%; }\n .row .offset-7    { margin-left: 58.33333%; }\n .row .offset-8    { margin-left: 66.66667%; }\n .row .offset-9    { margin-left: 75%; }\n .row .offset-10   { margin-left: 83.33333%; }\n .row .offset-11   { margin-left: 91.66667%; }\n \n /* Push/Pull */\n .row .push-1      { left: 8.33333%; }\n .row .pull-1      { right: 8.33333%; }\n .row .push-2      { left: 16.66667%; \t}\n .row .pull-2      { right: 16.66667%; }\n .row .push-3      { left: 25%; }\n .row .pull-3      { right: 25%;\t}\n .row .push-4      { left: 33.33333%; }\n .row .pull-4      { right: 33.33333%; }\n .row .push-5      { left: 41.66667%; }\n .row .pull-5      { right: 41.66667%; }\n .row .push-6      { left: 50%; }\n .row .pull-6      { right: 50%; }\n .row .push-7      { left: 58.33333%; }\n .row .pull-7      { right: 58.33333%; }\n .row .push-8      { left: 66.66667%; \t}\n .row .pull-8      { right: 66.66667%; }\n .row .push-9      { left: 75%; }\n .row .pull-9      { right: 75%; }\n .row .push-10     { left: 83.33333%; }\n .row .pull-10     { right: 83.33333%; }\n .row .push-11     { left: 91.66667%; }\n .row .pull-11     { right: 91.66667%; }\n \n /* block grids\n --------------------------------------------------------------------- */\n .bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n .bgrid-quarters [class*=\"column\"] { width: 25%; }\n .bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n .bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: left; }\n \n /* Left clearing for block grid columns - columns that changes width in\n different screen sizes. Allows columns with different heights to align\n properly.\n --------------------------------------------------------------------- */\n .first { clear: left; }   /* first column in default screen */\n .s-first { clear: none; } /* first column in smaller screens */\n \n /* smaller screens\n --------------------------------------------------------------- */\n @media only screen and (max-width: 900px) {\n \n    /* block grids on small screens */\n    .s-bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n    .s-bgrid-quarters [class*=\"column\"] { width: 25%; }\n    .s-bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n    .s-bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n    /* block grids left clearing */\n    .first { clear: none; }\n    .s-first { clear: left; }\n \n }\n \n /* mobile wide/smaller tablets\n --------------------------------------------------------------- */\n @media only screen and (max-width: 767px) {\n \n    .row {\n        width: 460px;\n        margin: 0 auto;\n       padding: 0;\n     }\n    .column, .columns {\n        width: auto !important;\n        float: none;\n        margin-left: 0;\n        margin-right: 0;\n       padding: 0 30px;\n    }\n    .row .row { width: auto; max-width: none; margin: 0 -30px; }\n \n    [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n    [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n \n    /* Offsets */\n    .row .offset-1    { margin-left: 0%; }\n    .row .offset-2    { margin-left: 0%; }\n    .row .offset-3    { margin-left: 0%; }\n    .row .offset-4    { margin-left: 0%; }\n    .row .offset-5    { margin-left: 0%; }\n    .row .offset-6    { margin-left: 0%; }\n    .row .offset-7    { margin-left: 0%; }\n    .row .offset-8    { margin-left: 0%; }\n    .row .offset-9    { margin-left: 0%; }\n    .row .offset-10   { margin-left: 0%; }\n    .row .offset-11   { margin-left: 0%; }\n }\n \n /* mobile narrow\n --------------------------------------------------------------- */\n @media only screen and (max-width: 460px) {\n \n    .row { width: auto; }\n \n }\n \n /* larger screens\n --------------------------------------------------------------- */\n @media screen and (min-width: 1200px) {\n \n    .wide .row { max-width: 1180px; }\n \n }\n \n /* ------------------------------------------------------------------ */\n /* e. Others\n /* ------------------------------------------------------------------ */\n \n /*  1. Clearing\n     (http://nicolasgallagher.com/micro-clearfix-hack/\n --------------------------------------------------------------------- */\n \n .cf:before,\n .cf:after {\n     content: \" \";\n     display: table;\n }\n .cf:after {\n     clear: both;\n }\n \n /*  2. Misc -------------------------------------------------------- */\n \n .remove-bottom { margin-bottom: 0 !important; }\n .half-bottom { margin-bottom: 12px !important; }\n .add-bottom { margin-bottom: 24px !important; }\n .no-border { border: none; }\n \n .text-center  { text-align: center !important; }\n .text-left    { text-align: left !important; }\n .text-right   { text-align: right !important; }\n .pull-left    { float: left !important; }\n .pull-right   { float: right !important; }\n .align-center {\n     margin-left: auto !important;\n     margin-right: auto !important;\n     text-align: center !important;\n } \n\n /* ------------------------------------------------------------------ */\n/* i. Footer\n/* ------------------------------------------------------------------ */\n\nfooter-c {\n   background: #1F1F1F url(./static/images/back1.jpg) no-repeat center center;\n   padding-top: 48px;\n   //margin-bottom: 48px;\n   color: #303030;\n   font-size: 14px;\n   text-align: center;\n   position: relative;\n   size: 100vw;\n}\n\nfooter-c a, footer-c a:visited { color: #525252; }\nfooter-c a:hover, footer-c a:focus { color: #fff; }\n\n/* copyright */\nfooter-c .copyright {\n    margin: 0;\n    padding: 0;\n }\nfooter-c .copyright li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    line-height: 1vh;\n}\n.ie footer-c .copyright li {\n   display: inline;\n}\nfooter-c .copyright li:before {\n    content: \"\\2022\";\n    padding-left: 0.5vw;\n    padding-right: 0.5vw;\n    color: #095153;\n}\nfooter-c .copyright  li:first-child:before {\n    display: none;\n}\n\n/* social links */\nfooter-c .social-links {\n   margin: 2.5vh 0 0.5vh 0;\n   padding: 0;\n   font-size: 30px;\n}\nfooter-c .social-links li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    margin-left: 1.5vw;\n    color: #F06000;\n}\n\nfooter-c .social-links li:first-child { margin-left: 0; }\n\n/* Go To Top Button */\n#go-top {\n\tposition: absolute;\n\ttop: -24px;\n   left: 50%;\n   margin-left: -30px;\n}\n#go-top a {\n\ttext-decoration: none;\n\tborder: 0 none;\n\tdisplay: block;\n\twidth: 60px;\n\theight: 60px;\n\tbackground-color: #525252;\n\n\t-webkit-transition: all 0.2s ease-in-out;\n   -moz-transition: all 0.2s ease-in-out;\n   -o-transition: all 0.2s ease-in-out;\n   -ms-transition: all 0.2s ease-in-out;\n   transition: all 0.2s ease-in-out;\n\n   color: #fff;\n   font-size: 21px;\n   line-height: 60px;\n \tborder-radius: 100%;\n}\n#go-top a:hover { background-color: #0F9095; }\n\n/* ------------------------------------------------------------------ */\n/* e. Portfolio Section\n/* ------------------------------------------------------------------ */\n\n#portfolio {\n   background: #ebeeee;\n   padding-top: 5vh;\n   padding-bottom: 60px;\n}\n#portfolio h1 {\n   font: 1.5vw/1.5vw 'opensans-semibold', sans-serif;\n   text-transform: uppercase;\n   letter-spacing: 1px;\n   text-align: center;\n   margin-bottom: 48px;\n   color: #3f51b5;\n}\n\n/* Portfolio Content */\n#portfolio-wrapper .columns { margin-bottom: 36px; }\n.portfolio-item .item-wrap {\n   background: #fff;\n   overflow: hidden;\n   position: relative;\n\n   -webkit-transition: all 0.3s ease-in-out;\n\t-moz-transition: all 0.3s ease-in-out;\n\t-o-transition: all 0.3s ease-in-out;\n\t-ms-transition: all 0.3s ease-in-out;\n\ttransition: all 0.3s ease-in-out;\n}\n.portfolio-item .item-wrap a {\n   display: block;\n   cursor: pointer;\n}\n\n/* overlay */\n.portfolio-item .item-wrap .overlay {\n   position: absolute;\n   left: 0;\n   top: 0;\n   width: 100%;\n   height: 100%;\n\n\topacity: 0;\n\t-moz-opacity: 0;\n\tfilter:alpha(opacity=0);\n\n   -webkit-transition: opacity 0.3s ease-in-out;\n\t-moz-transition: opacity 0.3s ease-in-out;\n\t-o-transition: opacity 0.3s ease-in-out;\n\ttransition: opacity 0.3s ease-in-out;\n\n   background: url(./static/images/overlay-bg.png) repeat;\n}\n.portfolio-item .item-wrap .link-icon {\n   display: block;\n   color: #fff;\n   height: 30px;\n   width: 30px;\n   font-size: 18px;\n   line-height: 30px;\n   text-align: center;\n\n   opacity: 0;\n\t-moz-opacity: 0;\n\tfilter:alpha(opacity=0);\n\n   -webkit-transition: opacity 0.3s ease-in-out;\n\t-moz-transition: opacity 0.3s ease-in-out;\n\t-o-transition: opacity 0.3s ease-in-out;\n\ttransition: opacity 0.3s ease-in-out;\n\n   position: absolute;\n   top: 50%;\n   left: 50%;\n   margin-left: -15px;\n   margin-top: -15px;\n}\n.portfolio-item .item-wrap img {\n   vertical-align: bottom;\n}\n.portfolio-item .portfolio-item-meta { padding: 18px }\n.portfolio-item .portfolio-item-meta h5 {\n   font: 14px/21px 'opensans-bold', sans-serif;\n   color: #fff;\n}\n.portfolio-item .portfolio-item-meta p {\n   font: 12px/18px 'opensans-light', sans-serif;\n   color: #c6c7c7;\n   margin-bottom: 0;\n}\n\n/* on hover */\n.portfolio-item:hover .overlay {\n\topacity: 1;\n\t-moz-opacity: 1;\n\tfilter:alpha(opacity=100);\n}\n.portfolio-item:hover .link-icon {\n   opacity: 1;\n\t-moz-opacity: 1;\n\tfilter:alpha(opacity=100);\n}\n\n/* primary navigation\n--------------------------------------------------------------------- */\n#nav-wrap ul, #nav-wrap li, #nav-wrap a {\n\t margin: 0;\n\t padding: 0;\n\t border: none;\n\t outline: none;\n}\n\n/* nav-wrap */\n#nav-wrap {\n   font: 12px 'opensans-bold', sans-serif;\n   width: 100%;\n   text-transform: uppercase;\n   letter-spacing: 2.5px;\n   margin: 0 auto;\n   z-index: 100;\n   position: fixed;\n   left: 0;\n   top: 0;\n}\n.opaque { background-color: #333; }\n\n/* hide toggle button */\n#nav-wrap > a.mobile-btn { display: none; }\n\nul#nav {\n   min-height: 48px;\n   width: auto;\n\n   /* center align the menu */\n   text-align: center;\n}\nul#nav li {\n   position: relative;\n   list-style: none;\n   height: 48px;\n   display: inline-block;\n}\n\n/* Links */\nul#nav li a {\n\n/* 8px padding top + 8px padding bottom + 32px line-height = 48px */\n\n   display: inline-block;\n   padding: 8px 13px;\n   line-height: 32px;\n\ttext-decoration: none;\n   text-align: left;\n   color: #fff;\n\n\t-webkit-transition: color .2s ease-in-out;\n\t-moz-transition: color .2s ease-in-out;\n\t-o-transition: color .2s ease-in-out;\n\t-ms-transition: color .2s ease-in-out;\n\ttransition: color .2s ease-in-out;\n}\n\nul#nav li a:active { background-color: transparent !important; }\nul#nav li.current a { color: #F06000; }\n\n/* mobile wide/smaller tablets\n---------------------------------------------------------------------- */\n\n@media only screen and (max-width: 767px) {\n\n   /* mobile navigation\n   -------------------------------------------------------------------- */\n   #nav-wrap {\n      font: 12px 'opensans-bold', sans-serif;\n      background: transparent !important;\n      letter-spacing: 1.5px;  \n      width: auto;\n      position: fixed;\n      top: 0;\n      right: 0;\n   }\n   #nav-wrap > a {\n\t   width: 48px;\n\t\theight: 48px;\n\t\ttext-align: left;\n\t\tbackground-color: #CC5200;\n\t\tposition: relative;\n      border: none;\n      float: right;\n\n      font: 0/0 a;\n      text-shadow: none;\n      color: transparent;\n\n      position: relative;\n      top: 0px;\n      right: 30px;\n   }\n\n\t#nav-wrap > a:before,\n   #nav-wrap > a:after {\n\t   position: absolute;\n\t\tborder: 2px solid #fff;\n\t\ttop: 35%;\n\t\tleft: 25%;\n\t\tright: 25%;\n\t\tcontent: '';\n\t}\n   #nav-wrap > a:after { top: 60%; }\n\n   /* toggle buttons */\n\t#nav-wrap:not( :target ) > a:first-of-type,\n\t#nav-wrap:target > a:last-of-type  {\n\t   display: block;\n\t}\n\n   /* hide menu panel */\n   #nav-wrap ul#nav {\n      height: auto;\n\t\tdisplay: none;\n      clear: both;\n      width: auto; \n      float: right;     \n\n      position: relative;\n      top: 12px;\n      right: 0;\n   }\n\n   /* display menu panels */\n\t#nav-wrap:target > ul#nav\t{\n\t   display: block;\n      padding: 30px 20px 48px 20px;\n      background: #1f2024;\n      margin: 0 30px;\n      clear: both;\n   }\n\n   ul#nav li {\n      display: block;\n      height: auto;      \n      margin: 0 auto; \n      padding: 0 4%;           \n      text-align: left;\n      border-bottom: 1px solid #2D2E34;\n      border-bottom-style: dotted; \n   }\n  \n   ul#nav li a {  \n      display: block;    \n      margin: 0;\n      padding: 0;      \n      margin: 12px 0; \n      line-height: 16px; /* reset line-height from 48px */\n      border: none;\n   }  \n}\n\n ");
 });
 
 /***/ }),
@@ -665,7 +774,7 @@ __webpack_require__.r(__webpack_exports__);
 var Slideshow = function Slideshow() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true
-  }, "\n            .centered-text {\n                position: absolute;\n                height: 33vh;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                margin: auto;\n            }\n\n            h1 {\n                color: #dc1731;\n                font-size: 5vh;\n                margin: 1vh;\n            }\n\n            h2 {\n              color: #9e2a22;\n            }\n\n            h3 {\n              color: #f50057;\n            }\n\n            h4 {\n              color: #6b6565;\n            }\n\n            .overlay {\n                background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5), #2F2727);\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n            }\n\n    .carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transitio\n    n:all .25s ease-in;transition:all .25s ease-in;opacity:.4;position:absolute;z-index:2;top:20px;background:0 0;border:0;font-size:32px;cursor:pointer}.carousel .control-arrow:hover{o\n    pacity:1}.carousel .control-arrow:before,.carousel.carousel-slider .control-arrow:before{margin:0 5px;display:inline-block;border-top:16px solid transparent;border-bottom:16px solid t\n    ransparent;content:''}.carousel .control-disabled.control-arrow{opacity:0;cursor:inherit;display:none}.carousel .control-prev.control-arrow{left:0}.carousel .control-prev.control-arrow:before{border-right:16px solid #ad1f4e}.carousel .control-next.control-arrow{right:0}.carousel .control-next.control-arrow:before{border-left:16px solid #ad1f4e}.carousel{position:relative;width:100%}.carousel *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.carousel img{width:100%;display:inline-block;pointer-events:none}.carousel .carousel{position:relative}.carousel .control-arrow{outline:0;border:0;background:0 0;top:50%;margin-top:-13px;font-size:116px}.carousel .thumbs-wrapper{margin:20px;overflow:hidden}.carousel .thumbs{-webkit-transition:all .15s ease-in;-moz-transition:all .15s ease-in;-ms-transition:all .15s ease-in;-o-transition:all .15s ease-in;transition:all .15s ease-in;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);position:relative;list-style:none;white-space:nowrap}.carousel .thumb{-webkit-transition:border .15s ease-in;-moz-transition:border .15s ease-in;-ms-transition:border .15s ease-in;-o-transition:border .15s ease-in;transition:border .15s ease-in;display:inline-block;width:0px;height:0px;margin-right:6px;white-space:nowrap;overflow:hidden;border:0px solid #ad1f4e;padding:2px}.carousel .thumb:focus{border:0px solid #ccc;outline:0}.carousel .thumb.selected,.carousel .thumb:hover{border:0px solid #333}.carousel .thumb img{vertical-align:top}.carousel.carousel-slider{position:relative;margin:0;overflow:hidden}.carousel.carousel-slider .control-arrow{top:0;color:#ad1f4e;font-size:26px;bottom:0;margin-top:0;padding:5px}.carousel.carousel-slider .control-arrow:hover{background:rgba(0,0,0,.2)}.carousel .slider-wrapper{overflow:hidden;margin:auto;width:100%;-webkit-transition:height .15s ease-in;-moz-transition:height .15s ease-in;-ms-transition:height .15s ease-in;-o-transition:height .15s ease-in;transition:height .15s ease-in}.carousel .slider-wrapper.axis-horizontal .slider{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-horizontal .slider .slide{flex-direction:column;flex-flow:column}.carousel .slider-wrapper.axis-vertical{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-vertical .slider{-webkit-flex-direction:column;flex-direction:column}.carousel .slider{margin:0;padding:0;position:relative;list-style:none;width:100%}.carousel .slider.animated{-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out}.carousel .slide{min-width:100%;margin:0;position:relative;text-align:center;background:#000}.carousel .slide img{width:100%;vertical-align:top;border:0}.carousel .slide iframe{display:inline-block;width:calc(100% - 80px);margin:0 40px 40px;border:0}.carousel .slide .legend{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;position:absolute;bottom:40px;left:50%;margin-left:-45%;width:90%;border-radius:10px;background:#000;color:#ad1f4e;padding:10px;font-size:12px;text-align:center;opacity:.25;-webkit-transition:opacity .35s ease-in-out;-moz-transition:opacity .35s ease-in-out;-ms-transition:opacity .35s ease-in-out;-o-transition:opacity .35s ease-in-out;transition:opacity .35s ease-in-out}.carousel .control-dots{position:absolute;bottom:0;margin:10px 0;text-align:center;width:100%}@media (min-width:960px){.carousel .control-dots{bottom:0}}.carousel .control-dots .dot{-webkit-transition:opacity .25s ease-in;-moz-transition:opacity .25s ease-in;-ms-transition:opacity .25s ease-in;-o-transition:opacity .25s ease-in;transition:opacity .25s ease-in;opacity:.3;box-shadow:1px 1px 2px rgba(0,0,0,.9);background:#ad1f4e;border-radius:50%;width:16px;height:16px;cursor:pointer;display:inline-block;margin:0 16px}.carousel .control-dots .dot.selected,.carousel .control-dots .dot:hover{opacity:1}.carousel .carousel-status{position:absolute;top:0;right:0;padding:5px;font-size:10px;text-shadow:1px 1px 1px rgba(0,0,0,.9);color:#ad1f4e}.carousel:hover .slide .legend{opacity:1}\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\n            .centered-text {\n                position: absolute;\n                height: 33vh;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                margin: auto;\n            }\n\n            h1 {\n                color: #dc1731;\n                font-size: 5vh;\n                margin: 1vh;\n            }\n\n            h2 {\n              color: #9e2a22;\n            }\n\n            h3 {\n              color: #f50057;\n            }\n\n            h4 {\n              color: #6b6565;\n            }\n\n            h5, h6{\n              color: #eee;\n            }\n\n            .overlay {\n                background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5), #2F2727);\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n            }\n\n    .carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transitio\n    n:all .25s ease-in;transition:all .25s ease-in;opacity:.4;position:absolute;z-index:2;top:20px;background:0 0;border:0;font-size:32px;cursor:pointer}.carousel .control-arrow:hover{o\n    pacity:1}.carousel .control-arrow:before,.carousel.carousel-slider .control-arrow:before{margin:0 5px;display:inline-block;border-top:16px solid transparent;border-bottom:16px solid t\n    ransparent;content:''}.carousel .control-disabled.control-arrow{opacity:0;cursor:inherit;display:none}.carousel .control-prev.control-arrow{left:0}.carousel .control-prev.control-arrow:before{border-right:16px solid #ad1f4e}.carousel .control-next.control-arrow{right:0}.carousel .control-next.control-arrow:before{border-left:16px solid #ad1f4e}.carousel{position:relative;width:100%}.carousel *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.carousel img{width:100%;display:inline-block;pointer-events:none}.carousel .carousel{position:relative}.carousel .control-arrow{outline:0;border:0;background:0 0;top:50%;margin-top:-13px;font-size:116px}.carousel .thumbs-wrapper{margin:20px;overflow:hidden}.carousel .thumbs{-webkit-transition:all .15s ease-in;-moz-transition:all .15s ease-in;-ms-transition:all .15s ease-in;-o-transition:all .15s ease-in;transition:all .15s ease-in;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);position:relative;list-style:none;white-space:nowrap}.carousel .thumb{-webkit-transition:border .15s ease-in;-moz-transition:border .15s ease-in;-ms-transition:border .15s ease-in;-o-transition:border .15s ease-in;transition:border .15s ease-in;display:inline-block;width:0px;height:0px;margin-right:6px;white-space:nowrap;overflow:hidden;border:0px solid #ad1f4e;padding:2px}.carousel .thumb:focus{border:0px solid #ccc;outline:0}.carousel .thumb.selected,.carousel .thumb:hover{border:0px solid #333}.carousel .thumb img{vertical-align:top}.carousel.carousel-slider{position:relative;margin:0;overflow:hidden}.carousel.carousel-slider .control-arrow{top:0;color:#ad1f4e;font-size:26px;bottom:0;margin-top:0;padding:5px}.carousel.carousel-slider .control-arrow:hover{background:rgba(0,0,0,.2)}.carousel .slider-wrapper{overflow:hidden;margin:auto;width:100%;-webkit-transition:height .15s ease-in;-moz-transition:height .15s ease-in;-ms-transition:height .15s ease-in;-o-transition:height .15s ease-in;transition:height .15s ease-in}.carousel .slider-wrapper.axis-horizontal .slider{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-horizontal .slider .slide{flex-direction:column;flex-flow:column}.carousel .slider-wrapper.axis-vertical{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-vertical .slider{-webkit-flex-direction:column;flex-direction:column}.carousel .slider{margin:0;padding:0;position:relative;list-style:none;width:100%}.carousel .slider.animated{-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out}.carousel .slide{min-width:100%;margin:0;position:relative;text-align:center;background:#000}.carousel .slide img{width:100%;vertical-align:top;border:0}.carousel .slide iframe{display:inline-block;width:calc(100% - 80px);margin:0 40px 40px;border:0}.carousel .slide .legend{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;position:absolute;bottom:40px;left:50%;margin-left:-45%;width:90%;border-radius:10px;background:#000;color:#ad1f4e;padding:10px;font-size:12px;text-align:center;opacity:.25;-webkit-transition:opacity .35s ease-in-out;-moz-transition:opacity .35s ease-in-out;-ms-transition:opacity .35s ease-in-out;-o-transition:opacity .35s ease-in-out;transition:opacity .35s ease-in-out}.carousel .control-dots{position:absolute;bottom:0;margin:10px 0;text-align:center;width:100%}@media (min-width:960px){.carousel .control-dots{bottom:0}}.carousel .control-dots .dot{-webkit-transition:opacity .25s ease-in;-moz-transition:opacity .25s ease-in;-ms-transition:opacity .25s ease-in;-o-transition:opacity .25s ease-in;transition:opacity .25s ease-in;opacity:.3;box-shadow:1px 1px 2px rgba(0,0,0,.9);background:#ad1f4e;border-radius:50%;width:16px;height:16px;cursor:pointer;display:inline-block;margin:0 16px}.carousel .control-dots .dot.selected,.carousel .control-dots .dot:hover{opacity:1}.carousel .carousel-status{position:absolute;top:0;right:0;padding:5px;font-size:10px;text-shadow:1px 1px 1px rgba(0,0,0,.9);color:#ad1f4e}.carousel:hover .slide .legend{opacity:1}\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "overlay"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "centered-text"
@@ -2176,6 +2285,35 @@ var Timer = function Timer() {
 
 /***/ }),
 
+/***/ "./components/useScript.js":
+/*!*********************************!*\
+  !*** ./components/useScript.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var useScript = function useScript(url) {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    var script = document.createElement('script');
+    script.src = url;
+    script.async = true;
+    document.body.appendChild(script);
+    return function () {
+      document.body.removeChild(script);
+    };
+  }, [url]);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (useScript);
+
+/***/ }),
+
 /***/ "./data/dictionary.js":
 /*!****************************!*\
   !*** ./data/dictionary.js ***!
@@ -2212,16 +2350,19 @@ __webpack_require__.r(__webpack_exports__);
     "name": "TBD",
     "designation": "TBD",
     "image": "speaker.jpg",
+    "msg": "I am very happy that the 9th Research Scholar Day of IIT Patna is going to be held with the usual thoroughness and excellent content. We have eminent speakers from Science, Engineering, Humanities and Social Sciences and Industry sharing their wisdom with the research scholars of the institute. Research is what separates institutes of higher learning from others, and it is really praiseworthy that RSD is considered a flagship event of IIT patna. I am sure the days event along with pre and post workshops/tutorial etc will be very interesting and informative for everybody Wish you all the best. Jai Hind .",
     "url": "https://www.canadianwanderlust.com"
   }, {
     "name": "TBD",
     "designation": "TBD",
     "image": "speaker.jpg",
+    "msg": "",
     "url": "http://www.timbakerdev.com"
   }, {
     "name": "TBD",
     "designation": "TBD",
     "image": "speaker.jpg",
+    "msg": "",
     "url": "http://www.timbakerdev.com/originalthaifood.github.io"
   }]
 });
@@ -3530,6 +3671,140 @@ var unitlessKeys = {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (unitlessKeys);
+
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Backdrop/Backdrop.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Backdrop/Backdrop.js ***!
+  \*****************************************************************/
+/*! exports provided: styles, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+/* harmony import */ var _Fade__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Fade */ "./node_modules/@material-ui/core/esm/Fade/index.js");
+
+
+
+
+
+
+
+var styles = {
+  /* Styles applied to the root element. */
+  root: {
+    // Improve scrollable dialog support.
+    zIndex: -1,
+    position: 'fixed',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    right: 0,
+    bottom: 0,
+    top: 0,
+    left: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    WebkitTapHighlightColor: 'transparent',
+    // Disable scroll capabilities.
+    touchAction: 'none'
+  },
+
+  /* Styles applied to the root element if `invisible={true}`. */
+  invisible: {
+    backgroundColor: 'transparent'
+  }
+};
+var Backdrop = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Backdrop(props, ref) {
+  var children = props.children,
+      classes = props.classes,
+      className = props.className,
+      _props$invisible = props.invisible,
+      invisible = _props$invisible === void 0 ? false : _props$invisible,
+      open = props.open,
+      transitionDuration = props.transitionDuration,
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "invisible", "open", "transitionDuration"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Fade__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    in: open,
+    timeout: transitionDuration
+  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, invisible && classes.invisible),
+    "aria-hidden": true,
+    ref: ref
+  }, children));
+});
+ true ? Backdrop.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The content of the component.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
+
+  /**
+   * @ignore
+   */
+  className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+
+  /**
+   * If `true`, the backdrop is invisible.
+   * It can be used when rendering a popover or a custom select component.
+   */
+  invisible: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * If `true`, the backdrop is open.
+   */
+  open: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool.isRequired,
+
+  /**
+   * The duration for the transition, in milliseconds.
+   * You may specify a single timeout for all transitions, or individually with an object.
+   */
+  transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
+    enter: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
+    exit: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number
+  })])
+} : undefined;
+/* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_5__["default"])(styles, {
+  name: 'MuiBackdrop'
+})(Backdrop));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Backdrop/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Backdrop/index.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Backdrop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Backdrop */ "./node_modules/@material-ui/core/esm/Backdrop/Backdrop.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Backdrop__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
 
 
 /***/ }),
@@ -5509,6 +5784,1191 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/esm/Fade/Fade.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Fade/Fade.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-transition-group */ "./node_modules/@material-ui/core/node_modules/react-transition-group/esm/index.js");
+/* harmony import */ var _styles_transitions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/transitions */ "./node_modules/@material-ui/core/esm/styles/transitions.js");
+/* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@material-ui/core/esm/styles/useTheme.js");
+/* harmony import */ var _transitions_utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../transitions/utils */ "./node_modules/@material-ui/core/esm/transitions/utils.js");
+/* harmony import */ var _utils_useForkRef__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/useForkRef */ "./node_modules/@material-ui/core/esm/utils/useForkRef.js");
+
+
+
+
+
+
+
+
+
+var styles = {
+  entering: {
+    opacity: 1
+  },
+  entered: {
+    opacity: 1
+  }
+};
+var defaultTimeout = {
+  enter: _styles_transitions__WEBPACK_IMPORTED_MODULE_5__["duration"].enteringScreen,
+  exit: _styles_transitions__WEBPACK_IMPORTED_MODULE_5__["duration"].leavingScreen
+};
+/**
+ * The Fade transition is used by the [Modal](/components/modal/) component.
+ * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
+ */
+
+var Fade = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Fade(props, ref) {
+  var children = props.children,
+      inProp = props.in,
+      onEnter = props.onEnter,
+      onExit = props.onExit,
+      style = props.style,
+      _props$timeout = props.timeout,
+      timeout = _props$timeout === void 0 ? defaultTimeout : _props$timeout,
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "in", "onEnter", "onExit", "style", "timeout"]);
+
+  var theme = Object(_styles_useTheme__WEBPACK_IMPORTED_MODULE_6__["default"])();
+  var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_8__["default"])(children.ref, ref);
+
+  var handleEnter = function handleEnter(node, isAppearing) {
+    Object(_transitions_utils__WEBPACK_IMPORTED_MODULE_7__["reflow"])(node); // So the animation always start from the start.
+
+    var transitionProps = Object(_transitions_utils__WEBPACK_IMPORTED_MODULE_7__["getTransitionProps"])({
+      style: style,
+      timeout: timeout
+    }, {
+      mode: 'enter'
+    });
+    node.style.webkitTransition = theme.transitions.create('opacity', transitionProps);
+    node.style.transition = theme.transitions.create('opacity', transitionProps);
+
+    if (onEnter) {
+      onEnter(node, isAppearing);
+    }
+  };
+
+  var handleExit = function handleExit(node) {
+    var transitionProps = Object(_transitions_utils__WEBPACK_IMPORTED_MODULE_7__["getTransitionProps"])({
+      style: style,
+      timeout: timeout
+    }, {
+      mode: 'exit'
+    });
+    node.style.webkitTransition = theme.transitions.create('opacity', transitionProps);
+    node.style.transition = theme.transitions.create('opacity', transitionProps);
+
+    if (onExit) {
+      onExit(node);
+    }
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_4__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    appear: true,
+    in: inProp,
+    onEnter: handleEnter,
+    onExit: handleExit,
+    timeout: timeout
+  }, other), function (state, childProps) {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        opacity: 0,
+        visibility: state === 'exited' && !inProp ? 'hidden' : undefined
+      }, styles[state], {}, style, {}, children.props.style),
+      ref: handleRef
+    }, childProps));
+  });
+});
+ true ? Fade.propTypes = {
+  /**
+   * A single child content element.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.element,
+
+  /**
+   * If `true`, the component will transition in.
+   */
+  in: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * @ignore
+   */
+  onEnter: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func,
+
+  /**
+   * @ignore
+   */
+  onExit: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func,
+
+  /**
+   * @ignore
+   */
+  style: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
+
+  /**
+   * The duration for the transition, in milliseconds.
+   * You may specify a single timeout for all transitions, or individually with an object.
+   */
+  timeout: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.shape({
+    enter: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
+    exit: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number
+  })])
+} : undefined;
+/* harmony default export */ __webpack_exports__["default"] = (Fade);
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Fade/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Fade/index.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Fade__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Fade */ "./node_modules/@material-ui/core/esm/Fade/Fade.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Fade__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Modal/Modal.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Modal/Modal.js ***!
+  \***********************************************************/
+/*! exports provided: styles, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/styles */ "./node_modules/@material-ui/styles/esm/index.js");
+/* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/index.js");
+/* harmony import */ var _utils_ownerDocument__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/ownerDocument */ "./node_modules/@material-ui/core/esm/utils/ownerDocument.js");
+/* harmony import */ var _Portal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Portal */ "./node_modules/@material-ui/core/esm/Portal/index.js");
+/* harmony import */ var _utils_createChainedFunction__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/createChainedFunction */ "./node_modules/@material-ui/core/esm/utils/createChainedFunction.js");
+/* harmony import */ var _utils_useForkRef__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/useForkRef */ "./node_modules/@material-ui/core/esm/utils/useForkRef.js");
+/* harmony import */ var _utils_useEventCallback__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/useEventCallback */ "./node_modules/@material-ui/core/esm/utils/useEventCallback.js");
+/* harmony import */ var _styles_zIndex__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../styles/zIndex */ "./node_modules/@material-ui/core/esm/styles/zIndex.js");
+/* harmony import */ var _ModalManager__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./ModalManager */ "./node_modules/@material-ui/core/esm/Modal/ModalManager.js");
+/* harmony import */ var _TrapFocus__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./TrapFocus */ "./node_modules/@material-ui/core/esm/Modal/TrapFocus.js");
+/* harmony import */ var _SimpleBackdrop__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./SimpleBackdrop */ "./node_modules/@material-ui/core/esm/Modal/SimpleBackdrop.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function getContainer(container) {
+  container = typeof container === 'function' ? container() : container;
+  return react_dom__WEBPACK_IMPORTED_MODULE_3___default.a.findDOMNode(container);
+}
+
+function getHasTransition(props) {
+  return props.children ? props.children.props.hasOwnProperty('in') : false;
+} // A modal manager used to track and manage the state of open Modals.
+// Modals don't open on the server so this won't conflict with concurrent requests.
+
+
+var defaultManager = new _ModalManager__WEBPACK_IMPORTED_MODULE_13__["default"]();
+var styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      position: 'fixed',
+      zIndex: theme.zIndex.modal,
+      right: 0,
+      bottom: 0,
+      top: 0,
+      left: 0
+    },
+
+    /* Styles applied to the root element if the `Modal` has exited. */
+    hidden: {
+      visibility: 'hidden'
+    }
+  };
+};
+/**
+ * Modal is a lower-level construct that is leveraged by the following components:
+ *
+ * - [Dialog](/api/dialog/)
+ * - [Drawer](/api/drawer/)
+ * - [Menu](/api/menu/)
+ * - [Popover](/api/popover/)
+ *
+ * If you are creating a modal dialog, you probably want to use the [Dialog](/api/dialog/) component
+ * rather than directly using Modal.
+ *
+ * This component shares many concepts with [react-overlays](https://react-bootstrap.github.io/react-overlays/#modals).
+ */
+
+var Modal = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Modal(inProps, ref) {
+  var theme = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_5__["useTheme"])();
+  var props = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_5__["getThemeProps"])({
+    name: 'MuiModal',
+    props: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, inProps),
+    theme: theme
+  });
+
+  var _props$BackdropCompon = props.BackdropComponent,
+      BackdropComponent = _props$BackdropCompon === void 0 ? _SimpleBackdrop__WEBPACK_IMPORTED_MODULE_15__["default"] : _props$BackdropCompon,
+      BackdropProps = props.BackdropProps,
+      children = props.children,
+      _props$closeAfterTran = props.closeAfterTransition,
+      closeAfterTransition = _props$closeAfterTran === void 0 ? false : _props$closeAfterTran,
+      container = props.container,
+      _props$disableAutoFoc = props.disableAutoFocus,
+      disableAutoFocus = _props$disableAutoFoc === void 0 ? false : _props$disableAutoFoc,
+      _props$disableBackdro = props.disableBackdropClick,
+      disableBackdropClick = _props$disableBackdro === void 0 ? false : _props$disableBackdro,
+      _props$disableEnforce = props.disableEnforceFocus,
+      disableEnforceFocus = _props$disableEnforce === void 0 ? false : _props$disableEnforce,
+      _props$disableEscapeK = props.disableEscapeKeyDown,
+      disableEscapeKeyDown = _props$disableEscapeK === void 0 ? false : _props$disableEscapeK,
+      _props$disablePortal = props.disablePortal,
+      disablePortal = _props$disablePortal === void 0 ? false : _props$disablePortal,
+      _props$disableRestore = props.disableRestoreFocus,
+      disableRestoreFocus = _props$disableRestore === void 0 ? false : _props$disableRestore,
+      _props$disableScrollL = props.disableScrollLock,
+      disableScrollLock = _props$disableScrollL === void 0 ? false : _props$disableScrollL,
+      _props$hideBackdrop = props.hideBackdrop,
+      hideBackdrop = _props$hideBackdrop === void 0 ? false : _props$hideBackdrop,
+      _props$keepMounted = props.keepMounted,
+      keepMounted = _props$keepMounted === void 0 ? false : _props$keepMounted,
+      _props$manager = props.manager,
+      manager = _props$manager === void 0 ? defaultManager : _props$manager,
+      onBackdropClick = props.onBackdropClick,
+      onClose = props.onClose,
+      onEscapeKeyDown = props.onEscapeKeyDown,
+      onRendered = props.onRendered,
+      open = props.open,
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["BackdropComponent", "BackdropProps", "children", "closeAfterTransition", "container", "disableAutoFocus", "disableBackdropClick", "disableEnforceFocus", "disableEscapeKeyDown", "disablePortal", "disableRestoreFocus", "disableScrollLock", "hideBackdrop", "keepMounted", "manager", "onBackdropClick", "onClose", "onEscapeKeyDown", "onRendered", "open"]);
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(true),
+      exited = _React$useState[0],
+      setExited = _React$useState[1];
+
+  var modal = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef({});
+  var mountNodeRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var modalRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_10__["default"])(modalRef, ref);
+  var hasTransition = getHasTransition(props);
+
+  var getDoc = function getDoc() {
+    return Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_7__["default"])(mountNodeRef.current);
+  };
+
+  var getModal = function getModal() {
+    modal.current.modalRef = modalRef.current;
+    modal.current.mountNode = mountNodeRef.current;
+    return modal.current;
+  };
+
+  var handleMounted = function handleMounted() {
+    manager.mount(getModal(), {
+      disableScrollLock: disableScrollLock
+    }); // Fix a bug on Chrome where the scroll isn't initially 0.
+
+    modalRef.current.scrollTop = 0;
+  };
+
+  var handleOpen = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_11__["default"])(function () {
+    var resolvedContainer = getContainer(container) || getDoc().body;
+    manager.add(getModal(), resolvedContainer); // The element was already mounted.
+
+    if (modalRef.current) {
+      handleMounted();
+    }
+  });
+  var isTopModal = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+    return manager.isTopModal(getModal());
+  }, [manager]);
+  var handlePortalRef = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_11__["default"])(function (node) {
+    mountNodeRef.current = node;
+
+    if (!node) {
+      return;
+    }
+
+    if (onRendered) {
+      onRendered();
+    }
+
+    if (open && isTopModal()) {
+      handleMounted();
+    } else {
+      Object(_ModalManager__WEBPACK_IMPORTED_MODULE_13__["ariaHidden"])(modalRef.current, true);
+    }
+  });
+  var handleClose = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+    manager.remove(getModal());
+  }, [manager]);
+  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+    return function () {
+      handleClose();
+    };
+  }, [handleClose]);
+  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+    if (open) {
+      handleOpen();
+    } else if (!hasTransition || !closeAfterTransition) {
+      handleClose();
+    }
+  }, [open, handleClose, hasTransition, closeAfterTransition, handleOpen]);
+
+  if (!keepMounted && !open && (!hasTransition || exited)) {
+    return null;
+  }
+
+  var handleEnter = function handleEnter() {
+    setExited(false);
+  };
+
+  var handleExited = function handleExited() {
+    setExited(true);
+
+    if (closeAfterTransition) {
+      handleClose();
+    }
+  };
+
+  var handleBackdropClick = function handleBackdropClick(event) {
+    if (event.target !== event.currentTarget) {
+      return;
+    }
+
+    if (onBackdropClick) {
+      onBackdropClick(event);
+    }
+
+    if (!disableBackdropClick && onClose) {
+      onClose(event, 'backdropClick');
+    }
+  };
+
+  var handleKeyDown = function handleKeyDown(event) {
+    // The handler doesn't take event.defaultPrevented into account:
+    //
+    // event.preventDefault() is meant to stop default behaviours like
+    // clicking a checkbox to check it, hitting a button to submit a form,
+    // and hitting left arrow to move the cursor in a text input etc.
+    // Only special HTML elements have these default behaviors.
+    if (event.key !== 'Escape' || !isTopModal()) {
+      return;
+    } // Swallow the event, in case someone is listening for the escape key on the body.
+
+
+    event.stopPropagation();
+
+    if (onEscapeKeyDown) {
+      onEscapeKeyDown(event);
+    }
+
+    if (!disableEscapeKeyDown && onClose) {
+      onClose(event, 'escapeKeyDown');
+    }
+  };
+
+  var inlineStyle = styles(theme || {
+    zIndex: _styles_zIndex__WEBPACK_IMPORTED_MODULE_12__["default"]
+  });
+  var childProps = {};
+
+  if (children.props.tabIndex === undefined) {
+    childProps.tabIndex = children.props.tabIndex || '-1';
+  } // It's a Transition like component
+
+
+  if (hasTransition) {
+    childProps.onEnter = Object(_utils_createChainedFunction__WEBPACK_IMPORTED_MODULE_9__["default"])(handleEnter, children.props.onEnter);
+    childProps.onExited = Object(_utils_createChainedFunction__WEBPACK_IMPORTED_MODULE_9__["default"])(handleExited, children.props.onExited);
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Portal__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    ref: handlePortalRef,
+    container: container,
+    disablePortal: disablePortal
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    ref: handleRef,
+    onKeyDown: handleKeyDown,
+    role: "presentation"
+  }, other, {
+    style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, inlineStyle.root, {}, !open && exited ? inlineStyle.hidden : {}, {}, other.style)
+  }), hideBackdrop ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BackdropComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    open: open,
+    onClick: handleBackdropClick
+  }, BackdropProps)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_TrapFocus__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    disableEnforceFocus: disableEnforceFocus,
+    disableAutoFocus: disableAutoFocus,
+    disableRestoreFocus: disableRestoreFocus,
+    getDoc: getDoc,
+    isEnabled: isTopModal,
+    open: open
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(children, childProps))));
+});
+ true ? Modal.propTypes = {
+  /**
+   * A backdrop component. This prop enables custom backdrop rendering.
+   */
+  BackdropComponent: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.elementType,
+
+  /**
+   * Props applied to the [`Backdrop`](/api/backdrop/) element.
+   */
+  BackdropProps: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
+
+  /**
+   * A single child content element.
+   */
+  children: _material_ui_utils__WEBPACK_IMPORTED_MODULE_6__["elementAcceptingRef"].isRequired,
+
+  /**
+   * When set to true the Modal waits until a nested Transition is completed before closing.
+   */
+  closeAfterTransition: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * A node, component instance, or function that returns either.
+   * The `container` will have the portal children appended to it.
+   */
+  container: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func]),
+
+  /**
+   * If `true`, the modal will not automatically shift focus to itself when it opens, and
+   * replace it to the last focused element when it closes.
+   * This also works correctly with any modal children that have the `disableAutoFocus` prop.
+   *
+   * Generally this should never be set to `true` as it makes the modal less
+   * accessible to assistive technologies, like screen readers.
+   */
+  disableAutoFocus: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * If `true`, clicking the backdrop will not fire any callback.
+   */
+  disableBackdropClick: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * If `true`, the modal will not prevent focus from leaving the modal while open.
+   *
+   * Generally this should never be set to `true` as it makes the modal less
+   * accessible to assistive technologies, like screen readers.
+   */
+  disableEnforceFocus: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * If `true`, hitting escape will not fire any callback.
+   */
+  disableEscapeKeyDown: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * Disable the portal behavior.
+   * The children stay within it's parent DOM hierarchy.
+   */
+  disablePortal: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * If `true`, the modal will not restore focus to previously focused element once
+   * modal is hidden.
+   */
+  disableRestoreFocus: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * Disable the scroll lock behavior.
+   */
+  disableScrollLock: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * If `true`, the backdrop is not rendered.
+   */
+  hideBackdrop: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * Always keep the children in the DOM.
+   * This prop can be useful in SEO situation or
+   * when you want to maximize the responsiveness of the Modal.
+   */
+  keepMounted: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * @ignore
+   */
+  manager: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
+
+  /**
+   * Callback fired when the backdrop is clicked.
+   */
+  onBackdropClick: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
+
+  /**
+   * Callback fired when the component requests to be closed.
+   * The `reason` parameter can optionally be used to control the response to `onClose`.
+   *
+   * @param {object} event The event source of the callback.
+   * @param {string} reason Can be: `"escapeKeyDown"`, `"backdropClick"`.
+   */
+  onClose: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
+
+  /**
+   * Callback fired when the escape key is pressed,
+   * `disableEscapeKeyDown` is false and the modal is in focus.
+   */
+  onEscapeKeyDown: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
+
+  /**
+   * Callback fired once the children has been mounted into the `container`.
+   * It signals that the `open={true}` prop took effect.
+   *
+   * This prop will be deprecated and removed in v5, the ref can be used instead.
+   */
+  onRendered: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
+
+  /**
+   * If `true`, the modal is open.
+   */
+  open: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool.isRequired
+} : undefined;
+/* harmony default export */ __webpack_exports__["default"] = (Modal);
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Modal/ModalManager.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Modal/ModalManager.js ***!
+  \******************************************************************/
+/*! exports provided: ariaHidden, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ariaHidden", function() { return ariaHidden; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ModalManager; });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _utils_getScrollbarSize__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/getScrollbarSize */ "./node_modules/@material-ui/core/esm/utils/getScrollbarSize.js");
+/* harmony import */ var _utils_ownerDocument__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/ownerDocument */ "./node_modules/@material-ui/core/esm/utils/ownerDocument.js");
+/* harmony import */ var _utils_ownerWindow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/ownerWindow */ "./node_modules/@material-ui/core/esm/utils/ownerWindow.js");
+
+
+
+
+
+ // Is a vertical scrollbar displayed?
+
+function isOverflowing(container) {
+  var doc = Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_4__["default"])(container);
+
+  if (doc.body === container) {
+    return Object(_utils_ownerWindow__WEBPACK_IMPORTED_MODULE_5__["default"])(doc).innerWidth > doc.documentElement.clientWidth;
+  }
+
+  return container.scrollHeight > container.clientHeight;
+}
+
+function ariaHidden(node, show) {
+  if (show) {
+    node.setAttribute('aria-hidden', 'true');
+  } else {
+    node.removeAttribute('aria-hidden');
+  }
+}
+
+function getPaddingRight(node) {
+  return parseInt(window.getComputedStyle(node)['padding-right'], 10) || 0;
+}
+
+function ariaHiddenSiblings(container, mountNode, currentNode) {
+  var nodesToExclude = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : [];
+  var show = arguments.length > 4 ? arguments[4] : undefined;
+  var blacklist = [mountNode, currentNode].concat(Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__["default"])(nodesToExclude));
+  var blacklistTagNames = ['TEMPLATE', 'SCRIPT', 'STYLE'];
+  [].forEach.call(container.children, function (node) {
+    if (node.nodeType === 1 && blacklist.indexOf(node) === -1 && blacklistTagNames.indexOf(node.tagName) === -1) {
+      ariaHidden(node, show);
+    }
+  });
+}
+
+function findIndexOf(containerInfo, callback) {
+  var idx = -1;
+  containerInfo.some(function (item, index) {
+    if (callback(item)) {
+      idx = index;
+      return true;
+    }
+
+    return false;
+  });
+  return idx;
+}
+
+function handleContainer(containerInfo, props) {
+  var restoreStyle = [];
+  var restorePaddings = [];
+  var container = containerInfo.container;
+  var fixedNodes;
+
+  if (!props.disableScrollLock) {
+    if (isOverflowing(container)) {
+      // Compute the size before applying overflow hidden to avoid any scroll jumps.
+      var scrollbarSize = Object(_utils_getScrollbarSize__WEBPACK_IMPORTED_MODULE_3__["default"])();
+      restoreStyle.push({
+        value: container.style.paddingRight,
+        key: 'padding-right',
+        el: container
+      }); // Use computed style, here to get the real padding to add our scrollbar width.
+
+      container.style['padding-right'] = "".concat(getPaddingRight(container) + scrollbarSize, "px"); // .mui-fixed is a global helper.
+
+      fixedNodes = Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_4__["default"])(container).querySelectorAll('.mui-fixed');
+      [].forEach.call(fixedNodes, function (node) {
+        restorePaddings.push(node.style.paddingRight);
+        node.style.paddingRight = "".concat(getPaddingRight(node) + scrollbarSize, "px");
+      });
+    } // Improve Gatsby support
+    // https://css-tricks.com/snippets/css/force-vertical-scrollbar/
+
+
+    var parent = container.parentElement;
+    var scrollContainer = parent.nodeName === 'HTML' && window.getComputedStyle(parent)['overflow-y'] === 'scroll' ? parent : container; // Block the scroll even if no scrollbar is visible to account for mobile keyboard
+    // screensize shrink.
+
+    restoreStyle.push({
+      value: scrollContainer.style.overflow,
+      key: 'overflow',
+      el: scrollContainer
+    });
+    scrollContainer.style.overflow = 'hidden';
+  }
+
+  var restore = function restore() {
+    if (fixedNodes) {
+      [].forEach.call(fixedNodes, function (node, i) {
+        if (restorePaddings[i]) {
+          node.style.paddingRight = restorePaddings[i];
+        } else {
+          node.style.removeProperty('padding-right');
+        }
+      });
+    }
+
+    restoreStyle.forEach(function (_ref) {
+      var value = _ref.value,
+          el = _ref.el,
+          key = _ref.key;
+
+      if (value) {
+        el.style.setProperty(key, value);
+      } else {
+        el.style.removeProperty(key);
+      }
+    });
+  };
+
+  return restore;
+}
+
+function getHiddenSiblings(container) {
+  var hiddenSiblings = [];
+  [].forEach.call(container.children, function (node) {
+    if (node.getAttribute && node.getAttribute('aria-hidden') === 'true') {
+      hiddenSiblings.push(node);
+    }
+  });
+  return hiddenSiblings;
+}
+/**
+ * @ignore - do not document.
+ *
+ * Proper state management for containers and the modals in those containers.
+ * Simplified, but inspired by react-overlay's ModalManager class.
+ * Used by the Modal to ensure proper styling of containers.
+ */
+
+
+var ModalManager =
+/*#__PURE__*/
+function () {
+  function ModalManager() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, ModalManager);
+
+    // this.modals[modalIndex] = modal
+    this.modals = []; // this.containers[containerIndex] = {
+    //   modals: [],
+    //   container,
+    //   restore: null,
+    // }
+
+    this.containers = [];
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(ModalManager, [{
+    key: "add",
+    value: function add(modal, container) {
+      var modalIndex = this.modals.indexOf(modal);
+
+      if (modalIndex !== -1) {
+        return modalIndex;
+      }
+
+      modalIndex = this.modals.length;
+      this.modals.push(modal); // If the modal we are adding is already in the DOM.
+
+      if (modal.modalRef) {
+        ariaHidden(modal.modalRef, false);
+      }
+
+      var hiddenSiblingNodes = getHiddenSiblings(container);
+      ariaHiddenSiblings(container, modal.mountNode, modal.modalRef, hiddenSiblingNodes, true);
+      var containerIndex = findIndexOf(this.containers, function (item) {
+        return item.container === container;
+      });
+
+      if (containerIndex !== -1) {
+        this.containers[containerIndex].modals.push(modal);
+        return modalIndex;
+      }
+
+      this.containers.push({
+        modals: [modal],
+        container: container,
+        restore: null,
+        hiddenSiblingNodes: hiddenSiblingNodes
+      });
+      return modalIndex;
+    }
+  }, {
+    key: "mount",
+    value: function mount(modal, props) {
+      var containerIndex = findIndexOf(this.containers, function (item) {
+        return item.modals.indexOf(modal) !== -1;
+      });
+      var containerInfo = this.containers[containerIndex];
+
+      if (!containerInfo.restore) {
+        containerInfo.restore = handleContainer(containerInfo, props);
+      }
+    }
+  }, {
+    key: "remove",
+    value: function remove(modal) {
+      var modalIndex = this.modals.indexOf(modal);
+
+      if (modalIndex === -1) {
+        return modalIndex;
+      }
+
+      var containerIndex = findIndexOf(this.containers, function (item) {
+        return item.modals.indexOf(modal) !== -1;
+      });
+      var containerInfo = this.containers[containerIndex];
+      containerInfo.modals.splice(containerInfo.modals.indexOf(modal), 1);
+      this.modals.splice(modalIndex, 1); // If that was the last modal in a container, clean up the container.
+
+      if (containerInfo.modals.length === 0) {
+        // The modal might be closed before it had the chance to be mounted in the DOM.
+        if (containerInfo.restore) {
+          containerInfo.restore();
+        }
+
+        if (modal.modalRef) {
+          // In case the modal wasn't in the DOM yet.
+          ariaHidden(modal.modalRef, true);
+        }
+
+        ariaHiddenSiblings(containerInfo.container, modal.mountNode, modal.modalRef, containerInfo.hiddenSiblingNodes, false);
+        this.containers.splice(containerIndex, 1);
+      } else {
+        // Otherwise make sure the next top modal is visible to a screen reader.
+        var nextTop = containerInfo.modals[containerInfo.modals.length - 1]; // as soon as a modal is adding its modalRef is undefined. it can't set
+        // aria-hidden because the dom element doesn't exist either
+        // when modal was unmounted before modalRef gets null
+
+        if (nextTop.modalRef) {
+          ariaHidden(nextTop.modalRef, false);
+        }
+      }
+
+      return modalIndex;
+    }
+  }, {
+    key: "isTopModal",
+    value: function isTopModal(modal) {
+      return this.modals.length > 0 && this.modals[this.modals.length - 1] === modal;
+    }
+  }]);
+
+  return ModalManager;
+}();
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Modal/SimpleBackdrop.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Modal/SimpleBackdrop.js ***!
+  \********************************************************************/
+/*! exports provided: styles, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+var styles = {
+  /* Styles applied to the root element. */
+  root: {
+    zIndex: -1,
+    position: 'fixed',
+    right: 0,
+    bottom: 0,
+    top: 0,
+    left: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    WebkitTapHighlightColor: 'transparent',
+    // Disable scroll capabilities.
+    touchAction: 'none'
+  },
+
+  /* Styles applied to the root element if `invisible={true}`. */
+  invisible: {
+    backgroundColor: 'transparent'
+  }
+};
+/**
+ * @ignore - internal component.
+ */
+
+var SimpleBackdrop = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function SimpleBackdrop(props, ref) {
+  var _props$invisible = props.invisible,
+      invisible = _props$invisible === void 0 ? false : _props$invisible,
+      open = props.open,
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["invisible", "open"]);
+
+  return open ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    "aria-hidden": true,
+    ref: ref
+  }, other, {
+    style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, styles.root, {}, invisible ? styles.invisible : {}, {}, other.style)
+  })) : null;
+});
+ true ? SimpleBackdrop.propTypes = {
+  /**
+   * If `true`, the backdrop is invisible.
+   * It can be used when rendering a popover or a custom select component.
+   */
+  invisible: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * If `true`, the backdrop is open.
+   */
+  open: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool.isRequired
+} : undefined;
+/* harmony default export */ __webpack_exports__["default"] = (SimpleBackdrop);
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Modal/TrapFocus.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Modal/TrapFocus.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utils_ownerDocument__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/ownerDocument */ "./node_modules/@material-ui/core/esm/utils/ownerDocument.js");
+/* harmony import */ var _utils_useForkRef__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/useForkRef */ "./node_modules/@material-ui/core/esm/utils/useForkRef.js");
+/* eslint-disable consistent-return, jsx-a11y/no-noninteractive-tabindex */
+
+
+
+
+
+/**
+ * @ignore - internal component.
+ */
+
+function TrapFocus(props) {
+  var children = props.children,
+      _props$disableAutoFoc = props.disableAutoFocus,
+      disableAutoFocus = _props$disableAutoFoc === void 0 ? false : _props$disableAutoFoc,
+      _props$disableEnforce = props.disableEnforceFocus,
+      disableEnforceFocus = _props$disableEnforce === void 0 ? false : _props$disableEnforce,
+      _props$disableRestore = props.disableRestoreFocus,
+      disableRestoreFocus = _props$disableRestore === void 0 ? false : _props$disableRestore,
+      getDoc = props.getDoc,
+      isEnabled = props.isEnabled,
+      open = props.open;
+  var ignoreNextEnforceFocus = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef();
+  var sentinelStart = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(null);
+  var sentinelEnd = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(null);
+  var nodeToRestore = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef();
+  var rootRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(null); // can be removed once we drop support for non ref forwarding class components
+
+  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useCallback(function (instance) {
+    // #StrictMode ready
+    rootRef.current = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(instance);
+  }, []);
+  var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_4__["default"])(children.ref, handleOwnRef); // ⚠️ You may rely on React.useMemo as a performance optimization, not as a semantic guarantee.
+  // https://reactjs.org/docs/hooks-reference.html#usememo
+
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.useMemo(function () {
+    if (!open || typeof window === 'undefined') {
+      return;
+    }
+
+    nodeToRestore.current = getDoc().activeElement;
+  }, [open]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+    if (!open) {
+      return;
+    }
+
+    var doc = Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_3__["default"])(rootRef.current); // We might render an empty child.
+
+    if (!disableAutoFocus && rootRef.current && !rootRef.current.contains(doc.activeElement)) {
+      if (!rootRef.current.hasAttribute('tabIndex')) {
+        if (true) {
+          console.error(['Material-UI: the modal content node does not accept focus.', 'For the benefit of assistive technologies, ' + 'the tabIndex of the node is being set to "-1".'].join('\n'));
+        }
+
+        rootRef.current.setAttribute('tabIndex', -1);
+      }
+
+      rootRef.current.focus();
+    }
+
+    var contain = function contain() {
+      if (disableEnforceFocus || !isEnabled() || ignoreNextEnforceFocus.current) {
+        ignoreNextEnforceFocus.current = false;
+        return;
+      }
+
+      if (rootRef.current && !rootRef.current.contains(doc.activeElement)) {
+        rootRef.current.focus();
+      }
+    };
+
+    var loopFocus = function loopFocus(event) {
+      // 9 = Tab
+      if (disableEnforceFocus || !isEnabled() || event.keyCode !== 9) {
+        return;
+      } // Make sure the next tab starts from the right place.
+
+
+      if (doc.activeElement === rootRef.current) {
+        // We need to ignore the next contain as
+        // it will try to move the focus back to the rootRef element.
+        ignoreNextEnforceFocus.current = true;
+
+        if (event.shiftKey) {
+          sentinelEnd.current.focus();
+        } else {
+          sentinelStart.current.focus();
+        }
+      }
+    };
+
+    doc.addEventListener('focus', contain, true);
+    doc.addEventListener('keydown', loopFocus, true); // With Edge, Safari and Firefox, no focus related events are fired when the focused area stops being a focused area
+    // e.g. https://bugzilla.mozilla.org/show_bug.cgi?id=559561.
+    //
+    // The whatwg spec defines how the browser should behave but does not explicitly mention any events:
+    // https://html.spec.whatwg.org/multipage/interaction.html#focus-fixup-rule.
+
+    var interval = setInterval(function () {
+      contain();
+    }, 50);
+    return function () {
+      clearInterval(interval);
+      doc.removeEventListener('focus', contain, true);
+      doc.removeEventListener('keydown', loopFocus, true); // restoreLastFocus()
+
+      if (!disableRestoreFocus) {
+        // In IE 11 it is possible for document.activeElement to be null resulting
+        // in nodeToRestore.current being null.
+        // Not all elements in IE 11 have a focus method.
+        // Once IE 11 support is dropped the focus() call can be unconditional.
+        if (nodeToRestore.current && nodeToRestore.current.focus) {
+          nodeToRestore.current.focus();
+        }
+
+        nodeToRestore.current = null;
+      }
+    };
+  }, [disableAutoFocus, disableEnforceFocus, disableRestoreFocus, isEnabled, open]);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    tabIndex: 0,
+    ref: sentinelStart,
+    "data-test": "sentinelStart"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(children, {
+    ref: handleRef
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    tabIndex: 0,
+    ref: sentinelEnd,
+    "data-test": "sentinelEnd"
+  }));
+}
+
+ true ? TrapFocus.propTypes = {
+  /**
+   * A single child content element.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.element.isRequired,
+
+  /**
+   * If `true`, the modal will not automatically shift focus to itself when it opens, and
+   * replace it to the last focused element when it closes.
+   * This also works correctly with any modal children that have the `disableAutoFocus` prop.
+   *
+   * Generally this should never be set to `true` as it makes the modal less
+   * accessible to assistive technologies, like screen readers.
+   */
+  disableAutoFocus: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+
+  /**
+   * If `true`, the modal will not prevent focus from leaving the modal while open.
+   *
+   * Generally this should never be set to `true` as it makes the modal less
+   * accessible to assistive technologies, like screen readers.
+   */
+  disableEnforceFocus: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+
+  /**
+   * If `true`, the modal will not restore focus to previously focused element once
+   * modal is hidden.
+   */
+  disableRestoreFocus: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+
+  /**
+   * Return the document to consider.
+   * We use it to implement the restore focus between different browser documents.
+   */
+  getDoc: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
+
+  /**
+   * Do we still want to enforce the focus?
+   * This prop helps nesting TrapFocus elements.
+   */
+  isEnabled: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
+
+  /**
+   * If `true`, the modal is open.
+   */
+  open: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool.isRequired
+} : undefined;
+/*
+
+In the future, we should be able to replace TrapFocus with:
+https://github.com/facebook/react/blob/master/packages/react-events/docs/FocusScope.md
+
+```jsx
+import FocusScope from 'react-dom/FocusScope';
+
+function TrapFocus(props) {
+  const {
+    children
+    disableAutoFocus = false,
+    disableEnforceFocus = false,
+    disableRestoreFocus = false,
+    open,
+  } = props;
+
+  if (!open) {
+    return children;
+  }
+
+  return (
+    <FocusScope
+      autoFocus={!disableAutoFocus}
+      contain={!disableEnforceFocus}
+      restoreFocus={!disableRestoreFocus}
+    >
+      {children}
+    </FocusScope>
+  );
+}
+```
+
+*/
+
+/* harmony default export */ __webpack_exports__["default"] = (TrapFocus);
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Modal/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Modal/index.js ***!
+  \***********************************************************/
+/*! exports provided: default, ModalManager */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Modal */ "./node_modules/@material-ui/core/esm/Modal/Modal.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Modal__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _ModalManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ModalManager */ "./node_modules/@material-ui/core/esm/Modal/ModalManager.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ModalManager", function() { return _ModalManager__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/esm/NoSsr/NoSsr.js":
 /*!***********************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/NoSsr/NoSsr.js ***!
@@ -5735,6 +7195,146 @@ var Paper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Pap
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Paper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Paper */ "./node_modules/@material-ui/core/esm/Paper/Paper.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Paper__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Portal/Portal.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Portal/Portal.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/index.js");
+/* harmony import */ var _utils_setRef__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/setRef */ "./node_modules/@material-ui/core/esm/utils/setRef.js");
+/* harmony import */ var _utils_useForkRef__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/useForkRef */ "./node_modules/@material-ui/core/esm/utils/useForkRef.js");
+
+
+
+
+
+
+
+function getContainer(container) {
+  container = typeof container === 'function' ? container() : container; // #StrictMode ready
+
+  return react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(container);
+}
+
+var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect;
+/**
+ * Portals provide a first-class way to render children into a DOM node
+ * that exists outside the DOM hierarchy of the parent component.
+ */
+
+var Portal = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function Portal(props, ref) {
+  var children = props.children,
+      container = props.container,
+      _props$disablePortal = props.disablePortal,
+      disablePortal = _props$disablePortal === void 0 ? false : _props$disablePortal,
+      onRendered = props.onRendered;
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null),
+      mountNode = _React$useState[0],
+      setMountNode = _React$useState[1];
+
+  var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_5__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.isValidElement(children) ? children.ref : null, ref);
+  useEnhancedEffect(function () {
+    if (!disablePortal) {
+      setMountNode(getContainer(container) || document.body);
+    }
+  }, [container, disablePortal]);
+  useEnhancedEffect(function () {
+    if (mountNode && !disablePortal) {
+      Object(_utils_setRef__WEBPACK_IMPORTED_MODULE_4__["default"])(ref, mountNode);
+      return function () {
+        Object(_utils_setRef__WEBPACK_IMPORTED_MODULE_4__["default"])(ref, null);
+      };
+    }
+
+    return undefined;
+  }, [ref, mountNode, disablePortal]);
+  useEnhancedEffect(function () {
+    if (onRendered && (mountNode || disablePortal)) {
+      onRendered();
+    }
+  }, [onRendered, mountNode, disablePortal]);
+
+  if (disablePortal) {
+    if (react__WEBPACK_IMPORTED_MODULE_0___default.a.isValidElement(children)) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(children, {
+        ref: handleRef
+      });
+    }
+
+    return children;
+  }
+
+  return mountNode ? react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.createPortal(children, mountNode) : mountNode;
+});
+ true ? Portal.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The children to render into the `container`.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node,
+
+  /**
+   * A node, component instance, or function that returns either.
+   * The `container` will have the portal children appended to it.
+   * By default, it uses the body of the top-level document object,
+   * so it's simply `document.body` most of the time.
+   */
+  container: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component), prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(typeof Element === 'undefined' ? Object : Element)]),
+
+  /**
+   * Disable the portal behavior.
+   * The children stay within it's parent DOM hierarchy.
+   */
+  disablePortal: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+
+  /**
+   * Callback fired once the children has been mounted into the `container`.
+   *
+   * This prop will be deprecated and removed in v5, the ref can be used instead.
+   */
+  onRendered: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func
+} : undefined;
+
+if (true) {
+  // eslint-disable-next-line
+  Portal['propTypes' + ''] = Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_3__["exactProp"])(Portal.propTypes);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Portal);
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Portal/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Portal/index.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Portal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Portal */ "./node_modules/@material-ui/core/esm/Portal/Portal.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Portal__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 
 
@@ -7870,6 +9470,32 @@ var zIndex = {
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/esm/transitions/utils.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/transitions/utils.js ***!
+  \*****************************************************************/
+/*! exports provided: reflow, getTransitionProps */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reflow", function() { return reflow; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getTransitionProps", function() { return getTransitionProps; });
+var reflow = function reflow(node) {
+  return node.scrollTop;
+};
+function getTransitionProps(props, options) {
+  var timeout = props.timeout,
+      _props$style = props.style,
+      style = _props$style === void 0 ? {} : _props$style;
+  return {
+    duration: style.transitionDuration || typeof timeout === 'number' ? timeout : timeout[options.mode] || 0,
+    delay: style.transitionDelay
+  };
+}
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/esm/utils/capitalize.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/utils/capitalize.js ***!
@@ -7892,6 +9518,54 @@ function capitalize(string) {
   }
 
   return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/utils/createChainedFunction.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/utils/createChainedFunction.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return createChainedFunction; });
+/**
+ * Safe chained function
+ *
+ * Will only create a new function if needed,
+ * otherwise will pass back existing functions or null.
+ *
+ * @param {function} functions to chain
+ * @returns {function|null}
+ */
+function createChainedFunction() {
+  for (var _len = arguments.length, funcs = new Array(_len), _key = 0; _key < _len; _key++) {
+    funcs[_key] = arguments[_key];
+  }
+
+  return funcs.reduce(function (acc, func) {
+    if (func == null) {
+      return acc;
+    }
+
+    if (true) {
+      if (typeof func !== 'function') {
+        console.error('Material-UI: invalid Argument Type, must only provide functions, undefined, or null.');
+      }
+    }
+
+    return function chainedFunction() {
+      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+
+      acc.apply(this, args);
+      func.apply(this, args);
+    };
+  }, function () {});
 }
 
 /***/ }),
@@ -8061,6 +9735,72 @@ function useIsFocusVisible() {
     ref: ref
   };
 }
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/utils/getScrollbarSize.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/utils/getScrollbarSize.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// A change of the browser zoom change the scrollbar size.
+// Credit https://github.com/twbs/bootstrap/blob/3ffe3a5d82f6f561b82ff78d82b32a7d14aed558/js/src/modal.js#L512-L519
+function getScrollbarSize() {
+  var scrollDiv = document.createElement('div');
+  scrollDiv.style.width = '99px';
+  scrollDiv.style.height = '99px';
+  scrollDiv.style.position = 'absolute';
+  scrollDiv.style.top = '-9999px';
+  scrollDiv.style.overflow = 'scroll';
+  document.body.appendChild(scrollDiv);
+  var scrollbarSize = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+  document.body.removeChild(scrollDiv);
+  return scrollbarSize;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (getScrollbarSize);
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/utils/ownerDocument.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/utils/ownerDocument.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownerDocument(node) {
+  return node && node.ownerDocument || document;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ownerDocument);
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/utils/ownerWindow.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/utils/ownerWindow.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ownerDocument__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ownerDocument */ "./node_modules/@material-ui/core/esm/utils/ownerDocument.js");
+
+
+function ownerWindow(node) {
+  var doc = Object(_ownerDocument__WEBPACK_IMPORTED_MODULE_0__["default"])(node);
+  return doc.defaultView || window;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ownerWindow);
 
 /***/ }),
 
@@ -50909,6 +52649,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Testimonials__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Testimonials */ "./components/Testimonials.js");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
 /* harmony import */ var _components_Speakers__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Speakers */ "./components/Speakers.js");
+/* harmony import */ var _components_useScript__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/useScript */ "./components/useScript.js");
+
 
 
 
@@ -50924,6 +52666,14 @@ __webpack_require__.r(__webpack_exports__);
 var text = __webpack_require__(/*! ../data/text */ "./data/text.js");
 
 var Home = function Home(props) {
+  Object(_components_useScript__WEBPACK_IMPORTED_MODULE_11__["default"])('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
+  Object(_components_useScript__WEBPACK_IMPORTED_MODULE_11__["default"])('./static/js/jquery-migrate-1.2.1.min.js');
+  Object(_components_useScript__WEBPACK_IMPORTED_MODULE_11__["default"])('./static/js/jquery.flexslider.js');
+  /*useScript('./static/js/waypoints.js');*/
+
+  Object(_components_useScript__WEBPACK_IMPORTED_MODULE_11__["default"])('./static/js/jquery.fittext.js');
+  Object(_components_useScript__WEBPACK_IMPORTED_MODULE_11__["default"])('./static/js/magnific-popup.js');
+  Object(_components_useScript__WEBPACK_IMPORTED_MODULE_11__["default"])('./static/js/init.js');
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section light",
     id: "home"

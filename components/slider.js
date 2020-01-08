@@ -34,6 +34,10 @@ const Slideshow = () => (
               color: #6b6565;
             }
 
+            h5, h6{
+              color: #eee;
+            }
+
             .overlay {
                 background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5), #2F2727);
                 position: absolute;

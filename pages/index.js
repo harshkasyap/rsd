@@ -10,14 +10,23 @@ import TeamSlider from "../components/slider/teamSlider"
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import Speakers from '../components/Speakers';
+import useScript from '../components/useScript';
 
 const text = require( "../data/text" );
 
 const Home = ( props ) => {
 
+    useScript('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
+    useScript('./static/js/jquery-migrate-1.2.1.min.js');
+    useScript('./static/js/jquery.flexslider.js');
+    /*useScript('./static/js/waypoints.js');*/
+    useScript('./static/js/jquery.fittext.js'); 
+    useScript('./static/js/magnific-popup.js');
+    useScript('./static/js/init.js');
+
     return (
         <Layout>
-            <div className="section light" id="home">
+             <div className="section light" id="home">
                 <Slideshow />
             </div>
             <div className="section light" id="about">

@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
     },
     paper: {
-        background: '#1F1F1F url(./static/images/back1.jpg) no-repeat center center',
+        background: '#1F1F1F url(./static/images/back.jpeg) no-repeat center center',
         width: '50vw',
         backgroundColor: theme.palette.background.paper,
         border: '2px solid #000',
@@ -55,9 +55,9 @@ export default function AnimatedModal( {name, msg} ) {
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
-                        <h4>{msg}</h4>
+                        <h5><i className="fa fa-quote-left"></i> {msg} <i className="fa fa-quote-right"></i></h5>
                         <br />
-                        <h3>{name}</h3>
+                        <h6>-{name}</h6>
                     </div>
                 </Fade>
             </Modal>
