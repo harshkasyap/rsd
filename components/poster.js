@@ -33,7 +33,7 @@ export default function Poster() {
             Poster Presentation
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Description
+            
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -18,10 +18,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true
-  }, "\n    .carousel {\n        height:100vh;\n        position: absolute;\n    }\n        \n    .carousel-inner &gt; .item &gt; img {\n        height:100vh;\n        object-fit: contain;\n    }\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__["Carousel"], {
+  }, "\n    .carousel {\n        height:100vh;\n        position: absolute;\n    }\n        \n    .carousel-inner &gt; .item &gt; img {\n        height:100vh;\n        object-fit: contain;\n    }\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__["Carousel"], {
     autoPlay: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/iit2.jpg",
+    src: "./static/images/iit1.jpg",
     height: "100%"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "legend"
@@ -49,6 +49,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slider/sponsorSlider */ "./components/slider/sponsorSlider.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -66,6 +67,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -97,15 +99,15 @@ function (_Component) {
         });
       }
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer-c", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Sponsors and Partners"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "twelve columns"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "social-links"
       }, networks), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "copyright"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "\xA9 Copyright \xA92020 All Rights Reserved | Design by Design By RSDP Team"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "\xA9 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Copyright \xA92020 All Rights Reserved | Design by Design By RSDP Team")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "go-top"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "#home"
@@ -113,7 +115,7 @@ function (_Component) {
         className: "smoothscroll",
         title: "Back to Top"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "icon-up-open"
+        className: "fa fa-arrow-up"
       }))))));
     }
   }]);
@@ -125,50 +127,96 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./components/Gallery.js":
-/*!*******************************!*\
-  !*** ./components/Gallery.js ***!
-  \*******************************/
+/***/ "./components/Speakers.js":
+/*!********************************!*\
+  !*** ./components/Speakers.js ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Gallery; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-responsive-carousel */ "./node_modules/react-responsive-carousel/lib/index.js");
-/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
-function Gallery() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
-    jsx: true
-  }, "\n    .carousel {\n        height:100vh;\n        position: absolute;\n    }\n        \n    .carousel-inner &gt; .item &gt; img {\n        height:100vh;\n        object-fit: contain;\n    }\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__["Carousel"], {
-    autoPlay: true
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/gallery/inaug.JPG",
-    height: "100%"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "legend"
-  }, "legend")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/gallery/welcome1.JPG",
-    height: "100%"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "legend"
-  }, "legend")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/gallery/welcome2.JPG",
-    height: "100%"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "legend"
-  }, "legend")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./static/images/gallery/winner.jpg",
-    height: "100%"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "legend"
-  }, "legend"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null));
-}
-;
+
+
+var Speakers =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Speakers, _Component);
+
+  function Speakers() {
+    _classCallCheck(this, Speakers);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Speakers).apply(this, arguments));
+  }
+
+  _createClass(Speakers, [{
+    key: "render",
+    value: function render() {
+      if (_data_dictionary__WEBPACK_IMPORTED_MODULE_1__["default"].speakers) {
+        var speaker = _data_dictionary__WEBPACK_IMPORTED_MODULE_1__["default"].speakers.map(function (speaker) {
+          var projectImage = './static/images/speakers/' + speaker.image;
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            key: speaker.name,
+            className: "columns portfolio-item"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "item-wrap"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: speaker.url,
+            title: speaker.name
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            alt: speaker.name,
+            src: projectImage
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "overlay"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "portfolio-item-meta"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, speaker.designation))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "link-icon"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+            className: "fa fa-link"
+          })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, speaker.name));
+        });
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        id: "portfolio"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "twelve columns collapsed"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "portfolio-wrapper",
+        className: "bgrid-thirds s-bgrid-thirds cf"
+      }, speaker))));
+    }
+  }]);
+
+  return Speakers;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Speakers);
 
 /***/ }),
 
@@ -230,20 +278,20 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
         jsx: true,
         global: true
-      }, "\n        /* ------------------------------------------------------------------\n        /* g. Testimonials\n        /* ------------------------------------------------------------------ */\n\n        #testimonials {\n        background: #1F1F1F url(./static/images/testimonials-bg.jpg) no-repeat center center;\n        background-size: cover !important;\n            -webkit-background-size: cover !important;\n        background-attachment: fixed;\n\n        position: relative;\n        min-height: 200px;\n        width: 100%;\n        overflow: hidden;\n        }\n\n        #testimonials .profile-pic {\n         position: relative;\n         width: 200px;\n         height: 200px;\n         border-radius: 100%;\n       }\n\n        #testimonials .text-container {\n        padding-top: 96px;\n        padding-bottom: 66px;\n        padding-left: 266px;\n        padding-right: 266px;\n        }\n        #testimonials h1 {\n        font: 18px/24px 'opensans-bold', sans-serif;\n        text-transform: uppercase;\n        letter-spacing: 3px;\n        color: #fff;\n        }\n        #testimonials h1 span { display: none; }\n        #testimonials .header-col { padding-top: 9px; }\n        #testimonials .header-col h1:before {\n        font-family: 'FontAwesome';\n        content: \"\f10d\";\n            padding-right: 10px;\n            font-size: 72px;\n        line-height: 72px;\n        text-align: left;\n        float: left;\n        color: #fff;\n        }\n\n        /*\tBlockquotes */\n        #testimonials blockquote {\n        margin: 0 0px 30px 0px;\n        padding-left: 0;\n        position: relative;\n        text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);\n        }\n        #testimonials blockquote:before { content: none; }\n        #testimonials blockquote p {\n        font-family: 'librebaskerville-italic', serif;\n        padding: 0;\n        font-size: 24px;\n        line-height: 48px;\n        color: #fff\n        }\n        #testimonials blockquote cite {\n        display: block;\n        font-size: 12px;\n        font-style: normal;\n        line-height: 18px;\n        color: #fff;\n        }\n        #testimonials blockquote cite:before { content: \"\\2014 \\0020\"; }\n        #testimonials blockquote cite a,\n        #testimonials blockquote cite a:visited { color: #8B9798; border: none }\n        "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      }, "\n        /* ------------------------------------------------------------------\n        /* g. Testimonials\n        /* ------------------------------------------------------------------ */\n\n        #testimonials {\n        background: #1F1F1F url(./static/images/back.jpeg) no-repeat center center;\n        background-size: cover !important;\n            -webkit-background-size: cover !important;\n        background-attachment: fixed;\n\n        position: relative;\n        min-height: 200px;\n        width: 100%;\n        overflow: hidden;\n        }\n\n        #testimonials .profile-pic {\n         position: relative;\n         width: 200px;\n         height: 200px;\n         border-radius: 100%;\n       }\n\n        #testimonials .text-container {\n        padding-top: 5vh;\n        padding-bottom: 5vh;\n        padding-left: 10vw;\n        padding-right: 10vw;\n        }\n        #testimonials h1 {\n        font: 18px/24px 'opensans-bold', sans-serif;\n        text-transform: uppercase;\n        letter-spacing: 3px;\n        color: #fff;\n        }\n        #testimonials h1 span { display: none; }\n        #testimonials .header-col { padding-top: 9px; }\n        #testimonials .header-col h1:before {\n        font-family: 'FontAwesome';\n        content: \"\f10d\";\n            padding-right: 10px;\n            font-size: 72px;\n        line-height: 72px;\n        text-align: left;\n        float: left;\n        color: #fff;\n        }\n\n        /*\tBlockquotes */\n        #testimonials blockquote {\n        margin: 0 0px 30px 0px;\n        padding-left: 0;\n        position: relative;\n        text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);\n        }\n        #testimonials blockquote:before { content: none; }\n        #testimonials blockquote p {\n        font-family: 'librebaskerville-italic', serif;\n        padding: 0;\n        font-size: 24px;\n        line-height: 48px;\n        color: #fff\n        }\n        #testimonials blockquote cite {\n        display: block;\n        font-size: 12px;\n        font-style: normal;\n        line-height: 18px;\n        color: #fff;\n        }\n        #testimonials blockquote cite:before { content: \"\\2014 \\0020\"; }\n        #testimonials blockquote cite a,\n        #testimonials blockquote cite a:visited { color: #8B9798; border: none }\n        "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         id: "testimonials"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "text-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row1"
+        className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "two1 columns1"
+        className: "three columns"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "profile-pic",
         src: "./static/images/director.jpg",
         alt: "Director"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "ten1 columns1 flex-container"
+        className: "nine columns flex-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "slides"
       }, testimonials))))));
@@ -273,7 +321,7 @@ __webpack_require__.r(__webpack_exports__);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true,
     global: true
-  }, "\n        .button {\n            margin: 20px;\n            border-style: solid;\n            border-width: 3px;\n            padding: 10px 30px;\n            font-size: 1.5rem;\n            transition: all 0.35s ease-in-out;\n            cursor: pointer;\n        }\n\n        .button.light {\n            background-color: transparent;\n            color: #eee;\n            border-color: #eee;\n        }\n\n        .button.light:hover {\n            background-color: #f1c40f;\n            color: #333;\n            border-color: #f1c40f;\n        }\n\n        .button.dark {\n            background-color: transparent;\n            color: #333;\n            border-color: #333;\n        }\n\n        .button.dark:hover {\n            background-color: #333;\n            color: #eee;\n            border-color: #333;\n        }\n\n        .container {\n            width: 1024px;\n            margin: auto;\n        }\n\n        .header {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n        }\n\n       /*  .footer {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n            background-color: #eee;\n            color: #333;\n        } */\n\n        .main {\n            padding-top: 59px;\n        }\n\n        .navlink {\n            padding: 20px 30px;\n            color: #eee;\n            text-decoration: none;\n            background-color: #333;\n            transition: all 0.7s ease-out;\n            cursor: pointer;\n        }\n\n        .navlink.highlight {\n            color: #f1c40f;\n        }\n\n        .navlink:hover {\n            background-color: #f1c40f;\n            transition: all 0.35s ease-out;\n            color: #333;\n        }\n\n        .section {\n            padding: 20px;\n        }\n\n        .section.dark {\n            background-color: #333;\n            color: #eee;\n        }\n\n        .section.color {\n            background-color: #f1c40f;\n            color: #333;\n        }\n\n        .section.light {\n            background-color: #eee;\n            color: #333;\n        }\n\n        body {\n            margin: 0;\n            font-family: 'Roboto', sans-serif;\n            text-align: center;\n        }\n\n        h1, h2, h3, h4 {\n            margin: 0;\n        }\n\n        p {\n            font-weight: 300;\n            font-size: 1.2rem;\n        }\n\n    ");
+  }, "\n        .button {\n            margin: 20px;\n            border-style: solid;\n            border-width: 3px;\n            padding: 10px 30px;\n            font-size: 1.5rem;\n            transition: all 0.35s ease-in-out;\n            cursor: pointer;\n        }\n\n        .button.light {\n            background-color: transparent;\n            color: #eee;\n            border-color: #eee;\n        }\n\n        .button.light:hover {\n            background-color: #f1c40f;\n            color: #333;\n            border-color: #f1c40f;\n        }\n\n        .button.dark {\n            background-color: transparent;\n            color: #333;\n            border-color: #333;\n        }\n\n        .button.dark:hover {\n            background-color: #333;\n            color: #eee;\n            border-color: #333;\n        }\n\n        .speaker-background{\n            background: #1F1F1F url(./static/images/testimonials-bg.jpg) no-repeat center center;\n        }\n\n        .container {\n            width: 80vw;\n            margin: auto;\n        }\n\n        .reg-event {\n            width: 100vw;\n            margin-left: 6vw;\n        }\n\n        .header {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n        }\n\n       /*  .footer {\n            position: fixed;\n            width: 100%;\n            z-index: 10;\n            background-color: #eee;\n            color: #333;\n        } */\n\n        .main {\n            padding-top: 59px;\n        }\n\n        .navlink {\n            padding: 20px 30px;\n            color: #eee;\n            text-decoration: none;\n            background-color: #333;\n            transition: all 0.7s ease-out;\n            cursor: pointer;\n        }\n\n        .navlink.highlight {\n            color: #f1c40f;\n        }\n\n        .navlink:hover {\n            background-color: #f1c40f;\n            transition: all 0.35s ease-out;\n            color: #333;\n        }\n\n        .section {\n            padding: 20px;\n        }\n\n        .section.dark {\n            background-color: #333;\n            color: #eee;\n        }\n\n        .section.color {\n            background-color: #f1c40f;\n            color: #333;\n        }\n\n        .section.light {\n            background-color: #eee;\n            color: #333;\n        }\n\n        body {\n            margin: 0;\n            font-family: 'Roboto', sans-serif;\n            text-align: center;\n        }\n\n        h1, h2, h3, h4 {\n            margin: 0;\n        }\n\n        p {\n            font-weight: 300;\n            font-size: 1.2rem;\n        }\n\n    ");
 });
 
 /***/ }),
@@ -294,7 +342,7 @@ __webpack_require__.r(__webpack_exports__);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true,
     global: true
-  }, "/*\n=====================================================================\n*   Ceevee v1.0 Default Stylesheet\n*   url: styleshout.com\n*   03-17-2014\n=====================================================================\n\nTOC:\na. Webfonts and Icon fonts\nb. Reset\nc. Default Styles\n   1. Basic\n   2. Typography\n   3. Links\n   4. Images\n   5. Buttons\n   6. Forms\nd. Grid\ne. Others\n   1. Clearing\n   2. Misc\n\n=====================================================================  */\n\n/* ------------------------------------------------------------------ */\n/* a. Webfonts and Icon fonts\n ------------------------------------------------------------------ */\n\n @import url(\"fonts.css\");\n @import url(\"fontello/css/fontello.css\");\n @import url(\"font-awesome/css/font-awesome.min.css\");\n \n /* ------------------------------------------------------------------\n /* b. Reset\n       Adapted from:\n       Normalize.css - https://github.com/necolas/normalize.css/\n       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/\n /* ------------------------------------------------------------------ */\n \n html, body, div, span, object, iframe,\n h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n abbr, address, cite, code,\n del, dfn, em, img, ins, kbd, q, samp,\n small, strong, sub, sup, var,\n b, i,\n dl, dt, dd, ol, ul, li,\n fieldset, form, label, legend,\n table, caption, tbody, tfoot, thead, tr, th, td,\n article, aside, canvas, details, figcaption, figure,\n footer, header, hgroup, menu, nav, section, summary,\n time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    outline: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n    background: transparent;\n }\n \n article,aside,details,figcaption,figure,\n footer,header,hgroup,menu,nav,section {\n    display: block;\n }\n \n audio,\n canvas,\n video {\n    display: inline-block;\n }\n \n audio:not([controls]) {\n    display: none;\n    height: 0;\n }\n \n [hidden] { display: none; }\n \n code, kbd, pre, samp {\n    font-family: monospace, serif;\n    font-size: 1em;\n }\n \n pre {\n    white-space: pre;\n    white-space: pre-wrap;\n    word-wrap: break-word;\n }\n \n blockquote, q { quotes: &#8220 &#8220; }\n \n blockquote:before, blockquote:after,\n q:before, q:after {\n    content: '';\n    content: none;\n }\n \n ins {\n    background-color: #ff9;\n    color: #000;\n    text-decoration: none;\n }\n \n mark {\n    background-color: #A7F4F6;\n    color: #555;\n }\n \n del { text-decoration: line-through; }\n \n abbr[title], dfn[title] {\n    border-bottom: 1px dotted;\n    cursor: help;\n }\n \n table {\n    border-collapse: collapse;\n    border-spacing: 0;\n }\n \n \n /* ------------------------------------------------------------------ */\n /* c. Default and Basic Styles\n       Adapted from:\n       Skeleton CSS Framework - http://www.getskeleton.com/\n       Typeplate Typographic Starter Kit - http://typeplate.com/\n /* ------------------------------------------------------------------ */\n \n /*  1. Basic  ------------------------------------------------------- */\n \n *,\n *:before,\n *:after {\n    -moz-box-sizing: border-box;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n }\n \n html {\n    font-size: 62.5%;\n    -webkit-font-smoothing: antialiased;\n }\n \n body {\n    background: #fff;\n    font-family: 'opensans-regular', sans-serif;\n    font-weight: normal;\n    font-size: 15px;\n    line-height: 30px;\n     color: #838C95;\n \n    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */\n     -webkit-text-size-adjust: 100%;\n }\n \n /*  2. Typography\n        Vertical rhythm with leading derived from 6\n --------------------------------------------------------------------- */\n \n h1, h2, h3, h4, h5, h6 {\n    color: #313131;\n     font-family: 'opensans-bold', sans-serif;\n    font-weight: normal;\n }\n h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }\n h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }\n h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }\n h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }\n h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }\n h5 { font-size: 18px; line-height: 30px; }\n h6 { font-size: 14px; line-height: 30px; }\n .subheader { }\n \n p { margin: 0 0 30px 0; }\n p img { margin: 0; }\n p.lead {\n    font: 19px/36px 'opensans-light', sans-serif;\n    margin-bottom: 18px;\n }\n \n /* for 'em' and 'strong' tags, font-size and line-height should be same with\n the body tag due to rendering problems in some browsers */\n em { font: 15px/30px 'opensans-italic', sans-serif; }\n strong, b { font: 15px/30px 'opensans-bold', sans-serif; }\n small { font-size: 11px; line-height: inherit; }\n \n /*\tBlockquotes */\n blockquote {\n    margin: 30px 0px;\n    padding-left: 40px;\n    position: relative;\n }\n blockquote:before {\n    content: \"\\201C\";\n    opacity: 0.45;\n    font-size: 80px;\n    line-height: 0px;\n    margin: 0;\n    font-family: arial, sans-serif;\n \n    position: absolute;\n    top:  30px;\n     left: 0;\n }\n blockquote p {\n    font-family: 'librebaskerville-italic', serif;\n    padding: 0;\n    font-size: 18px;\n    line-height: 36px;\n }\n blockquote cite {\n    display: block;\n    font-size: 12px;\n    font-style: normal;\n    line-height: 18px;\n }\n blockquote cite:before { content: \"\\2014 \\0020\"; }\n blockquote cite a,\n blockquote cite a:visited { color: #8B9798; border: none }\n \n /* ---------------------------------------------------------------------\n /*  Pull Quotes Markup\n /*\n     <aside class=\"pull-quote\">\n         <blockquote>\n             <p></p>\n         </blockquote>\n      </aside>\n /*\n /* --------------------------------------------------------------------- */\n .pull-quote {\n    position: relative;\n     padding: 18px 30px 18px 0px;\n }\n .pull-quote:before,\n .pull-quote:after {\n     height: 1em;\n     opacity: 0.45;\n     position: absolute;\n     font-size: 80px;\n    font-family: Arial, Sans-Serif;\n }\n .pull-quote:before {\n     content: \"\\201C\";\n     top:  33px;\n     left: 0;\n }\n .pull-quote:after {\n     content: '\\201D';\n     bottom: -33px;\n     right: 0;\n }\n .pull-quote blockquote {\n    margin: 0;\n }\n .pull-quote blockquote:before {\n    content: none;\n }\n \n /* Abbreviations */\n abbr {\n    font-family: 'opensans-bold', sans-serif;\n     font-variant: small-caps;\n     text-transform: lowercase;\n    letter-spacing: .5px;\n     color: gray;\n }\n abbr:hover { cursor: help; }\n \n /* drop cap */\n .drop-cap:first-letter {\n     float: left;\n     margin: 0;\n     padding: 14px 6px 0 0;\n     font-size: 84px;\n     font-family: /* Copperplate */ 'opensans-bold', sans-serif;\n    line-height: 60px;\n     text-indent: 0;\n     background: transparent;\n     color: inherit;\n }\n \n hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }\n \n \n /*  3. Links  ------------------------------------------------------- */\n \n a, a:visited {\n    text-decoration: none;\n    outline: 0;\n    color: #11ABB0;\n \n    -webkit-transition: color .3s ease-in-out;\n    -moz-transition: color .3s ease-in-out;\n    -o-transition: color .3s ease-in-out;\n    transition: color .3s ease-in-out;\n }\n a:hover, a:focus { color: #313131; }\n p a, p a:visited { line-height: inherit; }\n \n \n /*  4. List  --------------------------------------------------------- */\n \n ul, ol { margin-bottom: 24px; margin-top: 12px; }\n ul { list-style: none outside; }\n ol { list-style: decimal; }\n ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }\n ul.square { list-style: square outside; }\n ul.circle { list-style: circle outside; }\n ul.disc { list-style: disc outside; }\n ul ul, ul ol,\n ol ol, ol ul { margin: 6px 0 6px 30px; }\n ul ul li, ul ol li,\n ol ol li, ol ul li { margin-bottom: 6px; }\n li { line-height: 18px; margin-bottom: 12px; }\n ul.large li { }\n li p { }\n \n /* ---------------------------------------------------------------------\n /*  Stats Tab Markup\n \n     <ul class=\"stats-tabs\">\n         <li><a href=\"#\">[value]<b>[name]</b></a></li>\n      </ul>\n \n     Extend this object into your markup.\n /*\n /* --------------------------------------------------------------------- */\n .stats-tabs {\n    padding: 0;\n    margin: 24px 0;\n }\n .stats-tabs li {\n     display: inline-block;\n     margin: 0 10px 18px 0;\n     padding: 0 10px 0 0;\n     border-right: 1px solid #ccc;\n }\n .stats-tabs li:last-child {\n     margin: 0;\n     padding: 0;\n     border: none;\n }\n .stats-tabs li a {\n     display: inline-block;\n     font-size: 22px;\n     font-family: 'opensans-bold', sans-serif;\n    border: none;\n    color: #313131;\n }\n .stats-tabs li a:hover {\n    color:#11ABB0;\n }\n .stats-tabs li a b {\n     display: block;\n     margin: 6px 0 0 0;\n     font-size: 13px;\n     font-family: 'opensans-regular', sans-serif;\n    color: #8B9798;\n }\n \n /* definition list */\n dl { margin: 12px 0; }\n dt { margin: 0; color:#11ABB0; }\n dd { margin: 0 0 0 20px; }\n \n /* Lining Definition Style Markup */\n .lining dt,\n .lining dd {\n     display: inline;\n     margin: 0;\n }\n .lining dt + dt:before,\n .lining dd + dt:before {\n     content: \"A\";\n     white-space: pre;\n }\n .lining dd + dd:before {\n     content: \", \";\n }\n .lining dd:before {\n     content: \": \";\n     margin-left: -0.2em;\n }\n \n /* Dictionary Definition Style Markup */\n .dictionary-style dt {\n     display: inline;\n     counter-reset: definitions;\n }\n .dictionary-style dt + dt:before {\n     content: \", \";\n     margin-left: -0.2em;\n }\n .dictionary-style dd {\n     display: block;\n     counter-increment: definitions;\n }\n .dictionary-style dd:before {\n     content: counter(definitions, decimal) \". \";\n }\n \n /* Pagination */\n .pagination {\n    margin: 36px auto;\n    text-align: center;\n }\n .pagination ul li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n }\n .pagination .page-numbers {\n    font: 15px/18px 'opensans-bold', sans-serif;\n    display: inline-block;\n    padding: 6px 10px;\n    margin-right: 3px;\n    margin-bottom: 6px;\n     color: #6E757C;\n     background-color: #E6E8EB;\n \n     -webkit-transition: all 200ms ease-in-out;\n     -moz-transition: all 200ms ease-in-out;\n     -o-transition: all 200ms ease-in-out;\n     -ms-transition: all 200ms ease-in-out;\n     transition: all 200ms ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n     border-radius: 3px;\n }\n .pagination .page-numbers:hover {\n    background: #838A91;\n    color: #fff;\n }\n .pagination .current,\n .pagination .current:hover {\n    background-color: #11ABB0;\n    color: #fff;\n }\n .pagination .inactive,\n .pagination .inactive:hover {\n    background-color: #E6E8EB;\n     color: #A9ADB2;\n }\n .pagination .prev, .pagination .next {}\n \n /*  5. Images  --------------------------------------------------------- */\n \n img {\n    max-width: 100%;\n    height: auto;\n }\n img.pull-right { margin: 12px 0px 0px 18px; }\n img.pull-left { margin: 12px 18px 0px 0px; }\n \n /*  6. Buttons  --------------------------------------------------------- */\n \n .button,\n .button:visited,\n button,\n input[type=\"submit\"],\n input[type=\"reset\"],\n input[type=\"button\"] {\n    font: 16px/30px 'opensans-bold', sans-serif;\n    background: #11ABB0;\n    display: inline-block;\n     text-decoration: none;\n    letter-spacing: 0;\n    color: #fff;\n     padding: 12px 20px;\n     margin-bottom: 18px;\n    border: none;\n    cursor: pointer;\n    height: auto;\n \n    -webkit-transition: all .2s ease-in-out;\n     -moz-transition: all .2s ease-in-out;\n     -o-transition: all .2s ease-in-out;\n     -ms-transition: all .2s ease-in-out;\n     transition: all .2s ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n    border-radius: 3px;\n }\n \n .button:hover,\n button:hover,\n input[type=\"submit\"]:hover,\n input[type=\"reset\"]:hover,\n input[type=\"button\"]:hover {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button:active,\n button:active,\n input[type=\"submit\"]:active,\n input[type=\"reset\"]:active,\n input[type=\"button\"]:active {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button.full-width,\n button.full-width,\n input[type=\"submit\"].full-width,\n input[type=\"reset\"].full-width,\n input[type=\"button\"].full-width {\n     width: 100%;\n     padding-left: 0 !important;\n     padding-right: 0 !important;\n     text-align: center;\n }\n \n /* Fix for odd Mozilla border & padding issues */\n button::-moz-focus-inner,\n input::-moz-focus-inner {\n     border: 0;\n     padding: 0;\n }\n \n \n /*  7. Forms  --------------------------------------------------------- */\n \n form { margin-bottom: 24px; }\n fieldset { margin-bottom: 24px; }\n \n input[type=\"text\"],\n input[type=\"password\"],\n input[type=\"email\"],\n textarea,\n select {\n    display: block;\n    padding: 18px 15px;\n    margin: 0 0 24px 0;\n    border: 0;\n    outline: none;\n    vertical-align: middle;\n    min-width: 225px;\n     max-width: 100%;\n    font-size: 15px;\n    line-height: 24px;\n     color: #647373;\n     background: #D3D9D9;\n \n }\n \n /* select { padding: 0;\n    width: 220px;\n    } */\n \n input[type=\"text\"]:focus,\n input[type=\"password\"]:focus,\n input[type=\"email\"]:focus,\n textarea:focus {\n    color: #B3B7BC;\n     background-color: #3d4145;\n }\n \n textarea { min-height: 220px; }\n \n label,\n legend {\n    font: 16px/24px 'opensans-bold', sans-serif;\n     margin: 12px 0;\n    color: #3d4145;\n    display: block;\n }\n label span,\n legend span {\n     color: #8B9798;\n    font: 14px/24px 'opensans-regular', sans-serif;\n }\n \n input[type=\"checkbox\"],\n input[type=\"radio\"] {\n     font-size: 15px;\n     color: #737373;\n }\n \n input[type=\"checkbox\"] { display: inline; }\n \n /* ------------------------------------------------------------------ */\n /* d. Grid\n ---------------------------------------------------------------------\n    gutter = 40px.\n /* ------------------------------------------------------------------ */\n \n /* default\n --------------------------------------------------------------- */\n .row {\n    width: 96%;\n    max-width: 1020px;\n    margin: 0 auto;\n }\n /* fixed width for IE8 */\n .ie .row { width: 1000px ; }\n \n .narrow .row { max-width: 980px; }\n \n .row .row { width: auto; max-width: none; margin: 0 -20px; }\n \n /* row clearing */\n .row:before,\n .row:after {\n     content: \" \";\n     display: table;\n }\n .row:after {\n     clear: both;\n }\n \n .column, .columns {\n    position: relative;\n    padding: 0 20px;\n    min-height: 1px;\n    float: left;\n }\n .column.centered, .columns.centered  {\n     float: none;\n     margin: 0 auto;\n }\n \n /* removed gutters */\n .row.collapsed > .column,\n .row.collapsed > .columns,\n .column.collapsed, .columns.collapsed  { padding: 0; }\n \n [class*=\"column\"] + [class*=\"column\"]:last-child { float: right; }\n [class*=\"column\"] + [class*=\"column\"].end { float: right; }\n \n /* column widths */\n .row .one         { width: 8.33333%; }\n .row .two         { width: 16.66667%; }\n .row .three       { width: 25%; }\n .row .four        { width: 33.33333%; }\n .row .five        { width: 41.66667%; }\n .row .six         { width: 50%; }\n .row .seven       { width: 58.33333%; }\n .row .eight       { width: 66.66667%; }\n .row .nine        { width: 75%; }\n .row .ten         { width: 83.33333%; }\n .row .eleven      { width: 91.66667%; }\n .row .twelve      { width: 100%; }\n \n /* Offsets */\n .row .offset-1    { margin-left: 8.33333%; }\n .row .offset-2    { margin-left: 16.66667%; }\n .row .offset-3    { margin-left: 25%; }\n .row .offset-4    { margin-left: 33.33333%; }\n .row .offset-5    { margin-left: 41.66667%; }\n .row .offset-6    { margin-left: 50%; }\n .row .offset-7    { margin-left: 58.33333%; }\n .row .offset-8    { margin-left: 66.66667%; }\n .row .offset-9    { margin-left: 75%; }\n .row .offset-10   { margin-left: 83.33333%; }\n .row .offset-11   { margin-left: 91.66667%; }\n \n /* Push/Pull */\n .row .push-1      { left: 8.33333%; }\n .row .pull-1      { right: 8.33333%; }\n .row .push-2      { left: 16.66667%; \t}\n .row .pull-2      { right: 16.66667%; }\n .row .push-3      { left: 25%; }\n .row .pull-3      { right: 25%;\t}\n .row .push-4      { left: 33.33333%; }\n .row .pull-4      { right: 33.33333%; }\n .row .push-5      { left: 41.66667%; }\n .row .pull-5      { right: 41.66667%; }\n .row .push-6      { left: 50%; }\n .row .pull-6      { right: 50%; }\n .row .push-7      { left: 58.33333%; }\n .row .pull-7      { right: 58.33333%; }\n .row .push-8      { left: 66.66667%; \t}\n .row .pull-8      { right: 66.66667%; }\n .row .push-9      { left: 75%; }\n .row .pull-9      { right: 75%; }\n .row .push-10     { left: 83.33333%; }\n .row .pull-10     { right: 83.33333%; }\n .row .push-11     { left: 91.66667%; }\n .row .pull-11     { right: 91.66667%; }\n \n /* block grids\n --------------------------------------------------------------------- */\n .bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n .bgrid-quarters [class*=\"column\"] { width: 25%; }\n .bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n .bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: left; }\n \n /* Left clearing for block grid columns - columns that changes width in\n different screen sizes. Allows columns with different heights to align\n properly.\n --------------------------------------------------------------------- */\n .first { clear: left; }   /* first column in default screen */\n .s-first { clear: none; } /* first column in smaller screens */\n \n /* smaller screens\n --------------------------------------------------------------- */\n @media only screen and (max-width: 900px) {\n \n    /* block grids on small screens */\n    .s-bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n    .s-bgrid-quarters [class*=\"column\"] { width: 25%; }\n    .s-bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n    .s-bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n    /* block grids left clearing */\n    .first { clear: none; }\n    .s-first { clear: left; }\n \n }\n \n /* mobile wide/smaller tablets\n --------------------------------------------------------------- */\n @media only screen and (max-width: 767px) {\n \n    .row {\n        width: 460px;\n        margin: 0 auto;\n       padding: 0;\n     }\n    .column, .columns {\n        width: auto !important;\n        float: none;\n        margin-left: 0;\n        margin-right: 0;\n       padding: 0 30px;\n    }\n    .row .row { width: auto; max-width: none; margin: 0 -30px; }\n \n    [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n    [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n \n    /* Offsets */\n    .row .offset-1    { margin-left: 0%; }\n    .row .offset-2    { margin-left: 0%; }\n    .row .offset-3    { margin-left: 0%; }\n    .row .offset-4    { margin-left: 0%; }\n    .row .offset-5    { margin-left: 0%; }\n    .row .offset-6    { margin-left: 0%; }\n    .row .offset-7    { margin-left: 0%; }\n    .row .offset-8    { margin-left: 0%; }\n    .row .offset-9    { margin-left: 0%; }\n    .row .offset-10   { margin-left: 0%; }\n    .row .offset-11   { margin-left: 0%; }\n }\n \n /* mobile narrow\n --------------------------------------------------------------- */\n @media only screen and (max-width: 460px) {\n \n    .row { width: auto; }\n \n }\n \n /* larger screens\n --------------------------------------------------------------- */\n @media screen and (min-width: 1200px) {\n \n    .wide .row { max-width: 1180px; }\n \n }\n \n /* ------------------------------------------------------------------ */\n /* e. Others\n /* ------------------------------------------------------------------ */\n \n /*  1. Clearing\n     (http://nicolasgallagher.com/micro-clearfix-hack/\n --------------------------------------------------------------------- */\n \n .cf:before,\n .cf:after {\n     content: \" \";\n     display: table;\n }\n .cf:after {\n     clear: both;\n }\n \n /*  2. Misc -------------------------------------------------------- */\n \n .remove-bottom { margin-bottom: 0 !important; }\n .half-bottom { margin-bottom: 12px !important; }\n .add-bottom { margin-bottom: 24px !important; }\n .no-border { border: none; }\n \n .text-center  { text-align: center !important; }\n .text-left    { text-align: left !important; }\n .text-right   { text-align: right !important; }\n .pull-left    { float: left !important; }\n .pull-right   { float: right !important; }\n .align-center {\n     margin-left: auto !important;\n     margin-right: auto !important;\n     text-align: center !important;\n } \n\n /* ------------------------------------------------------------------ */\n/* i. Footer\n/* ------------------------------------------------------------------ */\n\nfooter {\n   padding-top: 48px;\n   //margin-bottom: 48px;\n   color: #303030;\n   font-size: 14px;\n   text-align: center;\n   position: relative;\n}\n\nfooter a, footer a:visited { color: #525252; }\nfooter a:hover, footer a:focus { color: #fff; }\n\n/* copyright */\nfooter .copyright {\n    margin: 0;\n    padding: 0;\n }\nfooter .copyright li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    line-height: 24px;\n}\n.ie footer .copyright li {\n   display: inline;\n}\nfooter .copyright li:before {\n    content: \"\\2022\";\n    padding-left: 10px;\n    padding-right: 10px;\n    color: #095153;\n}\nfooter .copyright  li:first-child:before {\n    display: none;\n}\n\n/* social links */\nfooter .social-links {\n   margin: 18px 0 30px 0;\n   padding: 0;\n   font-size: 30px;\n}\nfooter .social-links li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    margin-left: 42px;\n    color: #F06000;\n}\n\nfooter .social-links li:first-child { margin-left: 0; }\n\n/* Go To Top Button */\n#go-top {\n\tposition: absolute;\n\ttop: -24px;\n   left: 50%;\n   margin-left: -30px;\n}\n#go-top a {\n\ttext-decoration: none;\n\tborder: 0 none;\n\tdisplay: block;\n\twidth: 60px;\n\theight: 60px;\n\tbackground-color: #525252;\n\n\t-webkit-transition: all 0.2s ease-in-out;\n   -moz-transition: all 0.2s ease-in-out;\n   -o-transition: all 0.2s ease-in-out;\n   -ms-transition: all 0.2s ease-in-out;\n   transition: all 0.2s ease-in-out;\n\n   color: #fff;\n   font-size: 21px;\n   line-height: 60px;\n \tborder-radius: 100%;\n}\n#go-top a:hover { background-color: #0F9095; }\n\n ");
+  }, "/*\n=====================================================================\n*   Ceevee v1.0 Default Stylesheet\n*   url: styleshout.com\n*   03-17-2014\n=====================================================================\n\nTOC:\na. Webfonts and Icon fonts\nb. Reset\nc. Default Styles\n   1. Basic\n   2. Typography\n   3. Links\n   4. Images\n   5. Buttons\n   6. Forms\nd. Grid\ne. Others\n   1. Clearing\n   2. Misc\n\n=====================================================================  */\n\n/* ------------------------------------------------------------------ */\n/* a. Webfonts and Icon fonts\n ------------------------------------------------------------------ */\n\n @import url(\"fonts.css\");\n @import url(\"fontello/css/fontello.css\");\n @import url(\"font-awesome/css/font-awesome.min.css\");\n \n /* ------------------------------------------------------------------\n /* b. Reset\n       Adapted from:\n       Normalize.css - https://github.com/necolas/normalize.css/\n       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/\n /* ------------------------------------------------------------------ */\n \n html, body, div, span, object, iframe,\n h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n abbr, address, cite, code,\n del, dfn, em, img, ins, kbd, q, samp,\n small, strong, sub, sup, var,\n b, i,\n dl, dt, dd, ol, ul, li,\n fieldset, form, label, legend,\n table, caption, tbody, tfoot, thead, tr, th, td,\n article, aside, canvas, details, figcaption, figure,\n footer-c, header, hgroup, menu, nav, section, summary,\n time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    outline: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n    background: transparent;\n }\n \n article,aside,details,figcaption,figure,\n footer-c,header,hgroup,menu,nav,section {\n    display: block;\n }\n \n audio,\n canvas,\n video {\n    display: inline-block;\n }\n \n audio:not([controls]) {\n    display: none;\n    height: 0;\n }\n \n [hidden] { display: none; }\n \n code, kbd, pre, samp {\n    font-family: monospace, serif;\n    font-size: 1em;\n }\n \n pre {\n    white-space: pre;\n    white-space: pre-wrap;\n    word-wrap: break-word;\n }\n \n blockquote, q { quotes: &#8220 &#8220; }\n \n blockquote:before, blockquote:after,\n q:before, q:after {\n    content: '';\n    content: none;\n }\n \n ins {\n    background-color: #ff9;\n    color: #000;\n    text-decoration: none;\n }\n \n mark {\n    background-color: #A7F4F6;\n    color: #555;\n }\n \n del { text-decoration: line-through; }\n \n abbr[title], dfn[title] {\n    border-bottom: 1px dotted;\n    cursor: help;\n }\n \n table {\n    border-collapse: collapse;\n    border-spacing: 0;\n }\n \n \n /* ------------------------------------------------------------------ */\n /* c. Default and Basic Styles\n       Adapted from:\n       Skeleton CSS Framework - http://www.getskeleton.com/\n       Typeplate Typographic Starter Kit - http://typeplate.com/\n /* ------------------------------------------------------------------ */\n \n /*  1. Basic  ------------------------------------------------------- */\n \n *,\n *:before,\n *:after {\n    -moz-box-sizing: border-box;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n }\n \n html {\n    font-size: 62.5%;\n    -webkit-font-smoothing: antialiased;\n }\n \n body {\n    background: #fff;\n    font-family: 'opensans-regular', sans-serif;\n    font-weight: normal;\n    font-size: 15px;\n    line-height: 30px;\n     color: #838C95;\n \n    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */\n     -webkit-text-size-adjust: 100%;\n }\n \n /*  2. Typography\n        Vertical rhythm with leading derived from 6\n --------------------------------------------------------------------- */\n \n h1, h2, h3, h4, h5, h6 {\n    color: #313131;\n     font-family: 'opensans-bold', sans-serif;\n    font-weight: normal;\n }\n h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }\n h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }\n h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }\n h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }\n h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }\n h5 { font-size: 18px; line-height: 30px; }\n h6 { font-size: 14px; line-height: 30px; }\n .subheader { }\n \n p { margin: 0 0 1vh 0; }\n p img { margin: 0; }\n p.lead {\n    font: 19px/36px 'opensans-light', sans-serif;\n    margin-bottom: 18px;\n }\n \n /* for 'em' and 'strong' tags, font-size and line-height should be same with\n the body tag due to rendering problems in some browsers */\n em { font: 15px/30px 'opensans-italic', sans-serif; }\n strong, b { font: 15px/30px 'opensans-bold', sans-serif; }\n small { font-size: 11px; line-height: inherit; }\n \n /*\tBlockquotes */\n blockquote {\n    margin: 30px 0px;\n    padding-left: 40px;\n    position: relative;\n }\n blockquote:before {\n    content: \"\\201C\";\n    opacity: 0.45;\n    font-size: 80px;\n    line-height: 0px;\n    margin: 0;\n    font-family: arial, sans-serif;\n \n    position: absolute;\n    top:  30px;\n     left: 0;\n }\n blockquote p {\n    font-family: 'librebaskerville-italic', serif;\n    padding: 0;\n    font-size: 18px;\n    line-height: 36px;\n }\n blockquote cite {\n    display: block;\n    font-size: 12px;\n    font-style: normal;\n    line-height: 18px;\n }\n blockquote cite:before { content: \"\\2014 \\0020\"; }\n blockquote cite a,\n blockquote cite a:visited { color: #8B9798; border: none }\n \n /* ---------------------------------------------------------------------\n /*  Pull Quotes Markup\n /*\n     <aside class=\"pull-quote\">\n         <blockquote>\n             <p></p>\n         </blockquote>\n      </aside>\n /*\n /* --------------------------------------------------------------------- */\n .pull-quote {\n    position: relative;\n     padding: 18px 30px 18px 0px;\n }\n .pull-quote:before,\n .pull-quote:after {\n     height: 1em;\n     opacity: 0.45;\n     position: absolute;\n     font-size: 80px;\n    font-family: Arial, Sans-Serif;\n }\n .pull-quote:before {\n     content: \"\\201C\";\n     top:  33px;\n     left: 0;\n }\n .pull-quote:after {\n     content: '\\201D';\n     bottom: -33px;\n     right: 0;\n }\n .pull-quote blockquote {\n    margin: 0;\n }\n .pull-quote blockquote:before {\n    content: none;\n }\n \n /* Abbreviations */\n abbr {\n    font-family: 'opensans-bold', sans-serif;\n     font-variant: small-caps;\n     text-transform: lowercase;\n    letter-spacing: .5px;\n     color: gray;\n }\n abbr:hover { cursor: help; }\n \n /* drop cap */\n .drop-cap:first-letter {\n     float: left;\n     margin: 0;\n     padding: 14px 6px 0 0;\n     font-size: 84px;\n     font-family: /* Copperplate */ 'opensans-bold', sans-serif;\n    line-height: 60px;\n     text-indent: 0;\n     background: transparent;\n     color: inherit;\n }\n \n hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }\n \n \n /*  3. Links  ------------------------------------------------------- */\n \n a, a:visited {\n    text-decoration: none;\n    outline: 0;\n    color: #11ABB0;\n \n    -webkit-transition: color .3s ease-in-out;\n    -moz-transition: color .3s ease-in-out;\n    -o-transition: color .3s ease-in-out;\n    transition: color .3s ease-in-out;\n }\n a:hover, a:focus { color: #313131; }\n p a, p a:visited { line-height: inherit; }\n \n \n /*  4. List  --------------------------------------------------------- */\n \n ul, ol { margin-bottom: 24px; margin-top: 12px; }\n ul { list-style: none outside; }\n ol { list-style: decimal; }\n ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }\n ul.square { list-style: square outside; }\n ul.circle { list-style: circle outside; }\n ul.disc { list-style: disc outside; }\n ul ul, ul ol,\n ol ol, ol ul { margin: 6px 0 6px 30px; }\n ul ul li, ul ol li,\n ol ol li, ol ul li { margin-bottom: 6px; }\n li { line-height: 18px; margin-bottom: 12px; }\n ul.large li { }\n li p { }\n \n /* ---------------------------------------------------------------------\n /*  Stats Tab Markup\n \n     <ul class=\"stats-tabs\">\n         <li><a href=\"#\">[value]<b>[name]</b></a></li>\n      </ul>\n \n     Extend this object into your markup.\n /*\n /* --------------------------------------------------------------------- */\n .stats-tabs {\n    padding: 0;\n    margin: 24px 0;\n }\n .stats-tabs li {\n     display: inline-block;\n     margin: 0 10px 18px 0;\n     padding: 0 10px 0 0;\n     border-right: 1px solid #ccc;\n }\n .stats-tabs li:last-child {\n     margin: 0;\n     padding: 0;\n     border: none;\n }\n .stats-tabs li a {\n     display: inline-block;\n     font-size: 22px;\n     font-family: 'opensans-bold', sans-serif;\n    border: none;\n    color: #313131;\n }\n .stats-tabs li a:hover {\n    color:#11ABB0;\n }\n .stats-tabs li a b {\n     display: block;\n     margin: 6px 0 0 0;\n     font-size: 13px;\n     font-family: 'opensans-regular', sans-serif;\n    color: #8B9798;\n }\n \n /* definition list */\n dl { margin: 12px 0; }\n dt { margin: 0; color:#11ABB0; }\n dd { margin: 0 0 0 20px; }\n \n /* Lining Definition Style Markup */\n .lining dt,\n .lining dd {\n     display: inline;\n     margin: 0;\n }\n .lining dt + dt:before,\n .lining dd + dt:before {\n     content: \"A\";\n     white-space: pre;\n }\n .lining dd + dd:before {\n     content: \", \";\n }\n .lining dd:before {\n     content: \": \";\n     margin-left: -0.2em;\n }\n \n /* Dictionary Definition Style Markup */\n .dictionary-style dt {\n     display: inline;\n     counter-reset: definitions;\n }\n .dictionary-style dt + dt:before {\n     content: \", \";\n     margin-left: -0.2em;\n }\n .dictionary-style dd {\n     display: block;\n     counter-increment: definitions;\n }\n .dictionary-style dd:before {\n     content: counter(definitions, decimal) \". \";\n }\n \n /* Pagination */\n .pagination {\n    margin: 36px auto;\n    text-align: center;\n }\n .pagination ul li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n }\n .pagination .page-numbers {\n    font: 15px/18px 'opensans-bold', sans-serif;\n    display: inline-block;\n    padding: 6px 10px;\n    margin-right: 3px;\n    margin-bottom: 6px;\n     color: #6E757C;\n     background-color: #E6E8EB;\n \n     -webkit-transition: all 200ms ease-in-out;\n     -moz-transition: all 200ms ease-in-out;\n     -o-transition: all 200ms ease-in-out;\n     -ms-transition: all 200ms ease-in-out;\n     transition: all 200ms ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n     border-radius: 3px;\n }\n .pagination .page-numbers:hover {\n    background: #838A91;\n    color: #fff;\n }\n .pagination .current,\n .pagination .current:hover {\n    background-color: #11ABB0;\n    color: #fff;\n }\n .pagination .inactive,\n .pagination .inactive:hover {\n    background-color: #E6E8EB;\n     color: #A9ADB2;\n }\n .pagination .prev, .pagination .next {}\n \n /*  5. Images  --------------------------------------------------------- */\n \n img {\n    max-width: 100%;\n    height: auto;\n }\n img.pull-right { margin: 12px 0px 0px 18px; }\n img.pull-left { margin: 12px 18px 0px 0px; }\n \n /*  6. Buttons  --------------------------------------------------------- */\n \n .button-c,\n .button-c:visited,\n button-c,\n input[type=\"submit\"],\n input[type=\"reset\"],\n input[type=\"button-c\"] {\n    font: 16px/30px 'opensans-bold', sans-serif;\n    background: #11ABB0;\n    display: inline-block;\n     text-decoration: none;\n    letter-spacing: 0;\n    color: #fff;\n     padding: 12px 20px;\n     margin-bottom: 18px;\n    border: none;\n    cursor: pointer;\n    height: auto;\n \n    -webkit-transition: all .2s ease-in-out;\n     -moz-transition: all .2s ease-in-out;\n     -o-transition: all .2s ease-in-out;\n     -ms-transition: all .2s ease-in-out;\n     transition: all .2s ease-in-out;\n \n    -moz-border-radius: 3px;\n    -webkit-border-radius: 3px;\n    -khtml-border-radius: 3px;\n    border-radius: 3px;\n }\n \n .button-c:hover,\n button-c:hover,\n input[type=\"submit\"]:hover,\n input[type=\"reset\"]:hover,\n input[type=\"button-c\"]:hover {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button-c:active,\n button-c:active,\n input[type=\"submit\"]:active,\n input[type=\"reset\"]:active,\n input[type=\"button-c\"]:active {\n    background: #3d4145;\n    color: #fff;\n }\n \n .button-c.full-width,\n button-c.full-width,\n input[type=\"submit\"].full-width,\n input[type=\"reset\"].full-width,\n input[type=\"button-c\"].full-width {\n     width: 100%;\n     padding-left: 0 !important;\n     padding-right: 0 !important;\n     text-align: center;\n }\n \n /* Fix for odd Mozilla border & padding issues */\n button-c::-moz-focus-inner,\n input::-moz-focus-inner {\n     border: 0;\n     padding: 0;\n }\n \n \n /*  7. Forms  --------------------------------------------------------- */\n \n form { margin-bottom: 24px; }\n fieldset { margin-bottom: 24px; }\n \n input[type=\"text\"],\n input[type=\"password\"],\n input[type=\"email\"],\n textarea,\n select {\n    display: block;\n    padding: 18px 15px;\n    margin: 0 0 24px 0;\n    border: 0;\n    outline: none;\n    vertical-align: middle;\n    min-width: 225px;\n     max-width: 100%;\n    font-size: 15px;\n    line-height: 24px;\n     color: #647373;\n     background: #D3D9D9;\n \n }\n \n /* select { padding: 0;\n    width: 220px;\n    } */\n \n input[type=\"text\"]:focus,\n input[type=\"password\"]:focus,\n input[type=\"email\"]:focus,\n textarea:focus {\n    color: #B3B7BC;\n     background-color: #3d4145;\n }\n \n textarea { min-height: 220px; }\n \n label,\n legend {\n    font: 16px/24px 'opensans-bold', sans-serif;\n     margin: 12px 0;\n    color: #3d4145;\n    display: block;\n }\n label span,\n legend span {\n     color: #8B9798;\n    font: 14px/24px 'opensans-regular', sans-serif;\n }\n \n input[type=\"checkbox\"],\n input[type=\"radio\"] {\n     font-size: 15px;\n     color: #737373;\n }\n \n input[type=\"checkbox\"] { display: inline; }\n \n /* ------------------------------------------------------------------ */\n /* d. Grid\n ---------------------------------------------------------------------\n    gutter = 40px.\n /* ------------------------------------------------------------------ */\n \n /* default\n --------------------------------------------------------------- */\n .row {\n    width: 96%;\n    max-width: 1020px;\n    margin: 0 auto;\n }\n /* fixed width for IE8 */\n .ie .row { width: 1000px ; }\n \n .narrow .row { max-width: 980px; }\n \n .row .row { width: auto; max-width: none; margin: 0 -20px; }\n \n /* row clearing */\n .row:before,\n .row:after {\n     content: \" \";\n     display: table;\n }\n .row:after {\n     clear: both;\n }\n \n .column, .columns {\n    position: relative;\n    padding: 0 20px;\n    min-height: 1px;\n    float: left;\n }\n .column.centered, .columns.centered  {\n     float: none;\n     margin: 0 auto;\n }\n \n /* removed gutters */\n .row.collapsed > .column,\n .row.collapsed > .columns,\n .column.collapsed, .columns.collapsed  { padding: 0; }\n \n [class*=\"column\"] + [class*=\"column\"]:last-child { float: right; }\n [class*=\"column\"] + [class*=\"column\"].end { float: right; }\n \n /* column widths */\n .row .one         { width: 8.33333%; }\n .row .two         { width: 16.66667%; }\n .row .three       { width: 25%; }\n .row .four        { width: 33.33333%; }\n .row .five        { width: 41.66667%; }\n .row .six         { width: 50%; }\n .row .seven       { width: 58.33333%; }\n .row .eight       { width: 66.66667%; }\n .row .nine        { width: 75%; }\n .row .ten         { width: 83.33333%; }\n .row .eleven      { width: 91.66667%; }\n .row .twelve      { width: 100%; }\n \n /* Offsets */\n .row .offset-1    { margin-left: 8.33333%; }\n .row .offset-2    { margin-left: 16.66667%; }\n .row .offset-3    { margin-left: 25%; }\n .row .offset-4    { margin-left: 33.33333%; }\n .row .offset-5    { margin-left: 41.66667%; }\n .row .offset-6    { margin-left: 50%; }\n .row .offset-7    { margin-left: 58.33333%; }\n .row .offset-8    { margin-left: 66.66667%; }\n .row .offset-9    { margin-left: 75%; }\n .row .offset-10   { margin-left: 83.33333%; }\n .row .offset-11   { margin-left: 91.66667%; }\n \n /* Push/Pull */\n .row .push-1      { left: 8.33333%; }\n .row .pull-1      { right: 8.33333%; }\n .row .push-2      { left: 16.66667%; \t}\n .row .pull-2      { right: 16.66667%; }\n .row .push-3      { left: 25%; }\n .row .pull-3      { right: 25%;\t}\n .row .push-4      { left: 33.33333%; }\n .row .pull-4      { right: 33.33333%; }\n .row .push-5      { left: 41.66667%; }\n .row .pull-5      { right: 41.66667%; }\n .row .push-6      { left: 50%; }\n .row .pull-6      { right: 50%; }\n .row .push-7      { left: 58.33333%; }\n .row .pull-7      { right: 58.33333%; }\n .row .push-8      { left: 66.66667%; \t}\n .row .pull-8      { right: 66.66667%; }\n .row .push-9      { left: 75%; }\n .row .pull-9      { right: 75%; }\n .row .push-10     { left: 83.33333%; }\n .row .pull-10     { right: 83.33333%; }\n .row .push-11     { left: 91.66667%; }\n .row .pull-11     { right: 91.66667%; }\n \n /* block grids\n --------------------------------------------------------------------- */\n .bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n .bgrid-quarters [class*=\"column\"] { width: 25%; }\n .bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n .bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: left; }\n \n /* Left clearing for block grid columns - columns that changes width in\n different screen sizes. Allows columns with different heights to align\n properly.\n --------------------------------------------------------------------- */\n .first { clear: left; }   /* first column in default screen */\n .s-first { clear: none; } /* first column in smaller screens */\n \n /* smaller screens\n --------------------------------------------------------------- */\n @media only screen and (max-width: 900px) {\n \n    /* block grids on small screens */\n    .s-bgrid-sixths [class*=\"column\"]   { width: 16.66667%; }\n    .s-bgrid-quarters [class*=\"column\"] { width: 25%; }\n    .s-bgrid-thirds [class*=\"column\"]   { width: 33.33333%; }\n    .s-bgrid-halves [class*=\"column\"]   { width: 50%; }\n \n    /* block grids left clearing */\n    .first { clear: none; }\n    .s-first { clear: left; }\n \n }\n \n /* mobile wide/smaller tablets\n --------------------------------------------------------------- */\n @media only screen and (max-width: 767px) {\n \n    .row {\n        width: 460px;\n        margin: 0 auto;\n       padding: 0;\n     }\n    .column, .columns {\n        width: auto !important;\n        float: none;\n        margin-left: 0;\n        margin-right: 0;\n       padding: 0 30px;\n    }\n    .row .row { width: auto; max-width: none; margin: 0 -30px; }\n \n    [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n    [class*=\"bgrid\"] [class*=\"column\"] + [class*=\"column\"]:last-child { float: none; }\n \n    /* Offsets */\n    .row .offset-1    { margin-left: 0%; }\n    .row .offset-2    { margin-left: 0%; }\n    .row .offset-3    { margin-left: 0%; }\n    .row .offset-4    { margin-left: 0%; }\n    .row .offset-5    { margin-left: 0%; }\n    .row .offset-6    { margin-left: 0%; }\n    .row .offset-7    { margin-left: 0%; }\n    .row .offset-8    { margin-left: 0%; }\n    .row .offset-9    { margin-left: 0%; }\n    .row .offset-10   { margin-left: 0%; }\n    .row .offset-11   { margin-left: 0%; }\n }\n \n /* mobile narrow\n --------------------------------------------------------------- */\n @media only screen and (max-width: 460px) {\n \n    .row { width: auto; }\n \n }\n \n /* larger screens\n --------------------------------------------------------------- */\n @media screen and (min-width: 1200px) {\n \n    .wide .row { max-width: 1180px; }\n \n }\n \n /* ------------------------------------------------------------------ */\n /* e. Others\n /* ------------------------------------------------------------------ */\n \n /*  1. Clearing\n     (http://nicolasgallagher.com/micro-clearfix-hack/\n --------------------------------------------------------------------- */\n \n .cf:before,\n .cf:after {\n     content: \" \";\n     display: table;\n }\n .cf:after {\n     clear: both;\n }\n \n /*  2. Misc -------------------------------------------------------- */\n \n .remove-bottom { margin-bottom: 0 !important; }\n .half-bottom { margin-bottom: 12px !important; }\n .add-bottom { margin-bottom: 24px !important; }\n .no-border { border: none; }\n \n .text-center  { text-align: center !important; }\n .text-left    { text-align: left !important; }\n .text-right   { text-align: right !important; }\n .pull-left    { float: left !important; }\n .pull-right   { float: right !important; }\n .align-center {\n     margin-left: auto !important;\n     margin-right: auto !important;\n     text-align: center !important;\n } \n\n /* ------------------------------------------------------------------ */\n/* i. Footer\n/* ------------------------------------------------------------------ */\n\nfooter-c {\n   background: #1F1F1F url(./static/images/back1.jpg) no-repeat center center;\n   padding-top: 48px;\n   //margin-bottom: 48px;\n   color: #303030;\n   font-size: 14px;\n   text-align: center;\n   position: relative;\n   size: 100vw;\n}\n\nfooter-c a, footer-c a:visited { color: #525252; }\nfooter-c a:hover, footer-c a:focus { color: #fff; }\n\n/* copyright */\nfooter-c .copyright {\n    margin: 0;\n    padding: 0;\n }\nfooter-c .copyright li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    line-height: 1vh;\n}\n.ie footer-c .copyright li {\n   display: inline;\n}\nfooter-c .copyright li:before {\n    content: \"\\2022\";\n    padding-left: 0.5vw;\n    padding-right: 0.5vw;\n    color: #095153;\n}\nfooter-c .copyright  li:first-child:before {\n    display: none;\n}\n\n/* social links */\nfooter-c .social-links {\n   margin: 2.5vh 0 0.5vh 0;\n   padding: 0;\n   font-size: 30px;\n}\nfooter-c .social-links li {\n    display: inline-block;\n    margin: 0;\n    padding: 0;\n    margin-left: 1.5vw;\n    color: #F06000;\n}\n\nfooter-c .social-links li:first-child { margin-left: 0; }\n\n/* Go To Top Button */\n#go-top {\n\tposition: absolute;\n\ttop: -24px;\n   left: 50%;\n   margin-left: -30px;\n}\n#go-top a {\n\ttext-decoration: none;\n\tborder: 0 none;\n\tdisplay: block;\n\twidth: 60px;\n\theight: 60px;\n\tbackground-color: #525252;\n\n\t-webkit-transition: all 0.2s ease-in-out;\n   -moz-transition: all 0.2s ease-in-out;\n   -o-transition: all 0.2s ease-in-out;\n   -ms-transition: all 0.2s ease-in-out;\n   transition: all 0.2s ease-in-out;\n\n   color: #fff;\n   font-size: 21px;\n   line-height: 60px;\n \tborder-radius: 100%;\n}\n#go-top a:hover { background-color: #0F9095; }\n\n/* ------------------------------------------------------------------ */\n/* e. Portfolio Section\n/* ------------------------------------------------------------------ */\n\n#portfolio {\n   background: #ebeeee;\n   padding-top: 5vh;\n   padding-bottom: 60px;\n}\n#portfolio h1 {\n   font: 1.5vw/1.5vw 'opensans-semibold', sans-serif;\n   text-transform: uppercase;\n   letter-spacing: 1px;\n   text-align: center;\n   margin-bottom: 48px;\n   color: #3f51b5;\n}\n\n/* Portfolio Content */\n#portfolio-wrapper .columns { margin-bottom: 36px; }\n.portfolio-item .item-wrap {\n   background: #fff;\n   overflow: hidden;\n   position: relative;\n\n   -webkit-transition: all 0.3s ease-in-out;\n\t-moz-transition: all 0.3s ease-in-out;\n\t-o-transition: all 0.3s ease-in-out;\n\t-ms-transition: all 0.3s ease-in-out;\n\ttransition: all 0.3s ease-in-out;\n}\n.portfolio-item .item-wrap a {\n   display: block;\n   cursor: pointer;\n}\n\n/* overlay */\n.portfolio-item .item-wrap .overlay {\n   position: absolute;\n   left: 0;\n   top: 0;\n   width: 100%;\n   height: 100%;\n\n\topacity: 0;\n\t-moz-opacity: 0;\n\tfilter:alpha(opacity=0);\n\n   -webkit-transition: opacity 0.3s ease-in-out;\n\t-moz-transition: opacity 0.3s ease-in-out;\n\t-o-transition: opacity 0.3s ease-in-out;\n\ttransition: opacity 0.3s ease-in-out;\n\n   background: url(./static/images/overlay-bg.png) repeat;\n}\n.portfolio-item .item-wrap .link-icon {\n   display: block;\n   color: #fff;\n   height: 30px;\n   width: 30px;\n   font-size: 18px;\n   line-height: 30px;\n   text-align: center;\n\n   opacity: 0;\n\t-moz-opacity: 0;\n\tfilter:alpha(opacity=0);\n\n   -webkit-transition: opacity 0.3s ease-in-out;\n\t-moz-transition: opacity 0.3s ease-in-out;\n\t-o-transition: opacity 0.3s ease-in-out;\n\ttransition: opacity 0.3s ease-in-out;\n\n   position: absolute;\n   top: 50%;\n   left: 50%;\n   margin-left: -15px;\n   margin-top: -15px;\n}\n.portfolio-item .item-wrap img {\n   vertical-align: bottom;\n}\n.portfolio-item .portfolio-item-meta { padding: 18px }\n.portfolio-item .portfolio-item-meta h5 {\n   font: 14px/21px 'opensans-bold', sans-serif;\n   color: #fff;\n}\n.portfolio-item .portfolio-item-meta p {\n   font: 12px/18px 'opensans-light', sans-serif;\n   color: #c6c7c7;\n   margin-bottom: 0;\n}\n\n/* on hover */\n.portfolio-item:hover .overlay {\n\topacity: 1;\n\t-moz-opacity: 1;\n\tfilter:alpha(opacity=100);\n}\n.portfolio-item:hover .link-icon {\n   opacity: 1;\n\t-moz-opacity: 1;\n\tfilter:alpha(opacity=100);\n}\n\n/* primary navigation\n--------------------------------------------------------------------- */\n#nav-wrap ul, #nav-wrap li, #nav-wrap a {\n\t margin: 0;\n\t padding: 0;\n\t border: none;\n\t outline: none;\n}\n\n/* nav-wrap */\n#nav-wrap {\n   font: 12px 'opensans-bold', sans-serif;\n   width: 100%;\n   text-transform: uppercase;\n   letter-spacing: 2.5px;\n   margin: 0 auto;\n   z-index: 100;\n   position: fixed;\n   left: 0;\n   top: 0;\n}\n.opaque { background-color: #333; }\n\n/* hide toggle button */\n#nav-wrap > a.mobile-btn { display: none; }\n\nul#nav {\n   min-height: 48px;\n   width: auto;\n\n   /* center align the menu */\n   text-align: center;\n}\nul#nav li {\n   position: relative;\n   list-style: none;\n   height: 48px;\n   display: inline-block;\n}\n\n/* Links */\nul#nav li a {\n\n/* 8px padding top + 8px padding bottom + 32px line-height = 48px */\n\n   display: inline-block;\n   padding: 8px 13px;\n   line-height: 32px;\n\ttext-decoration: none;\n   text-align: left;\n   color: #fff;\n\n\t-webkit-transition: color .2s ease-in-out;\n\t-moz-transition: color .2s ease-in-out;\n\t-o-transition: color .2s ease-in-out;\n\t-ms-transition: color .2s ease-in-out;\n\ttransition: color .2s ease-in-out;\n}\n\nul#nav li a:active { background-color: transparent !important; }\nul#nav li.current a { color: #F06000; }\n\n/* mobile wide/smaller tablets\n---------------------------------------------------------------------- */\n\n@media only screen and (max-width: 767px) {\n\n   /* mobile navigation\n   -------------------------------------------------------------------- */\n   #nav-wrap {\n      font: 12px 'opensans-bold', sans-serif;\n      background: transparent !important;\n      letter-spacing: 1.5px;  \n      width: auto;\n      position: fixed;\n      top: 0;\n      right: 0;\n   }\n   #nav-wrap > a {\n\t   width: 48px;\n\t\theight: 48px;\n\t\ttext-align: left;\n\t\tbackground-color: #CC5200;\n\t\tposition: relative;\n      border: none;\n      float: right;\n\n      font: 0/0 a;\n      text-shadow: none;\n      color: transparent;\n\n      position: relative;\n      top: 0px;\n      right: 30px;\n   }\n\n\t#nav-wrap > a:before,\n   #nav-wrap > a:after {\n\t   position: absolute;\n\t\tborder: 2px solid #fff;\n\t\ttop: 35%;\n\t\tleft: 25%;\n\t\tright: 25%;\n\t\tcontent: '';\n\t}\n   #nav-wrap > a:after { top: 60%; }\n\n   /* toggle buttons */\n\t#nav-wrap:not( :target ) > a:first-of-type,\n\t#nav-wrap:target > a:last-of-type  {\n\t   display: block;\n\t}\n\n   /* hide menu panel */\n   #nav-wrap ul#nav {\n      height: auto;\n\t\tdisplay: none;\n      clear: both;\n      width: auto; \n      float: right;     \n\n      position: relative;\n      top: 12px;\n      right: 0;\n   }\n\n   /* display menu panels */\n\t#nav-wrap:target > ul#nav\t{\n\t   display: block;\n      padding: 30px 20px 48px 20px;\n      background: #1f2024;\n      margin: 0 30px;\n      clear: both;\n   }\n\n   ul#nav li {\n      display: block;\n      height: auto;      \n      margin: 0 auto; \n      padding: 0 4%;           \n      text-align: left;\n      border-bottom: 1px solid #2D2E34;\n      border-bottom-style: dotted; \n   }\n  \n   ul#nav li a {  \n      display: block;    \n      margin: 0;\n      padding: 0;      \n      margin: 12px 0; \n      line-height: 16px; /* reset line-height from 48px */\n      border: none;\n   }  \n}\n\n ");
 });
 
 /***/ }),
@@ -316,8 +364,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _globalStyle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./globalStyle */ "./components/globalStyle.js");
 /* harmony import */ var _importStyle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./importStyle */ "./components/importStyle.js");
-/* harmony import */ var _slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./slider/sponsorSlider */ "./components/slider/sponsorSlider.js");
-
 
 
 
@@ -341,42 +387,40 @@ var Layout = function Layout(_ref) {
     rel: "stylesheet"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
     className: "header section dark"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    id: "nav-wrap"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "mobile-btn",
+    href: "#nav-wrap",
+    title: "Show navigation"
+  }, "Show navigation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "mobile-btn",
+    href: "#home",
+    title: "Hide navigation"
+  }, "Hide navigation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    id: "nav",
+    className: "nav"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "current"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "home",
     href: "#home"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "navlink"
-  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "#about"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "navlink"
-  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "#register"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "navlink"
-  }, "Register")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "#speakers"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "navlink"
-  }, "Speakers")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "#gallery"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "navlink"
-  }, "Gallery")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "#sponsors"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "navlink"
-  }, "Sponsors and Partners")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "#contact"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "navlink"
-  }, "Team"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_globalStyle__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "scrolldown"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_importStyle__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "smoothscroll",
     href: "#about"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "icon-down-circle"
-  }))), children);
+  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "smoothscroll",
+    href: "#register"
+  }, "Register")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "smoothscroll",
+    href: "#speakers"
+  }, "Speakers")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "smoothscroll",
+    href: "#contact"
+  }, "Team")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "smoothscroll",
+    href: "#contact"
+  }, "RSD-19")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_globalStyle__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_importStyle__WEBPACK_IMPORTED_MODULE_4__["default"], null)), children);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -426,21 +470,31 @@ function Paper() {
     className: classes.card
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: classes.media,
-    image: "./static/images/paper.jpeg",
+    image: "./static/images/3mins.jpeg",
     title: "Paper Presentation"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
     gutterBottom: true,
     variant: "h5",
     component: "h2"
-  }, "Paper Presentation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, "My Research In 3 Mins"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
     variant: "body2",
     color: "textSecondary",
     component: "p"
-  }, "Description"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "three columns"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.google.com",
-    "class": "button",
-    align: "center"
-  }, "Register")));
+    "class": "button-c",
+    size: "small",
+    color: "primary"
+  }, "Register")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "six columns"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.google.com",
+    "class": "button-c",
+    size: "small",
+    color: "primary"
+  }, "Format"))));
 }
 
 /***/ }),
@@ -498,20 +552,21 @@ function Poster() {
     variant: "body2",
     color: "textSecondary",
     component: "p"
-  }, "Description"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.google.com",
-    "class": "button",
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "three columns"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://easychair.org/conferences/?conf=rsd2020",
+    "class": "button-c",
     size: "small",
     color: "primary"
-  }, "Register"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "Register")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "six columns"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.google.com",
-    "class": "button",
+    "class": "button-c",
     size: "small",
     color: "primary"
-  }, "Format"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.google.com",
-    "class": "button"
-  }, "Format")));
+  }, "Format"))));
 }
 
 /***/ }),
@@ -559,20 +614,31 @@ function Register() {
     className: classes.card
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: classes.media,
-    image: "./static/images/register.jpg",
+    image: "./static/images/winners.jpg",
     title: "Register Presentation"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
     gutterBottom: true,
     variant: "h5",
     component: "h2"
-  }, "Register For the Events"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, "Previous Year Winners"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
     variant: "body2",
     color: "textSecondary",
     component: "p"
-  }, "Paper and Poster Presentation"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "three columns"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.google.com",
-    "class": "button"
-  }, "Schedule of the Day")));
+    "class": "button-c",
+    size: "small",
+    color: "primary"
+  }, "Participants")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "six columns"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.google.com",
+    "class": "button-c",
+    size: "small",
+    color: "primary"
+  }, "Brocheure"))));
 }
 
 /***/ }),
@@ -599,7 +665,7 @@ __webpack_require__.r(__webpack_exports__);
 var Slideshow = function Slideshow() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true
-  }, "\n            .centered-text {\n                position: absolute;\n                height: 200px;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                margin: auto;\n            }\n\n            h1 {\n                color: #3f51b5;\n                font-size: 3rem;\n                margin: 30px;\n            }\n\n            h2 {\n              color: #9e2a22;\n            }\n\n            h3 {\n              color: #f50057;\n            }\n\n            h4 {\n              color: #9e2a22;\n            }\n\n            .overlay {\n                background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5), #2F2727);\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n            }\n\n    .carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transitio\n    n:all .25s ease-in;transition:all .25s ease-in;opacity:.4;position:absolute;z-index:2;top:20px;background:0 0;border:0;font-size:32px;cursor:pointer}.carousel .control-arrow:hover{o\n    pacity:1}.carousel .control-arrow:before,.carousel.carousel-slider .control-arrow:before{margin:0 5px;display:inline-block;border-top:16px solid transparent;border-bottom:16px solid t\n    ransparent;content:''}.carousel .control-disabled.control-arrow{opacity:0;cursor:inherit;display:none}.carousel .control-prev.control-arrow{left:0}.carousel .control-prev.control-arrow:before{border-right:16px solid #2e2b2c}.carousel .control-next.control-arrow{right:0}.carousel .control-next.control-arrow:before{border-left:16px solid #2e2b2c}.carousel{position:relative;width:100%}.carousel *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.carousel img{width:100%;display:inline-block;pointer-events:none}.carousel .carousel{position:relative}.carousel .control-arrow{outline:0;border:0;background:0 0;top:50%;margin-top:-13px;font-size:116px}.carousel .thumbs-wrapper{margin:20px;overflow:hidden}.carousel .thumbs{-webkit-transition:all .15s ease-in;-moz-transition:all .15s ease-in;-ms-transition:all .15s ease-in;-o-transition:all .15s ease-in;transition:all .15s ease-in;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);position:relative;list-style:none;white-space:nowrap}.carousel .thumb{-webkit-transition:border .15s ease-in;-moz-transition:border .15s ease-in;-ms-transition:border .15s ease-in;-o-transition:border .15s ease-in;transition:border .15s ease-in;display:inline-block;width:0px;height:0px;margin-right:6px;white-space:nowrap;overflow:hidden;border:0px solid #2e2b2c;padding:2px}.carousel .thumb:focus{border:0px solid #ccc;outline:0}.carousel .thumb.selected,.carousel .thumb:hover{border:0px solid #333}.carousel .thumb img{vertical-align:top}.carousel.carousel-slider{position:relative;margin:0;overflow:hidden}.carousel.carousel-slider .control-arrow{top:0;color:#2e2b2c;font-size:26px;bottom:0;margin-top:0;padding:5px}.carousel.carousel-slider .control-arrow:hover{background:rgba(0,0,0,.2)}.carousel .slider-wrapper{overflow:hidden;margin:auto;width:100%;-webkit-transition:height .15s ease-in;-moz-transition:height .15s ease-in;-ms-transition:height .15s ease-in;-o-transition:height .15s ease-in;transition:height .15s ease-in}.carousel .slider-wrapper.axis-horizontal .slider{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-horizontal .slider .slide{flex-direction:column;flex-flow:column}.carousel .slider-wrapper.axis-vertical{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-vertical .slider{-webkit-flex-direction:column;flex-direction:column}.carousel .slider{margin:0;padding:0;position:relative;list-style:none;width:100%}.carousel .slider.animated{-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out}.carousel .slide{min-width:100%;margin:0;position:relative;text-align:center;background:#000}.carousel .slide img{width:100%;vertical-align:top;border:0}.carousel .slide iframe{display:inline-block;width:calc(100% - 80px);margin:0 40px 40px;border:0}.carousel .slide .legend{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;position:absolute;bottom:40px;left:50%;margin-left:-45%;width:90%;border-radius:10px;background:#000;color:#2e2b2c;padding:10px;font-size:12px;text-align:center;opacity:.25;-webkit-transition:opacity .35s ease-in-out;-moz-transition:opacity .35s ease-in-out;-ms-transition:opacity .35s ease-in-out;-o-transition:opacity .35s ease-in-out;transition:opacity .35s ease-in-out}.carousel .control-dots{position:absolute;bottom:0;margin:10px 0;text-align:center;width:100%}@media (min-width:960px){.carousel .control-dots{bottom:0}}.carousel .control-dots .dot{-webkit-transition:opacity .25s ease-in;-moz-transition:opacity .25s ease-in;-ms-transition:opacity .25s ease-in;-o-transition:opacity .25s ease-in;transition:opacity .25s ease-in;opacity:.3;box-shadow:1px 1px 2px rgba(0,0,0,.9);background:#2e2b2c;border-radius:50%;width:16px;height:16px;cursor:pointer;display:inline-block;margin:0 16px}.carousel .control-dots .dot.selected,.carousel .control-dots .dot:hover{opacity:1}.carousel .carousel-status{position:absolute;top:0;right:0;padding:5px;font-size:10px;text-shadow:1px 1px 1px rgba(0,0,0,.9);color:#2e2b2c}.carousel:hover .slide .legend{opacity:1}\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\n            .centered-text {\n                position: absolute;\n                height: 33vh;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                margin: auto;\n            }\n\n            h1 {\n                color: #dc1731;\n                font-size: 5vh;\n                margin: 1vh;\n            }\n\n            h2 {\n              color: #9e2a22;\n            }\n\n            h3 {\n              color: #f50057;\n            }\n\n            h4 {\n              color: #6b6565;\n            }\n\n            .overlay {\n                background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5), #2F2727);\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n            }\n\n    .carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transitio\n    n:all .25s ease-in;transition:all .25s ease-in;opacity:.4;position:absolute;z-index:2;top:20px;background:0 0;border:0;font-size:32px;cursor:pointer}.carousel .control-arrow:hover{o\n    pacity:1}.carousel .control-arrow:before,.carousel.carousel-slider .control-arrow:before{margin:0 5px;display:inline-block;border-top:16px solid transparent;border-bottom:16px solid t\n    ransparent;content:''}.carousel .control-disabled.control-arrow{opacity:0;cursor:inherit;display:none}.carousel .control-prev.control-arrow{left:0}.carousel .control-prev.control-arrow:before{border-right:16px solid #ad1f4e}.carousel .control-next.control-arrow{right:0}.carousel .control-next.control-arrow:before{border-left:16px solid #ad1f4e}.carousel{position:relative;width:100%}.carousel *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.carousel img{width:100%;display:inline-block;pointer-events:none}.carousel .carousel{position:relative}.carousel .control-arrow{outline:0;border:0;background:0 0;top:50%;margin-top:-13px;font-size:116px}.carousel .thumbs-wrapper{margin:20px;overflow:hidden}.carousel .thumbs{-webkit-transition:all .15s ease-in;-moz-transition:all .15s ease-in;-ms-transition:all .15s ease-in;-o-transition:all .15s ease-in;transition:all .15s ease-in;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);position:relative;list-style:none;white-space:nowrap}.carousel .thumb{-webkit-transition:border .15s ease-in;-moz-transition:border .15s ease-in;-ms-transition:border .15s ease-in;-o-transition:border .15s ease-in;transition:border .15s ease-in;display:inline-block;width:0px;height:0px;margin-right:6px;white-space:nowrap;overflow:hidden;border:0px solid #ad1f4e;padding:2px}.carousel .thumb:focus{border:0px solid #ccc;outline:0}.carousel .thumb.selected,.carousel .thumb:hover{border:0px solid #333}.carousel .thumb img{vertical-align:top}.carousel.carousel-slider{position:relative;margin:0;overflow:hidden}.carousel.carousel-slider .control-arrow{top:0;color:#ad1f4e;font-size:26px;bottom:0;margin-top:0;padding:5px}.carousel.carousel-slider .control-arrow:hover{background:rgba(0,0,0,.2)}.carousel .slider-wrapper{overflow:hidden;margin:auto;width:100%;-webkit-transition:height .15s ease-in;-moz-transition:height .15s ease-in;-ms-transition:height .15s ease-in;-o-transition:height .15s ease-in;transition:height .15s ease-in}.carousel .slider-wrapper.axis-horizontal .slider{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-horizontal .slider .slide{flex-direction:column;flex-flow:column}.carousel .slider-wrapper.axis-vertical{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-vertical .slider{-webkit-flex-direction:column;flex-direction:column}.carousel .slider{margin:0;padding:0;position:relative;list-style:none;width:100%}.carousel .slider.animated{-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out}.carousel .slide{min-width:100%;margin:0;position:relative;text-align:center;background:#000}.carousel .slide img{width:100%;vertical-align:top;border:0}.carousel .slide iframe{display:inline-block;width:calc(100% - 80px);margin:0 40px 40px;border:0}.carousel .slide .legend{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;position:absolute;bottom:40px;left:50%;margin-left:-45%;width:90%;border-radius:10px;background:#000;color:#ad1f4e;padding:10px;font-size:12px;text-align:center;opacity:.25;-webkit-transition:opacity .35s ease-in-out;-moz-transition:opacity .35s ease-in-out;-ms-transition:opacity .35s ease-in-out;-o-transition:opacity .35s ease-in-out;transition:opacity .35s ease-in-out}.carousel .control-dots{position:absolute;bottom:0;margin:10px 0;text-align:center;width:100%}@media (min-width:960px){.carousel .control-dots{bottom:0}}.carousel .control-dots .dot{-webkit-transition:opacity .25s ease-in;-moz-transition:opacity .25s ease-in;-ms-transition:opacity .25s ease-in;-o-transition:opacity .25s ease-in;transition:opacity .25s ease-in;opacity:.3;box-shadow:1px 1px 2px rgba(0,0,0,.9);background:#ad1f4e;border-radius:50%;width:16px;height:16px;cursor:pointer;display:inline-block;margin:0 16px}.carousel .control-dots .dot.selected,.carousel .control-dots .dot:hover{opacity:1}.carousel .carousel-status{position:absolute;top:0;right:0;padding:5px;font-size:10px;text-shadow:1px 1px 1px rgba(0,0,0,.9);color:#ad1f4e}.carousel:hover .slide .legend{opacity:1}\n    "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "overlay"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "centered-text"
@@ -652,7 +718,7 @@ var CardWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  max-width: 1080px;\n  margin: 0 auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n  max-width: 65vw;\n  margin: 0 auto;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -974,6 +1040,7 @@ function (_React$Component) {
         responsive.forEach(function (_ref) {
           var breakPoint = _ref.breakPoint,
               cardsToShow = _ref.cardsToShow;
+          console.log(window.innerWidth);
 
           if (breakPoint <= window.innerWidth) {
             updatedCardsToShow = cardsToShow;
@@ -1114,6 +1181,9 @@ function (_React$Component) {
         onClick: this.handleRightArrowClick,
         disabled: !infinite && initialCard + cardsToShow === numberOfChildren
       });
+      /*     return (
+            <div id="go-top"><a className="smoothscroll" title="right" href="this.handleLeftArrowClick"><i className="fa fa-arrow-up"></i></a></div>
+          ); */
     }
   }, {
     key: "render",
@@ -1686,6 +1756,9 @@ var responsive = [{
 {
   breakPoint: 760,
   cardsToShow: 3
+}, {
+  breakPoint: 260,
+  cardsToShow: 1
 }];
 var sponsorSpotlights = sponsors.map(function (sponsor) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sponsorSpotlight__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1736,6 +1809,9 @@ var responsive = [{
 {
   breakPoint: 760,
   cardsToShow: 2
+}, {
+  breakPoint: 260,
+  cardsToShow: 1
 }];
 var teamSpotlight = team.map(function (member) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_teamSpotlight__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1745,7 +1821,7 @@ var teamSpotlight = team.map(function (member) {
 });
 
 var TeamSlider = function TeamSlider() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Team-RSD"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Slider__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Organizing committee"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Slider__WEBPACK_IMPORTED_MODULE_2__["default"], {
     responsive: responsive
   }, teamSpotlight));
 };
@@ -1802,74 +1878,6 @@ function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (Timer);
-
-/***/ }),
-
-/***/ "./components/speakerSpotlight.js":
-/*!****************************************!*\
-  !*** ./components/speakerSpotlight.js ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _data_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/theme */ "./data/theme.js");
-
-
-
-
-var SpeakerSpotlight = function SpeakerSpotlight(_ref) {
-  var details = _ref.details;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "speaker-pic"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
-    jsx: true
-  }, "\n            .speaker-pic {\n                display: inline-block;\n                width: 25%;\n                margin-bottom: 30px;\n            }\n\n            .rounded {\n                border-radius: 200px;\n                height: 200px;\n                width: 200px;\n                overflow: hidden;\n                margin: auto;\n                position: relative;\n                cursor: pointer;\n            }\n\n            .speaker-pic img {\n                width: 200px;\n            }\n\n            .rounded:hover .social {\n                opacity: 1;\n                transform: translateY( 0 );\n            }\n\n            .rounded:hover .overlay {\n                opacity: 0.5;\n            }\n\n            .social {\n                position: absolute;\n                margin: auto;\n                transition: all 0.2s;\n                top: 45%;\n                opacity: 0;\n                width: 100%;\n                transform: translateY( 100px );\n            }\n\n            .overlay {\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                opacity: 0;\n                background-color: ".concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].primaryColor, ";\n                transition: all 1s;\n            }\n\n            .social a {\n                margin: 10px;\n                border: 1px solid black;\n                padding: 5px 7px;\n                border-radius: 100%;\n                text-decoration: none;\n                color: ").concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].secondaryColor, ";\n            }\n        ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "rounded"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: details.imageUrl,
-    alt: details.name
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "overlay"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "social"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: details.twitter,
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-twitter"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: details.github,
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-github"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: details.site,
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-link"
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, details.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, details.position), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, details.company));
-};
-
-var shape = prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape,
-    string = prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string;
-SpeakerSpotlight.propTypes = {
-  details: shape({
-    name: string.isRequired,
-    position: string.isRequired,
-    company: string.isRequired,
-    imageUrl: string.isRequired
-  }).isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (SpeakerSpotlight);
 
 /***/ }),
 
@@ -1945,17 +1953,18 @@ __webpack_require__.r(__webpack_exports__);
 var TeamSpotlight = function TeamSpotlight(_ref) {
   var details = _ref.details;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "speaker-pic"
+    className: "member-pic"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true
-  }, "\n            .speaker-pic {\n                display: inline-block;\n                width: 25%;\n                margin-bottom: 30px;\n            }\n\n            .rounded {\n                border-radius: 200px;\n                height: 150px;\n                width: 150px;\n                overflow: hidden;\n                margin: auto;\n                position: relative;\n                cursor: pointer;\n            }\n\n            .speaker-pic img {\n                width: 150px;\n            }\n\n            .rounded:hover .social {\n                opacity: 1;\n                transform: translateY( 0 );\n            }\n\n            .rounded:hover .overlay {\n                opacity: 0.5;\n            }\n\n            .social {\n                position: absolute;\n                margin: auto;\n                transition: all 0.2s;\n                top: 45%;\n                opacity: 0;\n                width: 100%;\n                transform: translateY( 100px );\n            }\n\n            .overlay {\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                opacity: 0;\n                background-color: ".concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].primaryColor, ";\n                transition: all 1s;\n            }\n\n            .social a {\n                margin: 10px;\n                border: 1px solid black;\n                padding: 5px 7px;\n                border-radius: 100%;\n                text-decoration: none;\n                color: ").concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].secondaryColor, ";\n            }\n        ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\n            .member-pic {\n                display: inline-block;\n                width: 65%;\n                margin-bottom: 30px;\n            }\n\n            .rounded {\n                border-radius: 200px;\n                height: 150px;\n                width: 150px;\n                overflow: hidden;\n                margin: auto;\n                position: relative;\n                cursor: pointer;\n            }\n\n            .member-pic img {\n                width: 150px;\n            }\n\n            .rounded:hover .social {\n                opacity: 1;\n                transform: translateY( 0 );\n            }\n\n            .rounded:hover .overlay {\n                opacity: 0.5;\n            }\n\n            .social {\n                position: absolute;\n                margin: auto;\n                transition: all 0.2s;\n                top: 45%;\n                opacity: 0;\n                width: 100%;\n                transform: translateY( 100px );\n            }\n\n            .overlay {\n                position: absolute;\n                top: 0;\n                bottom: 0;\n                left: 0;\n                right: 0;\n                opacity: 0;\n                background-color: ".concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].primaryColor, ";\n                transition: all 1s;\n            }\n\n            .social a {\n                margin: 10px;\n                border: 1px solid black;\n                padding: 5px 7px;\n                border-radius: 100%;\n                text-decoration: none;\n                color: ").concat(_data_theme__WEBPACK_IMPORTED_MODULE_2__["default"].secondaryColor, ";\n            }\n        ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "rounded"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: details.url,
+    title: details.name
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: details.imageUrl,
     alt: details.name
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "overlay"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, details.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, details.position), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, details.company));
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, details.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, details.position));
 };
 
 var shape = prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape,
@@ -2198,49 +2207,24 @@ __webpack_require__.r(__webpack_exports__);
     "name": "twitter",
     "url": "https://twitter.com/RsdIit",
     "className": "fa fa-twitter"
+  }],
+  speakers: [{
+    "name": "TBD",
+    "designation": "TBD",
+    "image": "speaker.jpg",
+    "url": "https://www.canadianwanderlust.com"
+  }, {
+    "name": "TBD",
+    "designation": "TBD",
+    "image": "speaker.jpg",
+    "url": "http://www.timbakerdev.com"
+  }, {
+    "name": "TBD",
+    "designation": "TBD",
+    "image": "speaker.jpg",
+    "url": "http://www.timbakerdev.com/originalthaifood.github.io"
   }]
 });
-
-/***/ }),
-
-/***/ "./data/speakers.js":
-/*!**************************!*\
-  !*** ./data/speakers.js ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = [{
-  id: 1,
-  name: "Guillermo Rauch",
-  position: "Founder",
-  company: "Zeit",
-  imageUrl: "./static/images/speakers/speaker.png",
-  twitter: "https://twitter.com/rauchg",
-  github: "https://github.com/rauchg",
-  site: "https://rauchg.com/"
-}, {
-  id: 2,
-  name: "Liran Tal",
-  position: "Engineering Manager",
-  company: "Marketing Cloud, Nielsen",
-  imageUrl: "./static/images/speakers/speaker.png",
-  twitter: "https://twitter.com/liran_tal",
-  github: "https://github.com/lirantal",
-  site: "https://medium.com/@liran.tal"
-}, {
-  id: 3,
-  name: "Martin Splitt",
-  position: "Senior Software Engineer",
-  company: "Archilogic",
-  imageUrl: "./static/images/speakers/speaker.png",
-  twitter: "https://twitter.com/g33konaut",
-  github: "https://github.com/avgp",
-  site: "http://50linesofco.de/"
-}];
 
 /***/ }),
 
@@ -2310,44 +2294,43 @@ module.exports = [{
 
 module.exports = [{
   id: 1,
-  name: "Guillermo Rauch",
+  name: "Dr. T. Rajagopala Rao",
   position: "Convener",
-  imageUrl: "./static/images/speakers/speaker.png"
+  url: "https://www.iitp.ac.in/index.php?option=com_content&view=article&id=1500%3Adr-t-rajagopala-rao&catid=36&Itemid=136",
+  imageUrl: "./static/images/team/RajaGopal.png"
 }, {
   id: 2,
-  name: "Guillermo Rauch",
+  name: "Dr. Rishi Raj",
   position: "Convener",
-  imageUrl: "./static/images/speakers/speaker.png"
+  url: "https://https://www.iitp.ac.in/~rraj/",
+  imageUrl: "./static/images/team/RishiRaj.png"
 }, {
   id: 3,
-  name: "Guillermo Rauch",
+  name: "Dr. Sweta Sinha",
   position: "Convener",
-  imageUrl: "./static/images/speakers/speaker.png"
+  url: "https://www.iitp.ac.in/index.php?option=com_content&view=article&id=1498%3Adr-sweta-sinha&catid=39&Itemid=170",
+  imageUrl: "./static/images/team/Shewta.png"
 }, {
   id: 4,
-  name: "Guillermo Rauch",
-  position: "Convener",
-  imageUrl: "./static/images/speakers/speaker.png"
+  name: "Kuldeep Awasthi",
+  position: "PGR",
+  imageUrl: "./static/images/team/awasthi.png"
 }, {
-  id: 1,
-  name: "Guillermo Rauch",
-  position: "Convener",
-  imageUrl: "./static/images/speakers/speaker.png"
+  id: 5,
+  name: "Krutika Verma",
+  position: "Technical",
+  imageUrl: "./static/images/team/krutika.jpg"
 }, {
-  id: 2,
-  name: "Guillermo Rauch",
-  position: "Convener",
-  imageUrl: "./static/images/speakers/speaker.png"
+  id: 6,
+  name: "Swati",
+  position: "Technical",
+  imageUrl: "./static/images/team/swati1.jpg"
 }, {
-  id: 3,
-  name: "Guillermo Rauch",
-  position: "Convener",
-  imageUrl: "./static/images/speakers/speaker.png"
-}, {
-  id: 4,
-  name: "Guillermo Rauch",
-  position: "Convener",
-  imageUrl: "./static/images/speakers/speaker.png"
+  id: 7,
+  name: "Harsh Kasyap",
+  position: "Technical",
+  url: "https://harshkasyap.github.io",
+  imageUrl: "./static/images/team/harsh.jpg"
 }];
 
 /***/ }),
@@ -2363,9 +2346,9 @@ module.exports = [{
 
 
 module.exports = {
-  aboutPara1: "Research scholars’ day is an initiative by the research scholars of IIT Patna to make research more accessible. It is a platform for scholars to collaborate with the prominent personalities of their field by  sharing their knowledge through short talks and poster presentations.",
+  aboutPara1: " Research scholars’ day is an initiative by the research scholars of IIT Patna to make research more accessible. It is a platform for scholars to collaborate with the prominent personalities of their field by  sharing their knowledge through short talks and poster presentations.",
   aboutPara2: "This event is an effort by the scholars of IIT Patna to bring academic researches to the real-world. Scholars get an opportunity to showcase their research work and interact with prominent scientists.",
-  aboutPara3: "Poster presentation and 3-minute talk are the two main events for the scholars. These events are ways to present the research work in limited words. In poster-presentation scholars present their work precisely through posters to the eminent dignitaries. Another way of sharing the research work is through a 3-minute talk. Researchers share the understanding of their research area in limited words through the slides. The best presentation will be published on YouTube, Facebook and, Twitter handles of RSD. All the submitted and presented work will be finally published in the RSD IIT Patna booklet. The annual festival ends with a beautiful evening which includes a program, generally spicmacy program, to feel the rich and authentic classical music of India with some refreshments.",
+  aboutPara3: "Poster presentation and 3-minute talk are the two main events for the scholars. These events are ways to present the research work in limited words. In poster-presentation scholars present their work precisely through posters to the eminent dignitaries. Another way of sharing the research work is through a 3-minute talk. Researchers share the understanding of their research area in limited words through the slides. The best presentation will be published on YouTube, Facebook and, Twitter handles of RSD. All the submitted and presented work will be finally published in the RSD IIT Patna booklet. The annual festival ends with a beautiful evening which includes a program, generally spicmacy program, to feel the rich and authentic classical music of India with some refreshments. ",
   directorMsg: "I am very happy that the 9th Research Scholar Day of IIT Patna is going to be held with the usual thoroughness and excellent content. We have eminent speakers from Science, Engineering, Humanities and Social Sciences and Industry sharing their wisdom with the research scholars of the institute. Research is what separates institutes of higher learning from others, and it is really praiseworthy that RSD is considered a flagship event of IIT patna. I am sure the days event along with pre and post workshops/tutorial etc will be very interesting and informative for everybody Wish you all the best. Jai Hind .",
   directorName: "Prof. Pushpak Bhattacharyya"
 };
@@ -5526,433 +5509,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/core/esm/Grid/Grid.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/Grid/Grid.js ***!
-  \*********************************************************/
-/*! exports provided: styles, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
-/* harmony import */ var _utils_requirePropFactory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/requirePropFactory */ "./node_modules/@material-ui/core/esm/utils/requirePropFactory.js");
-
-
-// A grid component using the following libs as inspiration.
-//
-// For the implementation:
-// - https://getbootstrap.com/docs/4.3/layout/grid/
-// - https://github.com/kristoferjoseph/flexboxgrid/blob/master/src/css/flexboxgrid.css
-// - https://github.com/roylee0704/react-flexbox-grid
-// - https://material.angularjs.org/latest/layout/introduction
-//
-// Follow this flexbox Guide to better understand the underlying model:
-// - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-
-
-
-
-var SPACINGS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-var GRID_SIZES = ['auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
-function generateGrid(globalStyles, theme, breakpoint) {
-  var styles = {};
-  GRID_SIZES.forEach(function (size) {
-    var key = "grid-".concat(breakpoint, "-").concat(size);
-
-    if (size === true) {
-      // For the auto layouting
-      styles[key] = {
-        flexBasis: 0,
-        flexGrow: 1,
-        maxWidth: '100%'
-      };
-      return;
-    }
-
-    if (size === 'auto') {
-      styles[key] = {
-        flexBasis: 'auto',
-        flexGrow: 0,
-        maxWidth: 'none'
-      };
-      return;
-    } // Keep 7 significant numbers.
-
-
-    var width = "".concat(Math.round(size / 12 * 10e7) / 10e5, "%"); // Close to the bootstrap implementation:
-    // https://github.com/twbs/bootstrap/blob/8fccaa2439e97ec72a4b7dc42ccc1f649790adb0/scss/mixins/_grid.scss#L41
-
-    styles[key] = {
-      flexBasis: width,
-      flexGrow: 0,
-      maxWidth: width
-    };
-  }); // No need for a media query for the first size.
-
-  if (breakpoint === 'xs') {
-    Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])(globalStyles, styles);
-  } else {
-    globalStyles[theme.breakpoints.up(breakpoint)] = styles;
-  }
-}
-
-function getOffset(val) {
-  var div = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-  var parse = parseFloat(val);
-  return "".concat(parse / div).concat(String(val).replace(String(parse), '') || 'px');
-}
-
-function generateGutter(theme, breakpoint) {
-  var styles = {};
-  SPACINGS.forEach(function (spacing) {
-    var themeSpacing = theme.spacing(spacing);
-
-    if (themeSpacing === 0) {
-      return;
-    }
-
-    styles["spacing-".concat(breakpoint, "-").concat(spacing)] = {
-      margin: "-".concat(getOffset(themeSpacing, 2)),
-      width: "calc(100% + ".concat(getOffset(themeSpacing), ")"),
-      '& > $item': {
-        padding: getOffset(themeSpacing, 2)
-      }
-    };
-  });
-  return styles;
-} // Default CSS values
-// flex: '0 1 auto',
-// flexDirection: 'row',
-// alignItems: 'flex-start',
-// flexWrap: 'nowrap',
-// justifyContent: 'flex-start',
-
-
-var styles = function styles(theme) {
-  return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    /* Styles applied to the root element */
-    root: {},
-
-    /* Styles applied to the root element if `container={true}`. */
-    container: {
-      boxSizing: 'border-box',
-      display: 'flex',
-      flexWrap: 'wrap',
-      width: '100%'
-    },
-
-    /* Styles applied to the root element if `item={true}`. */
-    item: {
-      boxSizing: 'border-box',
-      margin: '0' // For instance, it's useful when used with a `figure` element.
-
-    },
-
-    /* Styles applied to the root element if `zeroMinWidth={true}`. */
-    zeroMinWidth: {
-      minWidth: 0
-    },
-
-    /* Styles applied to the root element if `direction="column"`. */
-    'direction-xs-column': {
-      flexDirection: 'column'
-    },
-
-    /* Styles applied to the root element if `direction="column-reverse"`. */
-    'direction-xs-column-reverse': {
-      flexDirection: 'column-reverse'
-    },
-
-    /* Styles applied to the root element if `direction="rwo-reverse"`. */
-    'direction-xs-row-reverse': {
-      flexDirection: 'row-reverse'
-    },
-
-    /* Styles applied to the root element if `wrap="nowrap"`. */
-    'wrap-xs-nowrap': {
-      flexWrap: 'nowrap'
-    },
-
-    /* Styles applied to the root element if `wrap="reverse"`. */
-    'wrap-xs-wrap-reverse': {
-      flexWrap: 'wrap-reverse'
-    },
-
-    /* Styles applied to the root element if `alignItems="center"`. */
-    'align-items-xs-center': {
-      alignItems: 'center'
-    },
-
-    /* Styles applied to the root element if `alignItems="flex-start"`. */
-    'align-items-xs-flex-start': {
-      alignItems: 'flex-start'
-    },
-
-    /* Styles applied to the root element if `alignItems="flex-end"`. */
-    'align-items-xs-flex-end': {
-      alignItems: 'flex-end'
-    },
-
-    /* Styles applied to the root element if `alignItems="baseline"`. */
-    'align-items-xs-baseline': {
-      alignItems: 'baseline'
-    },
-
-    /* Styles applied to the root element if `alignContent="center"`. */
-    'align-content-xs-center': {
-      alignContent: 'center'
-    },
-
-    /* Styles applied to the root element if `alignContent="flex-start"`. */
-    'align-content-xs-flex-start': {
-      alignContent: 'flex-start'
-    },
-
-    /* Styles applied to the root element if `alignContent="flex-end"`. */
-    'align-content-xs-flex-end': {
-      alignContent: 'flex-end'
-    },
-
-    /* Styles applied to the root element if `alignContent="space-between"`. */
-    'align-content-xs-space-between': {
-      alignContent: 'space-between'
-    },
-
-    /* Styles applied to the root element if `alignContent="space-around"`. */
-    'align-content-xs-space-around': {
-      alignContent: 'space-around'
-    },
-
-    /* Styles applied to the root element if `justify="center"`. */
-    'justify-xs-center': {
-      justifyContent: 'center'
-    },
-
-    /* Styles applied to the root element if `justify="flex-end"`. */
-    'justify-xs-flex-end': {
-      justifyContent: 'flex-end'
-    },
-
-    /* Styles applied to the root element if `justify="space-between"`. */
-    'justify-xs-space-between': {
-      justifyContent: 'space-between'
-    },
-
-    /* Styles applied to the root element if `justify="space-around"`. */
-    'justify-xs-space-around': {
-      justifyContent: 'space-around'
-    },
-
-    /* Styles applied to the root element if `justify="space-evenly"`. */
-    'justify-xs-space-evenly': {
-      justifyContent: 'space-evenly'
-    }
-  }, generateGutter(theme, 'xs'), {}, theme.breakpoints.keys.reduce(function (accumulator, key) {
-    // Use side effect over immutability for better performance.
-    generateGrid(accumulator, theme, key);
-    return accumulator;
-  }, {}));
-};
-var Grid = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Grid(props, ref) {
-  var _props$alignContent = props.alignContent,
-      alignContent = _props$alignContent === void 0 ? 'stretch' : _props$alignContent,
-      _props$alignItems = props.alignItems,
-      alignItems = _props$alignItems === void 0 ? 'stretch' : _props$alignItems,
-      classes = props.classes,
-      classNameProp = props.className,
-      _props$component = props.component,
-      Component = _props$component === void 0 ? 'div' : _props$component,
-      _props$container = props.container,
-      container = _props$container === void 0 ? false : _props$container,
-      _props$direction = props.direction,
-      direction = _props$direction === void 0 ? 'row' : _props$direction,
-      _props$item = props.item,
-      item = _props$item === void 0 ? false : _props$item,
-      _props$justify = props.justify,
-      justify = _props$justify === void 0 ? 'flex-start' : _props$justify,
-      _props$lg = props.lg,
-      lg = _props$lg === void 0 ? false : _props$lg,
-      _props$md = props.md,
-      md = _props$md === void 0 ? false : _props$md,
-      _props$sm = props.sm,
-      sm = _props$sm === void 0 ? false : _props$sm,
-      _props$spacing = props.spacing,
-      spacing = _props$spacing === void 0 ? 0 : _props$spacing,
-      _props$wrap = props.wrap,
-      wrap = _props$wrap === void 0 ? 'wrap' : _props$wrap,
-      _props$xl = props.xl,
-      xl = _props$xl === void 0 ? false : _props$xl,
-      _props$xs = props.xs,
-      xs = _props$xs === void 0 ? false : _props$xs,
-      _props$zeroMinWidth = props.zeroMinWidth,
-      zeroMinWidth = _props$zeroMinWidth === void 0 ? false : _props$zeroMinWidth,
-      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["alignContent", "alignItems", "classes", "className", "component", "container", "direction", "item", "justify", "lg", "md", "sm", "spacing", "wrap", "xl", "xs", "zeroMinWidth"]);
-
-  var className = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classNameProp, container && [classes.container, spacing !== 0 && classes["spacing-xs-".concat(String(spacing))]], item && classes.item, zeroMinWidth && classes.zeroMinWidth, direction !== 'row' && classes["direction-xs-".concat(String(direction))], wrap !== 'wrap' && classes["wrap-xs-".concat(String(wrap))], alignItems !== 'stretch' && classes["align-items-xs-".concat(String(alignItems))], alignContent !== 'stretch' && classes["align-content-xs-".concat(String(alignContent))], justify !== 'flex-start' && classes["justify-xs-".concat(String(justify))], xs !== false && classes["grid-xs-".concat(String(xs))], sm !== false && classes["grid-sm-".concat(String(sm))], md !== false && classes["grid-md-".concat(String(md))], lg !== false && classes["grid-lg-".concat(String(lg))], xl !== false && classes["grid-xl-".concat(String(xl))]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    className: className,
-    ref: ref
-  }, other));
-});
- true ? Grid.propTypes = {
-  /**
-   * Defines the `align-content` style property.
-   * It's applied for all screen sizes.
-   */
-  alignContent: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['stretch', 'center', 'flex-start', 'flex-end', 'space-between', 'space-around']),
-
-  /**
-   * Defines the `align-items` style property.
-   * It's applied for all screen sizes.
-   */
-  alignItems: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['flex-start', 'center', 'flex-end', 'stretch', 'baseline']),
-
-  /**
-   * The content of the component.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a DOM element or a component.
-   */
-  component: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.elementType,
-
-  /**
-   * If `true`, the component will have the flex *container* behavior.
-   * You should be wrapping *items* with a *container*.
-   */
-  container: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
-
-  /**
-   * Defines the `flex-direction` style property.
-   * It is applied for all screen sizes.
-   */
-  direction: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['row', 'row-reverse', 'column', 'column-reverse']),
-
-  /**
-   * If `true`, the component will have the flex *item* behavior.
-   * You should be wrapping *items* with a *container*.
-   */
-  item: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
-
-  /**
-   * Defines the `justify-content` style property.
-   * It is applied for all screen sizes.
-   */
-  justify: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly']),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for the `lg` breakpoint and wider screens if not overridden.
-   */
-  lg: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for the `md` breakpoint and wider screens if not overridden.
-   */
-  md: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for the `sm` breakpoint and wider screens if not overridden.
-   */
-  sm: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * Defines the space between the type `item` component.
-   * It can only be used on a type `container` component.
-   */
-  spacing: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(SPACINGS),
-
-  /**
-   * Defines the `flex-wrap` style property.
-   * It's applied for all screen sizes.
-   */
-  wrap: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['nowrap', 'wrap', 'wrap-reverse']),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for the `xl` breakpoint and wider screens.
-   */
-  xl: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for all the screen sizes with the lowest priority.
-   */
-  xs: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * If `true`, it sets `min-width: 0` on the item.
-   * Refer to the limitations section of the documentation to better understand the use case.
-   */
-  zeroMinWidth: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool
-} : undefined;
-var StyledGrid = Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_5__["default"])(styles, {
-  name: 'MuiGrid'
-})(Grid);
-
-if (true) {
-  var requireProp = Object(_utils_requirePropFactory__WEBPACK_IMPORTED_MODULE_6__["default"])('Grid');
-  StyledGrid.propTypes = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, StyledGrid.propTypes, {
-    alignContent: requireProp('container'),
-    alignItems: requireProp('container'),
-    direction: requireProp('container'),
-    justify: requireProp('container'),
-    lg: requireProp('item'),
-    md: requireProp('item'),
-    sm: requireProp('item'),
-    spacing: requireProp('container'),
-    wrap: requireProp('container'),
-    xs: requireProp('item'),
-    zeroMinWidth: requireProp('item')
-  });
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (StyledGrid);
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/Grid/index.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/Grid/index.js ***!
-  \**********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Grid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Grid */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Grid__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-
-
-/***/ }),
-
 /***/ "./node_modules/@material-ui/core/esm/NoSsr/NoSsr.js":
 /*!***********************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/NoSsr/NoSsr.js ***!
@@ -8505,37 +8061,6 @@ function useIsFocusVisible() {
     ref: ref
   };
 }
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/utils/requirePropFactory.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/utils/requirePropFactory.js ***!
-  \************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-function requirePropFactory(componentNameInError) {
-  if (false) {}
-
-  var requireProp = function requireProp(requiredProp) {
-    return function (props, propName, componentName, location, propFullName) {
-      var propFullNameSafe = propFullName || propName;
-
-      if (typeof props[propName] !== 'undefined' && !props[requiredProp]) {
-        return new Error("The prop `".concat(propFullNameSafe, "` of ") + "`".concat(componentNameInError, "` must be used on `").concat(requiredProp, "`."));
-      }
-
-      return null;
-    };
-  };
-
-  return requireProp;
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (requirePropFactory);
 
 /***/ }),
 
@@ -51377,29 +50902,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_poster__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/poster */ "./components/poster.js");
 /* harmony import */ var _components_register__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/register */ "./components/register.js");
 /* harmony import */ var _components_paper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/paper */ "./components/paper.js");
-/* harmony import */ var _components_Gallery__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Gallery */ "./components/Gallery.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
-/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/slider */ "./components/slider.js");
-/* harmony import */ var _components_speakerSpotlight__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/speakerSpotlight */ "./components/speakerSpotlight.js");
-/* harmony import */ var _components_slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/slider/sponsorSlider */ "./components/slider/sponsorSlider.js");
-/* harmony import */ var _components_slider_teamSlider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/slider/teamSlider */ "./components/slider/teamSlider.js");
-/* harmony import */ var _components_Testimonials__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Testimonials */ "./components/Testimonials.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var _data_dictionary__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../data/dictionary */ "./data/dictionary.js");
+/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/slider */ "./components/slider.js");
+/* harmony import */ var _components_slider_teamSlider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/slider/teamSlider */ "./components/slider/teamSlider.js");
+/* harmony import */ var _components_Testimonials__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Testimonials */ "./components/Testimonials.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_Speakers__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Speakers */ "./components/Speakers.js");
 
 
 
 
 
 
-
-
- //import SpeakerSlider from "../components/slider/speakerSlider"
-
-
-
-var speakers = __webpack_require__(/*! ../data/speakers */ "./data/speakers.js");
 
 
 
@@ -51409,59 +50924,48 @@ var speakers = __webpack_require__(/*! ../data/speakers */ "./data/speakers.js")
 var text = __webpack_require__(/*! ../data/text */ "./data/text.js");
 
 var Home = function Home(props) {
-  var speakerSpotlights = speakers.map(function (speaker) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_speakerSpotlight__WEBPACK_IMPORTED_MODULE_9__["default"], {
-      details: speaker,
-      key: speaker.id
-    });
-  });
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section light",
     id: "home"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider__WEBPACK_IMPORTED_MODULE_8__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider__WEBPACK_IMPORTED_MODULE_6__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section light",
     id: "about"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "About the event"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "About the event"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.aboutPara1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.aboutPara2), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text.aboutPara3))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Testimonials__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    data: _data_dictionary__WEBPACK_IMPORTED_MODULE_6__["default"].testimonials
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-quote-left"
+  }), text.aboutPara1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, text.aboutPara2), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, text.aboutPara3, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-quote-right"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Testimonials__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    data: _data_dictionary__WEBPACK_IMPORTED_MODULE_5__["default"].testimonials
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section light",
     id: "register"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Enroll your participation here!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Enroll your participation here!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    container: true,
-    spacing: 24
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    item: true,
-    xs: 4
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_poster__WEBPACK_IMPORTED_MODULE_1__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    item: true,
-    xs: 4
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_register__WEBPACK_IMPORTED_MODULE_2__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    item: true,
-    xs: 4
+    id: "portfolio-wrapper",
+    className: "bgrid-thirds s-bgrid-thirds cf"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "columns portfolio-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_poster__WEBPACK_IMPORTED_MODULE_1__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "columns portfolio-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_register__WEBPACK_IMPORTED_MODULE_2__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "columns portfolio-item"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_paper__WEBPACK_IMPORTED_MODULE_3__["default"], null))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section light",
     id: "speakers"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "KEYNOTE Speakers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, speakerSpotlights)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "KEYNOTE SPEAKERS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Speakers__WEBPACK_IMPORTED_MODULE_10__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "section light",
-    id: "gallery"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Shades of Previous Events"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Gallery__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section color",
     id: "contact"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider_teamSlider__WEBPACK_IMPORTED_MODULE_11__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section light",
-    id: "gallery"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sponsors and Partners"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider_sponsorSlider__WEBPACK_IMPORTED_MODULE_10__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_13__["default"], null));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_slider_teamSlider__WEBPACK_IMPORTED_MODULE_7__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!***************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FPlayGround%2FRepos%2Frsd%2Fpages%2Findex.js ***!
   \***************************************************************************************************************/
@@ -51484,5 +50988,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

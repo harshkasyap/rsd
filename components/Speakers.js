@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import dictionary from '../data/dictionary'
+import AnimatedModal from  './Modal'
 
 class Speakers extends Component {
-  render() {
 
+  render() {
+    
     if(dictionary.speakers){
       var speaker = dictionary.speakers.map(function(speaker){
         var projectImage = './static/images/speakers/'+speaker.image;
@@ -19,28 +21,46 @@ class Speakers extends Component {
               <div className="link-icon"><i className="fa fa-link"></i></div>
             </a>
           </div>
-          <h3>{speaker.name}</h3>
+          <h4>{speaker.name}</h4> 
+          <AnimatedModal name={speaker.name} msg={speaker.msg}/>
+            
+         {/*  <h3>{speaker.name}</h3> */}
+           {/* <button type='button' onClick={this.showModal.bind(this)}>{speaker.name}</button> */}
         </div>
       })
     }
 
     return (
       <section id="portfolio">
-
       <div className="row">
-
          <div className="twelve columns collapsed">
-
-            <h1>KEYNOTE SPEAKERS</h1>
-
             <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
                 {speaker}
             </div>
           </div>
       </div>
-   </section>
+      </section>
     );
   }
 }
+
+
+const Modal = ({ handleClose, show, children }) => {
+  const showHideClassName = show ? 'modal display-block' : 'modal display-none';
+
+  return (
+    <div className={showHideClassName}>
+      <section className='modal-main'>
+        {children}
+        <button
+          onClick={handleClose}
+        >
+          Close
+        </button>
+      </section>
+    </div>
+  );
+};
+
 
 export default Speakers;

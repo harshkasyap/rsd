@@ -33,7 +33,7 @@ export default function Register() {
             Previous Year Winners
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Paper and Poster Presentation
+           
           </Typography>
         </CardContent>
       </CardActionArea>

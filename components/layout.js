@@ -3,7 +3,6 @@ import Head from "next/head";
 import Link from "next/link";
 import GlobalStyle from "./globalStyle";
 import ImportStyle from "./importStyle";
-import SponsorSlider from "./slider/sponsorSlider"
 
 const Layout = ( { children, title = "RSD-IITP" } ) => (
     <div>
@@ -15,23 +14,29 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         </Head>
         <header className="header section dark">
-            <nav>
+            {/* <nav>
                 <Link href="#home"><a className="navlink">Home</a></Link>
                 <Link href="#about"><a className="navlink">About</a></Link>
                 <Link href="#register"><a className="navlink">Register</a></Link>
                 <Link href="#speakers"><a className="navlink">Speakers</a></Link>
                 <Link href="#contact"><a className="navlink">Team</a></Link>
+            </nav> */}
+            <nav id="nav-wrap">
+                <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
+
+                <ul id="nav" className="nav">
+                <li className="current"><a className="home" href="#home">Home</a></li>
+                <li><a className="smoothscroll" href="#about">About</a></li>
+                <li><a className="smoothscroll" href="#register">Register</a></li>
+                <li><a className="smoothscroll" href="#speakers">Speakers</a></li>
+                <li><a className="smoothscroll" href="#contact">Team</a></li>
+                <li><a className="smoothscroll" href="#contact">RSD-19</a></li>
+                </ul>
             </nav>
             <GlobalStyle />
-        </header>
-        <p className="scrolldown">
             <ImportStyle />
-            <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
-        </p>
- {/*        <footer className="footer">
-            <SponsorSlider />  
-        </footer>
- */}
+        </header>
         { children }
     </div>
 );

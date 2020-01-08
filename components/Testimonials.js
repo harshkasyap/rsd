@@ -44,8 +44,8 @@ class Testimonials extends Component {
         #testimonials .text-container {
         padding-top: 5vh;
         padding-bottom: 5vh;
-        padding-left: 20vw;
-        padding-right: 20vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
         }
         #testimonials h1 {
         font: 18px/24px 'opensans-bold', sans-serif;

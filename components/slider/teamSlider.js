@@ -10,6 +10,7 @@ const team = require( "../../data/team" );
 const responsive = [
   { breakPoint: 1280, cardsToShow: 4 }, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
   { breakPoint: 760, cardsToShow: 2 },
+  { breakPoint: 260, cardsToShow: 1 },
 ];
 
 const teamSpotlight = team.map(
@@ -19,6 +20,7 @@ const teamSpotlight = team.map(
 const TeamSlider = () => (
   <Container>
     <h2>Organizing committee</h2>
+    <br/ >
     <Slider responsive={responsive}>
       { teamSpotlight }
     </Slider>

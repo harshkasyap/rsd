@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import theme from "../data/theme";
 
 const TeamSpotlight = ( { details } ) => (
-    <div className="speaker-pic">
+    <div className="member-pic">
         <style jsx>{ `
-            .speaker-pic {
+            .member-pic {
                 display: inline-block;
-                width: 25%;
+                width: 65%;
                 margin-bottom: 30px;
             }
 
@@ -21,7 +21,7 @@ const TeamSpotlight = ( { details } ) => (
                 cursor: pointer;
             }
 
-            .speaker-pic img {
+            .member-pic img {
                 width: 150px;
             }
 
@@ -65,13 +65,14 @@ const TeamSpotlight = ( { details } ) => (
             }
         ` }</style>
         <div className="rounded">
-            <img src={ details.imageUrl } alt={ details.name } />
-            <div className="overlay" />
+            <a href={details.url} title={details.name}>
+                <img src={ details.imageUrl } alt={ details.name } />
+            </a>
         </div>
         <p><strong>{ details.name }</strong></p>
         <p>{ details.position }</p>
-        <p>{ details.company }</p>
     </div>
+
 );
 
 const { shape, string } = PropTypes;

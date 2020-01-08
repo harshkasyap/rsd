@@ -78,6 +78,7 @@ class Slider extends React.Component {
         (a[key] > b[key]) ? 1 : ((b[key] > a[key]) ? -1 : 0))('breakPoint')); // eslint-disable-line
       let updatedCardsToShow = this.state.cardsToShow;
       responsive.forEach(({ breakPoint, cardsToShow }) => {
+        console.log(window.innerWidth)
         if (breakPoint <= window.innerWidth) {
           updatedCardsToShow = cardsToShow;
         }

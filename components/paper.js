@@ -33,7 +33,7 @@ export default function Paper() {
             My Research In 3 Mins
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Description
+            
           </Typography>
         </CardContent>
       </CardActionArea>

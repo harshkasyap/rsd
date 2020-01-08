@@ -41,8 +41,13 @@ export default ( ) => (
         }
 
         .container {
-            width: 1024px;
+            width: 80vw;
             margin: auto;
+        }
+
+        .reg-event {
+            width: 100vw;
+            margin-left: 6vw;
         }
 
         .header {
