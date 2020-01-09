@@ -22,8 +22,8 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
                 <Link href="#contact"><a className="navlink">Team</a></Link>
             </nav> */}
             <nav id="nav-wrap">
-                <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-                <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
+                <a className="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
+                <a className="mobile-btn" href="#home" title="Hide navigation"></a>
 
                 <ul id="nav" className="nav">
                 <li><a className="home" href="#home">Home</a></li>

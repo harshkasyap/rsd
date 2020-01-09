@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function AnimatedModal( {name, msg} ) {
+export default function AnimatedModal( {name, msg, text} ) {
 
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
@@ -38,7 +38,7 @@ export default function AnimatedModal( {name, msg} ) {
         <div>
 
             <Button variant="contained" color="secondary" onClick={handleOpen}>
-                Read Message
+                {text}
             </Button>
 
             <Modal

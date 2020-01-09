@@ -24,6 +24,7 @@ class Footer extends Component {
            </ul>
 
            <ul className="copyright">
+              <li><h4>Mail: [rsd, rajgopal, pgr_gymkhana]@iitp.ac.in</h4></li>
               <li>&copy; <h4>Copyright ©2020 All Rights Reserved | Design by Design By RSDP Team</h4></li>
            </ul>
 

@@ -26,12 +26,125 @@ __webpack_require__.r(__webpack_exports__);
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "legend"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/pres1.JPG",
+    height: "100%"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "legend"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/pres2.JPG",
+    height: "100%"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "legend"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/pres3.JPG",
+    height: "100%"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "legend"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./static/images/music.JPG",
+    height: "100%"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "legend"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "./static/images/iit2.jpg",
     height: "100%"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "legend"
   }))));
 });
+
+/***/ }),
+
+/***/ "./components/Collage.js":
+/*!*******************************!*\
+  !*** ./components/Collage.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Collage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_core_Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Modal */ "./node_modules/@material-ui/core/esm/Modal/index.js");
+/* harmony import */ var _material_ui_core_Backdrop__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Backdrop */ "./node_modules/@material-ui/core/esm/Backdrop/index.js");
+/* harmony import */ var _material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Fade */ "./node_modules/@material-ui/core/esm/Fade/index.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(function (theme) {
+  return {
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    paper: {
+      background: '#1F1F1F url(./static/images/winners.jpg) no-repeat center center',
+      width: '90vw',
+      height: '90vh',
+      backgroundColor: theme.palette.background.paper,
+      border: '2px solid #000',
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3)
+    }
+  };
+});
+function Collage(_ref) {
+  var name = _ref.name,
+      msg = _ref.msg,
+      text = _ref.text;
+  var classes = useStyles();
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      open = _React$useState2[0],
+      setOpen = _React$useState2[1];
+
+  var handleOpen = function handleOpen() {
+    setOpen(true);
+  };
+
+  var handleClose = function handleClose() {
+    setOpen(false);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    "class": "button",
+    variant: "contained",
+    color: "secondary",
+    onClick: handleOpen
+  }, text), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Modal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    "aria-labelledby": "transition-modal-title",
+    "aria-describedby": "transition-modal-description",
+    className: classes.modal,
+    open: open,
+    onClose: handleClose,
+    closeAfterTransition: true,
+    BackdropComponent: _material_ui_core_Backdrop__WEBPACK_IMPORTED_MODULE_4__["default"],
+    BackdropProps: {
+      timeout: 500
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    "in": open
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classes.paper
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null)))));
+}
 
 /***/ }),
 
@@ -107,7 +220,7 @@ function (_Component) {
         className: "social-links"
       }, networks), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "copyright"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "\xA9 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Copyright \xA92020 All Rights Reserved | Design by Design By RSDP Team")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Mail: [rsd, rajgopal, pgr_gymkhana]@iitp.ac.in")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "\xA9 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Copyright \xA92020 All Rights Reserved | Design by Design By RSDP Team")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "go-top"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "#home"
@@ -177,7 +290,8 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["ma
 });
 function AnimatedModal(_ref) {
   var name = _ref.name,
-      msg = _ref.msg;
+      msg = _ref.msg,
+      text = _ref.text;
   var classes = useStyles();
 
   var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false),
@@ -197,7 +311,7 @@ function AnimatedModal(_ref) {
     variant: "contained",
     color: "secondary",
     onClick: handleOpen
-  }, "Read Message"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Modal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, text), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Modal__WEBPACK_IMPORTED_MODULE_3__["default"], {
     "aria-labelledby": "transition-modal-title",
     "aria-describedby": "transition-modal-description",
     className: classes.modal,
@@ -212,7 +326,11 @@ function AnimatedModal(_ref) {
     "in": open
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.paper
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, msg), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "-", name)))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-quote-left"
+  }), " ", msg, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-quote-right"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "-", name)))));
 }
 
 /***/ }),
@@ -290,7 +408,8 @@ function (_Component) {
             className: "fa fa-link"
           })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, speaker.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal__WEBPACK_IMPORTED_MODULE_2__["default"], {
             name: speaker.name,
-            msg: speaker.msg
+            msg: speaker.msg,
+            text: "Read Message"
           }));
         });
       }
@@ -502,16 +621,14 @@ var Layout = function Layout(_ref) {
     className: "mobile-btn",
     href: "#nav-wrap",
     title: "Show navigation"
-  }, "Show navigation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "mobile-btn",
     href: "#home",
     title: "Hide navigation"
-  }, "Hide navigation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     id: "nav",
     className: "nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "current"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "home",
     href: "#home"
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -700,6 +817,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/CardMedia */ "./node_modules/@material-ui/core/esm/CardMedia/index.js");
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _Collage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Collage */ "./components/Collage.js");
+
 
 
 
@@ -729,11 +848,11 @@ function Register() {
     gutterBottom: true,
     variant: "h5",
     component: "h2"
-  }, "Previous Year Winners"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    variant: "body2",
-    color: "textSecondary",
-    component: "p"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Collage__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    name: "",
+    msg: "",
+    text: "Previous Year Winners"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_4__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "three columns"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.google.com",
@@ -743,11 +862,11 @@ function Register() {
   }, "Participants")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "six columns"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.google.com",
+    href: "https://drive.google.com/open?id=1u6L1Tjng7HvtTOp5bqdsmoHQVzXwHg5B",
     "class": "button-c",
     size: "small",
     color: "primary"
-  }, "Brocheure"))));
+  }, "Brochure"))));
 }
 
 /***/ }),
@@ -2350,7 +2469,7 @@ __webpack_require__.r(__webpack_exports__);
     "name": "TBD",
     "designation": "TBD",
     "image": "speaker.jpg",
-    "msg": "I am very happy that the 9th Research Scholar Day of IIT Patna is going to be held with the usual thoroughness and excellent content. We have eminent speakers from Science, Engineering, Humanities and Social Sciences and Industry sharing their wisdom with the research scholars of the institute. Research is what separates institutes of higher learning from others, and it is really praiseworthy that RSD is considered a flagship event of IIT patna. I am sure the days event along with pre and post workshops/tutorial etc will be very interesting and informative for everybody Wish you all the best. Jai Hind .",
+    "msg": " I am very happy that the 9th Research Scholar Day of IIT Patna is going to be held with the usual thoroughness and excellent content. We have eminent speakers from Science, Engineering, Humanities and Social Sciences and Industry sharing their wisdom with the research scholars of the institute. Research is what separates institutes of higher learning from others, and it is really praiseworthy that RSD is considered a flagship event of IIT patna. I am sure the days event along with pre and post workshops/tutorial etc will be very interesting and informative for everybody Wish you all the best. Jai Hind . ",
     "url": "https://www.canadianwanderlust.com"
   }, {
     "name": "TBD",
@@ -2442,13 +2561,13 @@ module.exports = [{
 }, {
   id: 2,
   name: "Dr. Rishi Raj",
-  position: "Convener",
+  position: "Member",
   url: "https://https://www.iitp.ac.in/~rraj/",
   imageUrl: "./static/images/team/RishiRaj.png"
 }, {
   id: 3,
   name: "Dr. Sweta Sinha",
-  position: "Convener",
+  position: "Member",
   url: "https://www.iitp.ac.in/index.php?option=com_content&view=article&id=1498%3Adr-sweta-sinha&catid=39&Itemid=170",
   imageUrl: "./static/images/team/Shewta.png"
 }, {
@@ -2456,11 +2575,6 @@ module.exports = [{
   name: "Kuldeep Awasthi",
   position: "PGR",
   imageUrl: "./static/images/team/awasthi.png"
-}, {
-  id: 5,
-  name: "Krutika Verma",
-  position: "Technical",
-  imageUrl: "./static/images/team/krutika.jpg"
 }, {
   id: 6,
   name: "Swati",
@@ -8987,7 +9101,7 @@ var defaultTheme = Object(_createMuiTheme__WEBPACK_IMPORTED_MODULE_0__["default"
 /*!************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/index.js ***!
   \************************************************************/
-/*! exports provided: hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, easing, duration, formatMs, isString, isNumber, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider */
+/*! exports provided: createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, easing, duration, formatMs, isString, isNumber */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52715,7 +52829,7 @@ var Home = function Home(props) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!***************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FPlayGround%2FRepos%2Frsd%2Fpages%2Findex.js ***!
   \***************************************************************************************************************/
@@ -52738,5 +52852,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

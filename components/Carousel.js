@@ -21,6 +21,22 @@ export default () => (
       <p className="legend"></p>
     </div>
     <div>
+      <img src="./static/images/pres1.JPG" height="100%"/>
+      <p className="legend"></p>
+    </div>
+    <div>
+      <img src="./static/images/pres2.JPG" height="100%"/>
+      <p className="legend"></p>
+    </div>
+    <div>
+      <img src="./static/images/pres3.JPG" height="100%"/>
+      <p className="legend"></p>
+    </div>
+    <div>
+      <img src="./static/images/music.JPG" height="100%"/>
+      <p className="legend"></p>
+    </div>
+    <div>
       <img src="./static/images/iit2.jpg" height="100%"/>
       <p className="legend"></p>
     </div>

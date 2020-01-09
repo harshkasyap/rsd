@@ -22,7 +22,7 @@ class Speakers extends Component {
             </a>
           </div>
           <h4>{speaker.name}</h4> 
-          <AnimatedModal name={speaker.name} msg={speaker.msg}/>
+          <AnimatedModal name={speaker.name} msg={speaker.msg} text='Read Message'/>
             
          {/*  <h3>{speaker.name}</h3> */}
            {/* <button type='button' onClick={this.showModal.bind(this)}>{speaker.name}</button> */}
