@@ -644,8 +644,7 @@ var Layout = function Layout(_ref) {
     className: "smoothscroll",
     href: "#contact"
   }, "Team")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "smoothscroll",
-    href: "#contact"
+    href: "https://www.iitp.ac.in//rsd/"
   }, "RSD-19")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_globalStyle__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_importStyle__WEBPACK_IMPORTED_MODULE_4__["default"], null)), children);
 };
 
@@ -2586,6 +2585,106 @@ module.exports = [{
   position: "Technical",
   url: "https://harshkasyap.github.io",
   imageUrl: "./static/images/team/harsh.jpg"
+}, {
+  id: 8,
+  name: "Abhinav Bajapi",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/AbhinavBajapi.jpg"
+}, {
+  id: 9,
+  name: "Abhishek",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/Abhishek.jpg"
+}, {
+  id: 10,
+  name: "Ajit Kumar",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/AJITKUMAR.jpeg"
+}, {
+  id: 11,
+  name: "Akash Priy",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/AKASHPRIY.jpeg"
+}, {
+  id: 12,
+  name: "Akshay Saxena",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/AkshaySaxena.jpg"
+}, {
+  id: 13,
+  name: "Ammar Eqbal",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/AmmarEqbal.jpg"
+}, {
+  id: 14,
+  name: "Chhaya Tiwary",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/CHHAYATIWARY.jpg"
+}, {
+  id: 15,
+  name: "Debarati Ghosh",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/DebaratiGhosh.jpg"
+}, {
+  id: 16,
+  name: "Deepa Gupta",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/DeepaGupta.jpg"
+}, {
+  id: 17,
+  name: "Est Dev Patel",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/EstDevPatel.jpg"
+}, {
+  id: 18,
+  name: "Gaurav Shukla",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/GAURAVSHUKLA.jpg"
+}, {
+  id: 19,
+  name: "Lakshaman Kumar",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/LakshamanKumar.jpg"
+}, {
+  id: 20,
+  name: "Manish Kumar Thakur",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/MANISHKUMARTHAKUR.JPG"
+}, {
+  id: 21,
+  name: "Prabhakar Kumar Singh",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/PrabhakarKumarSingh.jpg"
+}, {
+  id: 22,
+  name: "Praveen Kumar",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/PraveenKumar.jpg"
+}, {
+  id: 23,
+  name: "Preetam Kumar Shukla",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/PreetamKumarShukla.jpg"
+}, {
+  id: 24,
+  name: "Rishabh Kumar Pandey",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/RISHABHKUMARPANDEY.jpg"
+}, {
+  id: 25,
+  name: "Shashank Srivastava",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/shashanksrivastava.jpg"
+}, {
+  id: 26,
+  name: "Sridipa Dandapat",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/SridipaDandapat.jpg"
+}, {
+  id: 27,
+  name: "Tirthankar Ghosal",
+  position: "Volunteer",
+  imageUrl: "./static/images/team/TirthankarGhosal.jpg"
 }];
 
 /***/ }),

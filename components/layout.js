@@ -31,7 +31,7 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
                 <li><a className="smoothscroll" href="#register">Register</a></li>
                 <li><a className="smoothscroll" href="#speakers">Speakers</a></li>
                 <li><a className="smoothscroll" href="#contact">Team</a></li>
-                <li><a className="smoothscroll" href="#contact">RSD-19</a></li>
+                <li><a href="https://www.iitp.ac.in//rsd/">RSD-19</a></li>
                 </ul>
             </nav>
             <GlobalStyle />

@@ -17,7 +17,7 @@ const teamSpotlight = team.map(
   ( member ) => <TeamSpotlight details={ member } key={ member.id } />,
 );
 
-const TeamSlider = () => (
+const OrgTeamSlider = () => (
   <Container>
     <h2>Organizing committee</h2>
     <br/ >
@@ -27,4 +27,4 @@ const TeamSlider = () => (
   </Container>
 );
 
-export default hot(module)(TeamSlider);
+export default hot(module)(OrgTeamSlider);

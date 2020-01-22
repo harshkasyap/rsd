@@ -6,7 +6,8 @@ import Paper from  "../components/paper"
 import Layout from "../components/layout";
 import dictionary from "../data/dictionary";
 import Slideshow from "../components/slider"
-import TeamSlider from "../components/slider/teamSlider"
+import CoreTeamSlider from "../components/slider/coreTeamSlider"
+import OrgTeamSlider from "../components/slider/orgTeamSlider"
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import Speakers from '../components/Speakers';
@@ -66,7 +67,8 @@ const Home = ( props ) => {
                 <Speakers />
             </div>
             <div className="section light" id="contact">
-                <TeamSlider />
+                <CoreTeamSlider />
+                <OrgTeamSlider />
             </div>
             <Footer />
         </Layout>
