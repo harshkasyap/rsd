@@ -31,6 +31,7 @@ const Slideshow = () => (
             }
 
             h4 {
+              font-size: 18px;
               color: #6b6565;
             }
 

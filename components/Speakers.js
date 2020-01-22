@@ -12,7 +12,7 @@ class Speakers extends Component {
         return <div key={speaker.name} className="columns portfolio-item">
            <div className="item-wrap">
             <a href={speaker.url} title={speaker.name}>
-               <img alt={speaker.name} src={projectImage} />
+               <img alt={speaker.name} src={projectImage}/>
                <div className="overlay">
                 <div className="portfolio-item-meta">
                  <h5>{speaker.designation}</h5>

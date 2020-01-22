@@ -35,7 +35,7 @@ const Home = ( props ) => {
                 <div className="container">
                     <br />
                         <h4><i className="fa fa-quote-left"></i>{text.aboutPara1}</h4><br />
-                        <h4>{text.aboutPara2}</h4><br />
+                        {/* <h4>{text.aboutPara2}</h4><br /> */}
                         <h4>{text.aboutPara3}<i className="fa fa-quote-right"></i></h4>
                     
                 </div>
@@ -70,7 +70,9 @@ const Home = ( props ) => {
                 <CoreTeamSlider />
                 <OrgTeamSlider />
             </div>
-            <Footer />
+            <div className="section light" id="footer">
+                <Footer />
+            </div>
         </Layout>
     );
 };
