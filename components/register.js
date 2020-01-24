@@ -38,10 +38,10 @@ export default function Register() {
       </CardActionArea>
       <CardActions>
       <div className="three columns">
-        <a href = "https://www.google.com" class="button-c" size="small" color="primary">Participants</a>
+        <a target="_blank" href = "https://www.google.com" class="button-c" size="small" color="primary">Participants</a>
       </div>
       <div className="six columns">
-        <a href = "https://drive.google.com/open?id=1u6L1Tjng7HvtTOp5bqdsmoHQVzXwHg5B" class="button-c" size="small" color="primary">Brochure</a>
+        <a target="_blank" href = "https://drive.google.com/open?id=1u6L1Tjng7HvtTOp5bqdsmoHQVzXwHg5B" class="button-c" size="small" color="primary">Brochure</a>
       </div>
       </CardActions>
     </Card>

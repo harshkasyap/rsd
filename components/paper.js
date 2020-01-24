@@ -39,10 +39,10 @@ export default function Paper() {
       </CardActionArea>
       <CardActions>
       <div className="three columns">
-        <a href = "https://www.google.com" class="button-c" size="small" color="primary">Register</a>
+        <a target="_blank" href = "https://www.google.com" class="button-c" size="small" color="primary">Register</a>
       </div>
       <div className="six columns">
-        <a href = "https://www.google.com" class="button-c" size="small" color="primary">Format</a>
+        <a target="_blank" href = "https://www.google.com" class="button-c" size="small" color="primary">Format</a>
       </div>
       </CardActions>
     </Card>

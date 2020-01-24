@@ -12,7 +12,11 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
     },
     paper: {
-        background: '#1F1F1F url(./static/images/winners.jpg) no-repeat center center',
+        background: '#1F1F1F url(./static/images/winners.jpg)',
+        /* Center and scale the image nicely */
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'auto 100%',
         width: '90vw',
         height: '90vh',
         backgroundColor: theme.palette.background.paper,

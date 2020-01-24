@@ -871,6 +871,42 @@ footer-c .social-links li a{
 
 footer-c .social-links li:first-child { margin-left: 0; }
 
+ #custom-link {
+   position: relative;
+   left: 50%;
+   margin-left: -30px;
+ }
+ #custom-link a p {
+   display:none;
+ }
+ #custom-link a:hover p {
+   position: absolute;
+   top: -12px;
+   left: 7%;
+   display:block;
+ }
+ #custom-link a {
+   text-decoration: none;
+   border: 0 none;
+   display: block;
+   width: 60px;
+   height: 60px;
+   background-color: #525252;
+ 
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+ 
+    color: #fff;
+    font-size: 21px;
+    line-height: 60px;
+    border-radius: 100%;
+ }
+
+ #custom-link a:hover { background-color: #0F9095; }
+
 /* Go To Top Button */
 #go-top {
 	position: absolute;

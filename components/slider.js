@@ -8,7 +8,7 @@ const Slideshow = () => (
     <style jsx>{ `
             .centered-text {
                 position: absolute;
-                height: 33vh;
+                height: 40vh;
                 top: 0;
                 bottom: 0;
                 left: 0;
@@ -16,9 +16,19 @@ const Slideshow = () => (
                 margin: auto;
             }
 
+            .logo {
+              position: absolute;
+              height: 10vh;
+              top: 0;
+              bottom: 75vh;
+              left: 0;
+              right: 75vw;
+              margin: auto;
+          }
+
             h1 {
                 color: #dc1731;
-                font-size: 5vh;
+                font-size: 6.5vh;
                 margin: 1vh;
             }
 
@@ -33,6 +43,10 @@ const Slideshow = () => (
             h4 {
               font-size: 18px;
               color: #6b6565;
+            }
+
+            .yellow {
+              color: #f1c40f;
             }
 
             h5, h6{
@@ -56,12 +70,13 @@ const Slideshow = () => (
 
       <Carousel/>
       <div className="overlay" />
-      <div className="centered-text">
+      <img className="logo" src={"./static/images/logo.png"} alt="logo" />
+      <div className="centered-text"> 
         {/* <div className="section light"> */}
           <h1>{ Dictionary.event.name }</h1>
           <Timer />
           <h3>{ Dictionary.event.period }</h3>
-          <h4>{ Dictionary.event.place }</h4>
+          <h4 className="yellow">{ Dictionary.event.place }</h4>
         {/* </div> */}
       </div>
   </div>

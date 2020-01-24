@@ -8,8 +8,14 @@ class Testimonials extends Component {
       var testimonials = this.props.data.testimonials.map(function(testimonials){
         return  <li key={testimonials.user}>
             <blockquote>
-               <p>{testimonials.text}</p>
-               <cite>{testimonials.user}</cite>
+               <p>{testimonials.text1}</p>
+               <p>{testimonials.text2}</p>
+               <p>{testimonials.text3}</p>
+               <p>{testimonials.text4}</p>
+               <p><h2>{testimonials.text5}</h2></p>
+               <p><h2>{testimonials.text6}</h2></p>
+               <cite><h3>{testimonials.user}</h3></cite>
+               <h3>{testimonials.designation}</h3>
             </blockquote>
          </li>
       })
@@ -94,16 +100,17 @@ class Testimonials extends Component {
         ` }</style>
       <section id="testimonials">
       <div className="text-container">
-         <div className="row">
-            <div className="three columns">
+         {/* <div className="row"> */}
+{/*             <div className="one columns">
                <img className="profile-pic" src={"./static/images/director.jpg"} alt="Director" />
-            </div>
-            <div className="nine columns flex-container">
+            </div> */}
+              <div className="twelve columns flex-container">
+                  <img className="profile-pic" src={"./static/images/director.jpg"} alt="Director" /> 
                   <ul className="slides">
                       {testimonials}
                   </ul>
-               </div>
-            </div>
+              </div>
+            {/* </div> */}
          </div>
    </section>
    </div>

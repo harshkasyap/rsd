@@ -15,8 +15,10 @@ class Footer extends Component {
     return (
      <footer-c>
      <div className="row">
-        <h4>Sponsors and Partners</h4>
-        <br />
+        <h3>Sponsors and Partners</h3>
+        <div id="custom-link">
+          <a target="_blank" href="https://drive.google.com/file/d/1x1ZDfvcWHQLJoWy3YTXWoQOPByt8iwwE/view?usp=sharing" title="SPONSORSHIP / EXHIBITOR PROSPECTUS"><i className="fa fa-download"></i></a>
+        </div>
         <SponsorSlider />
         <div className="twelve columns">
            <ul className="social-links">

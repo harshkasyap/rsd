@@ -109,12 +109,6 @@ module.exports = [
         imageUrl: "./static/images/team/PreetamKumarShukla.jpg",
     },
     {
-        id: 24,
-        name: "Rishabh Kumar Pandey",
-        position: "Volunteer",
-        imageUrl: "./static/images/team/RISHABHKUMARPANDEY.jpg",
-    },
-    {
         id: 25,
         name: "Shashank Srivastava",
         position: "Volunteer",
