@@ -41,8 +41,11 @@ const Slideshow = () => (
             }
 
             h4 {
-              font-size: 18px;
               color: #6b6565;
+            }
+
+            .lessSize {
+              font-size: 12px;
             }
 
             .yellow {

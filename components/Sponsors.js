@@ -1,31 +1,25 @@
 import React, { Component } from 'react';
 import dictionary from '../data/dictionary'
-import AnimatedModal from  './Modal'
 
-class Speakers extends Component {
+class Sponsors extends Component {
 
   render() {
     
-    if(dictionary.speakers){
-      var speaker = dictionary.speakers.map(function(speaker){
-        var projectImage = './static/images/speakers/'+speaker.image;
-        return <div key={speaker.name} className="columns portfolio-item">
+    if(dictionary.sponsors){
+      var sponsor = dictionary.sponsors.map(function(sponsor){
+        var projectImage = './static/images/sponsors/'+sponsor.image;
+        return <div key={sponsor.name} className="columns portfolio-item">
            <div className="item-wrap">
-            <a target="_blank" href={speaker.url} title={speaker.name}>
-               <img alt={speaker.name} src={projectImage}/>
+            <a target="_blank" href={sponsor.url} title={sponsor.name}>
+               <img alt={sponsor.name} src={projectImage}/>
                <div className="overlay">
                 <div className="portfolio-item-meta">
-                 <h5>{speaker.designation}</h5>
+                 <h5>{sponsor.designation}</h5>
                 </div>
                 </div>
               <div className="link-icon"><i className="fa fa-link"></i></div>
             </a>
           </div>
-          <h4 className="lessSize">{speaker.name}</h4> 
-          <AnimatedModal name={speaker.name} msg={speaker.msg} text='Read Message'/>
-            
-         {/*  <h3>{speaker.name}</h3> */}
-           {/* <button type='button' onClick={this.showModal.bind(this)}>{speaker.name}</button> */}
         </div>
       })
     }
@@ -34,8 +28,8 @@ class Speakers extends Component {
       <section id="portfolio">
       <div className="row">
          <div className="twelve columns collapsed">
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-quarters cf">
-                {speaker}
+            <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
+                {sponsor}
             </div>
           </div>
       </div>
@@ -63,4 +57,4 @@ const Modal = ({ handleClose, show, children }) => {
 };
 
 
-export default Speakers;
+export default Sponsors;

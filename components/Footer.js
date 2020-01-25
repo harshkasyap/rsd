@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import dictionary from '../data/dictionary';
 import Link from "next/link";
-import SponsorSlider from "./slider/sponsorSlider"
 
 class Footer extends Component {
   render() {
@@ -15,11 +14,12 @@ class Footer extends Component {
     return (
      <footer-c>
      <div className="row">
-        <h3>Sponsors and Partners</h3>
+{/*         <h3>Sponsors and Partners</h3>
         <div id="custom-link">
           <a target="_blank" href="https://drive.google.com/file/d/1x1ZDfvcWHQLJoWy3YTXWoQOPByt8iwwE/view?usp=sharing" title="SPONSORSHIP / EXHIBITOR PROSPECTUS"><i className="fa fa-download"></i></a>
-        </div>
-        <SponsorSlider />
+        </div> */}
+        {/* <SponsorSlider /> */}
+        {/* <Sponsors /> */}
         <div className="twelve columns">
            <ul className="social-links">
               {networks}

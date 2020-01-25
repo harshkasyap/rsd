@@ -12,6 +12,7 @@ import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import Speakers from '../components/Speakers';
 import useScript from '../components/useScript';
+import Sponsors from '../components/Sponsors';
 
 const text = require( "../data/text" );
 
@@ -69,6 +70,13 @@ const Home = ( props ) => {
             <div className="section light" id="contact">
                 <CoreTeamSlider />
                 <OrgTeamSlider />
+            </div>
+            <div className="section light" id="sponsors">
+                <h2>Sponsors and Partners</h2>
+                <div id="custom-link">
+                    <a target="_blank" href="https://drive.google.com/file/d/1x1ZDfvcWHQLJoWy3YTXWoQOPByt8iwwE/view?usp=sharing" title="SPONSORSHIP / EXHIBITOR PROSPECTUS"><i className="fa fa-download"></i></a>
+                </div>
+                <Sponsors />
             </div>
             <div className="section light" id="footer">
                 <Footer />

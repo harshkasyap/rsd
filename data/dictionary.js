@@ -53,6 +53,36 @@ export default {
             "image":"dsp.png",
             "msg":"",
             "url":"http://www.bhu.ac.in/science/chemistry/dspandey.php"
+          },
+          {
+            "name":"IPS Vikash Vaibhav",
+            "designation":"IG - ATS, Patna",
+            "image":"vikash.png",
+            "msg":"",
+            "url":"https://www.facebook.com/vikasvaibhavips/"
+          }
+        ],
+        sponsors: [
+          {
+            id: 1,
+            name: "ruban",
+            image: "ruban.jpeg",
+            designation: "",
+            linkUrl: "http://www.rubanpatliputrahospital.com/",
+          },
+          {
+            id: 2,
+            name: "ashirvad",
+            image: "ashirvad.jpeg",
+            designation: "",
+            linkUrl: "http://ashirwadengicon.com/",
+          },
+          {
+            id: 3,
+            name: "ipgi",
+            image: "ipgi.jpeg",
+            designation: "",
+            linkUrl: "http://ipgi.co.in/",
           }
         ]
 };
