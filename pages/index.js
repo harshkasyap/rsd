@@ -33,12 +33,14 @@ const Home = ( props ) => {
             </div>
             <div className="section light" id="about">
             <h2>About the event</h2>
+                <div id="custom-link">
+                    <a target="_blank" href="https://drive.google.com/file/d/1PBedqiEzNjmYTRZqffkhnpiV_8ShWuQH/view?usp=sharing" title="BROCHURE"><i className="fa fa-download"></i></a>
+                </div>
                 <div className="container">
                     <br />
                         <h4><i className="fa fa-quote-left"></i>{text.aboutPara1}</h4><br />
                         {/* <h4>{text.aboutPara2}</h4><br /> */}
-                        <h4>{text.aboutPara3}<i className="fa fa-quote-right"></i></h4>
-                    
+                        <h4>{text.aboutPara3}<i className="fa fa-quote-right"></i></h4>   
                 </div>
             </div>
 

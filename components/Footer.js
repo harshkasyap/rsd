@@ -30,9 +30,9 @@ class Footer extends Component {
               <br />
               <li><h4>Convener: rajgopal@iitp.ac.in</h4></li>
               <br />
-              <li><h4>PGR: pgr_gymkhana]@iitp.ac.in</h4></li>
+              <li><h4>PGR: pgr_gymkhana@iitp.ac.in</h4></li>
               <br />
-              <li>&copy; <h3>Copyright ©2020 All Rights Reserved | Design by Design By RSD Team</h3></li>
+              <li>&copy; <h5 className="white">Copyright ©2020 All Rights Reserved | Design by Design By RSD Team</h5></li>
            </ul>
 
         </div>

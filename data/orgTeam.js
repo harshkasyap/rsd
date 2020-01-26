@@ -25,10 +25,22 @@ module.exports = [
         imageUrl: "./static/images/team/Abhishek.jpg",
     },
     {
+        id: 9,
+        name: "Ajit Anand",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/AjitAnand.jpeg",
+    },
+    {
         id: 10,
         name: "Ajit Kumar",
         position: "Volunteer",
         imageUrl: "./static/images/team/AJITKUMAR.jpeg",
+    },
+    {
+        id: 28,
+        name: "Akash Mukherjee",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/AkashMukherjee.jpg",
     },
     {
         id: 11,
@@ -43,10 +55,22 @@ module.exports = [
         imageUrl: "./static/images/team/AkshaySaxena.jpg",
     },
     {
+        id: 29,
+        name: "Alok Kumar Gupta",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/AlokKumarGupta.png",
+    },
+    {
         id: 13,
         name: "Ammar Eqbal",
         position: "Volunteer",
         imageUrl: "./static/images/team/AmmarEqbal.jpg",
+    },
+    {
+        id: 30,
+        name: "Azim Memon",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/AzimMemon.jpg",
     },
     {
         id: 14,
@@ -67,10 +91,22 @@ module.exports = [
         imageUrl: "./static/images/team/DeepaGupta.jpg",
     },
     {
+        id: 31,
+        name: "Desireddy Shashidhar Reddy",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/DesireddyShashidharReddy.jpg",
+    },
+    {
         id: 17,
         name: "Est Dev Patel",
         position: "Volunteer",
         imageUrl: "./static/images/team/EstDevPatel.jpg",
+    },
+    {
+        id: 32,
+        name: "Febin Vijay",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/FebinVijay.jpg",
     },
     {
         id: 18,
@@ -79,10 +115,40 @@ module.exports = [
         imageUrl: "./static/images/team/GAURAVSHUKLA.jpg",
     },
     {
+        id: 33,
+        name: "Kamlesh Kumar",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/KAMLESHKUMAR.jpg",
+    },
+    {
+        id: 34,
+        name: "Kanika Guleria",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/kanikaguleria.jpg",
+    },
+    {
+        id: 35,
+        name: "Kishor Jha",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/KISHORJHA.jpeg",
+    },
+    {
+        id: 36,
+        name: "Krishna Kant Pandey",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/KrishnaKantPandey.jpg",
+    },
+    {
         id: 19,
         name: "Lakshaman Kumar",
         position: "Volunteer",
         imageUrl: "./static/images/team/LakshamanKumar.jpg",
+    },
+    {
+        id: 37,
+        name: "Mandeep Shaonak",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/MandeepShaonak.jpg",
     },
     {
         id: 20,
@@ -103,16 +169,46 @@ module.exports = [
         imageUrl: "./static/images/team/PraveenKumar.jpg",
     },
     {
+        id: 38,
+        name: "Praveen Kumar",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/Praveenkumar1.jpg",
+    },
+    {
         id: 23,
         name: "Preetam Kumar Shukla",
         position: "Volunteer",
         imageUrl: "./static/images/team/PreetamKumarShukla.jpg",
     },
     {
+        id: 39,
+        name: "priya Singh",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/priyasingh.jpg",
+    },
+    {
+        id: 40,
+        name: "Pushpender Singh",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/PushpenderSingh.jpg",
+    },
+    {
+        id: 24,
+        name: "Rishabh Kumar Pandey",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/RISHABHKUMARPANDEY.jpg",
+    },
+    {
         id: 25,
         name: "Shashank Srivastava",
         position: "Volunteer",
         imageUrl: "./static/images/team/shashanksrivastava.jpg",
+    },
+    {
+        id: 41,
+        name: "Soumya Kashyap",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/SoumyaKashyap.jpg",
     },
     {
         id: 26,

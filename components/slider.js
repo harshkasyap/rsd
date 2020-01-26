@@ -52,6 +52,10 @@ const Slideshow = () => (
               color: #f1c40f;
             }
 
+            .white {
+              color: #fff;
+            }
+
             h5, h6{
               color: #eee;
             }

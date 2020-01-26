@@ -41,7 +41,7 @@ export default function Register() {
         <a target="_blank" href = "https://www.google.com" class="button-c" size="small" color="primary">Participants</a>
       </div>
       <div className="six columns">
-        <a target="_blank" href = "https://drive.google.com/open?id=1u6L1Tjng7HvtTOp5bqdsmoHQVzXwHg5B" class="button-c" size="small" color="primary">Brochure</a>
+        <a target="_blank" href = "https://drive.google.com/file/d/1l01t8o5jZWxKX9FR7baaYjxHxt2BBOK0/view?usp=sharing" class="button-c" size="small" color="primary">Schedule</a>
       </div>
       </CardActions>
     </Card>

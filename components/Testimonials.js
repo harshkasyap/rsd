@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ImportStyle from "./importStyle";
 
 class Testimonials extends Component {
   render() {
