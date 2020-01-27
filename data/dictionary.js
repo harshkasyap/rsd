@@ -1,6 +1,6 @@
 export default {
     event: {
-        name: "Research Scholar Day",
+        name: "Research Scholar's Day",
         period: "March 7, 2020",
         place: "Indian Institute Of Technology, Patna",
         inaugralTime: "03 07 2020, 9:00 am"
@@ -83,6 +83,13 @@ export default {
             image: "ipgi.jpeg",
             designation: "",
             linkUrl: "http://ipgi.co.in/",
+          },
+          {
+            id: 4,
+            name: "mtc",
+            image: "sponsor.png",
+            designation: "",
+            linkUrl: "",
           }
         ]
 };

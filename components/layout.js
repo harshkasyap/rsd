@@ -26,14 +26,15 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
                 <a className="mobile-btn" href="#home" title="Hide navigation"></a>
 
                 <ul id="nav" className="nav">
-                <li><a className="home" href="#home">Home</a></li>
-                <li><a className="smoothscroll" href="#about">About</a></li>
-                <li><a className="smoothscroll" href="#register">Register</a></li>
-                <li><a className="smoothscroll" href="#speakers">Speakers</a></li>
-                <li><a className="smoothscroll" href="#contact">Team</a></li>
-                <li><a className="smoothscroll" href="#sponsors">Sponsors</a></li>
-                <li><a className="smoothscroll" href="#footer">Contact Us</a></li>
-                <li><a target="_blank" href="https://www.iitp.ac.in/rsd/rsd19">RSD-19</a></li>
+                    <li><a className="home" href="#home">Home</a></li>
+                    <li><a className="smoothscroll" href="#about">About</a></li>
+                    <li><a className="smoothscroll" href="#register">Register</a></li>
+                    <li><a className="smoothscroll" href="#speakers">Speakers</a></li>
+                    <li><a className="smoothscroll" href="#contact">Team</a></li>
+                    <li><a className="smoothscroll" href="#sponsors">Sponsors</a></li>
+                    <li><a className="smoothscroll" href="#footer">Contact Us</a></li>
+                    <li><a target="_blank" className="smoothscroll" href="https://drive.google.com/file/d/1PBedqiEzNjmYTRZqffkhnpiV_8ShWuQH/view?usp=sharing">Brochure</a></li>
+                    <li><a target="_blank" href="https://www.iitp.ac.in/rsd/rsd19">RSD-19</a></li>
                 </ul>
             </nav>
             <GlobalStyle />

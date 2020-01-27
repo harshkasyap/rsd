@@ -27,8 +27,8 @@ class Sponsors extends Component {
     return (
       <section id="portfolio">
       <div className="row">
-         <div className="twelve columns collapsed">
-            <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
+          <div className="twelve columns collapsed">
+            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-quarters cf">
                 {sponsor}
             </div>
           </div>
