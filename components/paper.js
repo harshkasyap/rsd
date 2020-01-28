@@ -33,13 +33,19 @@ export default function Paper() {
             My Research In 3 Mins
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            
+            <h3>Important Dates!</h3>
+            <h5><br />
+            Abstract Submission: Feb 15, 2020
+            <br />
+            Acceptance Notofication: Feb 18, 2020 
+            <br />
+            Presentation Submission: Feb 25, 2020</h5>
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
       <div className="three columns">
-        <a target="_blank" href = "https://www.google.com" class="button-c" size="small" color="primary">Register</a>
+        <a target="_blank" href = "https://easychair.org/conferences/?conf=rsd2020" class="button-c" size="small" color="primary">Register</a>
       </div>
       <div className="six columns">
         <a target="_blank" href = "https://www.google.com" class="button-c" size="small" color="primary">Format</a>

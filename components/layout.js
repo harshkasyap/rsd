@@ -33,7 +33,7 @@ const Layout = ( { children, title = "RSD-IITP" } ) => (
                     <li><a className="smoothscroll" href="#contact">Team</a></li>
                     <li><a className="smoothscroll" href="#sponsors">Sponsors</a></li>
                     <li><a className="smoothscroll" href="#footer">Contact Us</a></li>
-                    <li><a target="_blank" className="smoothscroll" href="https://drive.google.com/file/d/1PBedqiEzNjmYTRZqffkhnpiV_8ShWuQH/view?usp=sharing">Brochure</a></li>
+                    <li><a target="_blank" className="smoothscroll" href="https://drive.google.com/file/d/1YiIF9hAjnQ9PwRZJPt-WXfjfk3_3-5qP/view?usp=sharing">Brochure</a></li>
                     <li><a target="_blank" href="https://www.iitp.ac.in/rsd/rsd19">RSD-19</a></li>
                 </ul>
             </nav>

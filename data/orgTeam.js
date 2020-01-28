@@ -127,12 +127,6 @@ module.exports = [
         imageUrl: "./static/images/team/kanikaguleria.jpg",
     },
     {
-        id: 35,
-        name: "Kishor Jha",
-        position: "Volunteer",
-        imageUrl: "./static/images/team/KISHORJHA.jpeg",
-    },
-    {
         id: 36,
         name: "Krishna Kant Pandey",
         position: "Volunteer",
@@ -167,12 +161,6 @@ module.exports = [
         name: "Praveen Kumar",
         position: "Volunteer",
         imageUrl: "./static/images/team/PraveenKumar.jpg",
-    },
-    {
-        id: 38,
-        name: "Praveen Kumar",
-        position: "Volunteer",
-        imageUrl: "./static/images/team/Praveenkumar1.jpg",
     },
     {
         id: 23,

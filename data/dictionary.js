@@ -1,6 +1,6 @@
 export default {
     event: {
-        name: "Research Scholar's Day",
+        name: "Research Scholars' Day",
         period: "March 7, 2020",
         place: "Indian Institute Of Technology, Patna",
         inaugralTime: "03 07 2020, 9:00 am"
@@ -34,14 +34,14 @@ export default {
       ],
       speakers: [
           {
-            "name":"Padam shri Dr. BVR Mohan Reddy",
+            "name":"Dr. BVR Mohan Reddy, Padma Shri awardee",
             "designation":"Chairman of Cyient",
             "image":"bvr.png",
-            "msg":" I am very happy that the 9th Research Scholar Day of IIT Patna is going to be held with the usual thoroughness and excellent content. We have eminent speakers from Science, Engineering, Humanities and Social Sciences and Industry sharing their wisdom with the research scholars of the institute. Research is what separates institutes of higher learning from others, and it is really praiseworthy that RSD is considered a flagship event of IIT patna. I am sure the days event along with pre and post workshops/tutorial etc will be very interesting and informative for everybody Wish you all the best. Jai Hind . ",
+            "msg":"",
             "url":"https://en.wikipedia.org/wiki/B._V._R._Mohan_Reddy"
           },
           {
-            "name":"Padam shri Dr. Anvita Abbi",
+            "name":"Dr. Anvita Abbi, Padma Shri awardee",
             "designation":"Scholar and linguist",
             "image":"abbi.png",
             "msg":"",
@@ -68,28 +68,35 @@ export default {
             name: "ruban",
             image: "ruban.jpeg",
             designation: "",
-            linkUrl: "http://www.rubanpatliputrahospital.com/",
+            url: "http://www.rubanpatliputrahospital.com/",
           },
           {
             id: 2,
             name: "ashirvad",
             image: "ashirvad.jpeg",
             designation: "",
-            linkUrl: "http://ashirwadengicon.com/",
+            url: "http://ashirwadengicon.com/",
+          },
+          {
+            id: 4,
+            name: "ic-iitp",
+            image: "ic-iit-patna.jpg",
+            designation: "",
+            url: "http://ipgi.co.in/",
           },
           {
             id: 3,
             name: "ipgi",
             image: "ipgi.jpeg",
             designation: "",
-            linkUrl: "http://ipgi.co.in/",
+            url: "http://ipgi.co.in/",
           },
           {
-            id: 4,
+            id: 5,
             name: "mtc",
             image: "sponsor.png",
             designation: "",
-            linkUrl: "",
+            url: "",
           }
         ]
 };

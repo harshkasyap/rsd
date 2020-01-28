@@ -38,7 +38,7 @@ export default function Register() {
       </CardActionArea>
       <CardActions>
       <div className="three columns">
-        <a target="_blank" href = "https://www.google.com" class="button-c" size="small" color="primary">Participants</a>
+        <a target="_blank" href = "https://docs.google.com/spreadsheets/d/1jeKhX0naI78gE-11-ysgaVhDMKThTdOZIC21ZCJXxNg/edit?usp=sharing" class="button-c" size="small" color="primary">Participants</a>
       </div>
       <div className="six columns">
         <a target="_blank" href = "https://drive.google.com/file/d/1l01t8o5jZWxKX9FR7baaYjxHxt2BBOK0/view?usp=sharing" class="button-c" size="small" color="primary">Schedule</a>

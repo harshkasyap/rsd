@@ -18,9 +18,9 @@ const Slideshow = () => (
 
             .logo {
               position: absolute;
-              height: 10vh;
+              height: 20vh;
               top: 0;
-              bottom: 75vh;
+              bottom: 65vh;
               left: 0;
               right: 75vw;
               margin: auto;

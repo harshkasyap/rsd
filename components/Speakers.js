@@ -21,7 +21,7 @@ class Speakers extends Component {
               <div className="link-icon"><i className="fa fa-link"></i></div>
             </a>
           </div>
-          <h4 className="lessSize">{speaker.name}</h4> 
+          <h4>{speaker.name}</h4> 
           <AnimatedModal name={speaker.name} msg={speaker.msg} text='Read Message'/>
             
          {/*  <h3>{speaker.name}</h3> */}
