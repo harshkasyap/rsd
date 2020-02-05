@@ -55,8 +55,8 @@ export default {
             "url":"http://www.bhu.ac.in/science/chemistry/dspandey.php"
           },
           {
-            "name":"IPS Vikash Vaibhav",
-            "designation":"IG - ATS, Patna",
+            "name":"Shri Vikash Vaibhav, IPS",
+            "designation":"DIG-ATS, Patna",
             "image":"vikash.png",
             "msg":"",
             "url":"https://www.facebook.com/vikasvaibhavips/"

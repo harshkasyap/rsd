@@ -32,23 +32,17 @@ export default function Poster() {
           <Typography gutterBottom variant="h5" component="h2">
             Poster Presentation
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Submission Deadline for Abstract: Feb 5, 2020
-            <br />
-            Abstract Acceptance Notofication: Feb 8, 2020
-            <br />
-            Submission Deadline for Revised Abstract: Feb 11, 2020
-            <br />
-            Submission Deadline for Poster: Feb 15, 2020
-          </Typography>
+{/*           <Typography variant="body2" color="textSecondary" component="p">
+          </Typography> */}
         </CardContent>
+        {/* <DatesPoster /> */}
       </CardActionArea>
       <CardActions>
         <div className="three columns">
           <a target="_blank" href="https://easychair.org/conferences/?conf=rsd2020" class="button-c" size="small" color="primary">Register</a>
         </div>
         <div className="six columns">
-          <a target="_blank" href="https://docs.google.com/document/d/14plMIeS9mwvvOuoRXLFNPovKOfKHMcIMcHIzdIClIcI/edit?usp=sharing" class="button-c" size="small" color="primary">Format</a>
+          <a target="_blank" href="https://drive.google.com/drive/folders/1UbfQDFgLzXjPDJazpoxMhGXfpBkacEfH?usp=sharing" class="button-c" size="small" color="primary">Format</a>
         </div>
 
       </CardActions>

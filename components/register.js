@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Collage from  './Collage'
+import HelpRegister from  './HelpRegister';
 
 const useStyles = makeStyles({
   card: {
@@ -33,8 +34,8 @@ export default function Register() {
           <Typography gutterBottom variant="h5" component="h2">
             <Collage name='' msg='' text='Previous Year Winners'/>
           </Typography>
-
         </CardContent>
+        <HelpRegister />
       </CardActionArea>
       <CardActions>
       <div className="three columns">
