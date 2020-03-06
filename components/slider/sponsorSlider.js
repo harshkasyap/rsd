@@ -5,7 +5,7 @@ import Slider from './components/footer';
 import Container from './components/Container';
 
 import SponsorSpotLight from "../sponsorSpotlight";
-const sponsors = require( "../../data/sponsors" );
+import dictionary from '../../data/dictionary'
 
 const responsive = [
   { breakPoint: 1280, cardsToShow: 6 }, // this will be applied if screen size is greater than 1280px. cardsToShow will become 4.
@@ -13,7 +13,7 @@ const responsive = [
   { breakPoint: 260, cardsToShow: 1 },
 ];
 
-const sponsorSpotlights = sponsors.map(
+const sponsorSpotlights = dictionary.sponsors.map(
   ( sponsor ) => <SponsorSpotLight details={ sponsor } key={ sponsor.id } />,
 );
 

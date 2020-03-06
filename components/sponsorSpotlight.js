@@ -12,9 +12,9 @@ const SponsorSpotlight = ( { details } ) => (
             }
 
             .rounded-sps {
-                border-radius: 200px;
-                height: 75px;
-                width: 75px;
+                // border-radius: 200px;
+                height: 125px;
+                width: 125px;
                 margin: auto;
                 overflow: hidden;
                 position: relative;
@@ -22,7 +22,7 @@ const SponsorSpotlight = ( { details } ) => (
             }
 
             .sponsor-pic img {
-                width: 75px;
+                width: 125px;
             }
 
             .rounded-sps:hover .social {
@@ -65,8 +65,8 @@ const SponsorSpotlight = ( { details } ) => (
             }
         ` }</style>
         <div className="rounded-sps">
-            <a target="_blank" rel="noopener noreferrer" href={ details.linkUrl }>
-                <img src={ details.logoUrl } alt={ details.name } />
+            <a target="_blank" rel="noopener noreferrer" href={ details.url }>
+                <img src={ details.image } alt={ details.name } />
                 <div className="overlay" />
             </a>
         </div>{/* 
@@ -78,8 +78,8 @@ const { shape, string } = PropTypes;
 SponsorSpotlight.propTypes = {
     details: shape( {
         name: string.isRequired,
-        linkUrl: string.isRequired,
-        logoUrl: string.isRequired,
+        url: string.isRequired,
+        image: string.isRequired,
     } ).isRequired,
 };
 

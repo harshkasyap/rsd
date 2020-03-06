@@ -65,7 +65,7 @@ const TeamSpotlight = ( { details } ) => (
             }
         ` }</style>
         <div className="rounded">
-            <a href={details.url} title={details.name}>
+            <a target="_blank" href={details.url} title={details.name}>
                 <img src={ details.imageUrl } alt={ details.name } />
             </a>
         </div>

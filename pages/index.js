@@ -6,6 +6,7 @@ import Paper from  "../components/paper"
 import Layout from "../components/layout";
 import dictionary from "../data/dictionary";
 import Slideshow from "../components/slider"
+import CultTeamSlider from "../components/slider/cultTeamSlider"
 import CoreTeamSlider from "../components/slider/coreTeamSlider"
 import OrgTeamSlider from "../components/slider/orgTeamSlider"
 import Testimonials from '../components/Testimonials';
@@ -13,6 +14,7 @@ import Footer from '../components/Footer';
 import Speakers from '../components/Speakers';
 import useScript from '../components/useScript';
 import Sponsors from '../components/Sponsors';
+import SponsorSlider from '../components/slider/sponsorSlider';
 
 const text = require( "../data/text" );
 
@@ -66,6 +68,7 @@ const Home = ( props ) => {
                 <Speakers />
             </div>
             <div className="section light" id="contact">
+                <CultTeamSlider />
                 <CoreTeamSlider />
                 <OrgTeamSlider />
             </div>
@@ -74,7 +77,8 @@ const Home = ( props ) => {
                 <div id="custom-link">
                     <a target="_blank" href="https://drive.google.com/file/d/1x1ZDfvcWHQLJoWy3YTXWoQOPByt8iwwE/view?usp=sharing" title="SPONSORSHIP / EXHIBITOR PROSPECTUS"><i className="fa fa-download"></i></a>
                 </div>
-                <Sponsors />
+                <SponsorSlider />
+                {/* <Sponsors /> */}
             </div>
             <div className="section light" id="footer">
                 <Footer />

@@ -85,12 +85,6 @@ module.exports = [
         imageUrl: "./static/images/team/DebaratiGhosh.jpg",
     },
     {
-        id: 16,
-        name: "Deepa Gupta",
-        position: "Volunteer",
-        imageUrl: "./static/images/team/DeepaGupta.jpg",
-    },
-    {
         id: 31,
         name: "Desireddy Shashidhar Reddy",
         position: "Volunteer",
@@ -151,6 +145,12 @@ module.exports = [
         imageUrl: "./static/images/team/MANISHKUMARTHAKUR.JPG",
     },
     {
+        id: 50,
+        name: "Noohul",
+        position: "Volunteer",
+        imageUrl: "./static/images/team/noohul.jpeg",
+    },
+    {
         id: 21,
         name: "Prabhakar Kumar Singh",
         position: "Volunteer",
@@ -179,12 +179,6 @@ module.exports = [
         name: "Pushpender Singh",
         position: "Volunteer",
         imageUrl: "./static/images/team/PushpenderSingh.jpg",
-    },
-    {
-        id: 24,
-        name: "Rishabh Kumar Pandey",
-        position: "Volunteer",
-        imageUrl: "./static/images/team/RISHABHKUMARPANDEY.jpg",
     },
     {
         id: 25,
