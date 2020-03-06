@@ -77,8 +77,13 @@ const Home = ( props ) => {
                 <div id="custom-link">
                     <a target="_blank" href="https://drive.google.com/file/d/1x1ZDfvcWHQLJoWy3YTXWoQOPByt8iwwE/view?usp=sharing" title="SPONSORSHIP / EXHIBITOR PROSPECTUS"><i className="fa fa-download"></i></a>
                 </div>
+                <Sponsors />
                 <SponsorSlider />
-                {/* <Sponsors /> */}
+            </div>
+            <div className="section light">
+                <h2>In Association with</h2>
+                <h4>TBI, Last year, Tristup Solar Pvt Ltd, Angeethi, Macak, Rajib bed, A Diet Mess, Platonic Nanotech</h4>
+                <h4>Makers, Lakshmi Sales, M/S Sajawat, Scientific corp, Rajat Premier Trading Corp., NOOHUL</h4>
             </div>
             <div className="section light" id="footer">
                 <Footer />

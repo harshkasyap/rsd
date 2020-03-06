@@ -5,8 +5,8 @@ class Sponsors extends Component {
 
   render() {
     
-    if(dictionary.sponsors){
-      var sponsor = dictionary.sponsors.map(function(sponsor){
+    if(dictionary.bigSponsors){
+      var sponsor = dictionary.bigSponsors.map(function(sponsor){
         var projectImage = './static/images/sponsors/'+sponsor.image;
         return <div key={sponsor.name} className="columns portfolio-item">
            <div className="item-wrap">

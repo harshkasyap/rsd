@@ -13,8 +13,8 @@ const SponsorSpotlight = ( { details } ) => (
 
             .rounded-sps {
                 // border-radius: 200px;
-                height: 125px;
-                width: 125px;
+                height: 150px;
+                width: 150px;
                 margin: auto;
                 overflow: hidden;
                 position: relative;
@@ -22,7 +22,7 @@ const SponsorSpotlight = ( { details } ) => (
             }
 
             .sponsor-pic img {
-                width: 125px;
+                width: 150px;
             }
 
             .rounded-sps:hover .social {

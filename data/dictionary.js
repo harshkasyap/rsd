@@ -3,7 +3,7 @@ export default {
         name: "Research Scholars' Day",
         period: "March 7, 2020",
         place: "Indian Institute Of Technology, Patna",
-        inaugralTime: "03 07 2020, 9:00 am"
+        inaugralTime: "03 07 2020, 4:00 a"
     },
     footer: "Join us on 7th, March 2020. @ IIT Patna",
     testimonials:{
@@ -62,35 +62,44 @@ export default {
             "url":"https://www.facebook.com/vikasvaibhavips/"
           }
         ],
-        sponsors: [
+        bigSponsors: [
+          {
+            id: 0,
+            name: "beltron",
+            image: "beltron.jpg",
+            designation: "",
+            url: "http://bsedc.bihar.gov.in/",
+          },
           {
             id: 1,
             name: "ashirvad",
-            image: "static/images/sponsors/ashirvad.jpeg",
+            image: "ashirvad.jpeg",
             designation: "",
             url: "http://ashirwadengicon.com/",
           },
           {
             id: 2,
             name: "Scientific E-resources",
-            image: "static/images/sponsors/seresources.jpeg",
+            image: "seresources.jpeg",
             designation: "",
             url: "http://scientificeresources.blogspot.com/p/blog-page.html",
           },
           {
             id: 3,
             name: "wiley",
-            image: "static/images/sponsors/wiley.png",
+            image: "wiley.png",
             designation: "",
             url: "https://www.wileyindia.com/",
-          },
+          }
+        ],
+        sponsors: [
           {
             id: 4,
             name: "ic-iitp",
             image: "static/images/sponsors/incubation.png",
             designation: "",
-            url: "http://ipgi.co.in/",
-          },
+            url: "http://www.iciitp.com/",
+          }/* ,
           {
             id: 5,
             name: "tbi",
@@ -111,7 +120,7 @@ export default {
             image: "static/images/sponsors/tst.jpg",
             designation: "",
             url: "",
-          },
+          } */,
           {
             id: 8,
             name: "Yokogawa",
@@ -146,14 +155,14 @@ export default {
             image: "static/images/sponsors/MachTools.jpeg",
             designation: "",
             url: "http://machtools.in/",
-          },
+          }/* ,
           {
             id: 13,
             name: "Angeethi",
             image: "static/images/sponsors/tst.jpg",
             designation: "",
             url: "https://deshbandhuhotelbihta.business.site/",
-          },
+          } */,
           {
             id: 14,
             name: "ipgi",
@@ -167,14 +176,14 @@ export default {
             image: "static/images/sponsors/sudha.jpeg",
             designation: "",
             url: "http://www.sudha.coop/",
-          },
+          }/* ,
           {
             id: 16,
             name: "macak",
             image: "static/images/sponsors/tst.jpg",
             designation: "",
             url: "",
-          },
+          } */,
           {
             id: 17,
             name: "apolo",
@@ -195,7 +204,7 @@ export default {
             image: "static/images/sponsors/ranjan.png",
             designation: "",
             url: "http://www.ranjanscientific.com/",
-          },
+          }/* ,
           {
             id: 20,
             name: "Rajib bed",
@@ -209,14 +218,14 @@ export default {
             image: "static/images/sponsors/tst.jpg",
             designation: "",
             url: "",
-          },
+          } */,
           {
             id: 22,
             name: "entuple",
             image: "static/images/sponsors/entuple.png",
             designation: "",
             url: "https://www.entuple.com/",
-          },
+          }/* ,
           {
             id: 23,
             name: "Platonic Nanotech",
@@ -272,6 +281,6 @@ export default {
             image: "static/images/sponsors/sponsor.png",
             designation: "",
             url: "",
-          }
+          } */
         ]
 };

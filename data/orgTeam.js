@@ -139,12 +139,6 @@ module.exports = [
         imageUrl: "./static/images/team/MandeepShaonak.jpg",
     },
     {
-        id: 20,
-        name: "Manish Kumar Thakur",
-        position: "Volunteer",
-        imageUrl: "./static/images/team/MANISHKUMARTHAKUR.JPG",
-    },
-    {
         id: 50,
         name: "Noohul",
         position: "Volunteer",
