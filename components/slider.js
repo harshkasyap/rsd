@@ -81,7 +81,7 @@ const Slideshow = () => (
       <div className="centered-text"> 
         {/* <div className="section light"> */}
           <h1>{ Dictionary.event.name }</h1>
-          <Timer />
+          {/* <Timer /> */}
           <h3>{ Dictionary.event.period }</h3>
           <h4 className="yellow">{ Dictionary.event.place }</h4>
         {/* </div> */}
